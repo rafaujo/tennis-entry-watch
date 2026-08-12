@@ -1,6 +1,7 @@
 import argparse
 import html
 from collections import defaultdict
+from datetime import timedelta
 from pathlib import Path
 
 from tennis_entry_watch.models import EntryList, EntryStatus, SourceType
@@ -49,6 +50,7 @@ main{max-width:1180px;margin:18px auto 44px;background:var(--paper);border:1px s
 .scroll{overflow-x:auto;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:7px 9px;border-bottom:1px solid #e1e7eb;text-align:left;white-space:nowrap}th{background:#e9eef2;color:#344553;font-size:11px;text-transform:uppercase;letter-spacing:.04em}tbody tr:nth-child(even){background:#f8fafb}tbody tr:hover{background:#eef6fa}td.num,th.num{text-align:right}td.player{font-weight:600;min-width:210px}td small{display:block;color:var(--muted);font-weight:400}.empty td{text-align:center;padding:20px;color:var(--muted);font-style:italic}.pending td{color:var(--muted)}
 .status,.chance{display:inline-block;border-radius:2px;padding:2px 6px;font-size:11px;font-weight:800}.status{min-width:38px;text-align:center;background:#dfe8ee;color:#314553}.status-da,.status-pr,.status-qda{background:#dcefe7;color:#115b3e}.status-alt,.status-qalt{background:#fff0c2;color:#775000}.status-out{background:#f6d8da;color:#822128}.status-pending{background:#eceff2;color:#68737c}.chance-next{background:#d9f0e5;color:#11603f}.chance-near{background:#fff0c2;color:#725000}.chance-queue{background:#e9eef2;color:#50606c}.promoted{color:var(--green);font-weight:700}.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;color:var(--muted);font-size:12px}
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.card{border:1px solid var(--line);border-top:4px solid var(--blue);padding:16px;background:#fff}.card a{text-decoration:none;color:var(--ink)}.card a:hover{color:var(--blue)}.card-meta{color:var(--muted);margin:5px 0 12px}.card-stats{display:flex;gap:20px;border-top:1px solid var(--line);padding-top:11px}.card-stats strong{display:block;font-size:18px}.card-stats span{color:var(--muted);font-size:11px;text-transform:uppercase}.filters{display:flex;gap:10px;margin:14px 0}.filters input{width:100%;max-width:440px;border:1px solid #aebbc5;border-radius:3px;padding:9px 11px;font:inherit}.sources{background:var(--soft);border:1px solid var(--line);padding:11px 14px}.sources ul{margin:4px 0;padding-left:20px}a{color:var(--blue)}.footer-note{color:var(--muted);font-size:12px;margin-top:18px}
+.tour-group{margin-top:26px}.tour-group>h2{margin:0 0 10px}.tour-group .cards{margin-top:10px}.week-heading{margin:18px 0 5px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.tour-group-challenger .card{border-top-color:#718b55}
 .tournament-page{max-width:1380px}.entry-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}.tournament-page h2{margin-top:18px}.tournament-page th,.tournament-page td{padding:3px 6px;font-size:12px;line-height:1.25}.tournament-page th{font-size:10px}.tournament-page td.player{min-width:150px}.tournament-page .status,.tournament-page .chance{font-size:10px;padding:1px 4px}.tournament-page .explain{font-size:12px;margin:4px 0 6px}
 @media(max-width:760px){main{margin:0;border-width:0;padding:15px}.navlinks{gap:11px;font-size:12px}.subhead{display:block}.updated{text-align:left;margin-top:8px}.summary{grid-template-columns:1fr 1fr}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--line)}.cards{grid-template-columns:1fr}.hide-mobile{display:none}}
 @media(max-width:980px){.entry-grid{grid-template-columns:1fr}}
@@ -284,25 +286,50 @@ def build_page(entry_list: EntryList, home_href: str = "../index.html", schedule
 </main></body></html>'''
 
 
+def _tournament_card(entry_list: EntryList) -> str:
+    t = entry_list.tournament
+    main_count = sum(entry.status in MAIN_DRAW_STATUSES for entry in entry_list.entries)
+    alt_count = sum(entry.status == EntryStatus.ALT for entry in entry_list.entries)
+    return (
+        '<article class="card">'
+        f'<span class="eyebrow">{html.escape(t.category)} · {t.surface.value}</span>'
+        f'<h3><a href="tournaments/{t.tournament_id}.html">{html.escape(t.name)}</a></h3>'
+        f'<p class="card-meta">{t.start_date:%d %b}–{t.end_date:%d %b %Y} · {html.escape(t.location.city)}, {html.escape(t.location.country)}</p>'
+        '<div class="card-stats">'
+        f'<div><strong>{main_count}</strong><span>Main entries</span></div>'
+        f'<div><strong>{alt_count}</strong><span>Alternates</span></div>'
+        f'<div><strong>{sum(entry.status == EntryStatus.OUT for entry in entry_list.entries)}</strong><span>Withdrawals</span></div>'
+        '</div></article>'
+    )
+
+
 def build_index(entry_lists: list[EntryList]) -> str:
-    cards = []
-    for entry_list in sorted(entry_lists, key=lambda item: item.tournament.start_date):
-        t = entry_list.tournament
-        main_count = sum(entry.status in MAIN_DRAW_STATUSES for entry in entry_list.entries)
-        alt_count = sum(entry.status == EntryStatus.ALT for entry in entry_list.entries)
-        cards.append(
-            '<article class="card">'
-            f'<span class="eyebrow">{html.escape(t.category)} · {t.surface.value}</span>'
-            f'<h3><a href="tournaments/{t.tournament_id}.html">{html.escape(t.name)}</a></h3>'
-            f'<p class="card-meta">{t.start_date:%d %b}–{t.end_date:%d %b %Y} · {html.escape(t.location.city)}, {html.escape(t.location.country)}</p>'
-            '<div class="card-stats">'
-            f'<div><strong>{main_count}</strong><span>Main entries</span></div>'
-            f'<div><strong>{alt_count}</strong><span>Alternates</span></div>'
-            f'<div><strong>{sum(entry.status == EntryStatus.OUT for entry in entry_list.entries)}</strong><span>Withdrawals</span></div>'
-            '</div></article>'
+    tour_events = sorted(
+        (item for item in entry_lists if not item.tournament.category.lower().startswith("challenger")),
+        key=lambda item: item.tournament.start_date,
+    )
+    challenger_weeks = defaultdict(list)
+    for item in entry_lists:
+        if not item.tournament.category.lower().startswith("challenger"):
+            continue
+        start = item.tournament.start_date
+        week = start - timedelta(days=start.weekday())
+        challenger_weeks[week].append(item)
+
+    tour_section = (
+        '<section class="tour-group"><h2>ATP Tour &amp; Grand Slams</h2>'
+        f'<div class="cards">{"".join(_tournament_card(item) for item in tour_events)}</div></section>'
+    )
+    challenger_parts = ['<section class="tour-group tour-group-challenger"><h2>Challenger Tour</h2>']
+    for week, items in sorted(challenger_weeks.items()):
+        challenger_parts.append(f'<h3 class="week-heading">Week of {week:%d %b %Y}</h3>')
+        challenger_parts.append(
+            f'<div class="cards">{"".join(_tournament_card(item) for item in sorted(items, key=lambda event: event.tournament.name))}</div>'
         )
+    challenger_parts.append('</section>')
+    sections = tour_section + "".join(challenger_parts)
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tennis Entry Watch</title><style>{CSS}</style></head><body>
-{_nav("index.html", "schedules/index.html")}<main><span class="eyebrow">Upcoming tournaments</span><h1>Tennis entry lists before the draw</h1><p class="meta">Verified main-draw entries, alternate queues, qualifying paths, withdrawals, and player schedules.</p><div class="info"><strong>How to read it:</strong> confirmed entry is a fact from a cited list; queue distance is a calculation; projections are labelled separately.</div><div class="cards">{''.join(cards)}</div><p class="footer-note">Unofficial tracker. Always confirm time-sensitive participation with the tournament.</p></main></body></html>'''
+{_nav("index.html", "schedules/index.html")}<main><span class="eyebrow">Upcoming tournaments</span><h1>Tennis entry lists before the draw</h1><p class="meta">Verified main-draw entries, alternate queues, qualifying paths, withdrawals, and player schedules.</p><div class="info"><strong>How to read it:</strong> confirmed entry is a fact from a cited list; queue distance is a calculation; projections are labelled separately.</div>{sections}<p class="footer-note">Unofficial tracker. Always confirm time-sensitive participation with the tournament.</p></main></body></html>'''
 
 
 def build_schedules(entry_lists: list[EntryList], live_snapshot: dict | None = None) -> str:

@@ -47,6 +47,11 @@ def test_us_open_page_shows_alternate_queue_and_promotion():
 def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     written = build_site(Path("data/entries"), tmp_path)
     assert tmp_path / "index.html" in written
+    index = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "ATP Tour &amp; Grand Slams" in index
+    assert "Challenger Tour" in index
+    assert "Week of 17 Aug 2026" in index
+    assert index.index("ATP Tour &amp; Grand Slams") < index.index("Challenger Tour")
     assert (tmp_path / "tournaments" / "us-open-2026.html").exists()
     assert (tmp_path / "tournaments" / "cancun-challenger-2026.html").exists()
     assert (tmp_path / "tournaments" / "quebec-city-challenger-2026.html").exists()
