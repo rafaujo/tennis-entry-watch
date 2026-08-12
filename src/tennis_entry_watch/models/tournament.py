@@ -37,6 +37,8 @@ class Tournament(BaseModel):
     location: Location
     main_draw_size: int | None = Field(default=None, gt=0)
     qualifying_draw_size: int | None = Field(default=None, gt=0)
+    main_draw_qualifier_slots: int | None = Field(default=None, ge=0)
+    draw_published: bool | None = None
     entry_list_date: date | None = None
     entry_ranking_date: date | None = None
     status: TournamentStatus = TournamentStatus.UPCOMING
@@ -48,4 +50,3 @@ class Tournament(BaseModel):
         if self.end_date and self.end_date < self.start_date:
             raise ValueError("end_date cannot precede start_date")
         return self
-
