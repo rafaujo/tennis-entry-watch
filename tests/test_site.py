@@ -50,19 +50,22 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     written = build_site(Path("data/entries"), tmp_path)
     assert tmp_path / "index.html" in written
     index = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "Grand Slams" in index
-    assert "ATP Tour" in index
+    assert "Grand Slams &amp; ATP Tour" in index
     assert "Challenger Tour" in index
     assert "Week of 17 Aug 2026" in index
     assert "Week of 24 Aug 2026" in index
     assert "Week of 31 Aug 2026" in index
-    assert index.index("Week of 17 Aug 2026") < index.index("Week of 24 Aug 2026") < index.index("Week of 31 Aug 2026")
-    assert index.index("Grand Slams") < index.index("ATP Tour") < index.index("Challenger Tour")
-    week_17 = index[index.index("Week of 17 Aug 2026"):index.index("Week of 24 Aug 2026")]
-    week_24 = index[index.index("Week of 24 Aug 2026"):index.index("Week of 31 Aug 2026")]
-    assert "Winston-Salem Open" not in week_17
-    assert "Winston-Salem Open" in week_24
-    assert "US Open" in week_24
+    tour_start = index.index("Grand Slams &amp; ATP Tour")
+    challenger_start = index.index("Challenger Tour", tour_start)
+    assert tour_start < challenger_start
+    tour_block = index[tour_start:challenger_start]
+    challenger_block = index[challenger_start:]
+    assert "Winston-Salem Open" in tour_block
+    assert "US Open" in tour_block
+    assert "Kingston 1" not in tour_block
+    assert challenger_block.index("Week of 17 Aug 2026") < challenger_block.index("Week of 24 Aug 2026") < challenger_block.index("Week of 31 Aug 2026")
+    assert "Kingston 1" in challenger_block
+    assert "Como Lake Challenger" in challenger_block
     assert "Allershausen" not in index
     assert (tmp_path / "tournaments" / "us-open-2026.html").exists()
     assert (tmp_path / "tournaments" / "cancun-challenger-2026.html").exists()
