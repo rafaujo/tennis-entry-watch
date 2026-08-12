@@ -3,7 +3,7 @@
     "tournament_id": "winston-salem-open-2026",
     "name": "Winston-Salem Open",
     "year": 2026,
-    "start_date": "2026-08-23",
+    "start_date": "2026-08-22",
     "end_date": "2026-08-29",
     "category": "ATP 250",
     "surface": "Hard",
@@ -14,7 +14,9 @@
     "main_draw_size": 48,
     "qualifying_draw_size": 16,
     "main_draw_qualifier_slots": 4,
+    "main_draw_wildcard_slots": 4,
     "draw_published": false,
+    "qualifying_list_published": false,
     "entry_list_date": "2026-07-28",
     "entry_ranking_date": "2026-07-27",
     "status": "upcoming"

@@ -8,7 +8,7 @@ def test_page_contains_tournament_entries_and_disclaimer(current):
     assert "Sample Open" in page
     assert "Marco Silva" in page
     assert "fictional tournament" in page
-    assert "Snapshot" in page
+    assert "Entry snapshot" in page
 
 
 def test_real_pre_draw_page_shows_confirmed_and_pending_places():
@@ -20,10 +20,12 @@ def test_real_pre_draw_page_shows_confirmed_and_pending_places():
     assert "PRE-DRAW · ENTRY WATCH" in page
     assert "37/48" in page
     assert page.count("determined in qualifying") == 4
-    assert page.count("entry route not yet published") == 7
+    assert page.count("not announced") == 4
+    assert page.count("special exempt / late entry / performance bye allocation pending") == 3
     assert "#80 · Lorenzo Sonego" in page
     assert "No verified alternate list is available" in page
     assert "The draw has not been published" in page
+    assert "22 Aug–29 Aug 2026" in page
 
 
 def test_us_open_page_shows_alternate_queue_and_promotion():
@@ -65,3 +67,7 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     us_open = (tmp_path / "tournaments" / "us-open-2026.html").read_text(encoding="utf-8")
     assert us_open.count('status-qalt">LISTED Q') == 117
     assert "Tracked secondary · live ranking" in us_open
+    winston_salem = (tmp_path / "tournaments" / "winston-salem-open-2026.html").read_text(encoding="utf-8")
+    assert "Live ranking<br><strong>2026-08-12 16:39 UTC" in winston_salem
+    assert "No qualifying players are currently listed in the tracked schedule" in winston_salem
+    assert "ATP official · 2026 draw composition" in winston_salem
