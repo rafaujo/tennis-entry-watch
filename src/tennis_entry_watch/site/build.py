@@ -1,8 +1,9 @@
 import argparse
 import html
+from collections import defaultdict
 from pathlib import Path
 
-from tennis_entry_watch.models import EntryList, EntryStatus
+from tennis_entry_watch.models import EntryList, EntryStatus, SourceType
 
 
 MAIN_DRAW_STATUSES = {
@@ -21,71 +22,138 @@ STATUS_LABELS = {
     EntryStatus.Q: "Qualifier",
     EntryStatus.LL: "Lucky loser",
     EntryStatus.SE: "Special exempt",
-    EntryStatus.ALT: "Alternate",
+    EntryStatus.ALT: "Main-draw alternate",
+    EntryStatus.QDA: "Qualifying acceptance",
+    EntryStatus.QALT: "Qualifying alternate",
     EntryStatus.OUT: "Withdrawn",
 }
+
+SOURCE_LABELS = {
+    SourceType.ATP_OFFICIAL: "ATP official",
+    SourceType.TOURNAMENT_OFFICIAL: "Tournament official",
+    SourceType.TRUSTED_SECONDARY: "Tracked secondary",
+    SourceType.MANUAL: "Manual",
+    SourceType.AI_EXTRACTED: "AI-assisted extraction",
+}
+
+CSS = """
+:root{--nav:#10283d;--blue:#176b98;--sky:#eaf5fb;--ink:#15222c;--muted:#64727e;--line:#d4dde4;--soft:#f4f7f9;--paper:#fff;--green:#17704d;--amber:#8a5b00;--red:#a02b35}
+*{box-sizing:border-box}body{margin:0;background:#edf2f5;color:var(--ink);font:14px/1.45 Arial,Helvetica,sans-serif}.topbar{background:var(--nav);border-bottom:4px solid #32a0d5;color:#fff}.nav{max-width:1180px;margin:auto;display:flex;align-items:center;gap:22px;padding:11px 18px}.brand{font-size:17px;font-weight:800;letter-spacing:.04em;color:#fff;text-decoration:none}.navlinks{display:flex;gap:18px;margin-left:auto}.navlinks a{color:#dce9f2;text-decoration:none}.navlinks a:hover{color:#fff}
+main{max-width:1180px;margin:18px auto 44px;background:var(--paper);border:1px solid var(--line);padding:22px 24px}h1{font-size:28px;margin:0 0 5px}h2{font-size:19px;margin:28px 0 8px;border-bottom:2px solid var(--blue);padding-bottom:5px}h3{margin:0;font-size:18px}.eyebrow{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.phase{display:inline-block;background:var(--sky);color:#0d587f;border:1px solid #abd3e8;border-radius:3px;padding:3px 7px;font-size:11px;font-weight:800;letter-spacing:.06em}.subhead{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}.meta,.explain{color:var(--muted);margin:7px 0}.updated{text-align:right;color:var(--muted);font-size:12px}.updated strong{color:var(--ink)}
+.summary{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);margin:18px 0 9px}.metric{padding:11px 13px;border-right:1px solid var(--line)}.metric:last-child{border:0}.metric strong{display:block;font-size:19px}.metric span{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em}.notice{background:#fff8dd;border:1px solid #ecd78a;padding:10px 12px;margin:12px 0}.info{background:var(--sky);border:1px solid #bcddec;padding:10px 12px;margin:12px 0}
+.scroll{overflow-x:auto;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:7px 9px;border-bottom:1px solid #e1e7eb;text-align:left;white-space:nowrap}th{background:#e9eef2;color:#344553;font-size:11px;text-transform:uppercase;letter-spacing:.04em}tbody tr:nth-child(even){background:#f8fafb}tbody tr:hover{background:#eef6fa}td.num,th.num{text-align:right}td.player{font-weight:600;min-width:210px}td small{display:block;color:var(--muted);font-weight:400}.empty td{text-align:center;padding:20px;color:var(--muted);font-style:italic}.pending td{color:var(--muted)}
+.status,.chance{display:inline-block;border-radius:2px;padding:2px 6px;font-size:11px;font-weight:800}.status{min-width:38px;text-align:center;background:#dfe8ee;color:#314553}.status-da,.status-pr,.status-qda{background:#dcefe7;color:#115b3e}.status-alt,.status-qalt{background:#fff0c2;color:#775000}.status-out{background:#f6d8da;color:#822128}.status-pending{background:#eceff2;color:#68737c}.chance-next{background:#d9f0e5;color:#11603f}.chance-near{background:#fff0c2;color:#725000}.chance-queue{background:#e9eef2;color:#50606c}.promoted{color:var(--green);font-weight:700}.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;color:var(--muted);font-size:12px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.card{border:1px solid var(--line);border-top:4px solid var(--blue);padding:16px;background:#fff}.card a{text-decoration:none;color:var(--ink)}.card a:hover{color:var(--blue)}.card-meta{color:var(--muted);margin:5px 0 12px}.card-stats{display:flex;gap:20px;border-top:1px solid var(--line);padding-top:11px}.card-stats strong{display:block;font-size:18px}.card-stats span{color:var(--muted);font-size:11px;text-transform:uppercase}.filters{display:flex;gap:10px;margin:14px 0}.filters input{width:100%;max-width:440px;border:1px solid #aebbc5;border-radius:3px;padding:9px 11px;font:inherit}.sources{background:var(--soft);border:1px solid var(--line);padding:11px 14px}.sources ul{margin:4px 0;padding-left:20px}a{color:var(--blue)}.footer-note{color:var(--muted);font-size:12px;margin-top:18px}
+@media(max-width:760px){main{margin:0;border-width:0;padding:15px}.navlinks{gap:11px;font-size:12px}.subhead{display:block}.updated{text-align:left;margin-top:8px}.summary{grid-template-columns:1fr 1fr}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--line)}.cards{grid-template-columns:1fr}.hide-mobile{display:none}}
+"""
 
 
 def _rank(value: int | None) -> str:
     return str(value) if value is not None else "—"
 
 
-def _entry_row(entry) -> str:
-    projected_seed = _rank(entry.projected_seed)
+def _status(entry) -> str:
+    detail = STATUS_LABELS[entry.status]
+    movement = ""
+    if entry.previous_status == EntryStatus.ALT and entry.status in MAIN_DRAW_STATUSES:
+        movement = '<small class="promoted">promoted from alternate</small>'
     return (
-        f'<tr><td class="num">{projected_seed}</td>'
+        f'<span class="status status-{entry.status.value.lower()}" title="{html.escape(detail)}">'
+        f'{entry.status.value}</span>{movement}'
+    )
+
+
+def _chance(position: int) -> str:
+    if position == 1:
+        return '<span class="chance chance-next">NEXT IN · 1 opening</span>'
+    if position <= 4:
+        return f'<span class="chance chance-near">{position} openings away</span>'
+    return f'<span class="chance chance-queue">{position} openings away</span>'
+
+
+def _nav(home_href: str, schedules_href: str) -> str:
+    return (
+        '<header class="topbar"><nav class="nav">'
+        f'<a class="brand" href="{home_href}">TENNIS ENTRY WATCH</a>'
+        '<div class="navlinks">'
+        f'<a href="{home_href}">Tournaments</a>'
+        f'<a href="{schedules_href}">Player schedules</a>'
+        '</div></nav></header>'
+    )
+
+
+def _entry_row(entry) -> str:
+    return (
+        '<tr>'
+        f'<td class="num">{_rank(entry.projected_seed)}</td>'
         f'<td class="player">{html.escape(entry.player.name)}</td>'
         f'<td>{html.escape(entry.player.nationality or "—")}</td>'
         f'<td class="num">{_rank(entry.current_rank)}</td>'
         f'<td class="num">{_rank(entry.entry_rank)}</td>'
-        f'<td><span class="status status-{entry.status.value.lower()}">{entry.status.value}</span></td></tr>'
+        f'<td>{_status(entry)}</td></tr>'
     )
 
 
 def _pending_row(label: str, status: str, detail: str) -> str:
     return (
         '<tr class="pending"><td class="num">—</td>'
-        f'<td class="player">{html.escape(label)} <small>{html.escape(detail)}</small></td>'
+        f'<td class="player">{html.escape(label)}<small>{html.escape(detail)}</small></td>'
         '<td>—</td><td class="num">—</td><td class="num">—</td>'
         f'<td><span class="status status-pending">{html.escape(status)}</span></td></tr>'
     )
 
 
-def build_page(entry_list: EntryList) -> str:
+def build_page(entry_list: EntryList, home_href: str = "../index.html", schedules_href: str = "../schedules/index.html") -> str:
     t = entry_list.tournament
-    entries = entry_list.entries
     main_entries = sorted(
-        (entry for entry in entries if entry.status in MAIN_DRAW_STATUSES),
+        (entry for entry in entry_list.entries if entry.status in MAIN_DRAW_STATUSES),
         key=lambda entry: (entry.entry_rank or 9999, entry.player.name),
     )
     alternates = sorted(
-        (entry for entry in entries if entry.status == EntryStatus.ALT),
+        (entry for entry in entry_list.entries if entry.status == EntryStatus.ALT),
         key=lambda entry: entry.alternate_position or 9999,
     )
     withdrawals = sorted(
-        (entry for entry in entries if entry.status == EntryStatus.OUT),
+        (entry for entry in entry_list.entries if entry.status == EntryStatus.OUT),
         key=lambda entry: entry.withdrawn_at or entry_list.snapshot_at,
         reverse=True,
     )
+    q_acceptances = sorted(
+        (entry for entry in entry_list.qualifying_entries if entry.status == EntryStatus.QDA),
+        key=lambda entry: (entry.entry_rank or 9999, entry.player.name),
+    )
+    q_alternates = sorted(
+        (entry for entry in entry_list.qualifying_entries if entry.status == EntryStatus.QALT),
+        key=lambda entry: entry.alternate_position or 9999,
+    )
 
     qualifier_slots = t.main_draw_qualifier_slots or 0
+    wildcard_slots = t.main_draw_wildcard_slots or 0
     known_qualifiers = sum(entry.status == EntryStatus.Q for entry in main_entries)
+    known_wildcards = sum(entry.status == EntryStatus.WC for entry in main_entries)
     qualifier_placeholders = max(0, qualifier_slots - known_qualifiers)
+    wildcard_placeholders = max(0, wildcard_slots - known_wildcards)
     open_other = max(
         0,
-        (t.main_draw_size or len(main_entries)) - len(main_entries) - qualifier_placeholders,
+        (t.main_draw_size or len(main_entries))
+        - len(main_entries)
+        - qualifier_placeholders
+        - wildcard_placeholders,
     )
-    confirmed = len(main_entries)
     cutoff_entries = [entry for entry in main_entries if entry.entry_rank is not None]
     cutoff = max(cutoff_entries, key=lambda entry: entry.entry_rank) if cutoff_entries else None
 
     main_rows = [_entry_row(entry) for entry in main_entries]
     main_rows.extend(
-        _pending_row(f"Qualifier {index}", "Q", "player to be determined")
+        _pending_row(f"Qualifier {index}", "Q", "determined in qualifying")
         for index in range(1, qualifier_placeholders + 1)
     )
     main_rows.extend(
-        _pending_row(f"Unfilled main-draw place {index}", "TBD", "entry route not yet published")
+        _pending_row(f"Wild card {index}", "WC", "not announced")
+        for index in range(1, wildcard_placeholders + 1)
+    )
+    main_rows.extend(
+        _pending_row(f"Open place {index}", "TBD", "entry route not yet published")
         for index in range(1, open_other + 1)
     )
 
@@ -94,12 +162,10 @@ def build_page(entry_list: EntryList) -> str:
         f'<td class="num">{entry.alternate_position}</td>'
         f'<td class="player">{html.escape(entry.player.name)}</td>'
         f'<td>{html.escape(entry.player.nationality or "—")}</td>'
-        f'<td class="num">{_rank(entry.current_rank)}</td>'
-        f'<td class="num">{_rank(entry.entry_rank)}</td></tr>'
+        f'<td class="num">{_rank(entry.entry_rank)}</td>'
+        f'<td>{_chance(entry.alternate_position)}</td></tr>'
         for entry in alternates
-    )
-    if not alternate_rows:
-        alternate_rows = '<tr class="empty"><td colspan="5">No official alternate list has been published by the selected source.</td></tr>'
+    ) or '<tr class="empty"><td colspan="5">No verified alternate list is available from the selected source.</td></tr>'
 
     withdrawal_rows = "".join(
         '<tr>'
@@ -109,65 +175,163 @@ def build_page(entry_list: EntryList) -> str:
         f'<td>{entry.previous_status.value if entry.previous_status else "—"}</td>'
         f'<td class="num">{_rank(entry.entry_rank)}</td></tr>'
         for entry in withdrawals
-    )
-    if not withdrawal_rows:
-        withdrawal_rows = '<tr class="empty"><td colspan="5">No withdrawals are identified in the selected official source.</td></tr>'
+    ) or '<tr class="empty"><td colspan="5">No withdrawals are identified in the selected source.</td></tr>'
 
-    source_urls = sorted({entry.source.url for entry in entries})
+    if q_acceptances or q_alternates:
+        q_rows = "".join(
+            '<tr>'
+            f'<td class="num">{entry.alternate_position or "—"}</td>'
+            f'<td class="player">{html.escape(entry.player.name)}</td>'
+            f'<td>{html.escape(entry.player.nationality or "—")}</td>'
+            f'<td class="num">{_rank(entry.entry_rank)}</td>'
+            f'<td>{_status(entry)}</td>'
+            f'<td>{_chance(entry.alternate_position) if entry.alternate_position else "In qualifying field"}</td></tr>'
+            for entry in [*q_acceptances, *q_alternates]
+        )
+    else:
+        q_rows = (
+            '<tr class="empty"><td colspan="6">Qualifying entry list not yet available from a verified public source. '
+            'Ranking alone is not treated as proof of entry.</td></tr>'
+        )
+
+    unique_sources = {}
+    for entry in [*entry_list.entries, *entry_list.qualifying_entries]:
+        unique_sources[(entry.source.url, entry.source.source_type)] = entry.source
     sources = "".join(
-        f'<li><a href="{html.escape(url, quote=True)}">Official entry-list announcement</a></li>'
-        for url in source_urls
+        '<li>'
+        f'<a href="{html.escape(source.url, quote=True)}">{html.escape(SOURCE_LABELS[source.source_type])}</a>'
+        f' · retrieved {source.retrieved_at:%Y-%m-%d}'
+        '</li>'
+        for source in unique_sources.values()
     )
     cutoff_text = f"#{cutoff.entry_rank} · {html.escape(cutoff.player.name)}" if cutoff else "Not known"
-    draw_phase = "PRE-DRAW · ENTRY LIST" if t.draw_published is False else "ENTRY LIST"
+    draw_phase = "PRE-DRAW · ENTRY WATCH" if t.draw_published is False else "ENTRY LIST"
     sample_notice = ""
     if t.tournament_id == "sample-open-2026":
         sample_notice = '<p class="notice"><strong>Sample data:</strong> This fictional tournament demonstrates the MVP.</p>'
 
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{html.escape(t.name)} ATP Entry List | Tennis Entry Watch</title>
-<style>
-:root{{--nav:#11263d;--blue:#185f8d;--ink:#17212b;--muted:#66727e;--line:#d6dde3;--soft:#f3f6f8;--paper:#fff;--green:#16734f;--amber:#9a6300;--red:#a32b32}}
-*{{box-sizing:border-box}}body{{margin:0;background:#edf1f4;color:var(--ink);font:14px/1.4 Arial,Helvetica,sans-serif}}
-.topbar{{background:var(--nav);border-bottom:4px solid #2b91c9;color:#fff}}.nav{{max-width:1160px;margin:auto;display:flex;align-items:center;gap:22px;padding:10px 18px}}
-.brand{{font-size:17px;font-weight:800;letter-spacing:.04em;color:#fff;text-decoration:none}}.navlinks{{display:flex;gap:16px;margin-left:auto}}.navlinks a{{color:#dce8f1;text-decoration:none}}
-main{{max-width:1160px;margin:18px auto 44px;background:var(--paper);border:1px solid var(--line);padding:20px 22px}}h1{{font-size:27px;margin:0 0 4px}}h2{{font-size:19px;margin:28px 0 8px;border-bottom:2px solid var(--blue);padding-bottom:5px}}
-.phase{{display:inline-block;background:#e7f2f8;color:#0e557e;border:1px solid #afd3e6;border-radius:3px;padding:3px 7px;font-size:11px;font-weight:800;letter-spacing:.06em}}
-.subhead{{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}}.meta{{margin:7px 0;color:var(--muted)}}.updated{{text-align:right;color:var(--muted);font-size:12px}}
-.summary{{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);margin:18px 0 8px}}.metric{{padding:11px 13px;border-right:1px solid var(--line)}}.metric:last-child{{border:0}}.metric strong{{display:block;font-size:19px}}.metric span{{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em}}
-.notice{{background:#fff8dd;border:1px solid #ecd78a;padding:9px 11px;margin:12px 0}}.explain{{color:var(--muted);margin:6px 0 9px}}
-.scroll{{overflow-x:auto;border:1px solid var(--line)}}table{{width:100%;border-collapse:collapse;background:#fff}}caption{{text-align:left;font-weight:bold;padding:8px;background:var(--soft)}}th,td{{padding:6px 9px;border-bottom:1px solid #e2e7eb;text-align:left;white-space:nowrap}}th{{background:#e9eef2;color:#344553;font-size:11px;text-transform:uppercase;letter-spacing:.04em}}tbody tr:nth-child(even){{background:#f8fafb}}tbody tr:hover{{background:#eef6fa}}td.num,th.num{{text-align:right}}td.player{{font-weight:600;min-width:220px}}td small{{display:block;color:var(--muted);font-weight:400}}
-.status{{display:inline-block;min-width:38px;text-align:center;border-radius:2px;padding:2px 5px;background:#dfe8ee;color:#314553;font-size:11px;font-weight:800}}.status-da{{background:#dcefe7;color:#115b3e}}.status-alt{{background:#fff0c2;color:#775000}}.status-out{{background:#f6d8da;color:#822128}}.status-pending{{background:#eceff2;color:#68737c}}
-.pending td{{color:#66727e}}.empty td{{text-align:center;padding:17px;color:var(--muted);font-style:italic}}.legend{{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;color:var(--muted);font-size:12px}}
-.sources{{background:var(--soft);border:1px solid var(--line);padding:11px 14px}}.sources ul{{margin:4px 0;padding-left:20px}}a{{color:var(--blue)}}
-@media(max-width:760px){{main{{margin:0;border-width:0;padding:15px}}.navlinks{{display:none}}.subhead{{display:block}}.updated{{text-align:left;margin-top:8px}}.summary{{grid-template-columns:1fr 1fr}}.metric:nth-child(2){{border-right:0}}.metric:nth-child(-n+2){{border-bottom:1px solid var(--line)}}}}
-</style></head><body>
-<header class="topbar"><nav class="nav"><a class="brand" href="index.html">TENNIS ENTRY WATCH</a><div class="navlinks"><a href="#main-draw">Main draw</a><a href="#alternates">Alternates</a><a href="#withdrawals">Withdrawals</a><a href="#sources">Sources</a></div></nav></header>
-<main>{sample_notice}<div class="subhead"><div><span class="phase">{draw_phase}</span><h1>{html.escape(t.name)}</h1><p class="meta">{t.start_date:%d %b}–{t.end_date:%d %b %Y} · {html.escape(t.category)} · {t.surface.value} · {html.escape(t.location.city)}, {html.escape(t.location.country)}</p></div><div class="updated">Entry-list snapshot<br><strong>{entry_list.snapshot_at:%Y-%m-%d %H:%M UTC}</strong></div></div>
-<div class="summary"><div class="metric"><strong>{confirmed}/{t.main_draw_size or '—'}</strong><span>confirmed names</span></div><div class="metric"><strong>{qualifier_placeholders}</strong><span>qualifier places pending</span></div><div class="metric"><strong>{open_other}</strong><span>entry route pending</span></div><div class="metric"><strong>{cutoff_text}</strong><span>initial direct cutoff</span></div></div>
-<p class="notice"><strong>The draw has not been published.</strong> This page tracks the official entry list before the draw. A listed player is entered, but participation remains subject to withdrawal and ATP rules.</p>
-<section id="main-draw"><h2>Main Draw — entry list</h2><p class="explain">Confirmed names plus known unfilled places. Projected seeds remain blank until the applicable seeding ranking is collected.</p><div class="scroll"><table aria-label="Main draw entry list"><thead><tr><th class="num">Proj. seed</th><th>Player / place</th><th>Nation</th><th class="num">Current rank</th><th class="num">Entry rank</th><th>Status</th></tr></thead><tbody>{''.join(main_rows)}</tbody></table></div><div class="legend"><span><b>DA</b> Direct acceptance</span><span><b>Q</b> Qualifier</span><span><b>TBD</b> Entry route not published</span></div></section>
-<section id="alternates"><h2>Alternates</h2><div class="scroll"><table aria-label="Alternates"><thead><tr><th class="num">Alt</th><th>Player</th><th>Nation</th><th class="num">Current rank</th><th class="num">Entry rank</th></tr></thead><tbody>{alternate_rows}</tbody></table></div></section>
-<section id="withdrawals"><h2>Withdrawals</h2><div class="scroll"><table aria-label="Withdrawals"><thead><tr><th>Date</th><th>Player</th><th>Nation</th><th>Previous status</th><th class="num">Entry rank</th></tr></thead><tbody>{withdrawal_rows}</tbody></table></div></section>
-<section id="sources"><h2>Sources and limitations</h2><div class="sources"><ul>{sources}</ul><p>Only facts explicitly supported by the selected source are shown as confirmed. No unofficial alternate names or speculative wild cards are presented as entries.</p></div></section>
+<title>{html.escape(t.name)} entry watch</title><style>{CSS}</style></head><body>
+{_nav(home_href, schedules_href)}
+<main>{sample_notice}<div class="subhead"><div><span class="phase">{draw_phase}</span><h1>{html.escape(t.name)}</h1><p class="meta">{t.start_date:%d %b}–{t.end_date:%d %b %Y} · {html.escape(t.category)} · {t.surface.value} · {html.escape(t.location.city)}, {html.escape(t.location.country)}</p></div><div class="updated">Snapshot<br><strong>{entry_list.snapshot_at:%Y-%m-%d %H:%M UTC}</strong></div></div>
+<div class="summary"><div class="metric"><strong>{len(main_entries)}/{t.main_draw_size or '—'}</strong><span>named in main field</span></div><div class="metric"><strong>{len(alternates)}</strong><span>verified alternates</span></div><div class="metric"><strong>{len(withdrawals)}</strong><span>withdrawals tracked</span></div><div class="metric"><strong>{cutoff_text}</strong><span>current direct cutoff</span></div></div>
+<p class="notice"><strong>The draw has not been published.</strong> This is an entry watch, not the draw. “X openings away” is the player's current queue distance, not a subjective probability.</p>
+<section id="main-draw"><h2>Main draw entry list</h2><p class="explain">Confirmed names and reserved places. Projected seed stays blank until a verified seeding ranking is collected.</p><div class="scroll"><table><thead><tr><th class="num">Proj. seed</th><th>Player / place</th><th>Nation</th><th class="num">Current rank</th><th class="num">Entry rank</th><th>Status</th></tr></thead><tbody>{''.join(main_rows)}</tbody></table></div><div class="legend"><span><b>DA</b> Direct acceptance</span><span><b>PR</b> Protected ranking</span><span><b>Q</b> Qualifier place</span><span><b>WC</b> Wild card</span></div></section>
+<section id="alternates"><h2>Main-draw alternates</h2><p class="explain">The order follows the latest verified list. Each withdrawal can move the queue by one place.</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>Path to main draw</th></tr></thead><tbody>{alternate_rows}</tbody></table></div></section>
+<section id="qualifying"><h2>Qualifying entry watch</h2><p class="explain">Qualifying acceptances and qualifying alternates are a separate pool; a main-draw alternate may also appear here once officially listed.</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>Status</th><th>Path</th></tr></thead><tbody>{q_rows}</tbody></table></div></section>
+<section id="withdrawals"><h2>Withdrawals and promotions</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Player</th><th>Nation</th><th>Previous status</th><th class="num">Entry rank</th></tr></thead><tbody>{withdrawal_rows}</tbody></table></div></section>
+<section id="sources"><h2>Sources and method</h2><div class="sources"><ul>{sources}</ul><p>Official, tracked-secondary, and projected information are kept separate. A ranking position is never treated as confirmation that a player entered.</p></div></section>
 </main></body></html>'''
 
 
+def build_index(entry_lists: list[EntryList]) -> str:
+    cards = []
+    for entry_list in sorted(entry_lists, key=lambda item: item.tournament.start_date):
+        t = entry_list.tournament
+        main_count = sum(entry.status in MAIN_DRAW_STATUSES for entry in entry_list.entries)
+        alt_count = sum(entry.status == EntryStatus.ALT for entry in entry_list.entries)
+        cards.append(
+            '<article class="card">'
+            f'<span class="eyebrow">{html.escape(t.category)} · {t.surface.value}</span>'
+            f'<h3><a href="tournaments/{t.tournament_id}.html">{html.escape(t.name)}</a></h3>'
+            f'<p class="card-meta">{t.start_date:%d %b}–{t.end_date:%d %b %Y} · {html.escape(t.location.city)}, {html.escape(t.location.country)}</p>'
+            '<div class="card-stats">'
+            f'<div><strong>{main_count}</strong><span>Main entries</span></div>'
+            f'<div><strong>{alt_count}</strong><span>Alternates</span></div>'
+            f'<div><strong>{sum(entry.status == EntryStatus.OUT for entry in entry_list.entries)}</strong><span>Withdrawals</span></div>'
+            '</div></article>'
+        )
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tennis Entry Watch</title><style>{CSS}</style></head><body>
+{_nav("index.html", "schedules/index.html")}<main><span class="eyebrow">Upcoming tournaments</span><h1>Tennis entry lists before the draw</h1><p class="meta">Verified main-draw entries, alternate queues, qualifying paths, withdrawals, and player schedules.</p><div class="info"><strong>How to read it:</strong> confirmed entry is a fact from a cited list; queue distance is a calculation; projections are labelled separately.</div><div class="cards">{''.join(cards)}</div><p class="footer-note">Unofficial tracker. Always confirm time-sensitive participation with the tournament.</p></main></body></html>'''
+
+
+def build_schedules(entry_lists: list[EntryList]) -> str:
+    players = defaultdict(lambda: {"name": "", "nation": "", "events": []})
+    for entry_list in entry_lists:
+        t = entry_list.tournament
+        by_player = defaultdict(list)
+        for entry in entry_list.entries:
+            by_player[entry.player.player_id].append(entry)
+        for entry in entry_list.qualifying_entries:
+            by_player[entry.player.player_id].append(entry)
+        for player_id, entries in by_player.items():
+            first = entries[0]
+            record = players[player_id]
+            record["name"] = first.player.name
+            record["nation"] = first.player.nationality or "—"
+            labels = []
+            for entry in entries:
+                label = entry.status.value
+                if entry.alternate_position:
+                    label += f" #{entry.alternate_position}"
+                labels.append(label)
+            record["events"].append((t.start_date, t.name, t.tournament_id, " + ".join(labels)))
+
+    rows = []
+    for record in sorted(players.values(), key=lambda item: item["name"].split()[-1].lower()):
+        events = sorted(record["events"])
+        event_html = "<br>".join(
+            f'<a href="../tournaments/{event_id}.html">{html.escape(name)}</a> '
+            f'<span class="status status-{status.split()[0].lower()}">{html.escape(status)}</span>'
+            for _, name, event_id, status in events
+        )
+        search = html.escape(f'{record["name"]} {record["nation"]} {" ".join(event[1] for event in events)}'.lower(), quote=True)
+        rows.append(
+            f'<tr data-search="{search}"><td class="player">{html.escape(record["name"])}</td>'
+            f'<td>{html.escape(record["nation"])}</td><td>{event_html}</td><td class="num">{len(events)}</td></tr>'
+        )
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Player schedules | Tennis Entry Watch</title><style>{CSS}</style></head><body>
+{_nav("../index.html", "index.html")}<main><span class="eyebrow">Entry-based calendar</span><h1>Player schedules</h1><p class="meta">Upcoming tournaments in which each player appears on a verified main-draw, alternate, or qualifying list.</p><div class="filters"><input id="search" type="search" placeholder="Search player, country, or tournament…" aria-label="Search schedules"></div><div class="scroll"><table id="schedule"><thead><tr><th>Player</th><th>Nation</th><th>Tournaments and entry status</th><th class="num">Events</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div><p class="footer-note">This is not a travel itinerary: players may withdraw, and alternate status does not guarantee a place.</p></main><script>const input=document.querySelector('#search');input.addEventListener('input',()=>{{const q=input.value.trim().toLowerCase();document.querySelectorAll('#schedule tbody tr').forEach(row=>row.hidden=!row.dataset.search.includes(q));}});</script></body></html>'''
+
+
+def discover_entry_lists(data_root: Path) -> list[EntryList]:
+    entry_lists = []
+    for path in sorted(data_root.glob("*/current.json")):
+        data = EntryList.model_validate_json(path.read_text(encoding="utf-8"))
+        if not data.tournament.tournament_id.startswith("sample-"):
+            entry_lists.append(data)
+    return entry_lists
+
+
+def build_site(data_root: Path, output_dir: Path) -> list[Path]:
+    entry_lists = discover_entry_lists(data_root)
+    if not entry_lists:
+        raise ValueError(f"no current entry lists found under {data_root}")
+    tournaments_dir = output_dir / "tournaments"
+    schedules_dir = output_dir / "schedules"
+    tournaments_dir.mkdir(parents=True, exist_ok=True)
+    schedules_dir.mkdir(parents=True, exist_ok=True)
+    written = []
+    index_path = output_dir / "index.html"
+    index_path.write_text(build_index(entry_lists), encoding="utf-8")
+    written.append(index_path)
+    for entry_list in entry_lists:
+        destination = tournaments_dir / f"{entry_list.tournament.tournament_id}.html"
+        destination.write_text(build_page(entry_list), encoding="utf-8")
+        written.append(destination)
+    schedules_path = schedules_dir / "index.html"
+    schedules_path.write_text(build_schedules(entry_lists), encoding="utf-8")
+    written.append(schedules_path)
+    return written
+
+
 def build(input_path: Path, output_dir: Path) -> Path:
+    """Backward-compatible single-page builder used by early integrations."""
     data = EntryList.model_validate_json(input_path.read_text(encoding="utf-8"))
     output_dir.mkdir(parents=True, exist_ok=True)
     destination = output_dir / "index.html"
-    destination.write_text(build_page(data), encoding="utf-8")
+    destination.write_text(build_page(data, "index.html", "schedules/index.html"), encoding="utf-8")
     return destination
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build the static tournament page")
-    parser.add_argument("--input", type=Path, default=Path("data/entries/winston-salem-open-2026/current.json"))
+    parser = argparse.ArgumentParser(description="Build the static entry-watch site")
+    parser.add_argument("--data-root", type=Path, default=Path("data/entries"))
     parser.add_argument("--output", type=Path, default=Path("site"))
     args = parser.parse_args()
-    print(build(args.input, args.output))
+    for path in build_site(args.data_root, args.output):
+        print(path)
 
 
 if __name__ == "__main__":

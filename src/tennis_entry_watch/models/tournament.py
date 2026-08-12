@@ -38,7 +38,9 @@ class Tournament(BaseModel):
     main_draw_size: int | None = Field(default=None, gt=0)
     qualifying_draw_size: int | None = Field(default=None, gt=0)
     main_draw_qualifier_slots: int | None = Field(default=None, ge=0)
+    main_draw_wildcard_slots: int | None = Field(default=None, ge=0)
     draw_published: bool | None = None
+    qualifying_list_published: bool | None = None
     entry_list_date: date | None = None
     entry_ranking_date: date | None = None
     status: TournamentStatus = TournamentStatus.UPCOMING

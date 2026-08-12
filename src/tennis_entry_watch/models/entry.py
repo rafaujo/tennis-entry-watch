@@ -15,6 +15,8 @@ class EntryStatus(StrEnum):
     LL = "LL"
     SE = "SE"
     ALT = "ALT"
+    QDA = "QDA"
+    QALT = "QALT"
     OUT = "OUT"
 
 
@@ -50,10 +52,11 @@ class Entry(BaseModel):
 
     @model_validator(mode="after")
     def status_fields_are_consistent(self) -> "Entry":
-        if self.status == EntryStatus.ALT and self.alternate_position is None:
-            raise ValueError("ALT entries require alternate_position")
-        if self.status != EntryStatus.ALT and self.alternate_position is not None:
-            raise ValueError("alternate_position is only valid for ALT entries")
+        alternate_statuses = {EntryStatus.ALT, EntryStatus.QALT}
+        if self.status in alternate_statuses and self.alternate_position is None:
+            raise ValueError("alternate entries require alternate_position")
+        if self.status not in alternate_statuses and self.alternate_position is not None:
+            raise ValueError("alternate_position is only valid for alternate entries")
         if self.status == EntryStatus.OUT and self.previous_status is None:
             raise ValueError("OUT entries require previous_status")
         if self.status != EntryStatus.OUT and self.withdrawn_at is not None:
@@ -67,17 +70,22 @@ class EntryList(BaseModel):
     tournament: Tournament
     snapshot_at: datetime
     entries: list[Entry]
+    qualifying_entries: list[Entry] = Field(default_factory=list)
 
     @model_validator(mode="after")
     def entries_are_unique(self) -> "EntryList":
-        player_ids = [entry.player.player_id for entry in self.entries]
-        if len(player_ids) != len(set(player_ids)):
-            raise ValueError("a player may appear only once in an entry list")
-        alt_positions = [
-            entry.alternate_position for entry in self.entries
-            if entry.status == EntryStatus.ALT
-        ]
-        if len(alt_positions) != len(set(alt_positions)):
-            raise ValueError("alternate positions must be unique")
+        for pool_name, pool in (
+            ("main-draw", self.entries),
+            ("qualifying", self.qualifying_entries),
+        ):
+            player_ids = [entry.player.player_id for entry in pool]
+            if len(player_ids) != len(set(player_ids)):
+                raise ValueError(f"a player may appear only once in the {pool_name} list")
+            alt_positions = [
+                entry.alternate_position
+                for entry in pool
+                if entry.status in {EntryStatus.ALT, EntryStatus.QALT}
+            ]
+            if len(alt_positions) != len(set(alt_positions)):
+                raise ValueError(f"alternate positions must be unique in the {pool_name} list")
         return self
-

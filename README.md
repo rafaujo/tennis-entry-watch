@@ -4,7 +4,7 @@ Tennis Entry Watch is a small, auditable tracker for upcoming ATP men's singles 
 
 ## Current status
 
-Milestone 1 is a deterministic proof of concept. Milestone 2 adds one deliberately narrow real collector: the official Winston-Salem Open 2026 entry-list announcement. The repository contains validated domain models, fictional comparison snapshots, structured change detection, a static HTML builder, offline parser fixtures, and GitHub Actions configuration.
+The current milestone turns the proof of concept into a multi-tournament entry watch. It includes the official Winston-Salem announcement and the official US Open men's main-draw/alternate PDF, an objective alternate queue, qualifying-list support, player schedules, validated domain models, structured change detection, and GitHub Pages automation.
 
 ## Architecture
 
@@ -56,7 +56,7 @@ python -m tennis_entry_watch.site.build
 python -m tennis_entry_watch.collectors.winston_salem_cli
 ```
 
-The build reads `data/entries/winston-salem-open-2026/current.json` and writes `site/index.html`. Tests are fully offline and never contact third-party sites. The collector writes only after HTTP, parsing, count, and Pydantic validation succeed, using an atomic file replacement.
+The build discovers every `data/entries/*/current.json` file (excluding sample data), then writes the tournament dashboard, one page per tournament, and `site/schedules/index.html`. Tests are fully offline and never contact third-party sites. Collectors write only after HTTP, parsing, count, and Pydantic validation succeed, using an atomic file replacement.
 
 ## Change detection
 
@@ -84,7 +84,7 @@ Important external facts must retain source URL, retrieval timestamp, source typ
 
 ## First real source
 
-The Winston-Salem collector parses a dated official tournament announcement containing 37 explicitly identified direct entries and their 2026-07-27 rankings. Its [source review](docs/sources/winston-salem-2026.md) records the provenance and access assessment. It does not infer later withdrawals or entry types that the announcement does not state.
+The Winston-Salem collector parses a dated official tournament announcement containing 37 explicitly identified direct entries and their 2026-07-27 rankings. The US Open snapshot contains 104 current main-field names, 99 alternates, one withdrawal, and one promotion from the official report created on 2026-08-02. Neither dataset infers entry from ranking alone.
 
 ## Known limitations
 
@@ -92,7 +92,9 @@ The Winston-Salem collector parses a dated official tournament announcement cont
 - There is one collector only, no ranking provider, and no automated data commits yet.
 - Name-derived player IDs are a conservative fallback because this announcement exposes no stable ATP identifier; there is no fuzzy matching.
 - Validation covers core schema invariants, not expected draw occupancy or suspiciously large changes.
-- The generated site currently presents one tournament and does not yet render a change timeline.
+- Qualifying names remain empty until a verified qualifying entry list is available.
+- Queue distance is deterministic; it is not presented as a subjective probability.
+- The generated site does not yet render a historical change timeline.
 - Projected seeds are accepted as sourced data; no seeding calculation is implemented.
 
 ## Recommended next milestone
