@@ -1,0 +1,874 @@
+{
+  "tournament": {
+    "tournament_id": "winston-salem-open-2026",
+    "name": "Winston-Salem Open",
+    "year": 2026,
+    "start_date": "2026-08-23",
+    "end_date": "2026-08-29",
+    "category": "ATP 250",
+    "surface": "Hard",
+    "location": {
+      "city": "Winston-Salem",
+      "country": "USA"
+    },
+    "main_draw_size": 48,
+    "qualifying_draw_size": 16,
+    "entry_list_date": "2026-07-28",
+    "entry_ranking_date": "2026-07-27",
+    "status": "upcoming"
+  },
+  "snapshot_at": "2026-08-12T14:20:55.264620Z",
+  "entries": [
+    {
+      "player": {
+        "player_id": "luciano-darderi",
+        "name": "Luciano Darderi",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 23,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "arthur-rinderknech",
+        "name": "Arthur Rinderknech",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 28,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "alejandro-tabilo",
+        "name": "Alejandro Tabilo",
+        "nationality": "CHI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 30,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ignacio-buse",
+        "name": "Ignacio Buse",
+        "nationality": "PER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 34,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "arthur-fery",
+        "name": "Arthur Fery",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 37,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "raphael-collignon",
+        "name": "Raphael Collignon",
+        "nationality": "BEL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 38,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jaume-munar",
+        "name": "Jaume Munar",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 43,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mariano-navone",
+        "name": "Mariano Navone",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 44,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yannick-hanfmann",
+        "name": "Yannick Hanfmann",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 45,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ethan-quinn",
+        "name": "Ethan Quinn",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 46,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "adrian-mannarino",
+        "name": "Adrian Mannarino",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 47,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "luca-van-assche",
+        "name": "Luca Van Assche",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 48,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "juan-manuel-cerundolo",
+        "name": "Juan Manuel Cerundolo",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 50,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "quentin-halys",
+        "name": "Quentin Halys",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 52,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sebastian-baez",
+        "name": "Sebastian Baez",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 53,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tomas-machac",
+        "name": "Tomas Machac",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 54,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "fabian-marozsan",
+        "name": "Fabian Marozsan",
+        "nationality": "HUN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 55,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "terence-atmane",
+        "name": "Terence Atmane",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 56,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "juncheng-shang",
+        "name": "Juncheng Shang",
+        "nationality": "CHN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 56,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "corentin-moutet",
+        "name": "Corentin Moutet",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 57,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "roman-andres-burruchaga",
+        "name": "Roman Andres Burruchaga",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 58,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "miomir-kecmanovic",
+        "name": "Miomir Kecmanovic",
+        "nationality": "SRB",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 60,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "daniel-altmaier",
+        "name": "Daniel Altmaier",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 62,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "thiago-agustin-tirante",
+        "name": "Thiago Agustin Tirante",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 64,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "adolfo-daniel-vallejo",
+        "name": "Adolfo Daniel Vallejo",
+        "nationality": "PAR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 65,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "pablo-carreno-busta",
+        "name": "Pablo Carreno Busta",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 66,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "denis-shapovalov",
+        "name": "Denis Shapovalov",
+        "nationality": "CAN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 68,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "botic-van-de-zandschulp",
+        "name": "Botic van de Zandschulp",
+        "nationality": "NED",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 69,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "vit-kopriva",
+        "name": "Vit Kopriva",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 70,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "kamil-majchrzak",
+        "name": "Kamil Majchrzak",
+        "nationality": "POL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 72,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hamad-medjedovic",
+        "name": "Hamad Medjedovic",
+        "nationality": "SRB",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 73,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "alex-molcan",
+        "name": "Alex Molcan",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 74,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "camilo-ugo-carabelli",
+        "name": "Camilo Ugo Carabelli",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 75,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jenson-brooksby",
+        "name": "Jenson Brooksby",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 77,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "valentin-royer",
+        "name": "Valentin Royer",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 78,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jaime-faria",
+        "name": "Jaime Faria",
+        "nationality": "POR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 79,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "lorenzo-sonego",
+        "name": "Lorenzo Sonego",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": 80,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.winstonsalemopen.com/en/media/news/2026-player-announcement",
+        "retrieved_at": "2026-08-12T14:20:55.264620Z",
+        "source_type": "tournament_official",
+        "collector": "winston_salem_2026_official_announcement"
+      }
+    }
+  ]
+}

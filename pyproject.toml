@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tennis-entry-watch"
+version = "0.1.0"
+description = "Auditable ATP tournament entry-list tracking"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "pydantic>=2.7,<3",
+  "requests>=2.32,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+tennis-entry-watch-build = "tennis_entry_watch.site.build:main"
+tennis-entry-watch-collect-winston-salem = "tennis_entry_watch.collectors.winston_salem_cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tennis_entry_watch"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,17 @@
+{
+  "tournament": {
+    "tournament_id": "sample-open-2026", "name": "Sample Open", "year": 2026,
+    "start_date": "2026-09-14", "end_date": "2026-09-20", "category": "ATP 250 (fictional)",
+    "surface": "Hard", "location": {"city": "Example City", "country": "USA"},
+    "main_draw_size": 4, "qualifying_draw_size": null, "entry_list_date": "2026-08-03",
+    "entry_ranking_date": "2026-08-03", "status": "upcoming"
+  },
+  "snapshot_at": "2026-08-12T12:00:00Z",
+  "entries": [
+    {"player":{"player_id":"alex-river","name":"Alex River","nationality":"USA","atp_id":null,"birth_date":null},"status":"OUT","entry_rank":61,"current_rank":60,"alternate_position":null,"seed":null,"projected_seed":null,"previous_status":"DA","withdrawn_at":"2026-08-12T10:00:00Z","source":{"url":"https://example.invalid/sample-open/entries","retrieved_at":"2026-08-12T12:00:00Z","source_type":"manual","collector":"sample_fixture"}},
+    {"player":{"player_id":"bruno-costa","name":"Bruno Costa","nationality":"BRA","atp_id":null,"birth_date":null},"status":"DA","entry_rank":72,"current_rank":71,"alternate_position":null,"seed":null,"projected_seed":1,"previous_status":null,"withdrawn_at":null,"source":{"url":"https://example.invalid/sample-open/entries","retrieved_at":"2026-08-12T12:00:00Z","source_type":"manual","collector":"sample_fixture"}},
+    {"player":{"player_id":"marco-silva","name":"Marco Silva","nationality":"POR","atp_id":null,"birth_date":null},"status":"DA","entry_rank":91,"current_rank":89,"alternate_position":null,"seed":null,"projected_seed":2,"previous_status":null,"withdrawn_at":null,"source":{"url":"https://example.invalid/sample-open/entries","retrieved_at":"2026-08-12T12:00:00Z","source_type":"manual","collector":"sample_fixture"}},
+    {"player":{"player_id":"daniel-lee","name":"Daniel Lee","nationality":"KOR","atp_id":null,"birth_date":null},"status":"ALT","entry_rank":95,"current_rank":94,"alternate_position":1,"seed":null,"projected_seed":null,"previous_status":null,"withdrawn_at":null,"source":{"url":"https://example.invalid/sample-open/entries","retrieved_at":"2026-08-12T12:00:00Z","source_type":"manual","collector":"sample_fixture"}},
+    {"player":{"player_id":"emil-novak","name":"Emil Novak","nationality":"CZE","atp_id":null,"birth_date":null},"status":"WC","entry_rank":null,"current_rank":210,"alternate_position":null,"seed":null,"projected_seed":null,"previous_status":null,"withdrawn_at":null,"source":{"url":"https://example.invalid/sample-open/entries","retrieved_at":"2026-08-12T12:00:00Z","source_type":"manual","collector":"sample_fixture"}}
+  ]
+}
