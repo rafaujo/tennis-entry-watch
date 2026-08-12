@@ -188,6 +188,17 @@ def build_page(entry_list: EntryList, home_href: str = "../index.html", schedule
             f'<td>{_chance(entry.alternate_position) if entry.alternate_position else "In qualifying field"}</td></tr>'
             for entry in [*q_acceptances, *q_alternates]
         )
+    elif alternates and t.qualifying_draw_size:
+        q_rows = "".join(
+            '<tr>'
+            f'<td class="num">—</td>'
+            f'<td class="player">{html.escape(entry.player.name)}</td>'
+            f'<td>{html.escape(entry.player.nationality or "—")}</td>'
+            f'<td class="num">{_rank(entry.entry_rank)}</td>'
+            '<td><span class="status status-qalt">PROJ Q</span></td>'
+            f'<td>Likely qualifying · MD alternate #{entry.alternate_position}</td></tr>'
+            for entry in alternates
+        )
     else:
         q_rows = (
             '<tr class="empty"><td colspan="6">Qualifying entry list not yet available from a verified public source. '
@@ -219,7 +230,7 @@ def build_page(entry_list: EntryList, home_href: str = "../index.html", schedule
 <p class="notice"><strong>The draw has not been published.</strong> This is an entry watch, not the draw. “X openings away” is the player's current queue distance, not a subjective probability.</p>
 <section id="main-draw"><h2>Main draw entry list</h2><p class="explain">Confirmed names and reserved places. Projected seed stays blank until a verified seeding ranking is collected.</p><div class="scroll"><table><thead><tr><th class="num">Proj. seed</th><th>Player / place</th><th>Nation</th><th class="num">Current rank</th><th class="num">Entry rank</th><th>Status</th></tr></thead><tbody>{''.join(main_rows)}</tbody></table></div><div class="legend"><span><b>DA</b> Direct acceptance</span><span><b>PR</b> Protected ranking</span><span><b>Q</b> Qualifier place</span><span><b>WC</b> Wild card</span></div></section>
 <section id="alternates"><h2>Main-draw alternates</h2><p class="explain">The order follows the latest verified list. Each withdrawal can move the queue by one place.</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>Path to main draw</th></tr></thead><tbody>{alternate_rows}</tbody></table></div></section>
-<section id="qualifying"><h2>Qualifying entry watch</h2><p class="explain">Qualifying acceptances and qualifying alternates are a separate pool; a main-draw alternate may also appear here once officially listed.</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>Status</th><th>Path</th></tr></thead><tbody>{q_rows}</tbody></table></div></section>
+<section id="qualifying"><h2>Qualifying entry watch</h2><p class="explain">When an official qualifying list is unavailable, registered main-draw alternates are shown as projected qualifying candidates. <b>PROJ Q</b> is an estimate, not confirmed acceptance and not a prediction that the player will win qualifying.</p><div class="scroll"><table><thead><tr><th class="num">Q queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>Status</th><th>Path</th></tr></thead><tbody>{q_rows}</tbody></table></div></section>
 <section id="withdrawals"><h2>Withdrawals and promotions</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Player</th><th>Nation</th><th>Previous status</th><th class="num">Entry rank</th></tr></thead><tbody>{withdrawal_rows}</tbody></table></div></section>
 <section id="sources"><h2>Sources and method</h2><div class="sources"><ul>{sources}</ul><p>Official, tracked-secondary, and projected information are kept separate. A ranking position is never treated as confirmation that a player entered.</p></div></section>
 </main></body></html>'''

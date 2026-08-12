@@ -92,7 +92,7 @@ The Winston-Salem collector parses a dated official tournament announcement cont
 - There is one collector only, no ranking provider, and no automated data commits yet.
 - Name-derived player IDs are a conservative fallback because this announcement exposes no stable ATP identifier; there is no fuzzy matching.
 - Validation covers core schema invariants, not expected draw occupancy or suspiciously large changes.
-- Qualifying names remain empty until a verified qualifying entry list is available.
+- Until a verified qualifying list is available, registered main-draw alternates are shown as projected qualifying candidates (`PROJ Q`).
 - Queue distance is deterministic; it is not presented as a subjective probability.
 - The generated site does not yet render a historical change timeline.
 - Projected seeds are accepted as sourced data; no seeding calculation is implemented.

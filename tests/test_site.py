@@ -39,7 +39,9 @@ def test_us_open_page_shows_alternate_queue_and_promotion():
     assert "Aleksandar Vukic" in page
     assert "promoted from alternate" in page
     assert "Sebastian Korda" in page
-    assert "Ranking alone is not treated as proof of entry" in page
+    assert "PROJ Q" in page
+    assert "Likely qualifying · MD alternate #1" in page
+    assert "not confirmed acceptance" in page
 
 
 def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
