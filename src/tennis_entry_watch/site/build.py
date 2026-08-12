@@ -227,9 +227,22 @@ def build_page(
         for entry in withdrawals
     ) or '<tr class="empty"><td colspan="5">No withdrawals are identified in the selected source.</td></tr>'
 
+    q_alt_rows = "".join(
+        '<tr>'
+        f'<td class="num">{entry.alternate_position}</td>'
+        f'<td class="player">{html.escape(entry.player.name)}</td>'
+        f'<td>{html.escape(entry.player.nationality or "—")}</td>'
+        f'<td class="num">{_rank(entry.current_rank or entry.entry_rank)}</td>'
+        f'<td><span class="status status-qalt">'
+        f'{"PROJ Q ALT" if entry.source.collector == "live_tennis_schedule_snapshot" else "Q ALT"}'
+        f'</span></td>'
+        f'<td>{_chance(entry.alternate_position)}</td></tr>'
+        for entry in q_alternates
+    )
+
     if q_acceptances or q_alternates:
         ranked_qualifying = sorted(
-            [*q_acceptances, *q_alternates],
+            q_acceptances,
             key=lambda entry: (
                 entry.current_rank or entry.entry_rank or 9999,
                 entry.player.name,
@@ -242,9 +255,11 @@ def build_page(
             f'<td>{html.escape(entry.player.nationality or "—")}</td>'
             f'<td class="num">{_rank(entry.current_rank or entry.entry_rank)}</td>'
             f'<td>{_status(entry)}</td>'
-            f'<td>{_chance(entry.alternate_position) if entry.alternate_position else "In qualifying field"}</td></tr>'
+            f'<td>In qualifying field</td></tr>'
             for entry in ranked_qualifying
         )
+        if not q_rows:
+            q_rows = '<tr class="empty"><td colspan="6">No qualifying acceptances are currently listed.</td></tr>'
     elif (alternates or live_schedules) and t.qualifying_draw_size:
         alternate_by_id = {entry.player.player_id: entry for entry in alternates}
         projected = {}
@@ -268,6 +283,12 @@ def build_page(
                     "entry_rank": alternate_by_id.get(player_id).entry_rank if player_id in alternate_by_id else None,
                     "listed": True,
                 }
+        projected_items = sorted(
+            projected.items(),
+            key=lambda pair: (pair[1]["rank"] or 9999, pair[1]["name"]),
+        )
+        qualifying_field = projected_items[:t.qualifying_draw_size]
+        projected_q_alternates = projected_items[t.qualifying_draw_size:]
         q_rows = "".join(
             '<tr>'
             f'<td class="num">—</td>'
@@ -277,8 +298,19 @@ def build_page(
             f'<td><span class="status status-qalt">{"LISTED Q" if item["listed"] else "PROJ Q"}</span></td>'
             f'<td>{"Listed for qualifying" if item["listed"] else "Likely qualifying"}'
             f'{" · MD alternate #" + str(alternate_by_id[player_id].alternate_position) if player_id in alternate_by_id else ""}</td></tr>'
-            for player_id, item in sorted(projected.items(), key=lambda pair: (pair[1]["rank"] or 9999, pair[1]["name"]))
+            for player_id, item in qualifying_field
         )
+        if projected_q_alternates:
+            q_alt_rows = "".join(
+                '<tr>'
+                f'<td class="num">{position}</td>'
+                f'<td class="player">{html.escape(item["name"])}</td>'
+                f'<td>{html.escape(item["nation"])}</td>'
+                f'<td class="num">{_rank(item["rank"])}</td>'
+                f'<td><span class="status status-qalt">PROJ Q ALT</span></td>'
+                f'<td>{_chance(position)}</td></tr>'
+                for position, (_, item) in enumerate(projected_q_alternates, 1)
+            )
         if not q_rows:
             q_rows = (
                 '<tr class="empty"><td colspan="6">No qualifying players are currently listed in the tracked schedule. '
@@ -288,6 +320,12 @@ def build_page(
         q_rows = (
             '<tr class="empty"><td colspan="6">Qualifying entry list not yet available from a verified public source. '
             'Ranking alone is not treated as proof of entry.</td></tr>'
+        )
+
+    if not q_alt_rows:
+        q_alt_rows = (
+            '<tr class="empty"><td colspan="6">No verified or projected qualifying-alternate queue is available yet. '
+            'A queue is shown only when tracked candidates exceed the qualifying draw capacity.</td></tr>'
         )
 
     unique_sources = {}
@@ -328,7 +366,8 @@ def build_page(
 <div class="entry-grid"><section id="main-draw"><h2>Main draw</h2><p class="explain">Projected seeds use the current live ranking.</p><div class="scroll"><table><thead><tr><th class="num">Seed</th><th>Player / place</th><th>Nat.</th><th class="num">Rk</th><th class="num">ER</th><th>Status</th></tr></thead><tbody>{''.join(main_rows)}</tbody></table></div><div class="legend"><span><b>DA</b> Direct</span><span><b>PR</b> Protected ranking</span><span><b>Q</b> Qualifier</span><span><b>WC</b> Wild card</span></div></section><div>
 <section id="alternates"><h2>Main-draw alternates</h2><p class="explain">The order follows the latest verified list. Each withdrawal can move the queue by one place.</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>Path to main draw</th></tr></thead><tbody>{alternate_rows}</tbody></table></div></section>
 <section id="withdrawals"><h2>Withdrawals</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Player</th><th>Nat.</th><th>Previous</th><th class="num">ER</th></tr></thead><tbody>{withdrawal_rows}</tbody></table></div></section></div></div>
-<section id="qualifying"><h2>Qualifying</h2><p class="explain"><b>LISTED Q</b> comes from the tracked Live Tennis schedule; <b>PROJ Q</b> is inferred from the verified main-draw alternate list. Rows are ordered by current live ranking. Neither predicts qualification.</p><div class="scroll"><table><thead><tr><th class="num">Q queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path</th></tr></thead><tbody>{q_rows}</tbody></table></div></section>
+<div class="entry-grid"><section id="qualifying"><h2>Qualifying</h2><p class="explain"><b>LISTED Q</b> comes from the tracked Live Tennis schedule; <b>PROJ Q</b> is inferred from the verified main-draw alternate list. Rows are ordered by current live ranking. Neither predicts qualification.</p><div class="scroll"><table><thead><tr><th class="num">Q queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path</th></tr></thead><tbody>{q_rows}</tbody></table></div></section>
+<section id="qualifying-alternates"><h2>Qualifying alternates</h2><p class="explain"><b>Q ALT</b> is a published/tracked queue; <b>PROJ Q ALT</b> is calculated only when tracked candidates exceed the qualifying draw size.</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path to qualifying</th></tr></thead><tbody>{q_alt_rows}</tbody></table></div></section></div>
 <section id="sources"><h2>Sources and method</h2><div class="sources"><ul>{sources}</ul><p>Official, tracked-secondary, and projected information are kept separate. A ranking position is never treated as confirmation that a player entered.</p></div></section>
 </main></body></html>'''
 

@@ -1,4 +1,5 @@
 from pathlib import Path
+from copy import deepcopy
 
 from tennis_entry_watch.collectors.live_tennis_snapshot import (
     entry_lists_from_live_snapshot,
@@ -44,3 +45,25 @@ def test_generated_entries_keep_live_rank_and_secondary_provenance():
     )
     assert darderi.current_rank == 20
     assert darderi.source.source_type.value == "trusted_secondary"
+
+
+def test_qualifying_overflow_becomes_ranked_projected_alternate_queue():
+    snapshot = deepcopy(load_live_snapshot(Path("data/rankings/atp-live-current.json")))
+    snapshot["schedules"].extend(
+        {
+            "name": f"Projected Player {index}",
+            "nation": "USA",
+            "rank": 900 + index,
+            "events": ["Qual. Cancun"],
+        }
+        for index in range(1, 7)
+    )
+    cancun = next(
+        item
+        for item in entry_lists_from_live_snapshot(snapshot)
+        if item.tournament.tournament_id == "cancun-challenger-2026"
+    )
+    acceptances = [entry for entry in cancun.qualifying_entries if entry.status.value == "QDA"]
+    alternates = [entry for entry in cancun.qualifying_entries if entry.status.value == "QALT"]
+    assert len(acceptances) == 16
+    assert [entry.alternate_position for entry in alternates] == [1, 2]

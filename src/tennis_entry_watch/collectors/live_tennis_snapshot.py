@@ -230,7 +230,12 @@ TOURNAMENTS = (
 )
 
 
-def _entry(item: dict, status: EntryStatus, source: Source) -> Entry:
+def _entry(
+    item: dict,
+    status: EntryStatus,
+    source: Source,
+    alternate_position: int | None = None,
+) -> Entry:
     return Entry(
         player=Player(
             player_id=stable_player_id(item["name"]),
@@ -239,6 +244,7 @@ def _entry(item: dict, status: EntryStatus, source: Source) -> Entry:
         ),
         status=status,
         current_rank=item.get("rank"),
+        alternate_position=alternate_position,
         source=source,
     )
 
@@ -256,7 +262,12 @@ def entry_lists_from_live_snapshot(snapshot: dict) -> list[EntryList]:
     for spec in TOURNAMENTS:
         main = [item for item in schedules if spec["event"] in item.get("events", [])]
         qualifying_label = f'Qual. {spec["event"]}'
-        qualifying = [item for item in schedules if qualifying_label in item.get("events", [])]
+        qualifying = sorted(
+            (item for item in schedules if qualifying_label in item.get("events", [])),
+            key=lambda item: (item.get("rank") or 99999, item["name"]),
+        )
+        qualifying_acceptances = qualifying[:spec["q_draw"]]
+        qualifying_alternates = qualifying[spec["q_draw"]:]
         tournament = Tournament(
             tournament_id=spec["id"],
             name=spec["name"],
@@ -278,7 +289,13 @@ def entry_lists_from_live_snapshot(snapshot: dict) -> list[EntryList]:
                 tournament=tournament,
                 snapshot_at=retrieved_at,
                 entries=[_entry(item, EntryStatus.DA, source) for item in main],
-                qualifying_entries=[_entry(item, EntryStatus.QDA, source) for item in qualifying],
+                qualifying_entries=[
+                    *(_entry(item, EntryStatus.QDA, source) for item in qualifying_acceptances),
+                    *(
+                        _entry(item, EntryStatus.QALT, source, position)
+                        for position, item in enumerate(qualifying_alternates, 1)
+                    ),
+                ],
             )
         )
     return results
