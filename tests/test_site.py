@@ -50,19 +50,32 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     written = build_site(Path("data/entries"), tmp_path)
     assert tmp_path / "index.html" in written
     index = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ATP Tour &amp; Grand Slams" in index
+    assert "Grand Slams" in index
+    assert "ATP Tour" in index
     assert "Challenger Tour" in index
     assert "Week of 17 Aug 2026" in index
-    assert index.index("ATP Tour &amp; Grand Slams") < index.index("Challenger Tour")
+    assert "Week of 24 Aug 2026" in index
+    assert "Week of 31 Aug 2026" in index
+    assert index.index("Week of 17 Aug 2026") < index.index("Week of 24 Aug 2026") < index.index("Week of 31 Aug 2026")
+    assert index.index("Grand Slams") < index.index("ATP Tour") < index.index("Challenger Tour")
+    week_17 = index[index.index("Week of 17 Aug 2026"):index.index("Week of 24 Aug 2026")]
+    week_24 = index[index.index("Week of 24 Aug 2026"):index.index("Week of 31 Aug 2026")]
+    assert "Winston-Salem Open" not in week_17
+    assert "Winston-Salem Open" in week_24
+    assert "US Open" in week_24
+    assert "Allershausen" not in index
     assert (tmp_path / "tournaments" / "us-open-2026.html").exists()
     assert (tmp_path / "tournaments" / "cancun-challenger-2026.html").exists()
     assert (tmp_path / "tournaments" / "quebec-city-challenger-2026.html").exists()
+    assert (tmp_path / "tournaments" / "augsburg-challenger-2026.html").exists()
+    assert (tmp_path / "tournaments" / "manacor-challenger-2026.html").exists()
     schedules = (tmp_path / "schedules" / "index.html").read_text(encoding="utf-8")
     assert "Player schedules" in schedules
     assert "Luciano Darderi" in schedules
     assert "Winston-Salem Open" in schedules
     assert "US Open" in schedules
     assert "Live rank" in schedules
+    assert "Allershausen" not in schedules
     assert schedules.index("Jannik Sinner") < schedules.index("Carlos Alcaraz")
     us_open = (tmp_path / "tournaments" / "us-open-2026.html").read_text(encoding="utf-8")
     assert us_open.count('status-qalt">LISTED Q') == 117

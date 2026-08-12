@@ -6,10 +6,10 @@ from tennis_entry_watch.collectors.live_tennis_snapshot import (
 )
 
 
-def test_snapshot_builds_six_challenger_entry_lists():
+def test_snapshot_builds_current_and_upcoming_challenger_entry_lists():
     snapshot = load_live_snapshot(Path("data/rankings/atp-live-current.json"))
     entry_lists = entry_lists_from_live_snapshot(snapshot)
-    assert len(entry_lists) == 6
+    assert len(entry_lists) == 14
     by_id = {item.tournament.tournament_id: item for item in entry_lists}
 
     cancun = by_id["cancun-challenger-2026"]
@@ -21,6 +21,15 @@ def test_snapshot_builds_six_challenger_entry_lists():
     assert len(kingston.entries) == 20
     assert len(kingston.qualifying_entries) == 20
     assert kingston.tournament.main_draw_size == 32
+
+    augsburg = by_id["augsburg-challenger-2026"]
+    assert len(augsburg.entries) == 23
+    assert len(augsburg.qualifying_entries) == 20
+
+    como = by_id["como-challenger-2026"]
+    assert len(como.entries) == 23
+    assert len(como.qualifying_entries) == 0
+    assert como.tournament.qualifying_list_published is False
 
 
 def test_generated_entries_keep_live_rank_and_secondary_provenance():

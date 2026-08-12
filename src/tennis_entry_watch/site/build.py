@@ -7,6 +7,7 @@ from pathlib import Path
 from tennis_entry_watch.models import EntryList, EntryStatus, SourceType
 from tennis_entry_watch.normalize.players import stable_player_id
 from tennis_entry_watch.collectors.live_tennis_snapshot import (
+    TOURNAMENTS,
     entry_lists_from_live_snapshot,
     load_live_snapshot,
 )
@@ -19,6 +20,15 @@ MAIN_DRAW_STATUSES = {
     EntryStatus.Q,
     EntryStatus.LL,
     EntryStatus.SE,
+}
+
+SCHEDULE_EVENT_SCOPE = {
+    "US Open",
+    "Qual. US Open",
+    "Winston Salem",
+    "Qual. Winston Salem",
+    *(spec["event"] for spec in TOURNAMENTS),
+    *(f'Qual. {spec["event"]}' for spec in TOURNAMENTS),
 }
 
 STATUS_LABELS = {
@@ -50,7 +60,7 @@ main{max-width:1180px;margin:18px auto 44px;background:var(--paper);border:1px s
 .scroll{overflow-x:auto;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:7px 9px;border-bottom:1px solid #e1e7eb;text-align:left;white-space:nowrap}th{background:#e9eef2;color:#344553;font-size:11px;text-transform:uppercase;letter-spacing:.04em}tbody tr:nth-child(even){background:#f8fafb}tbody tr:hover{background:#eef6fa}td.num,th.num{text-align:right}td.player{font-weight:600;min-width:210px}td small{display:block;color:var(--muted);font-weight:400}.empty td{text-align:center;padding:20px;color:var(--muted);font-style:italic}.pending td{color:var(--muted)}
 .status,.chance{display:inline-block;border-radius:2px;padding:2px 6px;font-size:11px;font-weight:800}.status{min-width:38px;text-align:center;background:#dfe8ee;color:#314553}.status-da,.status-pr,.status-qda{background:#dcefe7;color:#115b3e}.status-alt,.status-qalt{background:#fff0c2;color:#775000}.status-out{background:#f6d8da;color:#822128}.status-pending{background:#eceff2;color:#68737c}.chance-next{background:#d9f0e5;color:#11603f}.chance-near{background:#fff0c2;color:#725000}.chance-queue{background:#e9eef2;color:#50606c}.promoted{color:var(--green);font-weight:700}.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;color:var(--muted);font-size:12px}
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.card{border:1px solid var(--line);border-top:4px solid var(--blue);padding:16px;background:#fff}.card a{text-decoration:none;color:var(--ink)}.card a:hover{color:var(--blue)}.card-meta{color:var(--muted);margin:5px 0 12px}.card-stats{display:flex;gap:20px;border-top:1px solid var(--line);padding-top:11px}.card-stats strong{display:block;font-size:18px}.card-stats span{color:var(--muted);font-size:11px;text-transform:uppercase}.filters{display:flex;gap:10px;margin:14px 0}.filters input{width:100%;max-width:440px;border:1px solid #aebbc5;border-radius:3px;padding:9px 11px;font:inherit}.sources{background:var(--soft);border:1px solid var(--line);padding:11px 14px}.sources ul{margin:4px 0;padding-left:20px}a{color:var(--blue)}.footer-note{color:var(--muted);font-size:12px;margin-top:18px}
-.tour-group{margin-top:26px}.tour-group>h2{margin:0 0 10px}.tour-group .cards{margin-top:10px}.week-heading{margin:18px 0 5px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.tour-group-challenger .card{border-top-color:#718b55}
+.week-group{margin-top:30px}.week-group>h2{margin:0 0 12px}.tier-group{margin-top:17px}.tier-heading{margin:0 0 7px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.tier-group .cards{margin-top:7px}.tier-challenger .card{border-top-color:#718b55}.tier-grand-slam .card{border-top-color:#a56a17}
 .tournament-page{max-width:1380px}.entry-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}.tournament-page h2{margin-top:18px}.tournament-page th,.tournament-page td{padding:3px 6px;font-size:12px;line-height:1.25}.tournament-page th{font-size:10px}.tournament-page td.player{min-width:150px}.tournament-page .status,.tournament-page .chance{font-size:10px;padding:1px 4px}.tournament-page .explain{font-size:12px;margin:4px 0 6px}
 @media(max-width:760px){main{margin:0;border-width:0;padding:15px}.navlinks{gap:11px;font-size:12px}.subhead{display:block}.updated{text-align:left;margin-top:8px}.summary{grid-template-columns:1fr 1fr}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--line)}.cards{grid-template-columns:1fr}.hide-mobile{display:none}}
 @media(max-width:980px){.entry-grid{grid-template-columns:1fr}}
@@ -340,33 +350,52 @@ def _tournament_card(entry_list: EntryList) -> str:
     )
 
 
+def _tournament_week(start_date):
+    """Use the following Monday for events whose qualifying/fan week starts on a weekend."""
+    if start_date.weekday() >= 5:
+        return start_date + timedelta(days=7 - start_date.weekday())
+    return start_date - timedelta(days=start_date.weekday())
+
+
 def build_index(entry_lists: list[EntryList]) -> str:
-    tour_events = sorted(
-        (item for item in entry_lists if not item.tournament.category.lower().startswith("challenger")),
-        key=lambda item: item.tournament.start_date,
-    )
-    challenger_weeks = defaultdict(list)
+    weeks = defaultdict(lambda: {"grand-slam": [], "atp-tour": [], "challenger": []})
     for item in entry_lists:
-        if not item.tournament.category.lower().startswith("challenger"):
+        category = item.tournament.category.lower()
+        if category == "grand slam":
+            tier = "grand-slam"
+        elif category.startswith("atp"):
+            tier = "atp-tour"
+        elif category.startswith("challenger"):
+            tier = "challenger"
+        else:
             continue
         start = item.tournament.start_date
-        week = start - timedelta(days=start.weekday())
-        challenger_weeks[week].append(item)
+        week = _tournament_week(start)
+        weeks[week][tier].append(item)
 
-    tour_section = (
-        '<section class="tour-group"><h2>ATP Tour &amp; Grand Slams</h2>'
-        f'<div class="cards">{"".join(_tournament_card(item) for item in tour_events)}</div></section>'
+    tier_labels = (
+        ("grand-slam", "Grand Slams"),
+        ("atp-tour", "ATP Tour"),
+        ("challenger", "Challenger Tour"),
     )
-    challenger_parts = ['<section class="tour-group tour-group-challenger"><h2>Challenger Tour</h2>']
-    for week, items in sorted(challenger_weeks.items()):
-        challenger_parts.append(f'<h3 class="week-heading">Week of {week:%d %b %Y}</h3>')
-        challenger_parts.append(
-            f'<div class="cards">{"".join(_tournament_card(item) for item in sorted(items, key=lambda event: event.tournament.name))}</div>'
-        )
-    challenger_parts.append('</section>')
-    sections = tour_section + "".join(challenger_parts)
+    sections = []
+    for week, tiers in sorted(weeks.items()):
+        sections.append(f'<section class="week-group"><h2>Week of {week:%d %b %Y}</h2>')
+        for tier, label in tier_labels:
+            items = tiers[tier]
+            if not items:
+                continue
+            cards = "".join(
+                _tournament_card(item)
+                for item in sorted(items, key=lambda event: event.tournament.name)
+            )
+            sections.append(
+                f'<div class="tier-group tier-{tier}"><h3 class="tier-heading">{label}</h3>'
+                f'<div class="cards">{cards}</div></div>'
+            )
+        sections.append('</section>')
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tennis Entry Watch</title><style>{CSS}</style></head><body>
-{_nav("index.html", "schedules/index.html")}<main><span class="eyebrow">Upcoming tournaments</span><h1>Tennis entry lists before the draw</h1><p class="meta">Verified main-draw entries, alternate queues, qualifying paths, withdrawals, and player schedules.</p><div class="info"><strong>How to read it:</strong> confirmed entry is a fact from a cited list; queue distance is a calculation; projections are labelled separately.</div>{sections}<p class="footer-note">Unofficial tracker. Always confirm time-sensitive participation with the tournament.</p></main></body></html>'''
+{_nav("index.html", "schedules/index.html")}<main><span class="eyebrow">Upcoming tournaments</span><h1>Tennis entry lists before the draw</h1><p class="meta">Grand Slams, ATP Tour, and Challenger Tour only. Tournaments are grouped by starting week.</p><div class="info"><strong>How to read it:</strong> confirmed entry is a fact from a cited list; queue distance is a calculation; projections are labelled separately.</div>{''.join(sections)}<p class="footer-note">Unofficial tracker. Always confirm time-sensitive participation with the tournament.</p></main></body></html>'''
 
 
 def build_schedules(entry_lists: list[EntryList], live_snapshot: dict | None = None) -> str:
@@ -414,6 +443,14 @@ def build_schedules(entry_lists: list[EntryList], live_snapshot: dict | None = N
             "Advantage Cars Prague Open": "prague",
             "Roehampton 1": "roehampton",
             "Sion Challenger": "sion",
+            "Kingston 2": "kingston 2",
+            "Roehampton 2": "roehampton 2",
+            "Schwaben Open": "augsburg",
+            "International Challenger-Zhangjiagang": "zhangjiagang",
+            "Como Lake Challenger": "como",
+            "CT PORTO CUP": "porto 1",
+            "Plovdiv 3": "plovdiv 3",
+            "Rafa Nadal Open by Movistar": "manacor",
             "Winston-Salem Open": "winston salem",
             "US Open": "us open",
         }
@@ -426,7 +463,12 @@ def build_schedules(entry_lists: list[EntryList], live_snapshot: dict | None = N
             f'<span class="status status-{status.split()[0].lower()}">{html.escape(status)}</span>'
             for _, name, event_id, status in events
         ]
-        external = [event for event in record["external"] if event.lower().replace("-", " ") not in tracked_names]
+        external = [
+            event
+            for event in record["external"]
+            if event in SCHEDULE_EVENT_SCOPE
+            and event.lower().replace("-", " ") not in tracked_names
+        ]
         external_html = [f'{html.escape(event)} <span class="status">LISTED</span>' for event in external]
         event_html = "<br>".join([*tracked_html, *external_html]) or "—"
         all_names = [event[1] for event in events] + external
