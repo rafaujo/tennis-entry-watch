@@ -1,0 +1,56 @@
+{
+  "id": "./",
+  "name": "Tennis Entry Watch",
+  "short_name": "Entry Watch",
+  "description": "ATP entry lists, alternates, qualifying paths and withdrawals before the draw.",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#edf2f5",
+  "theme_color": "#10283d",
+  "categories": [
+    "sports",
+    "news",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tournaments",
+      "short_name": "Tournaments",
+      "url": "./",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Player schedules",
+      "short_name": "Schedules",
+      "url": "./schedules/",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

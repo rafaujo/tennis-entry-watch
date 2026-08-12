@@ -4,7 +4,7 @@ Tennis Entry Watch is a small, auditable tracker for upcoming ATP men's singles 
 
 ## Current status
 
-The current milestone turns the proof of concept into a multi-tournament entry watch. It includes the official Winston-Salem announcement and the official US Open men's main-draw/alternate PDF, an objective alternate queue, qualifying-list support, live rankings, ranking-ordered player schedules, validated domain models, structured change detection, and GitHub Pages automation.
+The current milestone turns the proof of concept into a multi-tournament, installable entry watch. It includes the official Winston-Salem announcement and the official US Open men's main-draw/alternate PDF, an objective alternate queue, qualifying-list support, live rankings, ranking-ordered player schedules, validated domain models, structured change detection, a standards-based PWA, and GitHub Pages automation.
 
 The moving tournament catalog now generates pages for the current week and the next five weeks. Grand Slams and ATP Tour events appear first, followed by every Challenger event in scope. A calendar event is shown as `MONITORING` until a tracked entry list appears; finished events leave the homepage and remain in the archive. Pages with schedule data include listed main-draw and qualifying players, current ranks, projected seeds, qualifying-alternate overflow, and unassigned reserved places.
 
@@ -39,6 +39,7 @@ src/tennis_entry_watch/
   site/            Static HTML generation
 data/entries/      Git-tracked snapshots
 data/tournaments/  Moving calendar catalog and reviewed overrides
+assets/pwa/         Source app icons copied by the site build
 docs/sources/       Per-source access and provenance reviews
 tests/             Offline unit tests
 site/              Generated GitHub Pages artifact
@@ -61,7 +62,19 @@ python -m tennis_entry_watch.collectors.tournament_catalog_cli
 python -m tennis_entry_watch.collectors.winston_salem_cli
 ```
 
-The build combines verified `data/entries/*/current.json` files with the moving catalog and schedule snapshot. It writes the six-week dashboard, one page per tracked tournament, player schedules, and `site/archive/index.html`. Tests are fully offline and never contact third-party sites. Collectors write only after HTTP, parsing, count, and Pydantic validation succeed, using an atomic file replacement.
+The build combines verified `data/entries/*/current.json` files with the moving catalog and schedule snapshot. It writes the six-week dashboard, one page per tracked tournament, player schedules, the archive, installation instructions, the web app manifest, and a versioned service worker. Tests are fully offline and never contact third-party sites. Collectors write only after HTTP, parsing, count, and Pydantic validation succeed, using an atomic file replacement.
+
+## Progressive Web App
+
+The deployed GitHub Pages site is installable on supported Android browsers and as an iPhone/iPad Home Screen web app. Every generated page links the root-scoped manifest and service worker, so tournament pages opened directly still belong to the same app.
+
+- Online navigations use the network first, ensuring entry-list updates are not hidden by stale cache data.
+- A successful build precaches the current tracked tournament snapshot for offline fallback.
+- The cache name includes a content hash; a changed build activates a new cache and removes the old version.
+- Only same-origin generated assets are cached. External source pages are never intercepted.
+- `site/install/index.html` provides Android and iOS installation instructions and uses the browser install prompt when available.
+
+Push notifications and synced favourites need a subscription store and push-sending service; they are deliberately outside this static PWA milestone.
 
 ## Change detection
 
