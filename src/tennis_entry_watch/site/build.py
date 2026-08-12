@@ -589,8 +589,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Build the static entry-watch site")
     parser.add_argument("--data-root", type=Path, default=Path("data/entries"))
     parser.add_argument("--output", type=Path, default=Path("site"))
+    parser.add_argument(
+        "--ranking-path",
+        type=Path,
+        default=Path("data/rankings/atp-live-current.json"),
+    )
     args = parser.parse_args()
-    for path in build_site(args.data_root, args.output):
+    for path in build_site(args.data_root, args.output, args.ranking_path):
         print(path)
 
 
