@@ -1,0 +1,152 @@
+{
+  "tracking_started_at": "2026-08-12",
+  "events": [
+    {
+      "source_name": "Cincinnati Open",
+      "source_start_date": "2026-08-10",
+      "tournament_id": "cincinnati-open-2026",
+      "start_date": "2026-08-13",
+      "end_date": "2026-08-23",
+      "schedule_aliases": ["Cincinnati"]
+    },
+    {
+      "source_name": "Winston-Salem Open",
+      "source_start_date": "2026-08-24",
+      "tournament_id": "winston-salem-open-2026",
+      "start_date": "2026-08-23",
+      "end_date": "2026-08-29",
+      "schedule_aliases": ["Winston Salem"]
+    },
+    {
+      "source_name": "US Open",
+      "source_start_date": "2026-08-31",
+      "tournament_id": "us-open-2026",
+      "end_date": "2026-09-13",
+      "schedule_aliases": ["US Open"]
+    },
+    {
+      "source_name": "Cancún Country Open",
+      "source_start_date": "2026-08-17",
+      "tournament_id": "cancun-challenger-2026",
+      "name": "Europcar Cancun Country Club",
+      "start_date": "2026-08-18",
+      "end_date": "2026-08-23",
+      "schedule_aliases": ["Cancun"]
+    },
+    {
+      "source_name": "Québec National Bank Challenger",
+      "source_start_date": "2026-08-17",
+      "tournament_id": "quebec-city-challenger-2026",
+      "name": "Quebec National Bank Challenger",
+      "start_date": "2026-08-18",
+      "end_date": "2026-08-23",
+      "schedule_aliases": ["Quebec City"]
+    },
+    {
+      "source_name": "Kingston Open",
+      "source_start_date": "2026-08-17",
+      "tournament_id": "kingston-1-challenger-2026",
+      "name": "Kingston 1",
+      "end_date": "2026-08-22",
+      "schedule_aliases": ["Kingston"]
+    },
+    {
+      "source_name": "Advantage Cars Prague Open",
+      "source_start_date": "2026-08-17",
+      "tournament_id": "prague-challenger-2026",
+      "end_date": "2026-08-22",
+      "schedule_aliases": ["Prague"]
+    },
+    {
+      "source_name": "Roehampton Challenger",
+      "source_start_date": "2026-08-17",
+      "tournament_id": "roehampton-1-challenger-2026",
+      "name": "Roehampton 1",
+      "end_date": "2026-08-22",
+      "country": "Great Britain",
+      "schedule_aliases": ["Roehampton"]
+    },
+    {
+      "source_name": "Open de Sion",
+      "source_start_date": "2026-08-17",
+      "tournament_id": "sion-challenger-2026",
+      "name": "Sion Challenger",
+      "end_date": "2026-08-22",
+      "schedule_aliases": ["Sion"]
+    },
+    {
+      "source_name": "Kingston Open II",
+      "source_start_date": "2026-08-24",
+      "tournament_id": "kingston-2-challenger-2026",
+      "name": "Kingston 2",
+      "end_date": "2026-08-29",
+      "schedule_aliases": ["Kingston 2"]
+    },
+    {
+      "source_name": "Roehampton Challenger II",
+      "source_start_date": "2026-08-24",
+      "tournament_id": "roehampton-2-challenger-2026",
+      "name": "Roehampton 2",
+      "end_date": "2026-08-29",
+      "country": "Great Britain",
+      "schedule_aliases": ["Roehampton 2"]
+    },
+    {
+      "source_name": "Schwaben Open",
+      "source_start_date": "2026-08-24",
+      "tournament_id": "augsburg-challenger-2026",
+      "end_date": "2026-08-29",
+      "schedule_aliases": ["Augsburg"]
+    },
+    {
+      "source_name": "International Challenger Zhangjiagang",
+      "source_start_date": "2026-08-31",
+      "tournament_id": "zhangjiagang-challenger-2026",
+      "name": "International Challenger-Zhangjiagang",
+      "schedule_aliases": ["Zhangjiagang"]
+    },
+    {
+      "source_name": "Città di Como Challenger",
+      "source_start_date": "2026-08-31",
+      "tournament_id": "como-challenger-2026",
+      "name": "Como Lake Challenger",
+      "schedule_aliases": ["Como"]
+    },
+    {
+      "source_name": "Clube Tenis Porto Challenger",
+      "source_start_date": "2026-08-31",
+      "tournament_id": "porto-1-challenger-2026",
+      "name": "CT PORTO CUP",
+      "schedule_aliases": ["Porto 1"]
+    },
+    {
+      "source_name": "Plovdiv Challenger III",
+      "source_start_date": "2026-08-31",
+      "tournament_id": "plovdiv-3-challenger-2026",
+      "name": "Plovdiv 3",
+      "schedule_aliases": ["Plovdiv 3"]
+    },
+    {
+      "source_name": "Rafa Nadal Open",
+      "source_start_date": "2026-08-31",
+      "tournament_id": "manacor-challenger-2026",
+      "name": "Rafa Nadal Open by Movistar",
+      "start_date": "2026-09-01",
+      "schedule_aliases": ["Manacor"]
+    },
+    {
+      "source_name": "Chengdu Open",
+      "source_start_date": "2026-09-21",
+      "start_date": "2026-09-23",
+      "end_date": "2026-09-29",
+      "schedule_aliases": ["Chengdu"]
+    },
+    {
+      "source_name": "Hangzhou Open",
+      "source_start_date": "2026-09-21",
+      "start_date": "2026-09-23",
+      "end_date": "2026-09-29",
+      "schedule_aliases": ["Hangzhou"]
+    }
+  ]
+}

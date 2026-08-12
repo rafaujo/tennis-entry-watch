@@ -10,7 +10,7 @@ from tennis_entry_watch.collectors.live_tennis_snapshot import (
 def test_snapshot_builds_current_and_upcoming_challenger_entry_lists():
     snapshot = load_live_snapshot(Path("data/rankings/atp-live-current.json"))
     entry_lists = entry_lists_from_live_snapshot(snapshot)
-    assert len(entry_lists) == 14
+    assert len(entry_lists) == 34
     by_id = {item.tournament.tournament_id: item for item in entry_lists}
 
     cancun = by_id["cancun-challenger-2026"]
@@ -31,6 +31,10 @@ def test_snapshot_builds_current_and_upcoming_challenger_entry_lists():
     assert len(como.entries) == 23
     assert len(como.qualifying_entries) == 0
     assert como.tournament.qualifying_list_published is False
+
+    september = by_id["aon-open-challenger-2026"]
+    assert september.entries == []
+    assert september.tournament.start_date.isoformat() == "2026-09-07"
 
 
 def test_generated_entries_keep_live_rank_and_secondary_provenance():

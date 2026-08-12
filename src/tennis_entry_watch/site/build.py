@@ -1,15 +1,15 @@
 import argparse
 import html
 from collections import defaultdict
-from datetime import timedelta
+from datetime import date, timedelta
 from pathlib import Path
 
-from tennis_entry_watch.models import EntryList, EntryStatus, SourceType
+from tennis_entry_watch.models import EntryList, EntryStatus, SourceType, TournamentCatalog, TournamentStatus
 from tennis_entry_watch.normalize.players import stable_player_id
 from tennis_entry_watch.collectors.live_tennis_snapshot import (
-    TOURNAMENTS,
     entry_lists_from_live_snapshot,
     load_live_snapshot,
+    tournament_status,
 )
 
 
@@ -20,15 +20,6 @@ MAIN_DRAW_STATUSES = {
     EntryStatus.Q,
     EntryStatus.LL,
     EntryStatus.SE,
-}
-
-SCHEDULE_EVENT_SCOPE = {
-    "US Open",
-    "Qual. US Open",
-    "Winston Salem",
-    "Qual. Winston Salem",
-    *(spec["event"] for spec in TOURNAMENTS),
-    *(f'Qual. {spec["event"]}' for spec in TOURNAMENTS),
 }
 
 STATUS_LABELS = {
@@ -60,7 +51,7 @@ main{max-width:1180px;margin:18px auto 44px;background:var(--paper);border:1px s
 .scroll{overflow-x:auto;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:7px 9px;border-bottom:1px solid #e1e7eb;text-align:left;white-space:nowrap}th{background:#e9eef2;color:#344553;font-size:11px;text-transform:uppercase;letter-spacing:.04em}tbody tr:nth-child(even){background:#f8fafb}tbody tr:hover{background:#eef6fa}td.num,th.num{text-align:right}td.player{font-weight:600;min-width:210px}td small{display:block;color:var(--muted);font-weight:400}.empty td{text-align:center;padding:20px;color:var(--muted);font-style:italic}.pending td{color:var(--muted)}
 .status,.chance{display:inline-block;border-radius:2px;padding:2px 6px;font-size:11px;font-weight:800}.status{min-width:38px;text-align:center;background:#dfe8ee;color:#314553}.status-da,.status-pr,.status-qda{background:#dcefe7;color:#115b3e}.status-alt,.status-qalt{background:#fff0c2;color:#775000}.status-out{background:#f6d8da;color:#822128}.status-pending{background:#eceff2;color:#68737c}.chance-next{background:#d9f0e5;color:#11603f}.chance-near{background:#fff0c2;color:#725000}.chance-queue{background:#e9eef2;color:#50606c}.promoted{color:var(--green);font-weight:700}.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;color:var(--muted);font-size:12px}
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.card{border:1px solid var(--line);border-top:4px solid var(--blue);padding:16px;background:#fff}.card a{text-decoration:none;color:var(--ink)}.card a:hover{color:var(--blue)}.card-meta{color:var(--muted);margin:5px 0 12px}.card-stats{display:flex;gap:20px;border-top:1px solid var(--line);padding-top:11px}.card-stats strong{display:block;font-size:18px}.card-stats span{color:var(--muted);font-size:11px;text-transform:uppercase}.filters{display:flex;gap:10px;margin:14px 0}.filters input{width:100%;max-width:440px;border:1px solid #aebbc5;border-radius:3px;padding:9px 11px;font:inherit}.sources{background:var(--soft);border:1px solid var(--line);padding:11px 14px}.sources ul{margin:4px 0;padding-left:20px}a{color:var(--blue)}.footer-note{color:var(--muted);font-size:12px;margin-top:18px}
-.tour-group{margin-top:30px}.tour-group>h2{margin:0 0 12px}.tour-week{margin-top:18px}.week-heading{margin:0 0 7px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.tour-week .cards{margin-top:7px}.tour-group-challenger .card{border-top-color:#718b55}.card-grand-slam{border-top-color:#a56a17}
+.tour-group{margin-top:30px}.tour-group>h2{margin:0 0 12px}.tour-week{margin-top:18px}.week-heading{margin:0 0 7px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.tour-week .cards{margin-top:7px}.tour-group-challenger .card{border-top-color:#718b55}.card-grand-slam{border-top-color:#a56a17}.phase-monitoring{background:#eceff2;color:#59656e;border-color:#cbd3d9}.phase-active{background:#d9f0e5;color:#11603f;border-color:#9ed1b9}.archive-list{columns:2;column-gap:28px;padding-left:20px}.archive-list li{break-inside:avoid;margin:6px 0}
 .tournament-page{max-width:1380px}.entry-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}.tournament-page h2{margin-top:18px}.tournament-page th,.tournament-page td{padding:3px 6px;font-size:12px;line-height:1.25}.tournament-page th{font-size:10px}.tournament-page td.player{min-width:150px}.tournament-page .status,.tournament-page .chance{font-size:10px;padding:1px 4px}.tournament-page .explain{font-size:12px;margin:4px 0 6px}
 @media(max-width:760px){main{margin:0;border-width:0;padding:15px}.navlinks{gap:11px;font-size:12px}.subhead{display:block}.updated{text-align:left;margin-top:8px}.summary{grid-template-columns:1fr 1fr}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--line)}.cards{grid-template-columns:1fr}.hide-mobile{display:none}}
 @media(max-width:980px){.entry-grid{grid-template-columns:1fr}}
@@ -90,13 +81,15 @@ def _chance(position: int) -> str:
     return f'<span class="chance chance-queue">{position} openings away</span>'
 
 
-def _nav(home_href: str, schedules_href: str) -> str:
+def _nav(home_href: str, schedules_href: str, archive_href: str | None = None) -> str:
+    archive = f'<a href="{archive_href}">Archive</a>' if archive_href else ""
     return (
         '<header class="topbar"><nav class="nav">'
         f'<a class="brand" href="{home_href}">TENNIS ENTRY WATCH</a>'
         '<div class="navlinks">'
         f'<a href="{home_href}">Tournaments</a>'
         f'<a href="{schedules_href}">Player schedules</a>'
+        f'{archive}'
         '</div></nav></header>'
     )
 
@@ -126,6 +119,7 @@ def build_page(
     entry_list: EntryList,
     home_href: str = "../index.html",
     schedules_href: str = "../schedules/index.html",
+    archive_href: str = "../archive/index.html",
     live_schedules: list[dict] | None = None,
     live_snapshot_at: str | None = None,
 ) -> str:
@@ -347,7 +341,14 @@ def build_page(
             'ATP official · 2026 draw composition</a></li>'
         )
     cutoff_text = f"#{cutoff.entry_rank} · {html.escape(cutoff.player.name)}" if cutoff else "Not known"
-    draw_phase = "PRE-DRAW · ENTRY WATCH" if t.draw_published is False else "ENTRY LIST"
+    if t.status == TournamentStatus.COMPLETE:
+        draw_phase = "ARCHIVED"
+    elif t.status == TournamentStatus.ACTIVE:
+        draw_phase = "IN PROGRESS · ENTRY WATCH"
+    elif not entry_list.entries and not entry_list.qualifying_entries:
+        draw_phase = "MONITORING · LIST NOT FOUND"
+    else:
+        draw_phase = "PRE-DRAW · ENTRY WATCH" if t.draw_published is False else "ENTRY LIST"
     sample_notice = ""
     if t.tournament_id == "sample-open-2026":
         sample_notice = '<p class="notice"><strong>Sample data:</strong> This fictional tournament demonstrates the MVP.</p>'
@@ -359,7 +360,7 @@ def build_page(
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(t.name)} entry watch</title><style>{CSS}</style></head><body>
-{_nav(home_href, schedules_href)}
+{_nav(home_href, schedules_href, archive_href)}
 <main class="tournament-page">{sample_notice}<div class="subhead"><div><span class="phase">{draw_phase}</span><h1>{html.escape(t.name)}</h1><p class="meta">{t.start_date:%d %b}–{t.end_date:%d %b %Y} · {html.escape(t.category)} · {t.surface.value} · {html.escape(t.location.city)}, {html.escape(t.location.country)}</p></div><div class="updated">Entry snapshot<br><strong>{entry_list.snapshot_at:%Y-%m-%d %H:%M UTC}</strong>{live_updated}</div></div>
 <div class="summary"><div class="metric"><strong>{len(main_entries)}/{t.main_draw_size or '—'}</strong><span>named in main field</span></div><div class="metric"><strong>{len(alternates)}</strong><span>verified alternates</span></div><div class="metric"><strong>{len(withdrawals)}</strong><span>withdrawals tracked</span></div><div class="metric"><strong>{cutoff_text}</strong><span>current direct cutoff</span></div></div>
 <p class="notice"><strong>The draw has not been published.</strong> This is an entry watch, not the draw. “X openings away” is the player's current queue distance, not a subjective probability.</p>
@@ -377,11 +378,18 @@ def _tournament_card(entry_list: EntryList) -> str:
     main_count = sum(entry.status in MAIN_DRAW_STATUSES for entry in entry_list.entries)
     alt_count = sum(entry.status == EntryStatus.ALT for entry in entry_list.entries)
     card_class = "card card-grand-slam" if t.category.lower() == "grand slam" else "card"
+    if t.status == TournamentStatus.ACTIVE:
+        phase = '<span class="phase phase-active">IN PROGRESS</span>'
+    elif not entry_list.entries and not entry_list.qualifying_entries:
+        phase = '<span class="phase phase-monitoring">MONITORING · LIST NOT FOUND</span>'
+    else:
+        phase = '<span class="phase">ENTRY WATCH</span>'
     return (
         f'<article class="{card_class}">'
         f'<span class="eyebrow">{html.escape(t.category)} · {t.surface.value}</span>'
         f'<h3><a href="tournaments/{t.tournament_id}.html">{html.escape(t.name)}</a></h3>'
         f'<p class="card-meta">{t.start_date:%d %b}–{t.end_date:%d %b %Y} · {html.escape(t.location.city)}, {html.escape(t.location.country)}</p>'
+        f'{phase}'
         '<div class="card-stats">'
         f'<div><strong>{main_count}</strong><span>Main entries</span></div>'
         f'<div><strong>{alt_count}</strong><span>Alternates</span></div>'
@@ -397,7 +405,20 @@ def _tournament_week(start_date):
     return start_date - timedelta(days=start_date.weekday())
 
 
-def build_index(entry_lists: list[EntryList]) -> str:
+def _homepage_window(entry_lists: list[EntryList], as_of: date, weeks: int = 6) -> list[EntryList]:
+    current_week = as_of - timedelta(days=as_of.weekday())
+    window_end = current_week + timedelta(weeks=weeks, days=-1)
+    return [
+        item
+        for item in entry_lists
+        if item.tournament.status == TournamentStatus.ACTIVE
+        or current_week <= _tournament_week(item.tournament.start_date) <= window_end
+    ]
+
+
+def build_index(entry_lists: list[EntryList], as_of: date | None = None) -> str:
+    reference_date = as_of or date.today()
+    entry_lists = _homepage_window(entry_lists, reference_date)
     groups = {
         "tour": defaultdict(list),
         "challenger": defaultdict(list),
@@ -435,10 +456,39 @@ def build_index(entry_lists: list[EntryList]) -> str:
             )
         sections.append('</section>')
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tennis Entry Watch</title><style>{CSS}</style></head><body>
-{_nav("index.html", "schedules/index.html")}<main><span class="eyebrow">Upcoming tournaments</span><h1>Tennis entry lists before the draw</h1><p class="meta">Grand Slams, ATP Tour, and Challenger Tour only. Tournaments are grouped by starting week.</p><div class="info"><strong>How to read it:</strong> confirmed entry is a fact from a cited list; queue distance is a calculation; projections are labelled separately.</div>{''.join(sections)}<p class="footer-note">Unofficial tracker. Always confirm time-sensitive participation with the tournament.</p></main></body></html>'''
+{_nav("index.html", "schedules/index.html", "archive/index.html")}<main><span class="eyebrow">Current week + next five weeks</span><h1>Tennis entry lists before the draw</h1><p class="meta">Grand Slams, ATP Tour, and Challenger Tour only. Tournaments are grouped by starting week.</p><div class="info"><strong>How to read it:</strong> confirmed entry is a fact from a cited list; queue distance is a calculation; projections are labelled separately. <strong>Monitoring</strong> means the tournament is on the calendar but no tracked entry list has been found yet.</div>{''.join(sections)}<p class="footer-note">Unofficial tracker. Always confirm time-sensitive participation with the tournament.</p></main></body></html>'''
 
 
-def build_schedules(entry_lists: list[EntryList], live_snapshot: dict | None = None) -> str:
+def build_archive(entry_lists: list[EntryList], as_of: date | None = None) -> str:
+    reference_date = as_of or date.today()
+    archived = [
+        item for item in entry_lists
+        if item.tournament.status == TournamentStatus.COMPLETE
+        and item.tournament.end_date
+        and item.tournament.end_date >= item.tournament.start_date
+    ]
+    years = defaultdict(list)
+    for item in archived:
+        years[item.tournament.year].append(item)
+    sections = []
+    for year, items in sorted(years.items(), reverse=True):
+        links = "".join(
+            f'<li>{item.tournament.start_date:%d %b} · '
+            f'<a href="../tournaments/{item.tournament.tournament_id}.html">{html.escape(item.tournament.name)}</a> '
+            f'<small>{html.escape(item.tournament.category)}</small></li>'
+            for item in sorted(items, key=lambda value: (value.tournament.start_date, value.tournament.name), reverse=True)
+        )
+        sections.append(f'<section><h2>{year}</h2><ul class="archive-list">{links}</ul></section>')
+    empty = '<p class="notice">No tracked tournaments have finished yet.</p>' if not sections else ""
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Archive | Tennis Entry Watch</title><style>{CSS}</style></head><body>
+{_nav("../index.html", "../schedules/index.html", "index.html")}<main><span class="eyebrow">Historical snapshots</span><h1>Tournament archive</h1><p class="meta">Completed tournaments tracked since {reference_date:%Y}. Entry-list pages and withdrawal history remain available.</p>{empty}{''.join(sections)}</main></body></html>'''
+
+
+def build_schedules(
+    entry_lists: list[EntryList],
+    live_snapshot: dict | None = None,
+    schedule_event_scope: set[str] | None = None,
+) -> str:
     players = defaultdict(lambda: {"name": "", "nation": "", "rank": None, "points": None, "events": [], "external": []})
     ranking_by_id = {}
     for item in (live_snapshot or {}).get("rankings", []):
@@ -506,7 +556,7 @@ def build_schedules(entry_lists: list[EntryList], live_snapshot: dict | None = N
         external = [
             event
             for event in record["external"]
-            if event in SCHEDULE_EVENT_SCOPE
+            if (schedule_event_scope is None or event in schedule_event_scope)
             and event.lower().replace("-", " ") not in tracked_names
         ]
         external_html = [f'{html.escape(event)} <span class="status">LISTED</span>' for event in external]
@@ -522,7 +572,7 @@ def build_schedules(entry_lists: list[EntryList], live_snapshot: dict | None = N
     retrieved = f'{retrieved_raw.replace("T", " ")[:16]} UTC' if retrieved_raw else "not available"
     source_url = (live_snapshot or {}).get("schedule_source", "https://live-tennis.eu/en/atp-schedule")
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Player schedules | Tennis Entry Watch</title><style>{CSS}</style></head><body>
-{_nav("../index.html", "index.html")}<main><span class="eyebrow">Ordered by live ranking</span><h1>Player schedules</h1><p class="meta">Current live rank and upcoming tournament listings. Tracked tournament statuses take priority over the secondary schedule.</p><div class="info">Live Tennis snapshot: {html.escape(retrieved)} · <a href="{html.escape(source_url, quote=True)}">schedule source</a></div><div class="filters"><input id="search" type="search" placeholder="Search player, country, or tournament…" aria-label="Search schedules"></div><div class="scroll"><table id="schedule"><thead><tr><th class="num">Live rank</th><th>Player</th><th>Nation</th><th class="num">Points</th><th>Tournaments and entry status</th><th class="num">Events</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div><p class="footer-note">This is not a travel itinerary: players may withdraw, and alternate status does not guarantee a place.</p></main><script>const input=document.querySelector('#search');input.addEventListener('input',()=>{{const q=input.value.trim().toLowerCase();document.querySelectorAll('#schedule tbody tr').forEach(row=>row.hidden=!row.dataset.search.includes(q));}});</script></body></html>'''
+{_nav("../index.html", "index.html", "../archive/index.html")}<main><span class="eyebrow">Ordered by live ranking</span><h1>Player schedules</h1><p class="meta">Current live rank and upcoming tournament listings. Tracked tournament statuses take priority over the secondary schedule.</p><div class="info">Live Tennis snapshot: {html.escape(retrieved)} · <a href="{html.escape(source_url, quote=True)}">schedule source</a></div><div class="filters"><input id="search" type="search" placeholder="Search player, country, or tournament…" aria-label="Search schedules"></div><div class="scroll"><table id="schedule"><thead><tr><th class="num">Live rank</th><th>Player</th><th>Nation</th><th class="num">Points</th><th>Tournaments and entry status</th><th class="num">Events</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div><p class="footer-note">This is not a travel itinerary: players may withdraw, and alternate status does not guarantee a place.</p></main><script>const input=document.querySelector('#search');input.addEventListener('input',()=>{{const q=input.value.trim().toLowerCase();document.querySelectorAll('#schedule tbody tr').forEach(row=>row.hidden=!row.dataset.search.includes(q));}});</script></body></html>'''
 
 
 def discover_entry_lists(data_root: Path) -> list[EntryList]:
@@ -534,17 +584,38 @@ def discover_entry_lists(data_root: Path) -> list[EntryList]:
     return entry_lists
 
 
-def build_site(data_root: Path, output_dir: Path, ranking_path: Path = Path("data/rankings/atp-live-current.json")) -> list[Path]:
+def build_site(
+    data_root: Path,
+    output_dir: Path,
+    ranking_path: Path = Path("data/rankings/atp-live-current.json"),
+    catalog_path: Path = Path("data/tournaments/catalog.json"),
+    as_of: date | None = None,
+) -> list[Path]:
+    reference_date = as_of or date.today()
     entry_lists = discover_entry_lists(data_root)
     if not entry_lists:
         raise ValueError(f"no current entry lists found under {data_root}")
     live_snapshot = load_live_snapshot(ranking_path) if ranking_path.exists() else {}
+    catalog = (
+        TournamentCatalog.model_validate_json(catalog_path.read_text(encoding="utf-8-sig"))
+        if catalog_path.exists()
+        else None
+    )
     known_ids = {item.tournament.tournament_id for item in entry_lists}
     entry_lists.extend(
         item
-        for item in entry_lists_from_live_snapshot(live_snapshot)
+        for item in entry_lists_from_live_snapshot(live_snapshot, catalog, reference_date)
         if item.tournament.tournament_id not in known_ids
     )
+    schedule_event_scope = set()
+    if catalog:
+        included_ids = {item.tournament.tournament_id for item in entry_lists}
+        for event in catalog.events:
+            if event.tournament.tournament_id in included_ids:
+                schedule_event_scope.update(event.schedule_aliases)
+                schedule_event_scope.update(f"Qual. {alias}" for alias in event.schedule_aliases)
+    for entry_list in entry_lists:
+        entry_list.tournament.status = tournament_status(entry_list.tournament, reference_date)
     ranking_by_id = {stable_player_id(item["name"]): item for item in live_snapshot.get("rankings", [])}
     for entry_list in entry_lists:
         for entry in [*entry_list.entries, *entry_list.qualifying_entries]:
@@ -553,11 +624,13 @@ def build_site(data_root: Path, output_dir: Path, ranking_path: Path = Path("dat
                 entry.current_rank = ranking["rank"]
     tournaments_dir = output_dir / "tournaments"
     schedules_dir = output_dir / "schedules"
+    archive_dir = output_dir / "archive"
     tournaments_dir.mkdir(parents=True, exist_ok=True)
     schedules_dir.mkdir(parents=True, exist_ok=True)
+    archive_dir.mkdir(parents=True, exist_ok=True)
     written = []
     index_path = output_dir / "index.html"
-    index_path.write_text(build_index(entry_lists), encoding="utf-8")
+    index_path.write_text(build_index(entry_lists, reference_date), encoding="utf-8")
     written.append(index_path)
     for entry_list in entry_lists:
         destination = tournaments_dir / f"{entry_list.tournament.tournament_id}.html"
@@ -571,8 +644,14 @@ def build_site(data_root: Path, output_dir: Path, ranking_path: Path = Path("dat
         )
         written.append(destination)
     schedules_path = schedules_dir / "index.html"
-    schedules_path.write_text(build_schedules(entry_lists, live_snapshot), encoding="utf-8")
+    schedules_path.write_text(
+        build_schedules(entry_lists, live_snapshot, schedule_event_scope),
+        encoding="utf-8",
+    )
     written.append(schedules_path)
+    archive_path = archive_dir / "index.html"
+    archive_path.write_text(build_archive(entry_lists, reference_date), encoding="utf-8")
+    written.append(archive_path)
     return written
 
 
@@ -581,7 +660,10 @@ def build(input_path: Path, output_dir: Path) -> Path:
     data = EntryList.model_validate_json(input_path.read_text(encoding="utf-8"))
     output_dir.mkdir(parents=True, exist_ok=True)
     destination = output_dir / "index.html"
-    destination.write_text(build_page(data, "index.html", "schedules/index.html"), encoding="utf-8")
+    destination.write_text(
+        build_page(data, "index.html", "schedules/index.html", "archive/index.html"),
+        encoding="utf-8",
+    )
     return destination
 
 
@@ -594,8 +676,20 @@ def main() -> None:
         type=Path,
         default=Path("data/rankings/atp-live-current.json"),
     )
+    parser.add_argument(
+        "--catalog-path",
+        type=Path,
+        default=Path("data/tournaments/catalog.json"),
+    )
+    parser.add_argument("--as-of", type=date.fromisoformat)
     args = parser.parse_args()
-    for path in build_site(args.data_root, args.output, args.ranking_path):
+    for path in build_site(
+        args.data_root,
+        args.output,
+        args.ranking_path,
+        args.catalog_path,
+        args.as_of,
+    ):
         print(path)
 
 

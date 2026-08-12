@@ -20,6 +20,7 @@ dev = ["pytest>=8,<9"]
 [project.scripts]
 tennis-entry-watch-build = "tennis_entry_watch.site.build:main"
 tennis-entry-watch-collect-live-tennis = "tennis_entry_watch.collectors.live_tennis_cli:main"
+tennis-entry-watch-collect-tournament-catalog = "tennis_entry_watch.collectors.tournament_catalog_cli:main"
 tennis-entry-watch-collect-winston-salem = "tennis_entry_watch.collectors.winston_salem_cli:main"
 
 [tool.hatch.build.targets.wheel]

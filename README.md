@@ -6,7 +6,7 @@ Tennis Entry Watch is a small, auditable tracker for upcoming ATP men's singles 
 
 The current milestone turns the proof of concept into a multi-tournament entry watch. It includes the official Winston-Salem announcement and the official US Open men's main-draw/alternate PDF, an objective alternate queue, qualifying-list support, live rankings, ranking-ordered player schedules, validated domain models, structured change detection, and GitHub Pages automation.
 
-The Live Tennis snapshot also generates tracked entry pages for 14 Challenger events across the weeks of August 17, August 24, and August 31. These pages include the listed main-draw and qualifying players, current ranks, projected seeds, qualifying-alternate overflow, and unassigned reserved places. They are clearly identified as secondary-source lists until an official tournament document supersedes them.
+The moving tournament catalog now generates pages for the current week and the next five weeks. Grand Slams and ATP Tour events appear first, followed by every Challenger event in scope. A calendar event is shown as `MONITORING` until a tracked entry list appears; finished events leave the homepage and remain in the archive. Pages with schedule data include listed main-draw and qualifying players, current ranks, projected seeds, qualifying-alternate overflow, and unassigned reserved places.
 
 ## Architecture
 
@@ -38,6 +38,7 @@ src/tennis_entry_watch/
   changes/         Snapshot comparison
   site/            Static HTML generation
 data/entries/      Git-tracked snapshots
+data/tournaments/  Moving calendar catalog and reviewed overrides
 docs/sources/       Per-source access and provenance reviews
 tests/             Offline unit tests
 site/              Generated GitHub Pages artifact
@@ -56,10 +57,11 @@ pytest
 python -m tennis_entry_watch.site.build
 # Explicit network operations:
 python -m tennis_entry_watch.collectors.live_tennis_cli
+python -m tennis_entry_watch.collectors.tournament_catalog_cli
 python -m tennis_entry_watch.collectors.winston_salem_cli
 ```
 
-The build discovers every `data/entries/*/current.json` file (excluding sample data), then writes the tournament dashboard, one page per tournament, and `site/schedules/index.html`. Tests are fully offline and never contact third-party sites. Collectors write only after HTTP, parsing, count, and Pydantic validation succeed, using an atomic file replacement.
+The build combines verified `data/entries/*/current.json` files with the moving catalog and schedule snapshot. It writes the six-week dashboard, one page per tracked tournament, player schedules, and `site/archive/index.html`. Tests are fully offline and never contact third-party sites. Collectors write only after HTTP, parsing, count, and Pydantic validation succeed, using an atomic file replacement.
 
 ## Change detection
 
@@ -79,7 +81,9 @@ It rejects snapshots for different tournaments and snapshots supplied out of chr
 
 `test.yml` runs tests and verifies the static build on pushes and pull requests. `deploy-pages.yml` tests, builds, uploads the `site/` artifact, and deploys it through GitHub Pages on pushes to `main` or manual dispatch.
 
-`refresh-data.yml` runs three times per day and on manual dispatch. It retrieves the Live Tennis ranking and schedule pages, requires 900–1,200 validated rows in each table, checks ranking order, normalized-name uniqueness, cross-table overlap, and overlap with the last valid snapshot, then runs the offline test suite and rebuilds the site. If semantic data changed, it force-updates the bot-owned `automation/refresh-tennis-data` branch and opens or updates one supervised pull request. A new retrieval timestamp alone does not create a change.
+`refresh-data.yml` runs three times per day and on manual dispatch. It retrieves the Live Tennis ranking and schedule pages and refreshes the annual Grand Slam/ATP/Challenger catalog. It validates table sizes, calendar counts, ranking order, normalized-name uniqueness, source overlap, and Pydantic models before running the offline suite and rebuilding the site. If semantic data changed, it force-updates the bot-owned `automation/refresh-tennis-data` branch and opens or updates one supervised pull request. A new retrieval timestamp alone does not create a change.
+
+The calendar source is checked into `data/tournaments/catalog.json`, while reviewed name/date corrections live in `data/tournaments/overrides.json`. At a year boundary, the new year's events are merged with prior catalog history so archived pages are retained.
 
 The refresh workflow needs repository workflow permissions that allow GitHub Actions to create pull requests. It uses the temporary repository-scoped `GITHUB_TOKEN`; no personal token or source credential is stored.
 
@@ -97,13 +101,14 @@ The Winston-Salem collector parses a dated official tournament announcement cont
 
 - The comparison demo remains fictional; the Winston-Salem snapshot is real sourced data.
 - Live Tennis is a tracked secondary source and can change its HTML structure; parser or validation failures retain the last valid snapshot.
+- The ATP calendar pages are protected against unattended scraping, so the automated catalog parser uses structured annual Wikipedia calendars as a secondary source and retains ATP official calendar URLs for human verification. The last valid catalog remains in place if collection or validation fails.
 - Name-derived player IDs are a conservative fallback because this announcement exposes no stable ATP identifier; there is no fuzzy matching.
 - Validation covers table size, ranking order, normalized uniqueness, ranking/schedule overlap, and previous-snapshot overlap; it cannot verify facts that the source does not publish.
 - Until a verified qualifying list is available, registered main-draw alternates are shown as projected qualifying candidates (`PROJ Q`).
 - Queue distance is deterministic; it is not presented as a subjective probability.
-- The generated site does not yet render a historical change timeline.
+- The archive preserves tournament pages, but it does not yet render a chronological per-player change timeline.
 - Projected seeds are accepted as sourced data; no seeding calculation is implemented.
 
 ## Recommended next milestone
 
-Observe the first automated pull requests, tune source-specific anomaly thresholds, then add official-source collectors for qualifying and alternate lists without allowing secondary data to overwrite verified statuses.
+Add official-source collectors for qualifying and alternate lists without allowing secondary data to overwrite verified statuses, then render the structured withdrawal/promotion history as a timeline.

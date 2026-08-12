@@ -1,5 +1,7 @@
 from pathlib import Path
 
+from datetime import date
+
 from tennis_entry_watch.site.build import build_page, build_site
 
 
@@ -57,6 +59,10 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     assert "Week of 17 Aug 2026" in index
     assert "Week of 24 Aug 2026" in index
     assert "Week of 31 Aug 2026" in index
+    assert "Week of 07 Sep 2026" in index
+    assert "MONITORING · LIST NOT FOUND" in index
+    assert "Week of 14 Sep 2026" in index
+    assert "Week of 21 Sep 2026" not in index
     tour_start = index.index("Grand Slams &amp; ATP Tour")
     challenger_start = index.index("Challenger Tour", tour_start)
     assert tour_start < challenger_start
@@ -74,6 +80,8 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     assert (tmp_path / "tournaments" / "quebec-city-challenger-2026.html").exists()
     assert (tmp_path / "tournaments" / "augsburg-challenger-2026.html").exists()
     assert (tmp_path / "tournaments" / "manacor-challenger-2026.html").exists()
+    assert (tmp_path / "tournaments" / "aon-open-challenger-2026.html").exists()
+    assert (tmp_path / "archive" / "index.html").exists()
     schedules = (tmp_path / "schedules" / "index.html").read_text(encoding="utf-8")
     assert "Player schedules" in schedules
     assert "Luciano Darderi" in schedules
@@ -89,3 +97,13 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     assert "Live ranking<br><strong>2026-08-12 16:39 UTC" in winston_salem
     assert "No qualifying players are currently listed in the tracked schedule" in winston_salem
     assert "ATP official · 2026 draw composition" in winston_salem
+
+
+def test_completed_event_leaves_homepage_and_enters_archive(tmp_path):
+    build_site(Path("data/entries"), tmp_path, as_of=date(2026, 8, 24))
+    index = (tmp_path / "index.html").read_text(encoding="utf-8")
+    archive = (tmp_path / "archive" / "index.html").read_text(encoding="utf-8")
+    assert "Europcar Cancun Country Club" not in index
+    assert "Europcar Cancun Country Club" in archive
+    assert "Cincinnati Open" in archive
+    assert "Winston-Salem Open" in index
