@@ -1,11 +1,14 @@
 import argparse
 import html
-import json
 from collections import defaultdict
 from pathlib import Path
 
 from tennis_entry_watch.models import EntryList, EntryStatus, SourceType
 from tennis_entry_watch.normalize.players import stable_player_id
+from tennis_entry_watch.collectors.live_tennis_snapshot import (
+    entry_lists_from_live_snapshot,
+    load_live_snapshot,
+)
 
 
 MAIN_DRAW_STATUSES = {
@@ -113,7 +116,11 @@ def build_page(entry_list: EntryList, home_href: str = "../index.html", schedule
         (entry for entry in entry_list.entries if entry.status in MAIN_DRAW_STATUSES),
         key=lambda entry: (entry.entry_rank or 9999, entry.player.name),
     )
-    seed_slots = 32 if t.category.lower() == "grand slam" else min(16, len(main_entries))
+    seed_slots = (
+        32 if t.category.lower() == "grand slam"
+        else 8 if t.category.lower().startswith("challenger")
+        else min(16, len(main_entries))
+    )
     seedable = sorted((entry for entry in main_entries if entry.current_rank), key=lambda entry: entry.current_rank)
     for projected_seed, entry in enumerate(seedable[:seed_slots], 1):
         entry.projected_seed = projected_seed
@@ -198,7 +205,7 @@ def build_page(entry_list: EntryList, home_href: str = "../index.html", schedule
             f'<td class="num">{entry.alternate_position or "—"}</td>'
             f'<td class="player">{html.escape(entry.player.name)}</td>'
             f'<td>{html.escape(entry.player.nationality or "—")}</td>'
-            f'<td class="num">{_rank(entry.entry_rank)}</td>'
+            f'<td class="num">{_rank(entry.current_rank or entry.entry_rank)}</td>'
             f'<td>{_status(entry)}</td>'
             f'<td>{_chance(entry.alternate_position) if entry.alternate_position else "In qualifying field"}</td></tr>'
             for entry in [*q_acceptances, *q_alternates]
@@ -336,7 +343,20 @@ def build_schedules(entry_lists: list[EntryList], live_snapshot: dict | None = N
     rows = []
     for record in sorted(players.values(), key=lambda item: (item["rank"] or 99999, item["name"])):
         events = sorted(record["events"])
-        tracked_names = {name.lower().replace("-", " ") for _, name, _, _ in events}
+        aliases = {
+            "Europcar Cancun Country Club": "cancun",
+            "Quebec National Bank Challenger": "quebec city",
+            "Kingston 1": "kingston",
+            "Advantage Cars Prague Open": "prague",
+            "Roehampton 1": "roehampton",
+            "Sion Challenger": "sion",
+            "Winston-Salem Open": "winston salem",
+            "US Open": "us open",
+        }
+        tracked_names = {
+            aliases.get(name, name).lower().replace("-", " ")
+            for _, name, _, _ in events
+        }
         tracked_html = [
             f'<a href="../tournaments/{event_id}.html">{html.escape(name)}</a> '
             f'<span class="status status-{status.split()[0].lower()}">{html.escape(status)}</span>'
@@ -372,7 +392,13 @@ def build_site(data_root: Path, output_dir: Path, ranking_path: Path = Path("dat
     entry_lists = discover_entry_lists(data_root)
     if not entry_lists:
         raise ValueError(f"no current entry lists found under {data_root}")
-    live_snapshot = json.loads(ranking_path.read_text(encoding="utf-8-sig")) if ranking_path.exists() else {}
+    live_snapshot = load_live_snapshot(ranking_path) if ranking_path.exists() else {}
+    known_ids = {item.tournament.tournament_id for item in entry_lists}
+    entry_lists.extend(
+        item
+        for item in entry_lists_from_live_snapshot(live_snapshot)
+        if item.tournament.tournament_id not in known_ids
+    )
     ranking_by_id = {stable_player_id(item["name"]): item for item in live_snapshot.get("rankings", [])}
     for entry_list in entry_lists:
         for entry in [*entry_list.entries, *entry_list.qualifying_entries]:

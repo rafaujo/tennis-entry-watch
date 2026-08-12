@@ -6,6 +6,8 @@ Tennis Entry Watch is a small, auditable tracker for upcoming ATP men's singles 
 
 The current milestone turns the proof of concept into a multi-tournament entry watch. It includes the official Winston-Salem announcement and the official US Open men's main-draw/alternate PDF, an objective alternate queue, qualifying-list support, live rankings, ranking-ordered player schedules, validated domain models, structured change detection, and GitHub Pages automation.
 
+The Live Tennis snapshot also generates tracked entry pages for the August 17 Challenger events in Cancun, Quebec City, Kingston, Prague, Roehampton, and Sion. These pages include the listed main-draw and qualifying players, current ranks, projected seeds, and unassigned reserved places. They are clearly identified as secondary-source lists until an official tournament document supersedes them.
+
 ## Architecture
 
 ```text

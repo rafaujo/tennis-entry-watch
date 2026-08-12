@@ -48,6 +48,8 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     written = build_site(Path("data/entries"), tmp_path)
     assert tmp_path / "index.html" in written
     assert (tmp_path / "tournaments" / "us-open-2026.html").exists()
+    assert (tmp_path / "tournaments" / "cancun-challenger-2026.html").exists()
+    assert (tmp_path / "tournaments" / "quebec-city-challenger-2026.html").exists()
     schedules = (tmp_path / "schedules" / "index.html").read_text(encoding="utf-8")
     assert "Player schedules" in schedules
     assert "Luciano Darderi" in schedules
@@ -56,5 +58,5 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     assert "Live rank" in schedules
     assert schedules.index("Jannik Sinner") < schedules.index("Carlos Alcaraz")
     us_open = (tmp_path / "tournaments" / "us-open-2026.html").read_text(encoding="utf-8")
-    assert us_open.count('status-qalt">LISTED Q') == 113
+    assert us_open.count('status-qalt">LISTED Q') == 117
     assert "Tracked secondary · live ranking" in us_open
