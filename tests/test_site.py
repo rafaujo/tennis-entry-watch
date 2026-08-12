@@ -41,7 +41,7 @@ def test_us_open_page_shows_alternate_queue_and_promotion():
     assert "Sebastian Korda" in page
     assert "PROJ Q" in page
     assert "Likely qualifying · MD alternate #1" in page
-    assert "not confirmed acceptance" in page
+    assert "Neither predicts qualification" in page
 
 
 def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
@@ -53,3 +53,8 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     assert "Luciano Darderi" in schedules
     assert "Winston-Salem Open" in schedules
     assert "US Open" in schedules
+    assert "Live rank" in schedules
+    assert schedules.index("Jannik Sinner") < schedules.index("Carlos Alcaraz")
+    us_open = (tmp_path / "tournaments" / "us-open-2026.html").read_text(encoding="utf-8")
+    assert us_open.count('status-qalt">LISTED Q') == 113
+    assert "Tracked secondary · live ranking" in us_open
