@@ -40,6 +40,11 @@ def test_snapshot_builds_current_and_upcoming_challenger_entry_lists():
 def test_generated_entries_keep_live_rank_and_secondary_provenance():
     snapshot = load_live_snapshot(Path("data/rankings/atp-live-current.json"))
     entry_lists = entry_lists_from_live_snapshot(snapshot)
+    expected_rank = next(
+        item["rank"]
+        for item in snapshot["schedules"]
+        if item["name"] == "Luciano Darderi"
+    )
     darderi = next(
         entry
         for item in entry_lists
@@ -47,7 +52,7 @@ def test_generated_entries_keep_live_rank_and_secondary_provenance():
         for entry in item.entries
         if entry.player.player_id == "luciano-darderi"
     )
-    assert darderi.current_rank == 20
+    assert darderi.current_rank == expected_rank
     assert darderi.source.source_type.value == "trusted_secondary"
 
 

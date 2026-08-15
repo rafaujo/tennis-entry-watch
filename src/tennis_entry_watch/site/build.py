@@ -154,8 +154,9 @@ def build_page(
         else min(16, len(main_entries))
     )
     seedable = sorted((entry for entry in main_entries if entry.current_rank), key=lambda entry: entry.current_rank)
-    for projected_seed, entry in enumerate(seedable[:seed_slots], 1):
-        entry.projected_seed = projected_seed
+    if not t.draw_published:
+        for projected_seed, entry in enumerate(seedable[:seed_slots], 1):
+            entry.projected_seed = projected_seed
     main_entries.sort(
         key=lambda entry: (
             entry.projected_seed is None,
@@ -185,15 +186,18 @@ def build_page(
     wildcard_slots = t.main_draw_wildcard_slots or 0
     known_qualifiers = sum(entry.status == EntryStatus.Q for entry in main_entries)
     known_wildcards = sum(entry.status == EntryStatus.WC for entry in main_entries)
-    qualifier_placeholders = max(0, qualifier_slots - known_qualifiers)
-    wildcard_placeholders = max(0, wildcard_slots - known_wildcards)
-    open_other = max(
-        0,
-        (t.main_draw_size or len(main_entries))
-        - len(main_entries)
-        - qualifier_placeholders
-        - wildcard_placeholders,
-    )
+    if t.draw_published:
+        qualifier_placeholders = wildcard_placeholders = open_other = 0
+    else:
+        qualifier_placeholders = max(0, qualifier_slots - known_qualifiers)
+        wildcard_placeholders = max(0, wildcard_slots - known_wildcards)
+        open_other = max(
+            0,
+            (t.main_draw_size or len(main_entries))
+            - len(main_entries)
+            - qualifier_placeholders
+            - wildcard_placeholders,
+        )
     cutoff_entries = [entry for entry in main_entries if entry.entry_rank is not None]
     cutoff = max(cutoff_entries, key=lambda entry: entry.entry_rank) if cutoff_entries else None
 
@@ -220,6 +224,13 @@ def build_page(
             _pending_row(f"Open place {index}", "TBD", "entry route not yet published")
             for index in range(1, open_other + 1)
         )
+    if not main_rows:
+        message = (
+            "The official draw is now available; pre-draw projections are closed."
+            if t.draw_published
+            else "No verified main-draw entries are available from the selected source."
+        )
+        main_rows.append(f'<tr class="empty"><td colspan="6">{message}</td></tr>')
 
     alternate_rows = "".join(
         '<tr>'
@@ -229,7 +240,11 @@ def build_page(
         f'<td class="num">{_rank(entry.entry_rank)}</td>'
         f'<td>{_chance(entry.alternate_position)}</td></tr>'
         for entry in alternates
-    ) or '<tr class="empty"><td colspan="5">No verified alternate list is available from the selected source.</td></tr>'
+    ) or (
+        '<tr class="empty"><td colspan="5">The alternate queue is closed after draw publication.</td></tr>'
+        if t.draw_published
+        else '<tr class="empty"><td colspan="5">No verified alternate list is available from the selected source.</td></tr>'
+    )
 
     withdrawal_rows = "".join(
         '<tr>'
@@ -274,7 +289,7 @@ def build_page(
         )
         if not q_rows:
             q_rows = '<tr class="empty"><td colspan="6">No qualifying acceptances are currently listed.</td></tr>'
-    elif (alternates or live_schedules) and t.qualifying_draw_size:
+    elif not t.draw_published and (alternates or live_schedules) and t.qualifying_draw_size:
         alternate_by_id = {entry.player.player_id: entry for entry in alternates}
         projected = {}
         for entry in alternates:
@@ -330,6 +345,11 @@ def build_page(
                 '<tr class="empty"><td colspan="6">No qualifying players are currently listed in the tracked schedule. '
                 'The ranking is not used by itself to invent an entry list.</td></tr>'
             )
+    elif t.draw_published:
+        q_rows = (
+            '<tr class="empty"><td colspan="6">The qualifying draw has been published; '
+            'pre-draw qualifying estimates are closed.</td></tr>'
+        )
     else:
         q_rows = (
             '<tr class="empty"><td colspan="6">Qualifying entry list not yet available from a verified public source. '
@@ -338,7 +358,9 @@ def build_page(
 
     if not q_alt_rows:
         q_alt_rows = (
-            '<tr class="empty"><td colspan="6">No verified or projected qualifying-alternate queue is available yet. '
+            '<tr class="empty"><td colspan="6">The qualifying-alternate queue is closed after draw publication.</td></tr>'
+            if t.draw_published
+            else '<tr class="empty"><td colspan="6">No verified or projected qualifying-alternate queue is available yet. '
             'A queue is shown only when tracked candidates exceed the qualifying draw capacity.</td></tr>'
         )
 
@@ -360,9 +382,15 @@ def build_page(
             '<li><a href="https://www.atptour.com/-/media/files/rulebook/2026/2026-rulebook_14jan26.pdf">'
             'ATP official · 2026 draw composition</a></li>'
         )
+    if t.draw_url:
+        sources += (
+            f'<li><a href="{html.escape(t.draw_url, quote=True)}">ATP official · published draw</a></li>'
+        )
     cutoff_text = f"#{cutoff.entry_rank} · {html.escape(cutoff.player.name)}" if cutoff else "Not known"
     if t.status == TournamentStatus.COMPLETE:
         draw_phase = "ARCHIVED"
+    elif t.draw_published:
+        draw_phase = "DRAW PUBLISHED · IN PROGRESS" if t.status == TournamentStatus.ACTIVE else "DRAW PUBLISHED"
     elif t.status == TournamentStatus.ACTIVE:
         draw_phase = "IN PROGRESS · ENTRY WATCH"
     elif not entry_list.entries and not entry_list.qualifying_entries:
@@ -376,18 +404,45 @@ def build_page(
     if live_snapshot_at:
         timestamp = live_snapshot_at.replace("T", " ")[:16]
         live_updated = f'<br>Live ranking<br><strong>{html.escape(timestamp)} UTC</strong>'
+    if t.draw_published:
+        draw_link = (
+            f' <a href="{html.escape(t.draw_url, quote=True)}">Open the official draw.</a>'
+            if t.draw_url
+            else ""
+        )
+        lifecycle_notice = (
+            '<p class="info"><strong>The draw has been published.</strong> '
+            f'Pre-draw entry and alternate projections are now closed.{draw_link}</p>'
+        )
+        main_explain = "The official draw replaces projected seeds and pending entry places."
+        q_explain = "The published qualifying draw replaces the projected qualifying field."
+        q_alt_explain = "Alternate estimates close once qualifying begins."
+    else:
+        lifecycle_notice = (
+            '<p class="notice"><strong>The draw has not been published.</strong> This is an entry watch, not the draw. '
+            '“X openings away” is the player\'s current queue distance, not a subjective probability.</p>'
+        )
+        main_explain = "Projected seeds use the current live ranking."
+        q_explain = (
+            "<b>LISTED Q</b> comes from the tracked Live Tennis schedule; <b>PROJ Q</b> is inferred from the "
+            "verified main-draw alternate list. Rows are ordered by current live ranking. Neither predicts qualification."
+        )
+        q_alt_explain = (
+            "<b>Q ALT</b> is a published/tracked queue; <b>PROJ Q ALT</b> is calculated only when tracked "
+            "candidates exceed the qualifying draw size."
+        )
 
     return f'''<!doctype html>
 <html lang="en"><head>{_head(f'{t.name} entry watch', base_href)}</head><body>
 {_nav(home_href, schedules_href, archive_href, install_href)}
 <main class="tournament-page">{sample_notice}<div class="subhead"><div><span class="phase">{draw_phase}</span><h1>{html.escape(t.name)}</h1><p class="meta">{t.start_date:%d %b}–{t.end_date:%d %b %Y} · {html.escape(t.category)} · {t.surface.value} · {html.escape(t.location.city)}, {html.escape(t.location.country)}</p></div><div class="updated">Entry snapshot<br><strong>{entry_list.snapshot_at:%Y-%m-%d %H:%M UTC}</strong>{live_updated}</div></div>
 <div class="summary"><div class="metric"><strong>{len(main_entries)}/{t.main_draw_size or '—'}</strong><span>named in main field</span></div><div class="metric"><strong>{len(alternates)}</strong><span>verified alternates</span></div><div class="metric"><strong>{len(withdrawals)}</strong><span>withdrawals tracked</span></div><div class="metric"><strong>{cutoff_text}</strong><span>current direct cutoff</span></div></div>
-<p class="notice"><strong>The draw has not been published.</strong> This is an entry watch, not the draw. “X openings away” is the player's current queue distance, not a subjective probability.</p>
-<div class="entry-grid"><section id="main-draw"><h2>Main draw</h2><p class="explain">Projected seeds use the current live ranking.</p><div class="scroll"><table><thead><tr><th class="num">Seed</th><th>Player / place</th><th>Nat.</th><th class="num">Rk</th><th class="num">ER</th><th>Status</th></tr></thead><tbody>{''.join(main_rows)}</tbody></table></div><div class="legend"><span><b>DA</b> Direct</span><span><b>PR</b> Protected ranking</span><span><b>Q</b> Qualifier</span><span><b>WC</b> Wild card</span></div></section><div>
+{lifecycle_notice}
+<div class="entry-grid"><section id="main-draw"><h2>Main draw</h2><p class="explain">{main_explain}</p><div class="scroll"><table><thead><tr><th class="num">Seed</th><th>Player / place</th><th>Nat.</th><th class="num">Rk</th><th class="num">ER</th><th>Status</th></tr></thead><tbody>{''.join(main_rows)}</tbody></table></div><div class="legend"><span><b>DA</b> Direct</span><span><b>PR</b> Protected ranking</span><span><b>Q</b> Qualifier</span><span><b>WC</b> Wild card</span></div></section><div>
 <section id="alternates"><h2>Main-draw alternates</h2><p class="explain">The order follows the latest verified list. Each withdrawal can move the queue by one place.</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>Path to main draw</th></tr></thead><tbody>{alternate_rows}</tbody></table></div></section>
 <section id="withdrawals"><h2>Withdrawals</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Player</th><th>Nat.</th><th>Previous</th><th class="num">ER</th></tr></thead><tbody>{withdrawal_rows}</tbody></table></div></section></div></div>
-<div class="entry-grid"><section id="qualifying"><h2>Qualifying</h2><p class="explain"><b>LISTED Q</b> comes from the tracked Live Tennis schedule; <b>PROJ Q</b> is inferred from the verified main-draw alternate list. Rows are ordered by current live ranking. Neither predicts qualification.</p><div class="scroll"><table><thead><tr><th class="num">Q queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path</th></tr></thead><tbody>{q_rows}</tbody></table></div></section>
-<section id="qualifying-alternates"><h2>Qualifying alternates</h2><p class="explain"><b>Q ALT</b> is a published/tracked queue; <b>PROJ Q ALT</b> is calculated only when tracked candidates exceed the qualifying draw size.</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path to qualifying</th></tr></thead><tbody>{q_alt_rows}</tbody></table></div></section></div>
+<div class="entry-grid"><section id="qualifying"><h2>Qualifying</h2><p class="explain">{q_explain}</p><div class="scroll"><table><thead><tr><th class="num">Q queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path</th></tr></thead><tbody>{q_rows}</tbody></table></div></section>
+<section id="qualifying-alternates"><h2>Qualifying alternates</h2><p class="explain">{q_alt_explain}</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path to qualifying</th></tr></thead><tbody>{q_alt_rows}</tbody></table></div></section></div>
 <section id="sources"><h2>Sources and method</h2><div class="sources"><ul>{sources}</ul><p>Official, tracked-secondary, and projected information are kept separate. A ranking position is never treated as confirmation that a player entered.</p></div></section>
 </main></body></html>'''
 
@@ -397,7 +452,9 @@ def _tournament_card(entry_list: EntryList) -> str:
     main_count = sum(entry.status in MAIN_DRAW_STATUSES for entry in entry_list.entries)
     alt_count = sum(entry.status == EntryStatus.ALT for entry in entry_list.entries)
     card_class = "card card-grand-slam" if t.category.lower() == "grand slam" else "card"
-    if t.status == TournamentStatus.ACTIVE:
+    if t.draw_published:
+        phase = '<span class="phase phase-active">DRAW PUBLISHED</span>'
+    elif t.status == TournamentStatus.ACTIVE:
         phase = '<span class="phase phase-active">IN PROGRESS</span>'
     elif not entry_list.entries and not entry_list.qualifying_entries:
         phase = '<span class="phase phase-monitoring">MONITORING · LIST NOT FOUND</span>'

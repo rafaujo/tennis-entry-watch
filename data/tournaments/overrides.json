@@ -7,6 +7,9 @@
       "tournament_id": "cincinnati-open-2026",
       "start_date": "2026-08-13",
       "end_date": "2026-08-23",
+      "draw_published": true,
+      "draw_url": "https://www.atptour.com/en/scores/current/cincinnati/422/draws",
+      "qualifying_list_published": true,
       "schedule_aliases": ["Cincinnati"]
     },
     {
@@ -34,12 +37,13 @@
       "schedule_aliases": ["Cancun"]
     },
     {
-      "source_name": "Québec National Bank Challenger",
+      "source_name": "Challenger Banque Nationale de Québec",
       "source_start_date": "2026-08-17",
       "tournament_id": "quebec-city-challenger-2026",
       "name": "Quebec National Bank Challenger",
       "start_date": "2026-08-18",
       "end_date": "2026-08-23",
+      "country": "Canada",
       "schedule_aliases": ["Quebec City"]
     },
     {

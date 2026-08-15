@@ -6162,8 +6162,9 @@
         "qualifying_draw_size": 48,
         "main_draw_qualifier_slots": 12,
         "main_draw_wildcard_slots": 4,
-        "draw_published": false,
-        "qualifying_list_published": false,
+        "draw_published": true,
+        "draw_url": "https://www.atptour.com/en/scores/current/cincinnati/422/draws",
+        "qualifying_list_published": true,
         "entry_list_date": null,
         "entry_ranking_date": null,
         "status": "upcoming"

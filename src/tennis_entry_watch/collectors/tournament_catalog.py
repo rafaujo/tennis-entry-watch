@@ -194,7 +194,8 @@ def _apply_overrides(events: list[CatalogEvent], overrides: dict) -> list[Catalo
         for field in (
             "tournament_id", "name", "start_date", "end_date", "category", "surface",
             "main_draw_size", "qualifying_draw_size", "main_draw_qualifier_slots",
-            "main_draw_wildcard_slots",
+            "main_draw_wildcard_slots", "draw_published", "draw_url",
+            "qualifying_list_published",
         ):
             if field in override:
                 tournament_data[field] = override[field]

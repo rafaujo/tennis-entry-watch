@@ -8,6 +8,8 @@ The current milestone turns the proof of concept into a multi-tournament, instal
 
 The moving tournament catalog now generates pages for the current week and the next five weeks. Grand Slams and ATP Tour events appear first, followed by every Challenger event in scope. A calendar event is shown as `MONITORING` until a tracked entry list appears; finished events leave the homepage and remain in the archive. Pages with schedule data include listed main-draw and qualifying players, current ranks, projected seeds, qualifying-alternate overflow, and unassigned reserved places.
 
+When an official draw is published, the event changes to `DRAW PUBLISHED`, all pre-draw entry and alternate projections close, placeholder places disappear, and the page links to the official draw. The event remains visible while it is in progress and moves to the archive after its end date.
+
 ## Architecture
 
 ```text
