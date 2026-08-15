@@ -102,10 +102,11 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     assert "ATP official · 2026 draw composition" in winston_salem
     cincinnati = (tmp_path / "tournaments" / "cincinnati-open-2026.html").read_text(encoding="utf-8")
     assert "The draw has been published" in cincinnati
-    assert "Open the official draw" in cincinnati
+    assert "Open the published draw" in cincinnati
     assert "Open place 1" not in cincinnati
     assert "The draw has not been published" not in cincinnati
-    assert "pre-draw qualifying estimates are closed" in cincinnati
+    assert "Luca Van Assche" in cincinnati
+    assert "pre-draw qualifying estimates are closed" not in cincinnati
 
 
 def test_completed_event_leaves_homepage_and_enters_archive(tmp_path):

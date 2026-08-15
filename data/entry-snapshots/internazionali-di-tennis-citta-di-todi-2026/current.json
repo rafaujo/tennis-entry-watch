@@ -1,0 +1,765 @@
+{
+  "tournament": {
+    "tournament_id": "internazionali-di-tennis-citta-di-todi-2026",
+    "name": "Internazionali di Tennis Città di Todi",
+    "year": 2026,
+    "start_date": "2026-08-10",
+    "end_date": "2026-08-16",
+    "category": "Challenger 75",
+    "surface": "Clay",
+    "location": {
+      "city": "Todi",
+      "country": "Italy Clay –"
+    },
+    "main_draw_size": 32,
+    "qualifying_draw_size": 24,
+    "main_draw_qualifier_slots": 6,
+    "main_draw_wildcard_slots": 3,
+    "draw_published": true,
+    "draw_url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+    "qualifying_list_published": false,
+    "entry_list_date": null,
+    "entry_ranking_date": null,
+    "status": "upcoming"
+  },
+  "snapshot_at": "2026-08-15T11:45:15.288662Z",
+  "entries": [
+    {
+      "player": {
+        "player_id": "stefano-travaglia",
+        "name": "Stefano Travaglia",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 145,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "nicolas-kicker",
+        "name": "Nicolás Kicker",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 352,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "facundo-mena",
+        "name": "Facundo Mena",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 339,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "thomas-faurel",
+        "name": "Thomas Faurel",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 342,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "oriol-roca-batalla",
+        "name": "Oriol Roca Batalla",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 338,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "francesco-passaro",
+        "name": "Francesco Passaro",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 203,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "nikita-mashtakov",
+        "name": "Nikita Mashtakov",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 646,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "carlo-alberto-caniato",
+        "name": "Carlo Alberto Caniato",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 466,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marco-cecchinato",
+        "name": "Marco Cecchinato",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 164,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "nick-hardt",
+        "name": "Nick Hardt",
+        "nationality": "DOM",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 279,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "francesco-forti",
+        "name": "Francesco Forti",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 357,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "michele-mecarelli",
+        "name": "Michele Mecarelli",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 889,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "filippo-romano",
+        "name": "Filippo Romano",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 308,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "juan-bautista-torres",
+        "name": "Juan Bautista Torres",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 252,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "massimo-giunta",
+        "name": "Massimo Giunta",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 412,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "enrico-dalla-valle",
+        "name": "Enrico Dalla Valle",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 326,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "nikolas-sanchez-izquierdo",
+        "name": "Nikolás Sánchez Izquierdo",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 216,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "gabriele-piraino",
+        "name": "Gabriele Piraino",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "SE",
+      "entry_rank": null,
+      "current_rank": 358,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "maxim-mrva",
+        "name": "Maxim Mrva",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 271,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "pierluigi-basile",
+        "name": "Pierluigi Basile",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 622,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "murkel-dellien",
+        "name": "Murkel Dellien",
+        "nationality": "BOL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 364,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "federico-agustin-gomez",
+        "name": "Federico Agustin Gomez",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 168,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "daniel-elahi-galan",
+        "name": "Daniel Elahi Galán",
+        "nationality": "COL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 328,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "juan-cruz-martin-manzano",
+        "name": "Juan Cruz Martin Manzano",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "LL",
+      "entry_rank": null,
+      "current_rank": 433,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "alex-barrena",
+        "name": "Alex Barrena",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 229,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "georgii-kravchenko",
+        "name": "Georgii Kravchenko",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 380,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "luciano-emanuel-ambrogi",
+        "name": "Luciano Emanuel Ambrogi",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 317,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "duje-ajdukovic",
+        "name": "Duje Ajduković",
+        "nationality": "CRO",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 316,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "daniel-michalski",
+        "name": "Daniel Michalski",
+        "nationality": "POL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 320,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "lukas-neumayer",
+        "name": "Lukas Neumayer",
+        "nationality": "AUT",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 187,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "lorenzo-carboni",
+        "name": "Lorenzo Carboni",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 469,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "alexander-weis",
+        "name": "Alexander Weis",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 612,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    }
+  ],
+  "qualifying_entries": []
+}

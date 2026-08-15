@@ -1,0 +1,35 @@
+{
+  "events": [
+    {
+      "tournament_id": "cincinnati-open-2026",
+      "format": "protennislive_pdf",
+      "main_url": "https://www.protennislive.com/posting/2026/422/mds.pdf",
+      "qualifying_url": "https://www.protennislive.com/posting/2026/422/qs.pdf",
+      "minimum_main_players": 80
+    },
+    {
+      "tournament_id": "hamburg-ladies-gents-cup-2026",
+      "format": "wikipedia_draw",
+      "main_url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+      "minimum_main_players": 24
+    },
+    {
+      "tournament_id": "indiana-hardcourt-championships-2026",
+      "format": "wikipedia_draw",
+      "main_url": "https://en.wikipedia.org/wiki/2026_Indiana_Hardcourt_Championships_%E2%80%93_Singles",
+      "minimum_main_players": 24
+    },
+    {
+      "tournament_id": "internazionali-di-tennis-citta-di-todi-2026",
+      "format": "wikipedia_draw",
+      "main_url": "https://en.wikipedia.org/wiki/2026_Internazionali_di_Tennis_Citt%C3%A0_di_Todi_%E2%80%93_Singles",
+      "minimum_main_players": 24
+    },
+    {
+      "tournament_id": "president-s-cup-2026",
+      "format": "wikipedia_draw",
+      "main_url": "https://en.wikipedia.org/wiki/2026_President%27s_Cup_%E2%80%93_Men%27s_singles",
+      "minimum_main_players": 24
+    }
+  ]
+}

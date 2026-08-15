@@ -115,7 +115,7 @@ def _nav(
 def _entry_row(entry) -> str:
     return (
         '<tr>'
-        f'<td class="num">{_rank(entry.projected_seed)}</td>'
+        f'<td class="num">{_rank(entry.seed or entry.projected_seed)}</td>'
         f'<td class="player">{html.escape(entry.player.name)}</td>'
         f'<td>{html.escape(entry.player.nationality or "—")}</td>'
         f'<td class="num">{_rank(entry.current_rank)}</td>'
@@ -159,8 +159,8 @@ def build_page(
             entry.projected_seed = projected_seed
     main_entries.sort(
         key=lambda entry: (
-            entry.projected_seed is None,
-            entry.projected_seed or entry.current_rank or entry.entry_rank or 9999,
+            (entry.seed or entry.projected_seed) is None,
+            entry.seed or entry.projected_seed or entry.current_rank or entry.entry_rank or 9999,
             entry.player.name,
         )
     )
@@ -374,6 +374,7 @@ def build_page(
         '</li>'
         for source in unique_sources.values()
     )
+    source_urls = {source.url for source in unique_sources.values()}
     if live_schedules:
         sources += '<li><a href="https://live-tennis.eu/en/atp-live-ranking">Tracked secondary · live ranking</a></li>'
         sources += '<li><a href="https://live-tennis.eu/en/atp-schedule">Tracked secondary · player schedules</a></li>'
@@ -382,9 +383,14 @@ def build_page(
             '<li><a href="https://www.atptour.com/-/media/files/rulebook/2026/2026-rulebook_14jan26.pdf">'
             'ATP official · 2026 draw composition</a></li>'
         )
-    if t.draw_url:
+    if t.draw_url and t.draw_url not in source_urls:
+        draw_source_label = (
+            "ATP official · published draw"
+            if "atptour.com" in t.draw_url or "protennislive.com" in t.draw_url
+            else "Published draw"
+        )
         sources += (
-            f'<li><a href="{html.escape(t.draw_url, quote=True)}">ATP official · published draw</a></li>'
+            f'<li><a href="{html.escape(t.draw_url, quote=True)}">{draw_source_label}</a></li>'
         )
     cutoff_text = f"#{cutoff.entry_rank} · {html.escape(cutoff.player.name)}" if cutoff else "Not known"
     if t.status == TournamentStatus.COMPLETE:
@@ -406,7 +412,7 @@ def build_page(
         live_updated = f'<br>Live ranking<br><strong>{html.escape(timestamp)} UTC</strong>'
     if t.draw_published:
         draw_link = (
-            f' <a href="{html.escape(t.draw_url, quote=True)}">Open the official draw.</a>'
+            f' <a href="{html.escape(t.draw_url, quote=True)}">Open the published draw.</a>'
             if t.draw_url
             else ""
         )
@@ -678,23 +684,31 @@ def build_site(
     catalog_path: Path = Path("data/tournaments/catalog.json"),
     as_of: date | None = None,
     pwa_assets_path: Path = Path("assets/pwa"),
+    snapshot_root: Path = Path("data/entry-snapshots"),
 ) -> list[Path]:
     reference_date = as_of or date.today()
-    entry_lists = discover_entry_lists(data_root)
-    if not entry_lists:
-        raise ValueError(f"no current entry lists found under {data_root}")
+    verified_entry_lists = discover_entry_lists(data_root)
     live_snapshot = load_live_snapshot(ranking_path) if ranking_path.exists() else {}
     catalog = (
         TournamentCatalog.model_validate_json(catalog_path.read_text(encoding="utf-8-sig"))
         if catalog_path.exists()
         else None
     )
-    known_ids = {item.tournament.tournament_id for item in entry_lists}
-    entry_lists.extend(
-        item
-        for item in entry_lists_from_live_snapshot(live_snapshot, catalog, reference_date)
-        if item.tournament.tournament_id not in known_ids
+    live_entry_lists = entry_lists_from_live_snapshot(live_snapshot, catalog, reference_date)
+    retained_entry_lists = discover_entry_lists(snapshot_root) if snapshot_root.exists() else []
+    # Priority: manually verified lists, then retained/published snapshots, then the
+    # current schedule. An empty schedule refresh can therefore never erase a list.
+    entry_by_id = {item.tournament.tournament_id: item for item in live_entry_lists}
+    entry_by_id.update({item.tournament.tournament_id: item for item in retained_entry_lists})
+    entry_by_id.update({item.tournament.tournament_id: item for item in verified_entry_lists})
+    entry_lists = sorted(
+        entry_by_id.values(),
+        key=lambda item: (item.tournament.start_date, item.tournament.name),
     )
+    if not entry_lists:
+        raise ValueError(
+            f"no current entry lists found under {data_root} or {snapshot_root}"
+        )
     schedule_event_scope = set()
     if catalog:
         included_ids = {item.tournament.tournament_id for item in entry_lists}
@@ -784,6 +798,11 @@ def main() -> None:
     )
     parser.add_argument("--as-of", type=date.fromisoformat)
     parser.add_argument("--pwa-assets", type=Path, default=Path("assets/pwa"))
+    parser.add_argument(
+        "--snapshot-root",
+        type=Path,
+        default=Path("data/entry-snapshots"),
+    )
     args = parser.parse_args()
     for path in build_site(
         args.data_root,
@@ -792,6 +811,7 @@ def main() -> None:
         args.catalog_path,
         args.as_of,
         args.pwa_assets,
+        args.snapshot_root,
     ):
         print(path)
 

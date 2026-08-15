@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: refresh-tracked-data
@@ -29,6 +28,10 @@ jobs:
         run: python -m tennis_entry_watch.collectors.live_tennis_cli
       - name: Collect tournament catalog
         run: python -m tennis_entry_watch.collectors.tournament_catalog_cli
+      - name: Retain last non-empty entry lists
+        run: python -m tennis_entry_watch.collectors.entry_snapshot_cli
+      - name: Backfill published draws
+        run: python -m tennis_entry_watch.collectors.published_draw_cli
       - name: Validate and rebuild
         run: |
           pytest
@@ -37,33 +40,24 @@ jobs:
         id: changes
         shell: bash
         run: |
-          if git diff --quiet; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-      - name: Update automation branch
+      - name: Publish validated refresh to main
         if: steps.changes.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REFRESH_BRANCH: automation/refresh-tennis-data
         shell: bash
         run: |
           git config user.name "tennis-entry-watch[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -B "$REFRESH_BRANCH"
-          git add data/rankings/atp-live-current.json data/tournaments/catalog.json site
+          git add data/rankings/atp-live-current.json data/tournaments/catalog.json data/entry-snapshots site
           git commit -m "Atualiza ranking, schedules e torneios"
-          git push --force origin "$REFRESH_BRANCH"
-
-          if gh pr view "$REFRESH_BRANCH" --json url --jq .url >/dev/null 2>&1; then
-            gh pr edit "$REFRESH_BRANCH" \
-              --title "Atualização automática de dados e torneios" \
-              --body "Atualização supervisionada gerada pelo workflow agendado. Ranking, schedules e catálogo móvel foram coletados, validados e usados para reconstruir o site. Revise as mudanças antes do merge."
-          else
-            gh pr create \
-              --base main \
-              --head "$REFRESH_BRANCH" \
-              --title "Atualização automática de dados e torneios" \
-              --body "Atualização supervisionada gerada pelo workflow agendado. Ranking, schedules e catálogo móvel foram coletados, validados e usados para reconstruir o site. Revise as mudanças antes do merge."
-          fi
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          exit 1

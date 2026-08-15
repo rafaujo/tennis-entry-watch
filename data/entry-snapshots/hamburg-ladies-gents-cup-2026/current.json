@@ -1,0 +1,765 @@
+{
+  "tournament": {
+    "tournament_id": "hamburg-ladies-gents-cup-2026",
+    "name": "Hamburg Ladies & Gents Cup",
+    "year": 2026,
+    "start_date": "2026-08-10",
+    "end_date": "2026-08-16",
+    "category": "Challenger 75",
+    "surface": "Clay",
+    "location": {
+      "city": "Hamburg",
+      "country": "Germany Clay –"
+    },
+    "main_draw_size": 32,
+    "qualifying_draw_size": 24,
+    "main_draw_qualifier_slots": 6,
+    "main_draw_wildcard_slots": 3,
+    "draw_published": true,
+    "draw_url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+    "qualifying_list_published": false,
+    "entry_list_date": null,
+    "entry_ranking_date": null,
+    "status": "upcoming"
+  },
+  "snapshot_at": "2026-08-15T11:45:15.288662Z",
+  "entries": [
+    {
+      "player": {
+        "player_id": "zsombor-piros",
+        "name": "Zsombor Piros",
+        "nationality": "HUN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 117,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "max-schonhaus",
+        "name": "Max Schönhaus",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 314,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matheus-pucinelli-de-almeida",
+        "name": "Matheus Pucinelli De Almeida",
+        "nationality": "BRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 253,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "florian-broska",
+        "name": "Florian Broska",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 289,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "oleksii-krutykh",
+        "name": "Oleksii Krutykh",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 503,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dylan-dietrich",
+        "name": "Dylan Dietrich",
+        "nationality": "SUI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 403,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tseng-chun-hsin",
+        "name": "Tseng Chun-hsin",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "vitaliy-sachko",
+        "name": "Vitaliy Sachko",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 185,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ergi-krkn",
+        "name": "Ergi Kırkın",
+        "nationality": "TUR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 656,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jan-kumstat",
+        "name": "Jan Kumstát",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 313,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andrej-nedic",
+        "name": "Andrej Nedić",
+        "nationality": "BIH",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 247,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "olle-wallin",
+        "name": "Olle Wallin",
+        "nationality": "SWE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 405,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "carlos-taberner",
+        "name": "Carlos Taberner",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 398,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jamie-mackenzie",
+        "name": "Jamie Mackenzie",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 602,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "max-houkes",
+        "name": "Max Houkes",
+        "nationality": "NED",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 232,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sumit-nagal",
+        "name": "Sumit Nagal",
+        "nationality": "IND",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 235,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "diego-dedura",
+        "name": "Diego Dedura",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 186,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "max-hans-rehberg",
+        "name": "Max Hans Rehberg",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "PR",
+      "entry_rank": null,
+      "current_rank": 322,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "fryderyk-lechno-wasiutynski",
+        "name": "Fryderyk Lechno-Wasiutyński",
+        "nationality": "POL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 607,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "saba-purtseladze",
+        "name": "Saba Purtseladze",
+        "nationality": "GEO",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "LL",
+      "entry_rank": null,
+      "current_rank": 570,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "denis-yevseyev",
+        "name": "Denis Yevseyev",
+        "nationality": "KAZ",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 436,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matej-dodig",
+        "name": "Matej Dodig",
+        "nationality": "CRO",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 245,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "rudolf-molleker",
+        "name": "Rudolf Molleker",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 477,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "elmer-mller",
+        "name": "Elmer Møller",
+        "nationality": "DEN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 169,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "raul-brancaccio",
+        "name": "Raúl Brancaccio",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 220,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marvin-moller",
+        "name": "Marvin Möller",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 299,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "filip-jianu",
+        "name": "Filip Jianu",
+        "nationality": "ROU",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 285,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "cezar-cretu",
+        "name": "Cezar Crețu",
+        "nationality": "ROU",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 291,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mika-petkovic",
+        "name": "Mika Petković",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 424,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "niels-mcdonald",
+        "name": "Niels McDonald",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 483,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "eduardo-ribeiro",
+        "name": "Eduardo Ribeiro",
+        "nationality": "BRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 359,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "max-alcala-gurri",
+        "name": "Max Alcalá Gurri",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 175,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
+        "retrieved_at": "2026-08-15T11:45:15.288662Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    }
+  ],
+  "qualifying_entries": []
+}

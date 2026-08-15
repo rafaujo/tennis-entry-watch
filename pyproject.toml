@@ -10,6 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
   "beautifulsoup4>=4.12,<5",
+  "pypdf>=5,<6",
   "pydantic>=2.7,<3",
   "requests>=2.32,<3",
 ]
@@ -21,6 +22,8 @@ dev = ["pytest>=8,<9"]
 tennis-entry-watch-build = "tennis_entry_watch.site.build:main"
 tennis-entry-watch-collect-live-tennis = "tennis_entry_watch.collectors.live_tennis_cli:main"
 tennis-entry-watch-collect-tournament-catalog = "tennis_entry_watch.collectors.tournament_catalog_cli:main"
+tennis-entry-watch-refresh-entry-snapshots = "tennis_entry_watch.collectors.entry_snapshot_cli:main"
+tennis-entry-watch-collect-published-draws = "tennis_entry_watch.collectors.published_draw_cli:main"
 tennis-entry-watch-collect-winston-salem = "tennis_entry_watch.collectors.winston_salem_cli:main"
 
 [tool.hatch.build.targets.wheel]
