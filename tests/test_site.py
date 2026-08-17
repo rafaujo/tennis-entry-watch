@@ -52,7 +52,7 @@ def test_us_open_page_shows_alternate_queue_and_promotion():
 
 
 def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
-    written = build_site(Path("data/entries"), tmp_path)
+    written = build_site(Path("data/entries"), tmp_path, as_of=date(2026, 8, 15))
     assert tmp_path / "index.html" in written
     index = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "Grand Slams &amp; ATP Tour" in index

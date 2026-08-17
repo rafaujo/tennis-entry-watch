@@ -25,6 +25,7 @@ tennis-entry-watch-collect-tournament-catalog = "tennis_entry_watch.collectors.t
 tennis-entry-watch-refresh-entry-snapshots = "tennis_entry_watch.collectors.entry_snapshot_cli:main"
 tennis-entry-watch-collect-published-draws = "tennis_entry_watch.collectors.published_draw_cli:main"
 tennis-entry-watch-collect-winston-salem = "tennis_entry_watch.collectors.winston_salem_cli:main"
+tennis-entry-watch-quality = "tennis_entry_watch.quality:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/tennis_entry_watch"]

@@ -32,6 +32,8 @@ jobs:
         run: python -m tennis_entry_watch.collectors.entry_snapshot_cli
       - name: Backfill published draws
         run: python -m tennis_entry_watch.collectors.published_draw_cli
+      - name: Validate real data quality
+        run: python -m tennis_entry_watch.quality
       - name: Validate and rebuild
         run: |
           pytest
