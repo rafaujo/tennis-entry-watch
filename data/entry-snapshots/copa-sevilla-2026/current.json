@@ -1,15 +1,15 @@
 {
   "tournament": {
-    "tournament_id": "porto-1-challenger-2026",
-    "name": "CT PORTO CUP",
+    "tournament_id": "copa-sevilla-2026",
+    "name": "Copa Sevilla",
     "year": 2026,
-    "start_date": "2026-08-31",
-    "end_date": "2026-09-06",
-    "category": "Challenger 75",
+    "start_date": "2026-09-07",
+    "end_date": "2026-09-13",
+    "category": "Challenger 125",
     "surface": "Clay",
     "location": {
-      "city": "Porto",
-      "country": "Portugal Clay –"
+      "city": "Seville",
+      "country": "Spain Clay –"
     },
     "main_draw_size": 32,
     "qualifying_draw_size": 24,
@@ -24,6 +24,52 @@
   },
   "snapshot_at": "2026-08-18T16:49:25.186097Z",
   "entries": [
+    {
+      "player": {
+        "player_id": "facundo-diaz-acosta",
+        "name": "Facundo Díaz Acosta",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 81,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-18T16:49:25.186097Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marco-trungelliti",
+        "name": "Marco Trungelliti",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 82,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-18T16:49:25.186097Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
     {
       "player": {
         "player_id": "vilius-gaubas",
@@ -49,15 +95,15 @@
     },
     {
       "player": {
-        "player_id": "gustavo-heide",
-        "name": "Gustavo Heide",
-        "nationality": "BRA",
+        "player_id": "henrique-rocha",
+        "name": "Henrique Rocha",
+        "nationality": "POR",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 128,
+      "current_rank": 120,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -72,15 +118,15 @@
     },
     {
       "player": {
-        "player_id": "hugo-dellien",
-        "name": "Hugo Dellien",
-        "nationality": "BOL",
+        "player_id": "sebastian-ofner",
+        "name": "Sebastian Ofner",
+        "nationality": "AUT",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 138,
+      "current_rank": 125,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -95,15 +141,15 @@
     },
     {
       "player": {
-        "player_id": "tomas-barrios-vera",
-        "name": "Tomás Barrios Vera",
-        "nationality": "CHI",
+        "player_id": "pablo-llamas-ruiz",
+        "name": "Pablo Llamas Ruiz",
+        "nationality": "ESP",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 142,
+      "current_rank": 126,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -118,61 +164,15 @@
     },
     {
       "player": {
-        "player_id": "tom-gentzsch",
-        "name": "Tom Gentzsch",
-        "nationality": "GER",
+        "player_id": "dusan-lajovic",
+        "name": "Dušan Lajović",
+        "nationality": "SRB",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 143,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-18T16:49:25.186097Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "marco-cecchinato",
-        "name": "Marco Cecchinato",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 165,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-18T16:49:25.186097Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "zdenek-kolar",
-        "name": "Zdeněk Kolář",
-        "nationality": "CZE",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 173,
+      "current_rank": 166,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -210,15 +210,84 @@
     },
     {
       "player": {
-        "player_id": "lorenzo-giustino",
-        "name": "Lorenzo Giustino",
-        "nationality": "ITA",
+        "player_id": "gonzalo-bueno",
+        "name": "Gonzalo Bueno",
+        "nationality": "PER",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 203,
+      "current_rank": 176,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-18T16:49:25.186097Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "david-jorda-sanchis",
+        "name": "David Jordá Sanchis",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 189,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-18T16:49:25.186097Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "roberto-carballes-baena",
+        "name": "Roberto Carballés Baena",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 207,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-18T16:49:25.186097Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "pol-martin-tiffon",
+        "name": "Pol Martín Tiffon",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 208,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -242,6 +311,29 @@
       "status": "DA",
       "entry_rank": null,
       "current_rank": 210,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-18T16:49:25.186097Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "felix-gill",
+        "name": "Felix Gill",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 211,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -325,38 +417,15 @@
     },
     {
       "player": {
-        "player_id": "alex-barrena",
-        "name": "Alex Barrena",
-        "nationality": "ARG",
+        "player_id": "raul-brancaccio",
+        "name": "Raúl Brancaccio",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 230,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-18T16:49:25.186097Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "alejandro-moro-canas",
-        "name": "Alejandro Moro Cañas",
-        "nationality": "ESP",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 232,
+      "current_rank": 221,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -417,130 +486,15 @@
     },
     {
       "player": {
-        "player_id": "abdullah-shelbayh",
-        "name": "Abdullah Shelbayh",
-        "nationality": "JOR",
+        "player_id": "petr-brunclik",
+        "name": "Petr Brunclík",
+        "nationality": "CZE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 253,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-18T16:49:25.186097Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "thiago-monteiro",
-        "name": "Thiago Monteiro",
-        "nationality": "BRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 273,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-18T16:49:25.186097Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "nick-hardt",
-        "name": "Nick Hardt",
-        "nationality": "DOM",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 277,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-18T16:49:25.186097Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "max-hans-rehberg",
-        "name": "Max Hans Rehberg",
-        "nationality": "GER",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 320,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-18T16:49:25.186097Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "mika-petkovic",
-        "name": "Mika Petković",
-        "nationality": "GER",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 426,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-18T16:49:25.186097Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "niels-mcdonald",
-        "name": "Niels McDonald",
-        "nationality": "GER",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 489,
+      "current_rank": 356,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
