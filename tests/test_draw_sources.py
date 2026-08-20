@@ -24,5 +24,6 @@ def test_current_atp_draws_are_monitored_from_official_pdfs() -> None:
         "main_url": "https://www.protennislive.com/posting/2026/560/mds.pdf",
         "qualifying_url": "https://www.protennislive.com/posting/2026/560/qs.pdf",
         "minimum_main_players": 112,
+        "wildcard_url": "https://www.usopen.org/en_US/news/articles/2026-08-18/gael_monfils_alexei_popyrin_lead_2026_us_open_mens_wild_cards.html",
+        "minimum_main_wildcards": 6,
     }
-
