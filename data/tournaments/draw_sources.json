@@ -8,6 +8,20 @@
       "minimum_main_players": 80
     },
     {
+      "tournament_id": "winston-salem-open-2026",
+      "format": "protennislive_pdf",
+      "main_url": "https://www.protennislive.com/posting/2026/6242/mds.pdf",
+      "qualifying_url": "https://www.protennislive.com/posting/2026/6242/qs.pdf",
+      "minimum_main_players": 32
+    },
+    {
+      "tournament_id": "us-open-2026",
+      "format": "protennislive_pdf",
+      "main_url": "https://www.protennislive.com/posting/2026/560/mds.pdf",
+      "qualifying_url": "https://www.protennislive.com/posting/2026/560/qs.pdf",
+      "minimum_main_players": 112
+    },
+    {
       "tournament_id": "hamburg-ladies-gents-cup-2026",
       "format": "wikipedia_draw",
       "main_url": "https://en.wikipedia.org/wiki/2026_Hamburg_Ladies_%26_Gents_Cup_%E2%80%93_Men%27s_singles",
@@ -33,3 +47,4 @@
     }
   ]
 }
+
