@@ -62,6 +62,7 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     assert "Week of 31 Aug 2026" in index
     assert "Week of 07 Sep 2026" in index
     assert "MONITORING · LIST NOT FOUND" in index
+    assert "Wild cards" in index
     assert "Week of 14 Sep 2026" in index
     assert "Week of 21 Sep 2026" not in index
     tour_start = index.index("Grand Slams &amp; ATP Tour")
@@ -106,6 +107,7 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     assert "Open place 1" not in cincinnati
     assert "The draw has not been published" not in cincinnati
     assert "Luca Van Assche" in cincinnati
+    assert cincinnati.count('status-wc" title="Wild card">WC') == 5
     assert "pre-draw qualifying estimates are closed" not in cincinnati
 
 

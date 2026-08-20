@@ -214,6 +214,36 @@ def _source(url: str, source_type: SourceType, retrieved_at: datetime, collector
     return Source(url=url, retrieved_at=retrieved_at, source_type=source_type, collector=collector)
 
 
+def parse_official_main_draw_wildcards(page_html: str) -> list[str]:
+    """Extract announced main-draw wild cards from an official news article."""
+    soup = BeautifulSoup(page_html, "html.parser")
+    headings = soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "p"])
+    for heading in headings:
+        heading_text = heading.get_text(" ", strip=True)
+        if not re.search(r"\bmain draw wild cards?\b", heading_text, re.I):
+            continue
+        names: list[str] = []
+        for element in heading.find_all_next(
+            ["h1", "h2", "h3", "h4", "h5", "h6", "p", "li"]
+        ):
+            if element.name != "li":
+                if names and re.search(
+                    r"\b(?:main draw|qualifying tournament)?\s*wild cards?\b",
+                    element.get_text(" ", strip=True),
+                    re.I,
+                ):
+                    break
+                continue
+            candidate = element.get_text(" ", strip=True).split(",", 1)[0].strip()
+            if not candidate or re.search(r"\bto be announced\b", candidate, re.I):
+                continue
+            if candidate not in names:
+                names.append(candidate)
+        if names:
+            return names
+    return []
+
+
 def _entry(
     resolver: PlayerResolver,
     name: str,
@@ -229,6 +259,41 @@ def _entry(
         current_rank=rank,
         seed=seed,
         source=source,
+    )
+
+
+def apply_main_draw_wildcards(
+    entry_list: EntryList,
+    wildcards: list[Entry],
+    snapshot_at: datetime,
+) -> EntryList:
+    """Overlay an official wild-card announcement on the latest entry snapshot."""
+    entries = list(entry_list.entries)
+    positions = {entry.player.player_id: index for index, entry in enumerate(entries)}
+    for wildcard in wildcards:
+        index = positions.get(wildcard.player.player_id)
+        if index is None:
+            positions[wildcard.player.player_id] = len(entries)
+            entries.append(wildcard)
+            continue
+        existing = entries[index]
+        if existing.status == EntryStatus.OUT:
+            continue
+        previous_status = (
+            existing.status
+            if existing.status == EntryStatus.ALT
+            else existing.previous_status
+        )
+        entries[index] = existing.model_copy(
+            update={
+                "status": EntryStatus.WC,
+                "alternate_position": None,
+                "previous_status": previous_status,
+                "source": wildcard.source,
+            }
+        )
+    return entry_list.model_copy(
+        update={"snapshot_at": snapshot_at, "entries": entries}
     )
 
 
@@ -429,5 +494,44 @@ def collect_configured_draws(
                 updated += 1
         except Exception as exc:
             warnings.append(f"{tournament_id}: {exc}")
-    return updated, warnings
 
+    for item in config.get("events", []):
+        wildcard_url = item.get("wildcard_url")
+        if not wildcard_url:
+            continue
+        tournament_id = item["tournament_id"]
+        try:
+            response = client.get(
+                wildcard_url,
+                headers={"User-Agent": USER_AGENT},
+                timeout=45,
+            )
+            response.raise_for_status()
+            names = parse_official_main_draw_wildcards(response.text)
+            minimum = item.get("minimum_main_wildcards", 1)
+            if len(names) < minimum:
+                raise ValueError(
+                    f"only {len(names)} announced main-draw wild cards parsed"
+                )
+            existing_path = snapshot_path(output_root, tournament_id)
+            if not existing_path.exists():
+                raise ValueError("no entry snapshot available for wild-card overlay")
+            existing = EntryList.model_validate_json(
+                existing_path.read_text(encoding="utf-8-sig")
+            )
+            source = _source(
+                wildcard_url,
+                SourceType.TOURNAMENT_OFFICIAL,
+                retrieved_at,
+                "official_wildcard_announcement",
+            )
+            wildcards = [
+                _entry(resolver, name, EntryStatus.WC, source)
+                for name in names
+            ]
+            overlaid = apply_main_draw_wildcards(existing, wildcards, retrieved_at)
+            if write_entry_snapshot(overlaid, output_root):
+                updated += 1
+        except Exception as exc:
+            warnings.append(f"{tournament_id} wild cards: {exc}")
+    return updated, warnings
