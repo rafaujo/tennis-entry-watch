@@ -141,3 +141,63 @@ def test_wildcard_overlay_runs_before_the_draw_is_published(
     assert "fixture-open-2026: 404" in warnings
     assert not any("wild cards:" in warning for warning in warnings)
     assert result.entries[0].status == EntryStatus.WC
+
+
+def test_configured_wildcards_are_used_when_official_page_is_unavailable(
+    tmp_path, synthetic_catalog, synthetic_live_snapshot
+):
+    wildcard_url = "https://example.test/unavailable-wildcards"
+    config_path = tmp_path / "draw-sources.json"
+    config_path.write_text(
+        json.dumps(
+            {
+                "events": [
+                    {
+                        "tournament_id": "fixture-open-2026",
+                        "format": "protennislive_pdf",
+                        "main_url": "https://example.test/not-published.pdf",
+                        "minimum_main_players": 16,
+                        "wildcard_url": wildcard_url,
+                        "minimum_main_wildcards": 1,
+                        "main_wildcards": ["Main Player One"],
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    entry_list = entry_lists_from_live_snapshot(
+        synthetic_live_snapshot,
+        synthetic_catalog,
+        as_of=synthetic_catalog.tracking_started_at,
+    )[0]
+    output_root = tmp_path / "snapshots"
+    write_entry_snapshot(entry_list, output_root)
+
+    class Response:
+        def __init__(self, status_code=404):
+            self.text = ""
+            self.content = b""
+            self.status_code = status_code
+
+        def raise_for_status(self):
+            raise requests.HTTPError(str(self.status_code))
+
+    class Session:
+        def get(self, _url, **_kwargs):
+            return Response()
+
+    updated, warnings = collect_configured_draws(
+        config_path,
+        synthetic_catalog,
+        synthetic_live_snapshot,
+        output_root,
+        session=Session(),
+    )
+
+    result = EntryList.model_validate_json(
+        snapshot_path(output_root, "fixture-open-2026").read_text(encoding="utf-8")
+    )
+    assert updated == 1
+    assert any("configured fallback used" in warning for warning in warnings)
+    assert result.entries[0].status == EntryStatus.WC
