@@ -500,6 +500,10 @@ def collect_configured_draws(
         if not wildcard_url:
             continue
         tournament_id = item["tournament_id"]
+        minimum = item.get("minimum_main_wildcards", 1)
+        fallback_names = item.get("main_wildcards", [])
+        names: list[str] = []
+        page_error: Exception | None = None
         try:
             response = client.get(
                 wildcard_url,
@@ -508,11 +512,23 @@ def collect_configured_draws(
             )
             response.raise_for_status()
             names = parse_official_main_draw_wildcards(response.text)
-            minimum = item.get("minimum_main_wildcards", 1)
             if len(names) < minimum:
                 raise ValueError(
                     f"only {len(names)} announced main-draw wild cards parsed"
                 )
+        except Exception as exc:
+            page_error = exc
+
+        if page_error is not None:
+            if len(fallback_names) < minimum:
+                warnings.append(f"{tournament_id} wild cards: {page_error}")
+                continue
+            names = fallback_names
+            warnings.append(
+                f"{tournament_id} wild cards: configured fallback used ({page_error})"
+            )
+
+        try:
             existing_path = snapshot_path(output_root, tournament_id)
             if not existing_path.exists():
                 raise ValueError("no entry snapshot available for wild-card overlay")
