@@ -1,9 +1,14 @@
 from pathlib import Path
 
-from datetime import date
+from datetime import date, datetime, timezone
 
 from tennis_entry_watch.collectors.live_tennis_snapshot import load_live_snapshot
-from tennis_entry_watch.site.build import build_page, build_site
+from tennis_entry_watch.models import EntryList, EntryStatus, Source, SourceType
+from tennis_entry_watch.site.build import (
+    build_page,
+    build_site,
+    overlay_official_wildcards,
+)
 
 
 def test_page_contains_tournament_entries_and_disclaimer(current):
@@ -29,6 +34,42 @@ def test_real_pre_draw_page_shows_confirmed_and_pending_places():
     assert "No verified alternate list is available" in page
     assert "The draw has not been published" in page
     assert "22 Aug–29 Aug 2026" in page
+
+
+def test_official_wildcards_overlay_a_manually_verified_list():
+    source = Path("data/entries/us-open-2026/current.json")
+    verified = EntryList.model_validate_json(source.read_text(encoding="utf-8"))
+    target = next(
+        entry for entry in verified.entries if entry.player.name == "Michael Zheng"
+    )
+    official_source = Source(
+        url="https://example.test/official-wildcards",
+        retrieved_at=datetime(2026, 8, 20, 23, tzinfo=timezone.utc),
+        source_type=SourceType.TOURNAMENT_OFFICIAL,
+        collector="official_wildcard_announcement",
+    )
+    retained = verified.model_copy(
+        update={
+            "snapshot_at": official_source.retrieved_at,
+            "entries": [
+                entry.model_copy(
+                    update={"status": EntryStatus.WC, "source": official_source}
+                )
+                if entry.player.player_id == target.player.player_id
+                else entry
+                for entry in verified.entries
+            ],
+        }
+    )
+
+    result = overlay_official_wildcards(verified, retained)
+    overlaid = next(
+        entry for entry in result.entries if entry.player.player_id == target.player.player_id
+    )
+    assert overlaid.status == EntryStatus.WC
+    assert overlaid.previous_status == EntryStatus.ALT
+    assert overlaid.alternate_position is None
+    assert overlaid.source.source_type == SourceType.TOURNAMENT_OFFICIAL
 
 
 def test_us_open_page_shows_alternate_queue_and_promotion():
