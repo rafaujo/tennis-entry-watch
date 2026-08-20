@@ -36,6 +36,47 @@ STATUS_LABELS = {
     EntryStatus.OUT: "Withdrawn",
 }
 
+
+def overlay_official_wildcards(
+    base: EntryList,
+    retained: EntryList,
+) -> EntryList:
+    """Apply official WC statuses without replacing a manually verified list."""
+    entries = list(base.entries)
+    positions = {entry.player.player_id: index for index, entry in enumerate(entries)}
+    for wildcard in retained.entries:
+        if (
+            wildcard.status != EntryStatus.WC
+            or wildcard.source.source_type != SourceType.TOURNAMENT_OFFICIAL
+        ):
+            continue
+        index = positions.get(wildcard.player.player_id)
+        if index is None:
+            positions[wildcard.player.player_id] = len(entries)
+            entries.append(wildcard)
+            continue
+        existing = entries[index]
+        if existing.status == EntryStatus.OUT:
+            continue
+        entries[index] = existing.model_copy(
+            update={
+                "status": EntryStatus.WC,
+                "alternate_position": None,
+                "previous_status": (
+                    existing.status
+                    if existing.status == EntryStatus.ALT
+                    else existing.previous_status
+                ),
+                "source": wildcard.source,
+            }
+        )
+    return base.model_copy(
+        update={
+            "snapshot_at": max(base.snapshot_at, retained.snapshot_at),
+            "entries": entries,
+        }
+    )
+
 SOURCE_LABELS = {
     SourceType.ATP_OFFICIAL: "ATP official",
     SourceType.TOURNAMENT_OFFICIAL: "Tournament official",
@@ -700,9 +741,22 @@ def build_site(
     retained_entry_lists = discover_entry_lists(snapshot_root) if snapshot_root.exists() else []
     # Priority: manually verified lists, then retained/published snapshots, then the
     # current schedule. An empty schedule refresh can therefore never erase a list.
+    retained_by_id = {
+        item.tournament.tournament_id: item for item in retained_entry_lists
+    }
+    verified_by_id = {
+        item.tournament.tournament_id: item for item in verified_entry_lists
+    }
     entry_by_id = {item.tournament.tournament_id: item for item in live_entry_lists}
-    entry_by_id.update({item.tournament.tournament_id: item for item in retained_entry_lists})
-    entry_by_id.update({item.tournament.tournament_id: item for item in verified_entry_lists})
+    entry_by_id.update(retained_by_id)
+    entry_by_id.update(verified_by_id)
+    for tournament_id, verified in verified_by_id.items():
+        retained = retained_by_id.get(tournament_id)
+        if retained is not None:
+            entry_by_id[tournament_id] = overlay_official_wildcards(
+                verified,
+                retained,
+            )
     entry_lists = sorted(
         entry_by_id.values(),
         key=lambda item: (item.tournament.start_date, item.tournament.name),
