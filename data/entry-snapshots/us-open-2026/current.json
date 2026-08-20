@@ -22,7 +22,7 @@
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-08-20T23:47:36.961924Z",
+  "snapshot_at": "2026-08-20T23:52:23.677944Z",
   "entries": [
     {
       "player": {
@@ -2263,7 +2263,7 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
       "current_rank": 106,
       "alternate_position": null,
@@ -2272,10 +2272,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-20T23:47:36.961924Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.usopen.org/en_US/news/articles/2026-08-18/gael_monfils_alexei_popyrin_lead_2026_us_open_mens_wild_cards.html",
+        "retrieved_at": "2026-08-20T23:52:23.677944Z",
+        "source_type": "tournament_official",
+        "collector": "official_wildcard_announcement"
       }
     },
     {
@@ -2447,7 +2447,7 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
       "current_rank": 247,
       "alternate_position": null,
@@ -2456,10 +2456,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-20T23:47:36.961924Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.usopen.org/en_US/news/articles/2026-08-18/gael_monfils_alexei_popyrin_lead_2026_us_open_mens_wild_cards.html",
+        "retrieved_at": "2026-08-20T23:52:23.677944Z",
+        "source_type": "tournament_official",
+        "collector": "official_wildcard_announcement"
       }
     },
     {
@@ -2470,7 +2470,7 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
       "current_rank": 306,
       "alternate_position": null,
@@ -2479,10 +2479,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-20T23:47:36.961924Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.usopen.org/en_US/news/articles/2026-08-18/gael_monfils_alexei_popyrin_lead_2026_us_open_mens_wild_cards.html",
+        "retrieved_at": "2026-08-20T23:52:23.677944Z",
+        "source_type": "tournament_official",
+        "collector": "official_wildcard_announcement"
       }
     },
     {
@@ -2493,7 +2493,7 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
       "current_rank": 386,
       "alternate_position": null,
@@ -2502,10 +2502,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-20T23:47:36.961924Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.usopen.org/en_US/news/articles/2026-08-18/gael_monfils_alexei_popyrin_lead_2026_us_open_mens_wild_cards.html",
+        "retrieved_at": "2026-08-20T23:52:23.677944Z",
+        "source_type": "tournament_official",
+        "collector": "official_wildcard_announcement"
       }
     },
     {
@@ -2562,7 +2562,7 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
       "current_rank": 760,
       "alternate_position": null,
@@ -2571,10 +2571,33 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-20T23:47:36.961924Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.usopen.org/en_US/news/articles/2026-08-18/gael_monfils_alexei_popyrin_lead_2026_us_open_mens_wild_cards.html",
+        "retrieved_at": "2026-08-20T23:52:23.677944Z",
+        "source_type": "tournament_official",
+        "collector": "official_wildcard_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dane-sweeny",
+        "name": "Dane Sweeny",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 122,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/news/articles/2026-08-18/gael_monfils_alexei_popyrin_lead_2026_us_open_mens_wild_cards.html",
+        "retrieved_at": "2026-08-20T23:52:23.677944Z",
+        "source_type": "tournament_official",
+        "collector": "official_wildcard_announcement"
       }
     }
   ],
