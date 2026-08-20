@@ -2,7 +2,7 @@ import io
 import json
 import re
 import unicodedata
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -23,6 +23,36 @@ from tennis_entry_watch.normalize.players import stable_player_id
 
 
 USER_AGENT = "TennisEntryWatch/0.1 (+https://github.com/rafaujo/tennis-entry-watch)"
+ATP_TOUR_CALENDAR_URL = "https://www.atptour.com/en/tournaments/"
+ATP_DRAW_URL = "https://www.protennislive.com/posting/{year}/{atp_id}/{draw}.pdf"
+ATP_DRAW_LOOKAHEAD_DAYS = 56
+ATP_OVERVIEW_PATTERN = re.compile(
+    r"/en/tournaments/(?P<slug>[^/?#]+)/(?P<atp_id>\d+)/overview",
+    re.I,
+)
+MONTH_PATTERN = (
+    r"January|February|March|April|May|June|July|August|September|October|November|December"
+)
+OFFICIAL_DATE_PATTERNS = (
+    re.compile(
+        rf"\b(?P<day>\d{{1,2}})\s+(?P<month>{MONTH_PATTERN})\s*-\s*"
+        rf"\d{{1,2}}\s+(?:{MONTH_PATTERN})\s*,?\s*(?P<year>\d{{4}})\b"
+    ),
+    re.compile(
+        rf"\b(?P<day>\d{{1,2}})\s*-\s*\d{{1,2}}\s+"
+        rf"(?P<month>{MONTH_PATTERN})\s*,?\s*(?P<year>\d{{4}})\b"
+    ),
+)
+MONTH_NUMBER = {
+    month: number
+    for number, month in enumerate(
+        (
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December",
+        ),
+        1,
+    )
+}
 DRAW_STATUS = {
     "Q": EntryStatus.Q,
     "WC": EntryStatus.WC,
@@ -36,6 +66,115 @@ DRAW_STATUS = {
 def _fold(value: str) -> str:
     value = unicodedata.normalize("NFKD", value)
     return re.sub(r"[^a-z0-9]+", " ", value.encode("ascii", "ignore").decode().lower()).strip()
+
+
+def _official_start_date(text: str) -> date | None:
+    for pattern in OFFICIAL_DATE_PATTERNS:
+        match = pattern.search(text)
+        if match:
+            return date(
+                int(match.group("year")),
+                MONTH_NUMBER[match.group("month")],
+                int(match.group("day")),
+            )
+    return None
+
+
+def parse_atp_tournament_links(page_html: str) -> list[dict]:
+    """Extract official tournament IDs and dates from the ATP calendar page."""
+    soup = BeautifulSoup(page_html, "html.parser")
+    by_atp_id: dict[str, dict] = {}
+    for link in soup.select('a[href*="/en/tournaments/"]'):
+        href = link.get("href", "")
+        match = ATP_OVERVIEW_PATTERN.search(href)
+        if not match:
+            continue
+        text = " ".join(link.stripped_strings)
+        start_date = _official_start_date(text)
+        if not text or start_date is None:
+            continue
+        atp_id = match.group("atp_id")
+        candidate = {
+            "atp_id": atp_id,
+            "slug": match.group("slug"),
+            "text": text,
+            "start_date": start_date,
+        }
+        if atp_id not in by_atp_id or len(text) > len(by_atp_id[atp_id]["text"]):
+            by_atp_id[atp_id] = candidate
+    return list(by_atp_id.values())
+
+
+def _official_match_score(event, official: dict) -> int:
+    tournament = event.tournament
+    if abs((tournament.start_date - official["start_date"]).days) > 3:
+        return 0
+    text = _fold(official["text"])
+    slug = _fold(official["slug"])
+    name = _fold(tournament.name)
+    city = _fold(tournament.location.city)
+    aliases = {_fold(alias) for alias in event.schedule_aliases if _fold(alias)}
+    score = 0
+    if name and (name in text or name == slug):
+        score = max(score, 100 + len(name))
+    if city and (city in text or city == slug):
+        score = max(score, 80 + len(city))
+    for alias in aliases:
+        if alias in text or alias == slug:
+            score = max(score, 60 + len(alias))
+    return score
+
+
+def discover_atp_draw_sources(
+    page_html: str,
+    catalog: TournamentCatalog,
+    today: date | None = None,
+    lookahead_days: int = ATP_DRAW_LOOKAHEAD_DAYS,
+) -> list[dict]:
+    """Build ProTennisLive PDF sources for current and upcoming ATP events."""
+    official_events = parse_atp_tournament_links(page_html)
+    current_day = today or date.today()
+    latest_start = current_day + timedelta(days=lookahead_days)
+    used_atp_ids: set[str] = set()
+    results: list[dict] = []
+    for event in catalog.events:
+        tournament = event.tournament
+        if not (
+            tournament.category == "Grand Slam"
+            or re.fullmatch(r"ATP (?:250|500|1000)", tournament.category)
+        ):
+            continue
+        if tournament.end_date and tournament.end_date < current_day:
+            continue
+        if tournament.start_date > latest_start:
+            continue
+        candidates = sorted(
+            (
+                (_official_match_score(event, official), official)
+                for official in official_events
+                if official["atp_id"] not in used_atp_ids
+            ),
+            key=lambda item: item[0],
+            reverse=True,
+        )
+        if not candidates or candidates[0][0] == 0:
+            continue
+        official = candidates[0][1]
+        used_atp_ids.add(official["atp_id"])
+        base = {
+            "year": tournament.year,
+            "atp_id": official["atp_id"],
+        }
+        results.append(
+            {
+                "tournament_id": tournament.tournament_id,
+                "format": "protennislive_pdf",
+                "main_url": ATP_DRAW_URL.format(draw="mds", **base),
+                "qualifying_url": ATP_DRAW_URL.format(draw="qs", **base),
+                "minimum_main_players": max(16, tournament.main_draw_size - 16),
+            }
+        )
+    return results
 
 
 class PlayerResolver:
@@ -229,7 +368,25 @@ def collect_configured_draws(
     client = session or requests.Session()
     updated = 0
     warnings: list[str] = []
-    for item in config.get("events", []):
+    discovered: list[dict] = []
+    try:
+        calendar_response = client.get(
+            ATP_TOUR_CALENDAR_URL,
+            headers={"User-Agent": USER_AGENT},
+            timeout=45,
+        )
+        calendar_response.raise_for_status()
+        discovered = discover_atp_draw_sources(calendar_response.text, catalog)
+        if not discovered:
+            raise ValueError("no current or upcoming tournament IDs found")
+    except Exception as exc:
+        warnings.append(f"ATP draw-source discovery: {exc}")
+
+    items_by_tournament = {item["tournament_id"]: item for item in discovered}
+    items_by_tournament.update(
+        {item["tournament_id"]: item for item in config.get("events", [])}
+    )
+    for item in items_by_tournament.values():
         tournament_id = item["tournament_id"]
         tournament = events.get(tournament_id)
         if tournament is None:
@@ -273,3 +430,4 @@ def collect_configured_draws(
         except Exception as exc:
             warnings.append(f"{tournament_id}: {exc}")
     return updated, warnings
+
