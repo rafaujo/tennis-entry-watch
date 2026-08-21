@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-08-15T11:43:24.434703Z",
+  "retrieved_at": "2026-08-21T22:42:09.844057Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -7882,6 +7882,37 @@
     },
     {
       "tournament": {
+        "tournament_id": "wuning-challenger-iii-2026",
+        "name": "Wuning Challenger III",
+        "year": 2026,
+        "start_date": "2026-10-05",
+        "end_date": "2026-10-11",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Wuning",
+          "country": "China Hard –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Wuning",
+        "Wuning Challenger III"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
         "tournament_id": "catania-challenger-2026",
         "name": "Catania Challenger",
         "year": 2026,
@@ -9426,6 +9457,37 @@
       "schedule_aliases": [
         "Temuco",
         "Challenger Temuco"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
+        "tournament_id": "crete-challenger-v-2026",
+        "name": "Crete Challenger V",
+        "year": 2026,
+        "start_date": "2026-11-30",
+        "end_date": "2026-12-06",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Hersonissos",
+          "country": "Greece Hard –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Hersonissos",
+        "Crete Challenger V"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
