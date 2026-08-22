@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-08-21T22:42:09.844057Z",
+  "retrieved_at": "2026-08-22T22:39:27.251194Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -7388,8 +7388,8 @@
     },
     {
       "tournament": {
-        "tournament_id": "san-diego-challenger-2026",
-        "name": "San Diego Challenger",
+        "tournament_id": "serving-the-future-open-2026",
+        "name": "Serving the Future Open",
         "year": 2026,
         "start_date": "2026-09-21",
         "end_date": "2026-09-27",
@@ -7412,7 +7412,7 @@
       },
       "schedule_aliases": [
         "San Diego",
-        "San Diego Challenger"
+        "Serving the Future Open"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
@@ -9463,6 +9463,37 @@
     },
     {
       "tournament": {
+        "tournament_id": "chisinau-indoors-2026",
+        "name": "Chișinău Indoors",
+        "year": 2026,
+        "start_date": "2026-11-30",
+        "end_date": "2026-12-06",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Chișinău",
+          "country": "Moldova Hard (i) –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Chișinău",
+        "Chișinău Indoors"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
         "tournament_id": "crete-challenger-v-2026",
         "name": "Crete Challenger V",
         "year": 2026,
@@ -9488,37 +9519,6 @@
       "schedule_aliases": [
         "Hersonissos",
         "Crete Challenger V"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary"
-    },
-    {
-      "tournament": {
-        "tournament_id": "moldova-open-ii-2026",
-        "name": "Moldova Open II",
-        "year": 2026,
-        "start_date": "2026-11-30",
-        "end_date": "2026-12-06",
-        "category": "Challenger 50",
-        "surface": "Hard",
-        "location": {
-          "city": "Chișinău",
-          "country": "Moldova Hard (i) –"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Chișinău",
-        "Moldova Open II"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
