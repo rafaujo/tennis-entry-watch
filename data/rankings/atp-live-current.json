@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-08-22T22:39:23.303655Z",
+  "retrieved_at": "2026-08-23T10:42:06.847974Z",
   "ranking_source": "https://live-tennis.eu/en/atp-live-ranking",
   "schedule_source": "https://live-tennis.eu/en/atp-schedule",
   "rankings": [
@@ -70,45 +70,45 @@
       "rank": 11
     },
     {
+      "name": "Frances Tiafoe",
+      "nation": "USA",
+      "points": 2680,
+      "rank": 12
+    },
+    {
       "name": "Rafael Jódar",
       "nation": "ESP",
       "points": 2671,
-      "rank": 12
+      "rank": 13
     },
     {
       "name": "Lorenzo Musetti",
       "nation": "ITA",
       "points": 2605,
-      "rank": 13
+      "rank": 14
     },
     {
       "name": "Learner Tien",
       "nation": "USA",
       "points": 2565,
-      "rank": 14
+      "rank": 15
     },
     {
       "name": "Alexander Bublik",
       "nation": "KAZ",
       "points": 2525,
-      "rank": 15
+      "rank": 16
     },
     {
       "name": "Brandon Nakashima",
       "nation": "USA",
       "points": 2485,
-      "rank": 16
+      "rank": 17
     },
     {
       "name": "Jakub Menšík",
       "nation": "CZE",
       "points": 2445,
-      "rank": 17
-    },
-    {
-      "name": "Frances Tiafoe",
-      "nation": "USA",
-      "points": 2430,
       "rank": 18
     },
     {
@@ -292,45 +292,45 @@
       "rank": 48
     },
     {
+      "name": "Sebastián Báez",
+      "nation": "ARG",
+      "points": 1044,
+      "rank": 49
+    },
+    {
       "name": "Juan Manuel Cerúndolo",
       "nation": "ARG",
       "points": 1040,
-      "rank": 49
+      "rank": 50
     },
     {
       "name": "Quentin Halys",
       "nation": "FRA",
       "points": 1030,
-      "rank": 50
+      "rank": 51
     },
     {
-      "name": "Sebastián Báez",
-      "nation": "ARG",
-      "points": 1015,
-      "rank": 51
+      "name": "Hubert Hurkacz",
+      "nation": "POL",
+      "points": 1009,
+      "rank": 52
     },
     {
       "name": "Stefanos Tsitsipas",
       "nation": "GRE",
       "points": 1000,
-      "rank": 52
+      "rank": 53
     },
     {
       "name": "Yannick Hanfmann",
       "nation": "GER",
       "points": 991,
-      "rank": 53
+      "rank": 54
     },
     {
       "name": "Jaume Munar",
       "nation": "ESP",
       "points": 990,
-      "rank": 54
-    },
-    {
-      "name": "Hubert Hurkacz",
-      "nation": "POL",
-      "points": 980,
       "rank": 55
     },
     {
@@ -442,33 +442,33 @@
       "rank": 73
     },
     {
+      "name": "Valentin Royer",
+      "nation": "FRA",
+      "points": 793,
+      "rank": 74
+    },
+    {
       "name": "Jan Choinski",
       "nation": "GBR",
       "points": 773,
-      "rank": 74
+      "rank": 75
     },
     {
       "name": "Camilo Ugo Carabelli",
       "nation": "ARG",
       "points": 770,
-      "rank": 75
+      "rank": 76
     },
     {
       "name": "Marcos Giron",
       "nation": "USA",
       "points": 765,
-      "rank": 76
+      "rank": 77
     },
     {
       "name": "Hamad Medjedović",
       "nation": "SRB",
       "points": 764,
-      "rank": 77
-    },
-    {
-      "name": "Valentin Royer",
-      "nation": "FRA",
-      "points": 762,
       "rank": 78
     },
     {
@@ -6084,57 +6084,9 @@
       ]
     },
     {
-      "name": "Rafael Jódar",
-      "nation": "ESP",
-      "rank": 11,
-      "events": [
-        "US Open"
-      ]
-    },
-    {
-      "name": "Lorenzo Musetti",
-      "nation": "ITA",
-      "rank": 12,
-      "events": [
-        "US Open"
-      ]
-    },
-    {
-      "name": "Learner Tien",
-      "nation": "USA",
-      "rank": 13,
-      "events": [
-        "US Open"
-      ]
-    },
-    {
       "name": "Arthur Fils",
       "nation": "FRA",
-      "rank": 14,
-      "events": [
-        "US Open"
-      ]
-    },
-    {
-      "name": "Alexander Bublik",
-      "nation": "KAZ",
-      "rank": 15,
-      "events": [
-        "US Open"
-      ]
-    },
-    {
-      "name": "Brandon Nakashima",
-      "nation": "USA",
-      "rank": 16,
-      "events": [
-        "US Open"
-      ]
-    },
-    {
-      "name": "Jakub Menšík",
-      "nation": "CZE",
-      "rank": 17,
+      "rank": 11,
       "events": [
         "US Open"
       ]
@@ -6142,6 +6094,54 @@
     {
       "name": "Frances Tiafoe",
       "nation": "USA",
+      "rank": 12,
+      "events": [
+        "US Open"
+      ]
+    },
+    {
+      "name": "Rafael Jódar",
+      "nation": "ESP",
+      "rank": 13,
+      "events": [
+        "US Open"
+      ]
+    },
+    {
+      "name": "Lorenzo Musetti",
+      "nation": "ITA",
+      "rank": 14,
+      "events": [
+        "US Open"
+      ]
+    },
+    {
+      "name": "Learner Tien",
+      "nation": "USA",
+      "rank": 15,
+      "events": [
+        "US Open"
+      ]
+    },
+    {
+      "name": "Alexander Bublik",
+      "nation": "KAZ",
+      "rank": 16,
+      "events": [
+        "US Open"
+      ]
+    },
+    {
+      "name": "Brandon Nakashima",
+      "nation": "USA",
+      "rank": 17,
+      "events": [
+        "US Open"
+      ]
+    },
+    {
+      "name": "Jakub Menšík",
+      "nation": "CZE",
       "rank": 18,
       "events": [
         "US Open"
@@ -6351,9 +6351,18 @@
       ]
     },
     {
+      "name": "Luca Van Assche",
+      "nation": "FRA",
+      "rank": 44,
+      "events": [
+        "Winston Salem",
+        "US Open"
+      ]
+    },
+    {
       "name": "Alex Michelsen",
       "nation": "USA",
-      "rank": 44,
+      "rank": 45,
       "events": [
         "US Open"
       ]
@@ -6361,7 +6370,7 @@
     {
       "name": "Denis Shapovalov",
       "nation": "CAN",
-      "rank": 45,
+      "rank": 46,
       "events": [
         "US Open"
       ]
@@ -6369,7 +6378,7 @@
     {
       "name": "Mariano Navone",
       "nation": "ARG",
-      "rank": 46,
+      "rank": 47,
       "events": [
         "Winston Salem",
         "US Open"
@@ -6378,22 +6387,13 @@
     {
       "name": "Karen Khachanov",
       "nation": "RUS",
-      "rank": 47,
-      "events": [
-        "US Open"
-      ]
-    },
-    {
-      "name": "Luca Van Assche",
-      "nation": "FRA",
       "rank": 48,
       "events": [
-        "Winston Salem",
         "US Open"
       ]
     },
     {
-      "name": "Juan Manuel Cerúndolo",
+      "name": "Sebastián Báez",
       "nation": "ARG",
       "rank": 49,
       "events": [
@@ -6402,8 +6402,8 @@
       ]
     },
     {
-      "name": "Quentin Halys",
-      "nation": "FRA",
+      "name": "Juan Manuel Cerúndolo",
+      "nation": "ARG",
       "rank": 50,
       "events": [
         "Winston Salem",
@@ -6411,8 +6411,8 @@
       ]
     },
     {
-      "name": "Sebastián Báez",
-      "nation": "ARG",
+      "name": "Quentin Halys",
+      "nation": "FRA",
       "rank": 51,
       "events": [
         "Winston Salem",
@@ -6420,9 +6420,17 @@
       ]
     },
     {
+      "name": "Hubert Hurkacz",
+      "nation": "POL",
+      "rank": 52,
+      "events": [
+        "US Open"
+      ]
+    },
+    {
       "name": "Stefanos Tsitsipas",
       "nation": "GRE",
-      "rank": 52,
+      "rank": 53,
       "events": [
         "US Open"
       ]
@@ -6430,7 +6438,7 @@
     {
       "name": "Yannick Hanfmann",
       "nation": "GER",
-      "rank": 53,
+      "rank": 54,
       "events": [
         "US Open"
       ]
@@ -6438,14 +6446,6 @@
     {
       "name": "Jaume Munar",
       "nation": "ESP",
-      "rank": 54,
-      "events": [
-        "US Open"
-      ]
-    },
-    {
-      "name": "Hubert Hurkacz",
-      "nation": "POL",
       "rank": 55,
       "events": [
         "US Open"
@@ -6605,9 +6605,18 @@
       ]
     },
     {
+      "name": "Valentin Royer",
+      "nation": "FRA",
+      "rank": 74,
+      "events": [
+        "Winston Salem",
+        "US Open"
+      ]
+    },
+    {
       "name": "Jan Choinski",
       "nation": "GBR",
-      "rank": 74,
+      "rank": 75,
       "events": [
         "Winston Salem",
         "US Open",
@@ -6617,7 +6626,7 @@
     {
       "name": "Camilo Ugo Carabelli",
       "nation": "ARG",
-      "rank": 75,
+      "rank": 76,
       "events": [
         "Winston Salem",
         "US Open"
@@ -6626,7 +6635,7 @@
     {
       "name": "Marcos Giron",
       "nation": "USA",
-      "rank": 76,
+      "rank": 77,
       "events": [
         "Winston Salem",
         "US Open"
@@ -6635,17 +6644,8 @@
     {
       "name": "Hamad Medjedović",
       "nation": "SRB",
-      "rank": 77,
-      "events": [
-        "US Open"
-      ]
-    },
-    {
-      "name": "Valentin Royer",
-      "nation": "FRA",
       "rank": 78,
       "events": [
-        "Winston Salem",
         "US Open"
       ]
     },
@@ -6972,6 +6972,7 @@
       "rank": 116,
       "events": [
         "Qual. US Open",
+        "US Open",
         "Shanghai"
       ]
     },
@@ -7143,9 +7144,19 @@
       ]
     },
     {
+      "name": "Stefanos Sakellaridis",
+      "nation": "GRE",
+      "rank": 136,
+      "events": [
+        "Qual. US Open",
+        "Como",
+        "Genoa 1"
+      ]
+    },
+    {
       "name": "Grigor Dimitrov",
       "nation": "BUL",
-      "rank": 136,
+      "rank": 137,
       "events": [
         "Qual. US Open"
       ]
@@ -7153,7 +7164,7 @@
     {
       "name": "Alexandre Müller",
       "nation": "FRA",
-      "rank": 137,
+      "rank": 138,
       "events": [
         "Qual. US Open",
         "Manacor"
@@ -7162,7 +7173,7 @@
     {
       "name": "Lloyd Harris",
       "nation": "RSA",
-      "rank": 138,
+      "rank": 139,
       "events": [
         "Qual. US Open",
         "Shanghai"
@@ -7171,7 +7182,7 @@
     {
       "name": "Hugo Dellien",
       "nation": "BOL",
-      "rank": 139,
+      "rank": 140,
       "events": [
         "Qual. US Open",
         "Porto 1",
@@ -7181,18 +7192,8 @@
     {
       "name": "Jack Draper",
       "nation": "GBR",
-      "rank": 140,
-      "events": []
-    },
-    {
-      "name": "Stefanos Sakellaridis",
-      "nation": "GRE",
       "rank": 141,
-      "events": [
-        "Qual. US Open",
-        "Como",
-        "Genoa 1"
-      ]
+      "events": []
     },
     {
       "name": "Arthur Cazaux",
@@ -7597,9 +7598,18 @@
       ]
     },
     {
+      "name": "Jan Kumstát",
+      "nation": "CZE",
+      "rank": 186,
+      "events": [
+        "Como",
+        "Genoa 1"
+      ]
+    },
+    {
       "name": "Andrea Guerrieri",
       "nation": "ITA",
-      "rank": 186,
+      "rank": 187,
       "events": [
         "Qual. US Open"
       ]
@@ -7607,7 +7617,7 @@
     {
       "name": "Vitaliy Sachko",
       "nation": "UKR",
-      "rank": 187,
+      "rank": 188,
       "events": [
         "Qual. US Open",
         "Tulln"
@@ -7616,7 +7626,7 @@
     {
       "name": "Lautaro Midon",
       "nation": "ARG",
-      "rank": 188,
+      "rank": 189,
       "events": [
         "Qual. US Open",
         "Como",
@@ -7626,7 +7636,7 @@
     {
       "name": "Diego Dedura",
       "nation": "GER",
-      "rank": 189,
+      "rank": 190,
       "events": [
         "Qual. US Open",
         "Manacor"
@@ -7635,7 +7645,7 @@
     {
       "name": "Lukas Neumayer",
       "nation": "AUT",
-      "rank": 190,
+      "rank": 191,
       "events": [
         "Qual. US Open",
         "Como",
@@ -7645,7 +7655,7 @@
     {
       "name": "David Jordá Sanchis",
       "nation": "ESP",
-      "rank": 191,
+      "rank": 192,
       "events": [
         "Qual. US Open",
         "Manacor",
@@ -7655,7 +7665,7 @@
     {
       "name": "Keegan Smith",
       "nation": "USA",
-      "rank": 192,
+      "rank": 193,
       "events": [
         "Qual. US Open",
         "Shanghai"
@@ -7664,7 +7674,7 @@
     {
       "name": "Gianluca Cadenasso",
       "nation": "ITA",
-      "rank": 193,
+      "rank": 194,
       "events": [
         "Genoa 1"
       ]
@@ -7672,7 +7682,7 @@
     {
       "name": "Edas Butvilas",
       "nation": "LTU",
-      "rank": 194,
+      "rank": 195,
       "events": [
         "Qual. Manacor",
         "Istanbul 3"
@@ -7681,7 +7691,7 @@
     {
       "name": "Harry Wendelken",
       "nation": "GBR",
-      "rank": 195,
+      "rank": 196,
       "events": [
         "Qual. US Open"
       ]
@@ -7689,7 +7699,7 @@
     {
       "name": "Liam Broady",
       "nation": "GBR",
-      "rank": 196,
+      "rank": 197,
       "events": [
         "Qual. US Open",
         "Pozzuoli"
@@ -7698,7 +7708,7 @@
     {
       "name": "Thiago Seyboth Wild",
       "nation": "BRA",
-      "rank": 197,
+      "rank": 198,
       "events": [
         "Qual. US Open",
         "Como",
@@ -7708,7 +7718,7 @@
     {
       "name": "Ugo Blanchet",
       "nation": "FRA",
-      "rank": 198,
+      "rank": 199,
       "events": [
         "Qual. US Open",
         "Cassis"
@@ -7717,7 +7727,7 @@
     {
       "name": "Moïse Kouamé",
       "nation": "FRA",
-      "rank": 199,
+      "rank": 200,
       "events": [
         "Qual. US Open",
         "Phan Thiet 3"
@@ -7726,7 +7736,7 @@
     {
       "name": "Lorenzo Giustino",
       "nation": "ITA",
-      "rank": 200,
+      "rank": 201,
       "events": [
         "Qual. US Open",
         "Porto 1",
@@ -7736,13 +7746,13 @@
     {
       "name": "Yoshihito Nishioka",
       "nation": "JPN",
-      "rank": 201,
+      "rank": 202,
       "events": []
     },
     {
       "name": "Luka Pavlovic",
       "nation": "FRA",
-      "rank": 202,
+      "rank": 203,
       "events": [
         "Qual. US Open"
       ]
@@ -7750,7 +7760,7 @@
     {
       "name": "Elias Ymer",
       "nation": "SWE",
-      "rank": 203,
+      "rank": 204,
       "events": [
         "Qual. US Open",
         "Zhangjiagang",
@@ -7760,7 +7770,7 @@
     {
       "name": "Timofey Skatov",
       "nation": "KAZ",
-      "rank": 204,
+      "rank": 205,
       "events": [
         "Qual. US Open",
         "Istanbul 3"
@@ -7769,18 +7779,9 @@
     {
       "name": "Laslo Djere",
       "nation": "SRB",
-      "rank": 205,
-      "events": [
-        "Qual. US Open",
-        "Genoa 1"
-      ]
-    },
-    {
-      "name": "Jan Kumstát",
-      "nation": "CZE",
       "rank": 206,
       "events": [
-        "Como",
+        "Qual. US Open",
         "Genoa 1"
       ]
     },
@@ -8099,7 +8100,9 @@
       "name": "Darwin Blanch",
       "nation": "USA",
       "rank": 241,
-      "events": []
+      "events": [
+        "US Open"
+      ]
     },
     {
       "name": "James McCabe",
@@ -8330,9 +8333,17 @@
       ]
     },
     {
+      "name": "Dominic Stricker",
+      "nation": "SUI",
+      "rank": 268,
+      "events": [
+        "Augsburg"
+      ]
+    },
+    {
       "name": "Ilia Simakin",
       "nation": "RUS",
-      "rank": 268,
+      "rank": 269,
       "events": [
         "Zhangjiagang",
         "Phan Thiet 3"
@@ -8341,7 +8352,7 @@
     {
       "name": "Kaichi Uchida",
       "nation": "JPN",
-      "rank": 269,
+      "rank": 270,
       "events": [
         "Maanshan 10",
         "Zhangjiagang"
@@ -8350,7 +8361,7 @@
     {
       "name": "Hynek Bartoň",
       "nation": "CZE",
-      "rank": 270,
+      "rank": 271,
       "events": [
         "Augsburg",
         "Tulln"
@@ -8359,13 +8370,13 @@
     {
       "name": "Philip Henning",
       "nation": "RSA",
-      "rank": 271,
+      "rank": 272,
       "events": []
     },
     {
       "name": "Sean Cuenin",
       "nation": "FRA",
-      "rank": 272,
+      "rank": 273,
       "events": [
         "Qual. Porto 1"
       ]
@@ -8373,7 +8384,7 @@
     {
       "name": "Marvin Möller",
       "nation": "GER",
-      "rank": 273,
+      "rank": 274,
       "events": [
         "Augsburg",
         "Meerbusch"
@@ -8382,7 +8393,7 @@
     {
       "name": "Thiago Monteiro",
       "nation": "BRA",
-      "rank": 274,
+      "rank": 275,
       "events": [
         "Porto 1",
         "Tulln"
@@ -8391,7 +8402,7 @@
     {
       "name": "Michele Ribecai",
       "nation": "ITA",
-      "rank": 275,
+      "rank": 276,
       "events": [
         "Roehampton 2",
         "Qual. Manacor",
@@ -8401,7 +8412,7 @@
     {
       "name": "Dan Added",
       "nation": "FRA",
-      "rank": 276,
+      "rank": 277,
       "events": [
         "Qual. US Open",
         "Bagneres De Bigorre",
@@ -8411,7 +8422,7 @@
     {
       "name": "João Lucas Reis Da Silva",
       "nation": "BRA",
-      "rank": 277,
+      "rank": 278,
       "events": [
         "Como",
         "Tulln"
@@ -8420,7 +8431,7 @@
     {
       "name": "Nick Hardt",
       "nation": "DOM",
-      "rank": 278,
+      "rank": 279,
       "events": [
         "Augsburg",
         "Porto 1"
@@ -8429,7 +8440,7 @@
     {
       "name": "Iñaki Montes De La Torre",
       "nation": "ESP",
-      "rank": 279,
+      "rank": 280,
       "events": [
         "Qual. Manacor"
       ]
@@ -8437,7 +8448,7 @@
     {
       "name": "Álvaro Guillén Meza",
       "nation": "ECU",
-      "rank": 280,
+      "rank": 281,
       "events": [
         "Kingston 2",
         "Qual. Como"
@@ -8446,7 +8457,7 @@
     {
       "name": "Alastair Gray",
       "nation": "GBR",
-      "rank": 281,
+      "rank": 282,
       "events": [
         "Roehampton 2"
       ]
@@ -8454,7 +8465,7 @@
     {
       "name": "Juan Manuel La Serna",
       "nation": "ARG",
-      "rank": 282,
+      "rank": 283,
       "events": [
         "Augsburg",
         "Plovdiv 3"
@@ -8463,7 +8474,7 @@
     {
       "name": "Pedro Boscardin Dias",
       "nation": "BRA",
-      "rank": 283,
+      "rank": 284,
       "events": [
         "Qual. Como",
         "Tulln"
@@ -8472,7 +8483,7 @@
     {
       "name": "Franco Agamenone",
       "nation": "ITA",
-      "rank": 284,
+      "rank": 285,
       "events": [
         "Plovdiv 3"
       ]
@@ -8480,7 +8491,7 @@
     {
       "name": "Petr Bar Biryukov",
       "nation": "RUS",
-      "rank": 285,
+      "rank": 286,
       "events": [
         "Maanshan 10",
         "Zhangjiagang"
@@ -8489,7 +8500,7 @@
     {
       "name": "Mattéo Martineau",
       "nation": "FRA",
-      "rank": 286,
+      "rank": 287,
       "events": [
         "Roehampton 2",
         "Qual. Manacor"
@@ -8498,7 +8509,7 @@
     {
       "name": "Pierre Hugues Herbert",
       "nation": "FRA",
-      "rank": 287,
+      "rank": 288,
       "events": [
         "Qual. Winston Salem"
       ]
@@ -8506,7 +8517,7 @@
     {
       "name": "Cezar Crețu",
       "nation": "ROU",
-      "rank": 288,
+      "rank": 289,
       "events": [
         "Augsburg",
         "Istanbul 3"
@@ -8515,13 +8526,13 @@
     {
       "name": "Giles Hussey",
       "nation": "GBR",
-      "rank": 289,
+      "rank": 290,
       "events": []
     },
     {
       "name": "Sergey Fomin",
       "nation": "UZB",
-      "rank": 290,
+      "rank": 291,
       "events": [
         "Maanshan 10",
         "Zhangjiagang"
@@ -8530,7 +8541,7 @@
     {
       "name": "Sandro Kopp",
       "nation": "AUT",
-      "rank": 291,
+      "rank": 292,
       "events": [
         "Augsburg",
         "Tulln"
@@ -8539,7 +8550,7 @@
     {
       "name": "Carl Emil Overbeck",
       "nation": "DEN",
-      "rank": 292,
+      "rank": 293,
       "events": [
         "Qual. Manacor",
         "Istanbul 3"
@@ -8548,7 +8559,7 @@
     {
       "name": "Rodrigo Pacheco Mendez",
       "nation": "MEX",
-      "rank": 293,
+      "rank": 294,
       "events": [
         "Kingston 2",
         "Phan Thiet 3"
@@ -8557,7 +8568,7 @@
     {
       "name": "Stefan Kozlov",
       "nation": "USA",
-      "rank": 294,
+      "rank": 295,
       "events": [
         "Qual. Winston Salem"
       ]
@@ -8565,24 +8576,16 @@
     {
       "name": "Florian Broska",
       "nation": "GER",
-      "rank": 295,
+      "rank": 296,
       "events": []
     },
     {
       "name": "Yu-hsiou Hsu",
       "nation": "TWN",
-      "rank": 296,
+      "rank": 297,
       "events": [
         "Zhangjiagang",
         "Shanghai"
-      ]
-    },
-    {
-      "name": "Dominic Stricker",
-      "nation": "SUI",
-      "rank": 297,
-      "events": [
-        "Augsburg"
       ]
     },
     {
@@ -8838,18 +8841,25 @@
       ]
     },
     {
-      "name": "Anton Matusevich",
+      "name": "Oliver Tarvet",
       "nation": "GBR",
       "rank": 329,
       "events": [
-        "Roehampton 2",
-        "Plaisir"
+        "Roehampton 2"
+      ]
+    },
+    {
+      "name": "Anton Matusevich",
+      "nation": "GBR",
+      "rank": 330,
+      "events": [
+        "Roehampton 2"
       ]
     },
     {
       "name": "Sascha Gueymard Wayenburg",
       "nation": "FRA",
-      "rank": 330,
+      "rank": 331,
       "events": [
         "Qual. Manacor"
       ]
@@ -8857,7 +8867,7 @@
     {
       "name": "Enrico Dalla Valle",
       "nation": "ITA",
-      "rank": 331,
+      "rank": 332,
       "events": [
         "Qual. Como"
       ]
@@ -8865,13 +8875,13 @@
     {
       "name": "Jordan Thompson",
       "nation": "AUS",
-      "rank": 332,
+      "rank": 333,
       "events": []
     },
     {
       "name": "Daniel Elahi Galán",
       "nation": "COL",
-      "rank": 333,
+      "rank": 334,
       "events": [
         "Tulln"
       ]
@@ -8879,19 +8889,19 @@
     {
       "name": "Mikhail Kukushkin",
       "nation": "KAZ",
-      "rank": 334,
+      "rank": 335,
       "events": []
     },
     {
       "name": "Eliakim Coulibaly",
       "nation": "CIV",
-      "rank": 335,
+      "rank": 336,
       "events": []
     },
     {
       "name": "Raphaël Pérot",
       "nation": "FRA",
-      "rank": 336,
+      "rank": 337,
       "events": [
         "Augsburg"
       ]
@@ -8899,7 +8909,7 @@
     {
       "name": "Mathys Erhard",
       "nation": "FRA",
-      "rank": 337,
+      "rank": 338,
       "events": [
         "Qual. Manacor"
       ]
@@ -8907,7 +8917,7 @@
     {
       "name": "Marko Topo",
       "nation": "GER",
-      "rank": 338,
+      "rank": 339,
       "events": [
         "Qual. Augsburg",
         "Plovdiv 3"
@@ -8916,13 +8926,13 @@
     {
       "name": "Dali Blanch",
       "nation": "USA",
-      "rank": 339,
+      "rank": 340,
       "events": []
     },
     {
       "name": "Lucas Poullain",
       "nation": "FRA",
-      "rank": 340,
+      "rank": 341,
       "events": [
         "Bagneres De Bigorre"
       ]
@@ -8930,7 +8940,7 @@
     {
       "name": "Edward Winter",
       "nation": "AUS",
-      "rank": 341,
+      "rank": 342,
       "events": [
         "Kingston 2"
       ]
@@ -8938,7 +8948,7 @@
     {
       "name": "Ognjen Milić",
       "nation": "SRB",
-      "rank": 342,
+      "rank": 343,
       "events": [
         "Plovdiv 3"
       ]
@@ -8946,7 +8956,7 @@
     {
       "name": "Oriol Roca Batalla",
       "nation": "ESP",
-      "rank": 343,
+      "rank": 344,
       "events": [
         "Qual. Porto 1"
       ]
@@ -8954,7 +8964,7 @@
     {
       "name": "Facundo Mena",
       "nation": "ARG",
-      "rank": 344,
+      "rank": 345,
       "events": [
         "Augsburg",
         "Qual. Como"
@@ -8963,13 +8973,13 @@
     {
       "name": "Yasutaka Uchiyama",
       "nation": "JPN",
-      "rank": 345,
+      "rank": 346,
       "events": []
     },
     {
       "name": "Hamish Stewart",
       "nation": "GBR",
-      "rank": 346,
+      "rank": 347,
       "events": [
         "Bagneres De Bigorre"
       ]
@@ -8977,7 +8987,7 @@
     {
       "name": "Thomas Faurel",
       "nation": "FRA",
-      "rank": 347,
+      "rank": 348,
       "events": [
         "Augsburg",
         "Plovdiv 3",
@@ -8987,7 +8997,7 @@
     {
       "name": "Tiago Torres",
       "nation": "POR",
-      "rank": 348,
+      "rank": 349,
       "events": [
         "Qual. Porto 1"
       ]
@@ -8995,7 +9005,7 @@
     {
       "name": "Philip Sekulic",
       "nation": "AUS",
-      "rank": 349,
+      "rank": 350,
       "events": [
         "Urayasu",
         "Phan Thiet 3"
@@ -9004,7 +9014,7 @@
     {
       "name": "Ivan Marrero Curbelo",
       "nation": "ESP",
-      "rank": 350,
+      "rank": 351,
       "events": [
         "Kingston 2",
         "Qual. Manacor"
@@ -9013,7 +9023,7 @@
     {
       "name": "Tiago Pereira",
       "nation": "POR",
-      "rank": 351,
+      "rank": 352,
       "events": [
         "Poznan",
         "Qual. Porto 1"
@@ -9022,7 +9032,7 @@
     {
       "name": "Antoine Ghibaudo",
       "nation": "FRA",
-      "rank": 352,
+      "rank": 353,
       "events": [
         "Bagneres De Bigorre",
         "Plaisir"
@@ -9031,7 +9041,7 @@
     {
       "name": "Mitchell Krueger",
       "nation": "USA",
-      "rank": 353,
+      "rank": 354,
       "events": [
         "Kingston 2"
       ]
@@ -9039,7 +9049,7 @@
     {
       "name": "Juan Estevez",
       "nation": "ARG",
-      "rank": 354,
+      "rank": 355,
       "events": [
         "Augsburg",
         "Plovdiv 3"
@@ -9048,7 +9058,7 @@
     {
       "name": "Geoffrey Blancaneaux",
       "nation": "FRA",
-      "rank": 355,
+      "rank": 356,
       "events": [
         "Rabat 2"
       ]
@@ -9056,7 +9066,7 @@
     {
       "name": "Hernán Casanova",
       "nation": "ARG",
-      "rank": 356,
+      "rank": 357,
       "events": [
         "Plovdiv 3"
       ]
@@ -9064,19 +9074,11 @@
     {
       "name": "Jake Delaney",
       "nation": "AUS",
-      "rank": 357,
+      "rank": 358,
       "events": [
         "Taipei 2",
         "Zhangjiagang",
         "Wuning 8"
-      ]
-    },
-    {
-      "name": "Oliver Tarvet",
-      "nation": "GBR",
-      "rank": 358,
-      "events": [
-        "Roehampton 2"
       ]
     },
     {
@@ -9968,7 +9970,6 @@
       "nation": "BEL",
       "rank": 468,
       "events": [
-        "Allershausen",
         "Casablanca",
         "Rabat 2"
       ]
@@ -10016,7 +10017,7 @@
       "nation": "ITA",
       "rank": 474,
       "events": [
-        "Rabat 2"
+        "Gijon"
       ]
     },
     {
@@ -10836,7 +10837,7 @@
       "events": [
         "Poznan",
         "Qual. Plovdiv 3",
-        "Qual. Budapest"
+        "Budapest"
       ]
     },
     {
@@ -11134,8 +11135,7 @@
       "rank": 609,
       "events": [
         "Poznan",
-        "Qual. Plovdiv 3",
-        "Tsaghkadzor 3"
+        "Qual. Plovdiv 3"
       ]
     },
     {
@@ -11214,7 +11214,7 @@
       "nation": "BUL",
       "rank": 618,
       "events": [
-        "Qual. Plaisir"
+        "Plaisir"
       ]
     },
     {
@@ -11686,9 +11686,7 @@
       "name": "Stefan Horia Haita",
       "nation": "ROU",
       "rank": 676,
-      "events": [
-        "Bucharest 3"
-      ]
+      "events": []
     },
     {
       "name": "Pedro Rodenas",
@@ -11744,8 +11742,7 @@
       "nation": "ITA",
       "rank": 683,
       "events": [
-        "Bologna 2",
-        "Tsaghkadzor 3"
+        "Bologna 2"
       ]
     },
     {
@@ -12001,7 +11998,7 @@
       "events": [
         "Pecs",
         "Haren",
-        "Qual. Tsaghkadzor 3"
+        "Qual. Budapest"
       ]
     },
     {
@@ -12232,7 +12229,8 @@
       "rank": 745,
       "events": [
         "Oviedo",
-        "Madrid"
+        "Madrid",
+        "Qual. Gijon"
       ]
     },
     {
@@ -12253,9 +12251,7 @@
       "name": "Kalin Ivanovski",
       "nation": "MKD",
       "rank": 748,
-      "events": [
-        "Maribor"
-      ]
+      "events": []
     },
     {
       "name": "Vignesh Gogineni",
@@ -12481,8 +12477,7 @@
       "nation": "USA",
       "rank": 777,
       "events": [
-        "Qual. Kingston 2",
-        "Qual. Hurghada 9"
+        "Qual. Kingston 2"
       ]
     },
     {
@@ -12498,7 +12493,6 @@
       "nation": "FRA",
       "rank": 779,
       "events": [
-        "Le Cap d'Agde",
         "Qual. Bagneres De Bigorre",
         "Qual. Sintra"
       ]
@@ -12592,8 +12586,7 @@
       "nation": "AUS",
       "rank": 790,
       "events": [
-        "Qual. Kingston 2",
-        "Qual. Bali 4"
+        "Qual. Kingston 2"
       ]
     },
     {
@@ -12631,7 +12624,7 @@
       "events": [
         "Oviedo",
         "Madrid",
-        "Qual. Sintra"
+        "Qual. Budapest"
       ]
     },
     {
@@ -13075,8 +13068,7 @@
       "nation": "IRL",
       "rank": 852,
       "events": [
-        "Szczawno",
-        "Qual. Plaisir"
+        "Szczawno"
       ]
     },
     {
@@ -13159,8 +13151,7 @@
       "rank": 862,
       "events": [
         "Vienna",
-        "Bologna 2",
-        "Qual. Tsaghkadzor 3"
+        "Bologna 2"
       ]
     },
     {
@@ -13267,7 +13258,7 @@
       "rank": 876,
       "events": [
         "Nonthaburi",
-        "Qual. Nonthaburi 2"
+        "Nonthaburi 2"
       ]
     },
     {
@@ -13323,8 +13314,7 @@
       "nation": "ITA",
       "rank": 882,
       "events": [
-        "Maribor",
-        "Qual. Hurghada 9"
+        "Maribor"
       ]
     },
     {
@@ -13408,7 +13398,8 @@
       "nation": "ITA",
       "rank": 893,
       "events": [
-        "Bologna 2"
+        "Bologna 2",
+        "Qual. Budapest"
       ]
     },
     {
@@ -13480,7 +13471,9 @@
       "name": "Goncalo Marques",
       "nation": "POR",
       "rank": 902,
-      "events": []
+      "events": [
+        "Qual. Sintra"
+      ]
     },
     {
       "name": "Felix Corwin",
@@ -13488,8 +13481,7 @@
       "rank": 903,
       "events": [
         "Urbana 2",
-        "Trelew",
-        "Leme"
+        "Trelew"
       ]
     },
     {
@@ -13614,7 +13606,8 @@
       "nation": "ITA",
       "rank": 919,
       "events": [
-        "Qual. Bologna 2"
+        "Qual. Bologna 2",
+        "Qual. Tsaghkadzor 3"
       ]
     },
     {
@@ -13722,9 +13715,7 @@
       "name": "Mikalai Haliak",
       "nation": "BLR",
       "rank": 934,
-      "events": [
-        "Qual. Wuning 8"
-      ]
+      "events": []
     },
     {
       "name": "Christopher Li",
@@ -13894,7 +13885,7 @@
       "nation": "ITA",
       "rank": 955,
       "events": [
-        "Qual. Monastir 36"
+        "Qual. Rabat 2"
       ]
     },
     {
@@ -14039,7 +14030,7 @@
       "rank": 974,
       "events": [
         "Porto Velho 2",
-        "Qual. Leme"
+        "Leme"
       ]
     },
     {
