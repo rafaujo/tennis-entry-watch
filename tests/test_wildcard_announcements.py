@@ -132,6 +132,7 @@ def test_wildcard_overlay_runs_before_the_draw_is_published(
         synthetic_live_snapshot,
         output_root,
         session=Session(),
+        as_of=synthetic_catalog.tracking_started_at,
     )
 
     result = EntryList.model_validate_json(
@@ -193,6 +194,7 @@ def test_configured_wildcards_are_used_when_official_page_is_unavailable(
         synthetic_live_snapshot,
         output_root,
         session=Session(),
+        as_of=synthetic_catalog.tracking_started_at,
     )
 
     result = EntryList.model_validate_json(

@@ -425,12 +425,14 @@ def collect_configured_draws(
     live_snapshot: dict,
     output_root: Path,
     session: requests.Session | None = None,
+    as_of: date | None = None,
 ) -> tuple[int, list[str]]:
     config = json.loads(config_path.read_text(encoding="utf-8-sig"))
     events = {event.tournament.tournament_id: event.tournament for event in catalog.events}
     resolver = PlayerResolver(live_snapshot)
     retrieved_at = datetime.now(timezone.utc)
     client = session or requests.Session()
+    current_day = as_of or date.today()
     updated = 0
     warnings: list[str] = []
     discovered: list[dict] = []
@@ -441,7 +443,11 @@ def collect_configured_draws(
             timeout=45,
         )
         calendar_response.raise_for_status()
-        discovered = discover_atp_draw_sources(calendar_response.text, catalog)
+        discovered = discover_atp_draw_sources(
+            calendar_response.text,
+            catalog,
+            today=current_day,
+        )
         if not discovered:
             raise ValueError("no current or upcoming tournament IDs found")
     except Exception as exc:
@@ -457,7 +463,7 @@ def collect_configured_draws(
         if tournament is None:
             warnings.append(f"{tournament_id}: not found in catalog")
             continue
-        if tournament.end_date and tournament.end_date < date.today():
+        if tournament.end_date and tournament.end_date < current_day:
             continue
         try:
             if item["format"] == "protennislive_pdf":
