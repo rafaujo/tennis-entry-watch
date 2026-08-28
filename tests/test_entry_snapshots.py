@@ -3,8 +3,14 @@ from datetime import date
 
 from tennis_entry_watch.collectors.entry_snapshots import (
     load_entry_snapshots,
+    merge_published_draw_history,
     retain_live_entry_snapshots,
+    write_entry_snapshot,
 )
+from tennis_entry_watch.collectors.live_tennis_snapshot import (
+    entry_lists_from_live_snapshot,
+)
+from tennis_entry_watch.models import EntryStatus
 
 
 def test_empty_schedule_refresh_retains_last_non_empty_entry_list(
@@ -36,3 +42,91 @@ def test_empty_schedule_refresh_retains_last_non_empty_entry_list(
         entry.player.player_id for entry in before.qualifying_entries
     ]
     assert after.snapshot_at == before.snapshot_at
+
+
+def test_published_challenger_draw_keeps_known_er_and_pr(
+    synthetic_live_snapshot, synthetic_catalog
+):
+    history = entry_lists_from_live_snapshot(
+        synthetic_live_snapshot,
+        synthetic_catalog,
+        synthetic_catalog.tracking_started_at,
+    )[0]
+    protected = history.entries[0].model_copy(
+        update={"status": EntryStatus.PR, "entry_rank": 201}
+    )
+    protected_alternate = history.entries[1].model_copy(
+        update={
+            "status": EntryStatus.ALT,
+            "entry_rank": 202,
+            "alternate_position": 1,
+            "previous_status": EntryStatus.PR,
+        }
+    )
+    history = history.model_copy(
+        update={"entries": [protected, protected_alternate]}
+    )
+    published = history.model_copy(
+        update={
+            "tournament": history.tournament.model_copy(
+                update={"draw_published": True}
+            ),
+            "entries": [
+                entry.model_copy(
+                    update={
+                        "status": EntryStatus.DA,
+                        "entry_rank": None,
+                        "alternate_position": None,
+                        "previous_status": None,
+                    }
+                )
+                for entry in history.entries
+            ],
+        }
+    )
+
+    merged = merge_published_draw_history(published, history)
+    by_name = {entry.player.name: entry for entry in merged.entries}
+
+    assert by_name["Main Player One"].status == EntryStatus.PR
+    assert by_name["Main Player One"].entry_rank == 201
+    assert by_name["Main Player Two"].status == EntryStatus.PR
+    assert by_name["Main Player Two"].entry_rank == 202
+    assert by_name["Main Player Two"].previous_status == EntryStatus.ALT
+
+    repeated = merge_published_draw_history(published, merged)
+    assert len(repeated.entries) == len(merged.entries)
+    assert repeated.entries == merged.entries
+
+
+def test_schedule_refresh_does_not_replace_a_published_draw(
+    tmp_path, synthetic_live_snapshot, synthetic_catalog
+):
+    published = entry_lists_from_live_snapshot(
+        synthetic_live_snapshot,
+        synthetic_catalog,
+        synthetic_catalog.tracking_started_at,
+    )[0]
+    published = published.model_copy(
+        update={
+            "tournament": published.tournament.model_copy(
+                update={"draw_published": True}
+            )
+        }
+    )
+    write_entry_snapshot(published, tmp_path)
+
+    changed_schedule = deepcopy(synthetic_live_snapshot)
+    changed_schedule["retrieved_at"] = "2026-08-19T12:00:00Z"
+    changed_schedule["schedules"] = changed_schedule["schedules"][1:]
+    updated, retained = retain_live_entry_snapshots(
+        changed_schedule,
+        synthetic_catalog,
+        tmp_path,
+        synthetic_catalog.tracking_started_at,
+    )
+    after = load_entry_snapshots(tmp_path)[0]
+
+    assert updated == 0
+    assert retained == 1
+    assert after == published

@@ -10,7 +10,11 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
-from tennis_entry_watch.collectors.entry_snapshots import snapshot_path, write_entry_snapshot
+from tennis_entry_watch.collectors.entry_snapshots import (
+    merge_published_draw_history,
+    snapshot_path,
+    write_entry_snapshot,
+)
 from tennis_entry_watch.models import (
     Entry,
     EntryList,
@@ -810,8 +814,14 @@ def collect_configured_draws(
             if len(main) < item.get("minimum_main_players", 16):
                 raise ValueError(f"only {len(main)} main-draw players parsed")
             existing_path = snapshot_path(output_root, tournament_id)
-            if not qualifying and existing_path.exists():
-                existing = EntryList.model_validate_json(existing_path.read_text(encoding="utf-8-sig"))
+            existing = (
+                EntryList.model_validate_json(
+                    existing_path.read_text(encoding="utf-8-sig")
+                )
+                if existing_path.exists()
+                else None
+            )
+            if not qualifying and existing is not None:
                 qualifying = existing.qualifying_entries
             tournament = tournament.model_copy(
                 update={
@@ -820,15 +830,15 @@ def collect_configured_draws(
                     "qualifying_list_published": bool(qualifying),
                 }
             )
-            if write_entry_snapshot(
-                EntryList(
-                    tournament=tournament,
-                    snapshot_at=retrieved_at,
-                    entries=main,
-                    qualifying_entries=qualifying,
-                ),
-                output_root,
-            ):
+            published = EntryList(
+                tournament=tournament,
+                snapshot_at=retrieved_at,
+                entries=main,
+                qualifying_entries=qualifying,
+            )
+            if existing is not None:
+                published = merge_published_draw_history(published, existing)
+            if write_entry_snapshot(published, output_root):
                 updated += 1
         except Exception as exc:
             warnings.append(f"{tournament_id}: {exc}")

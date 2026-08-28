@@ -3,7 +3,7 @@ from datetime import date
 from pathlib import Path
 
 from tennis_entry_watch.collectors.live_tennis_snapshot import entry_lists_from_live_snapshot
-from tennis_entry_watch.models import EntryList, TournamentCatalog
+from tennis_entry_watch.models import EntryList, EntryStatus, TournamentCatalog
 
 
 def snapshot_path(root: Path, tournament_id: str) -> Path:
@@ -39,6 +39,88 @@ def write_entry_snapshot(entry_list: EntryList, root: Path) -> bool:
     return True
 
 
+def merge_published_draw_history(
+    published: EntryList,
+    history: EntryList,
+) -> EntryList:
+    """Keep known entry metadata and pre-draw history beside an official draw."""
+    entries = list(published.entries)
+    published_positions = {
+        entry.player.player_id: index
+        for index, entry in enumerate(entries)
+        if entry.status not in {EntryStatus.ALT, EntryStatus.OUT}
+    }
+
+    for previous in history.entries:
+        index = published_positions.get(previous.player.player_id)
+        if index is None:
+            continue
+        official = entries[index]
+        updates = {}
+        if official.entry_rank is None and previous.entry_rank is not None:
+            updates["entry_rank"] = previous.entry_rank
+        if previous.status == EntryStatus.PR and official.status == EntryStatus.DA:
+            updates["status"] = EntryStatus.PR
+        elif previous.status == EntryStatus.ALT and official.status != EntryStatus.WC:
+            if previous.previous_status == EntryStatus.PR:
+                updates["status"] = EntryStatus.PR
+            if official.previous_status is None:
+                updates["previous_status"] = EntryStatus.ALT
+        if (
+            previous.previous_status == EntryStatus.ALT
+            and official.status != EntryStatus.WC
+            and official.previous_status is None
+        ):
+            updates["previous_status"] = EntryStatus.ALT
+        if updates:
+            entries[index] = official.model_copy(update=updates)
+
+    official_source = next((entry.source for entry in published.entries), None)
+    accepted_statuses = {EntryStatus.DA, EntryStatus.PR, EntryStatus.SE}
+    historical_acceptances = sum(
+        entry.status in accepted_statuses for entry in history.entries
+    )
+    draw_looks_complete = len(published_positions) >= historical_acceptances
+    entry_ids = {entry.player.player_id for entry in entries}
+    for previous in history.entries:
+        if previous.player.player_id in entry_ids:
+            continue
+        if previous.status in {EntryStatus.ALT, EntryStatus.OUT}:
+            entries.append(previous)
+            entry_ids.add(previous.player.player_id)
+            continue
+        if previous.status in accepted_statuses and draw_looks_complete:
+            entries.append(
+                previous.model_copy(
+                    update={
+                        "status": EntryStatus.OUT,
+                        "alternate_position": None,
+                        "previous_status": previous.status,
+                        "withdrawn_at": None,
+                        "source": official_source or previous.source,
+                    }
+                )
+            )
+            entry_ids.add(previous.player.player_id)
+
+    qualifying_entries = list(published.qualifying_entries)
+    qualifying_ids = {entry.player.player_id for entry in qualifying_entries}
+    qualifying_entries.extend(
+        entry
+        for entry in history.qualifying_entries
+        if entry.status in {EntryStatus.QALT, EntryStatus.OUT}
+        and entry.player.player_id not in qualifying_ids
+    )
+
+    return published.model_copy(
+        update={
+            "snapshot_at": max(published.snapshot_at, history.snapshot_at),
+            "entries": entries,
+            "qualifying_entries": qualifying_entries,
+        }
+    )
+
+
 def retain_live_entry_snapshots(
     snapshot: dict,
     catalog: TournamentCatalog,
@@ -49,9 +131,18 @@ def retain_live_entry_snapshots(
     updated = retained = 0
     for current in entry_lists_from_live_snapshot(snapshot, catalog, as_of):
         destination = snapshot_path(output_root, current.tournament.tournament_id)
+        if destination.exists():
+            previous = EntryList.model_validate_json(
+                destination.read_text(encoding="utf-8-sig")
+            )
+            if previous.tournament.draw_published:
+                retained += 1
+                continue
         has_entries = bool(current.entries or current.qualifying_entries)
         if not has_entries and destination.exists():
-            previous = EntryList.model_validate_json(destination.read_text(encoding="utf-8-sig"))
+            previous = EntryList.model_validate_json(
+                destination.read_text(encoding="utf-8-sig")
+            )
             tournament = current.tournament.model_copy(
                 update={
                     "draw_published": bool(
