@@ -4,6 +4,7 @@ import re
 import unicodedata
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import quote
 
 import requests
 from bs4 import BeautifulSoup
@@ -23,9 +24,19 @@ from tennis_entry_watch.normalize.players import stable_player_id
 
 
 USER_AGENT = "TennisEntryWatch/0.1 (+https://github.com/rafaujo/tennis-entry-watch)"
+US_OPEN_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36"
+)
 ATP_TOUR_CALENDAR_URL = "https://www.atptour.com/en/tournaments/"
+ATP_CHALLENGER_CALENDAR_URL = (
+    "https://www.atptour.com/en/atp-challenger-tour/calendar"
+)
 ATP_DRAW_URL = "https://www.protennislive.com/posting/{year}/{atp_id}/{draw}.pdf"
 ATP_DRAW_LOOKAHEAD_DAYS = 56
+CHALLENGER_DRAW_LOOKAHEAD_DAYS = 10
+WIKIPEDIA_API_URL = "https://en.wikipedia.org/w/api.php"
+WIKIPEDIA_PAGE_URL = "https://en.wikipedia.org/wiki/{title}"
 ATP_OVERVIEW_PATTERN = re.compile(
     r"/en/tournaments/(?P<slug>[^/?#]+)/(?P<atp_id>\d+)/overview",
     re.I,
@@ -39,8 +50,13 @@ OFFICIAL_DATE_PATTERNS = (
         rf"\d{{1,2}}\s+(?:{MONTH_PATTERN})\s*,?\s*(?P<year>\d{{4}})\b"
     ),
     re.compile(
-        rf"\b(?P<day>\d{{1,2}})\s*-\s*\d{{1,2}}\s+"
+        rf"\b(?P<day>\d{{1,2}})\s*[-–—]\s*\d{{1,2}}\s+"
         rf"(?P<month>{MONTH_PATTERN})\s*,?\s*(?P<year>\d{{4}})\b"
+    ),
+    re.compile(
+        rf"\bbetween\s+(?P<day>\d{{1,2}})\s+and\s+\d{{1,2}}\s+"
+        rf"(?P<month>{MONTH_PATTERN})\s*,?\s*(?P<year>\d{{4}})\b",
+        re.I,
     ),
 )
 MONTH_NUMBER = {
@@ -125,13 +141,13 @@ def _official_match_score(event, official: dict) -> int:
     return score
 
 
-def discover_atp_draw_sources(
+def _discover_protennislive_draw_sources(
     page_html: str,
     catalog: TournamentCatalog,
+    category_filter,
     today: date | None = None,
     lookahead_days: int = ATP_DRAW_LOOKAHEAD_DAYS,
 ) -> list[dict]:
-    """Build ProTennisLive PDF sources for current and upcoming ATP events."""
     official_events = parse_atp_tournament_links(page_html)
     current_day = today or date.today()
     latest_start = current_day + timedelta(days=lookahead_days)
@@ -139,10 +155,7 @@ def discover_atp_draw_sources(
     results: list[dict] = []
     for event in catalog.events:
         tournament = event.tournament
-        if not (
-            tournament.category == "Grand Slam"
-            or re.fullmatch(r"ATP (?:250|500|1000)", tournament.category)
-        ):
+        if not category_filter(tournament.category):
             continue
         if tournament.end_date and tournament.end_date < current_day:
             continue
@@ -171,10 +184,166 @@ def discover_atp_draw_sources(
                 "format": "protennislive_pdf",
                 "main_url": ATP_DRAW_URL.format(draw="mds", **base),
                 "qualifying_url": ATP_DRAW_URL.format(draw="qs", **base),
-                "minimum_main_players": max(16, tournament.main_draw_size - 16),
+                "minimum_main_players": max(
+                    16,
+                    tournament.main_draw_size
+                    - (8 if tournament.category.startswith("Challenger") else 16),
+                ),
             }
         )
     return results
+
+
+def discover_atp_draw_sources(
+    page_html: str,
+    catalog: TournamentCatalog,
+    today: date | None = None,
+    lookahead_days: int = ATP_DRAW_LOOKAHEAD_DAYS,
+) -> list[dict]:
+    """Build ProTennisLive PDF sources for current and upcoming ATP events."""
+    return _discover_protennislive_draw_sources(
+        page_html,
+        catalog,
+        lambda category: category == "Grand Slam"
+        or bool(re.fullmatch(r"ATP (?:250|500|1000)", category)),
+        today,
+        lookahead_days,
+    )
+
+
+def discover_challenger_draw_sources(
+    page_html: str,
+    catalog: TournamentCatalog,
+    today: date | None = None,
+    lookahead_days: int = CHALLENGER_DRAW_LOOKAHEAD_DAYS,
+) -> list[dict]:
+    """Build official PDF sources for current and imminent Challengers."""
+    return _discover_protennislive_draw_sources(
+        page_html,
+        catalog,
+        lambda category: category.startswith("Challenger"),
+        today,
+        lookahead_days,
+    )
+
+
+def _wikipedia_challenger_title_score(event, title: str) -> int:
+    folded_title = _fold(title)
+    if str(event.tournament.year) not in title:
+        return 0
+    if "singles" not in folded_title or "doubles" in folded_title:
+        return 0
+    if "women s" in folded_title or "women" in folded_title:
+        return 0
+    values = [
+        event.tournament.name,
+        event.tournament.location.city,
+        *event.schedule_aliases,
+    ]
+    score = 0
+    generic = {"challenger", "open", "tennis", "cup", "international"}
+    title_tokens = set(folded_title.split()) - generic
+    for value in values:
+        folded = _fold(value)
+        if not folded:
+            continue
+        if folded in folded_title:
+            score = max(score, 100 + len(folded))
+            continue
+        tokens = set(folded.split()) - generic
+        overlap = len(tokens & title_tokens)
+        if overlap >= min(2, len(tokens)):
+            score = max(score, 40 + overlap * 10)
+    return score
+
+
+def wikipedia_challenger_draw_titles(event, search_results: list[dict]) -> list[str]:
+    candidates = sorted(
+        (
+            (
+                _wikipedia_challenger_title_score(event, item.get("title") or ""),
+                item.get("title") or "",
+            )
+            for item in search_results
+        ),
+        reverse=True,
+    )
+    return [title for score, title in candidates if score > 0]
+
+
+def discover_wikipedia_challenger_draw_sources(
+    catalog: TournamentCatalog,
+    session: requests.Session,
+    today: date | None = None,
+    lookahead_days: int = CHALLENGER_DRAW_LOOKAHEAD_DAYS,
+) -> tuple[list[dict], list[str]]:
+    """Find published Challenger singles pages and match the exact event week."""
+    current_day = today or date.today()
+    latest_start = current_day + timedelta(days=lookahead_days)
+    results: list[dict] = []
+    warnings: list[str] = []
+    for event in catalog.events:
+        tournament = event.tournament
+        if not tournament.category.startswith("Challenger"):
+            continue
+        if tournament.end_date and tournament.end_date < current_day:
+            continue
+        if tournament.start_date > latest_start:
+            continue
+        try:
+            response = session.get(
+                WIKIPEDIA_API_URL,
+                params={
+                    "action": "query",
+                    "list": "search",
+                    "srsearch": f'"{tournament.year} {tournament.location.city}" tennis singles',
+                    "srlimit": 10,
+                    "format": "json",
+                },
+                headers={"User-Agent": USER_AGENT},
+                timeout=30,
+            )
+            response.raise_for_status()
+            search_results = response.json().get("query", {}).get("search", [])
+            for title in wikipedia_challenger_draw_titles(event, search_results):
+                main_title = re.sub(
+                    r"\s+[–—-]\s+(?:Men's\s+)?Singles$",
+                    "",
+                    title,
+                    flags=re.I,
+                )
+                main_page_url = WIKIPEDIA_PAGE_URL.format(
+                    title=quote(main_title.replace(" ", "_"), safe="()_-'")
+                )
+                main_page = session.get(
+                    main_page_url,
+                    headers={"User-Agent": USER_AGENT},
+                    timeout=30,
+                )
+                main_page.raise_for_status()
+                article_start = _official_start_date(
+                    BeautifulSoup(main_page.text, "html.parser").get_text(" ", strip=True)
+                )
+                if article_start is None or abs(
+                    (article_start - tournament.start_date).days
+                ) > 1:
+                    continue
+                results.append(
+                    {
+                        "tournament_id": tournament.tournament_id,
+                        "format": "wikipedia_draw",
+                        "main_url": WIKIPEDIA_PAGE_URL.format(
+                            title=quote(title.replace(" ", "_"), safe="()_-'")
+                        ),
+                        "minimum_main_players": max(16, tournament.main_draw_size - 8),
+                    }
+                )
+                break
+        except Exception as exc:
+            warnings.append(
+                f"{tournament.tournament_id}: Wikipedia discovery failed ({exc})"
+            )
+    return results, warnings
 
 
 class PlayerResolver:
@@ -343,6 +512,52 @@ def _pdf_names(pdf_bytes: bytes, section_label: str) -> list[tuple[str, EntrySta
     return results
 
 
+def _us_open_text_names(
+    text: str,
+) -> list[tuple[str, EntryStatus, str | None, int | None]]:
+    results: list[tuple[str, EntryStatus, str | None, int | None]] = []
+    seen_positions: set[int] = set()
+    pattern = re.compile(
+        r"^\s*(?:\[(?P<seed>\d+)\])?(?:\((?P<marker>[^)]+)\))?"
+        r"(?P<position>\d+)\.(?P<name>.+?)\s*$"
+    )
+    for line in text.splitlines():
+        match = pattern.match(line)
+        if not match:
+            continue
+        position = int(match.group("position"))
+        if position in seen_positions:
+            continue
+        rest = match.group("name").strip()
+        if "QUALIFIER/LUCKY LOSER" in rest.upper():
+            continue
+        nation_match = re.search(r"\s([A-Z]{3})$", rest)
+        nation = nation_match.group(1) if nation_match else None
+        if nation_match:
+            rest = rest[: nation_match.start()].strip()
+        if "," in rest:
+            surname, given = (part.strip() for part in rest.split(",", 1))
+            name = f"{given} {surname}".strip()
+        else:
+            name = rest
+        marker = (match.group("marker") or "").upper()
+        status = EntryStatus.WC if marker in {"W", "WC"} else EntryStatus.DA
+        seed = int(match.group("seed")) if match.group("seed") else None
+        results.append((name, status, nation, seed))
+        seen_positions.add(position)
+    return results
+
+
+def _us_open_pdf_names(
+    pdf_bytes: bytes,
+) -> list[tuple[str, EntryStatus, str | None, int | None]]:
+    """Parse the official US Open draw PDFs, whose layout differs from ATP PDFs."""
+    text = "\n".join(
+        page.extract_text() or "" for page in PdfReader(io.BytesIO(pdf_bytes)).pages
+    )
+    return _us_open_text_names(text)
+
+
 def collect_protennislive_draw(
     main_url: str,
     qualifying_url: str | None,
@@ -363,8 +578,79 @@ def collect_protennislive_draw(
         q_response.raise_for_status()
         q_source = _source(qualifying_url, SourceType.ATP_OFFICIAL, retrieved_at, "protennislive_pdf_draw")
         qualifying = [
-            _entry(resolver, name, EntryStatus.QDA, q_source, nation, seed)
-            for name, _, nation, seed in _pdf_names(q_response.content, "Qualifying Singles")
+            _entry(
+                resolver,
+                name,
+                EntryStatus.WC if status == EntryStatus.WC else EntryStatus.QDA,
+                q_source,
+                nation,
+                seed,
+            )
+            for name, status, nation, seed in _pdf_names(
+                q_response.content, "Qualifying Singles"
+            )
+        ]
+    return main, qualifying
+
+
+def collect_us_open_draw(
+    main_url: str,
+    qualifying_url: str | None,
+    resolver: PlayerResolver,
+    retrieved_at: datetime,
+    session: requests.Session,
+) -> tuple[list[Entry], list[Entry]]:
+    def fetch(url: str):
+        last_error: Exception | None = None
+        draw_code = "mq" if "_MQ_" in url else "ms"
+        for attempt, timeout in enumerate((45, 90), 1):
+            try:
+                response = session.get(
+                    url,
+                    params={
+                        "download": (
+                            f"{int(retrieved_at.timestamp())}-{draw_code}-{attempt}"
+                        )
+                    },
+                    headers={"User-Agent": US_OPEN_USER_AGENT},
+                    timeout=timeout,
+                )
+                response.raise_for_status()
+                return response
+            except Exception as exc:
+                last_error = exc
+        raise last_error or RuntimeError(f"could not download {url}")
+
+    main_response = fetch(main_url)
+    main_source = _source(
+        main_url,
+        SourceType.TOURNAMENT_OFFICIAL,
+        retrieved_at,
+        "us_open_official_pdf_draw",
+    )
+    main = [
+        _entry(resolver, name, status, main_source, nation, seed)
+        for name, status, nation, seed in _us_open_pdf_names(main_response.content)
+    ]
+    qualifying: list[Entry] = []
+    if qualifying_url:
+        q_response = fetch(qualifying_url)
+        q_source = _source(
+            qualifying_url,
+            SourceType.TOURNAMENT_OFFICIAL,
+            retrieved_at,
+            "us_open_official_pdf_draw",
+        )
+        qualifying = [
+            _entry(
+                resolver,
+                name,
+                EntryStatus.WC if status == EntryStatus.WC else EntryStatus.QDA,
+                q_source,
+                nation,
+                seed,
+            )
+            for name, status, nation, seed in _us_open_pdf_names(q_response.content)
         ]
     return main, qualifying
 
@@ -435,7 +721,9 @@ def collect_configured_draws(
     current_day = as_of or date.today()
     updated = 0
     warnings: list[str] = []
-    discovered: list[dict] = []
+    discovered_atp: list[dict] = []
+    discovered_challengers: list[dict] = []
+    discovered_wikipedia: list[dict] = []
     try:
         calendar_response = client.get(
             ATP_TOUR_CALENDAR_URL,
@@ -443,17 +731,53 @@ def collect_configured_draws(
             timeout=45,
         )
         calendar_response.raise_for_status()
-        discovered = discover_atp_draw_sources(
+        discovered_atp = discover_atp_draw_sources(
             calendar_response.text,
             catalog,
             today=current_day,
         )
-        if not discovered:
+        if not discovered_atp:
             raise ValueError("no current or upcoming tournament IDs found")
     except Exception as exc:
         warnings.append(f"ATP draw-source discovery: {exc}")
 
-    items_by_tournament = {item["tournament_id"]: item for item in discovered}
+    try:
+        challenger_response = client.get(
+            ATP_CHALLENGER_CALENDAR_URL,
+            headers={"User-Agent": USER_AGENT},
+            timeout=45,
+        )
+        challenger_response.raise_for_status()
+        discovered_challengers = discover_challenger_draw_sources(
+            challenger_response.text,
+            catalog,
+            today=current_day,
+        )
+    except Exception as exc:
+        warnings.append(f"Challenger draw-source discovery: {exc}")
+
+    wikipedia_warnings: list[str] = []
+    try:
+        discovered_wikipedia, wikipedia_warnings = (
+            discover_wikipedia_challenger_draw_sources(
+                catalog,
+                client,
+                today=current_day,
+            )
+        )
+    except Exception as exc:
+        warnings.append(f"Challenger Wikipedia discovery: {exc}")
+    warnings.extend(wikipedia_warnings)
+
+    items_by_tournament = {
+        item["tournament_id"]: item for item in discovered_wikipedia
+    }
+    items_by_tournament.update(
+        {item["tournament_id"]: item for item in discovered_atp}
+    )
+    items_by_tournament.update(
+        {item["tournament_id"]: item for item in discovered_challengers}
+    )
     items_by_tournament.update(
         {item["tournament_id"]: item for item in config.get("events", [])}
     )
@@ -469,6 +793,14 @@ def collect_configured_draws(
             if item["format"] == "protennislive_pdf":
                 main, qualifying = collect_protennislive_draw(
                     item["main_url"], item.get("qualifying_url"), resolver, retrieved_at, client
+                )
+            elif item["format"] == "us_open_pdf":
+                main, qualifying = collect_us_open_draw(
+                    item["main_url"],
+                    item.get("qualifying_url"),
+                    resolver,
+                    retrieved_at,
+                    client,
                 )
             elif item["format"] == "wikipedia_draw":
                 main = collect_wikipedia_draw(item["main_url"], resolver, retrieved_at, client)
@@ -506,6 +838,13 @@ def collect_configured_draws(
         if not wildcard_url:
             continue
         tournament_id = item["tournament_id"]
+        existing_path = snapshot_path(output_root, tournament_id)
+        if existing_path.exists():
+            existing = EntryList.model_validate_json(
+                existing_path.read_text(encoding="utf-8-sig")
+            )
+            if existing.tournament.draw_published:
+                continue
         minimum = item.get("minimum_main_wildcards", 1)
         fallback_names = item.get("main_wildcards", [])
         names: list[str] = []
@@ -535,7 +874,6 @@ def collect_configured_draws(
             )
 
         try:
-            existing_path = snapshot_path(output_root, tournament_id)
             if not existing_path.exists():
                 raise ValueError("no entry snapshot available for wild-card overlay")
             existing = EntryList.model_validate_json(

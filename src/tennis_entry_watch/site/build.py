@@ -215,7 +215,11 @@ def build_page(
         reverse=True,
     )
     q_acceptances = sorted(
-        (entry for entry in entry_list.qualifying_entries if entry.status == EntryStatus.QDA),
+        (
+            entry
+            for entry in entry_list.qualifying_entries
+            if entry.status in {EntryStatus.QDA, EntryStatus.WC}
+        ),
         key=lambda entry: (entry.entry_rank or 9999, entry.player.name),
     )
     q_alternates = sorted(
@@ -228,7 +232,11 @@ def build_page(
     known_qualifiers = sum(entry.status == EntryStatus.Q for entry in main_entries)
     known_wildcards = sum(entry.status == EntryStatus.WC for entry in main_entries)
     if t.draw_published:
-        qualifier_placeholders = wildcard_placeholders = open_other = 0
+        qualifier_placeholders = max(
+            0,
+            (t.main_draw_size or len(main_entries)) - len(main_entries),
+        )
+        wildcard_placeholders = open_other = 0
     else:
         qualifier_placeholders = max(0, qualifier_slots - known_qualifiers)
         wildcard_placeholders = max(0, wildcard_slots - known_wildcards)
@@ -753,10 +761,23 @@ def build_site(
     for tournament_id, verified in verified_by_id.items():
         retained = retained_by_id.get(tournament_id)
         if retained is not None:
-            entry_by_id[tournament_id] = overlay_official_wildcards(
-                verified,
-                retained,
-            )
+            if (
+                retained.tournament.draw_published
+                and (
+                    retained.tournament.start_date <= reference_date
+                    or (
+                        retained.tournament.qualifying_list_published
+                        and retained.tournament.start_date - timedelta(days=7)
+                        <= reference_date
+                    )
+                )
+            ):
+                entry_by_id[tournament_id] = retained
+            else:
+                entry_by_id[tournament_id] = overlay_official_wildcards(
+                    verified,
+                    retained,
+                )
     entry_lists = sorted(
         entry_by_id.values(),
         key=lambda item: (item.tournament.start_date, item.tournament.name),
