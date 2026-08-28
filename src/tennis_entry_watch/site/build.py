@@ -77,6 +77,74 @@ def overlay_official_wildcards(
         }
     )
 
+
+def merge_published_draw_history(
+    published: EntryList,
+    history: EntryList,
+) -> EntryList:
+    """Keep the final pre-draw queue and withdrawals beside an official draw."""
+    entries = list(published.entries)
+    published_positions = {
+        entry.player.player_id: index for index, entry in enumerate(entries)
+    }
+
+    # Record promotions on the official row instead of duplicating those
+    # players in the historical alternate queue.
+    for previous in history.entries:
+        index = published_positions.get(previous.player.player_id)
+        if index is None or previous.status != EntryStatus.ALT:
+            continue
+        official = entries[index]
+        if official.previous_status is None:
+            entries[index] = official.model_copy(
+                update={"previous_status": EntryStatus.ALT}
+            )
+
+    official_source = next((entry.source for entry in published.entries), None)
+    accepted_statuses = {EntryStatus.DA, EntryStatus.PR, EntryStatus.SE}
+    historical_acceptances = sum(
+        entry.status in accepted_statuses for entry in history.entries
+    )
+    draw_looks_complete = len(published.entries) >= historical_acceptances
+    for previous in history.entries:
+        if previous.player.player_id in published_positions:
+            continue
+        if previous.status in {EntryStatus.ALT, EntryStatus.OUT}:
+            entries.append(previous)
+            continue
+        if previous.status in accepted_statuses and draw_looks_complete:
+            # Absence from a complete published draw confirms the withdrawal,
+            # but does not reveal its exact date.
+            entries.append(
+                previous.model_copy(
+                    update={
+                        "status": EntryStatus.OUT,
+                        "alternate_position": None,
+                        "previous_status": previous.status,
+                        "withdrawn_at": None,
+                        "source": official_source or previous.source,
+                    }
+                )
+            )
+
+    qualifying_entries = list(published.qualifying_entries)
+    qualifying_ids = {entry.player.player_id for entry in qualifying_entries}
+    qualifying_entries.extend(
+        entry
+        for entry in history.qualifying_entries
+        if entry.status in {EntryStatus.QALT, EntryStatus.OUT}
+        and entry.player.player_id not in qualifying_ids
+    )
+
+    return published.model_copy(
+        update={
+            "snapshot_at": max(published.snapshot_at, history.snapshot_at),
+            "entries": entries,
+            "qualifying_entries": qualifying_entries,
+        }
+    )
+
+
 SOURCE_LABELS = {
     SourceType.ATP_OFFICIAL: "ATP official",
     SourceType.TOURNAMENT_OFFICIAL: "Tournament official",
@@ -281,13 +349,29 @@ def build_page(
         )
         main_rows.append(f'<tr class="empty"><td colspan="6">{message}</td></tr>')
 
+    alternate_explain = (
+        "Final tracked pre-draw queue, retained as history after publication."
+        if t.draw_published
+        else (
+            "The order follows the latest verified list. "
+            "Each withdrawal can move the queue by one place."
+        )
+    )
+    alternate_path_heading = (
+        "Final status" if t.draw_published else "Path to main draw"
+    )
+    final_queue_badge = (
+        '<span class="chance chance-queue">FINAL QUEUE</span>'
+        if t.draw_published
+        else None
+    )
     alternate_rows = "".join(
         '<tr>'
         f'<td class="num">{entry.alternate_position}</td>'
         f'<td class="player">{html.escape(entry.player.name)}</td>'
         f'<td>{html.escape(entry.player.nationality or "—")}</td>'
         f'<td class="num">{_rank(entry.entry_rank)}</td>'
-        f'<td>{_chance(entry.alternate_position)}</td></tr>'
+        f'<td>{final_queue_badge or _chance(entry.alternate_position)}</td></tr>'
         for entry in alternates
     ) or (
         '<tr class="empty"><td colspan="5">The alternate queue is closed after draw publication.</td></tr>'
@@ -494,7 +578,7 @@ def build_page(
 <div class="summary"><div class="metric"><strong>{len(main_entries)}/{t.main_draw_size or '—'}</strong><span>named in main field</span></div><div class="metric"><strong>{len(alternates)}</strong><span>verified alternates</span></div><div class="metric"><strong>{len(withdrawals)}</strong><span>withdrawals tracked</span></div><div class="metric"><strong>{cutoff_text}</strong><span>current direct cutoff</span></div></div>
 {lifecycle_notice}
 <div class="entry-grid"><section id="main-draw"><h2>Main draw</h2><p class="explain">{main_explain}</p><div class="scroll"><table><thead><tr><th class="num">Seed</th><th>Player / place</th><th>Nat.</th><th class="num">Rk</th><th class="num">ER</th><th>Status</th></tr></thead><tbody>{''.join(main_rows)}</tbody></table></div><div class="legend"><span><b>DA</b> Direct</span><span><b>PR</b> Protected ranking</span><span><b>Q</b> Qualifier</span><span><b>WC</b> Wild card</span></div></section><div>
-<section id="alternates"><h2>Main-draw alternates</h2><p class="explain">The order follows the latest verified list. Each withdrawal can move the queue by one place.</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>Path to main draw</th></tr></thead><tbody>{alternate_rows}</tbody></table></div></section>
+<section id="alternates"><h2>Main-draw alternates</h2><p class="explain">{alternate_explain}</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>{alternate_path_heading}</th></tr></thead><tbody>{alternate_rows}</tbody></table></div></section>
 <section id="withdrawals"><h2>Withdrawals</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Player</th><th>Nat.</th><th>Previous</th><th class="num">ER</th></tr></thead><tbody>{withdrawal_rows}</tbody></table></div></section></div></div>
 <div class="entry-grid"><section id="qualifying"><h2>Qualifying</h2><p class="explain">{q_explain}</p><div class="scroll"><table><thead><tr><th class="num">Q queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path</th></tr></thead><tbody>{q_rows}</tbody></table></div></section>
 <section id="qualifying-alternates"><h2>Qualifying alternates</h2><p class="explain">{q_alt_explain}</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path to qualifying</th></tr></thead><tbody>{q_alt_rows}</tbody></table></div></section></div>
@@ -772,7 +856,10 @@ def build_site(
                     )
                 )
             ):
-                entry_by_id[tournament_id] = retained
+                entry_by_id[tournament_id] = merge_published_draw_history(
+                    retained,
+                    verified,
+                )
             else:
                 entry_by_id[tournament_id] = overlay_official_wildcards(
                     verified,

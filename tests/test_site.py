@@ -10,6 +10,7 @@ from tennis_entry_watch.models import EntryList, EntryStatus, Source, SourceType
 from tennis_entry_watch.site.build import (
     build_page,
     build_site,
+    merge_published_draw_history,
     overlay_official_wildcards,
 )
 
@@ -73,6 +74,31 @@ def test_official_wildcards_overlay_a_manually_verified_list():
     assert overlaid.previous_status == EntryStatus.ALT
     assert overlaid.alternate_position is None
     assert overlaid.source.source_type == SourceType.TOURNAMENT_OFFICIAL
+
+
+def test_published_draw_keeps_predraw_alternates_and_withdrawals():
+    verified = EntryList.model_validate_json(
+        Path("data/entries/us-open-2026/current.json").read_text(encoding="utf-8")
+    )
+    published = EntryList.model_validate_json(
+        Path("data/entry-snapshots/us-open-2026/current.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    result = merge_published_draw_history(published, verified)
+    statuses = {entry.player.name: entry for entry in result.entries}
+
+    assert statuses["Benjamin Bonzi"].previous_status == EntryStatus.ALT
+    assert statuses["Hugo Gaston"].status == EntryStatus.ALT
+    assert statuses["Sebastian Korda"].status == EntryStatus.OUT
+    assert statuses["Jannik Sinner"].status == EntryStatus.OUT
+
+    page = build_page(result)
+    assert "Final tracked pre-draw queue" in page
+    assert "FINAL QUEUE" in page
+    assert "promoted from alternate" in page
+    assert "PROJ Q" not in page
 
 
 def test_qualifying_wild_card_is_visible(
