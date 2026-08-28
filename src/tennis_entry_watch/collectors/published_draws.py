@@ -12,8 +12,13 @@ from pypdf import PdfReader
 
 from tennis_entry_watch.collectors.entry_snapshots import (
     merge_published_draw_history,
+    predraw_snapshot_path,
+    project_main_alternates_from_qualifying,
     snapshot_path,
     write_entry_snapshot,
+)
+from tennis_entry_watch.collectors.live_tennis_snapshot import (
+    entry_lists_from_live_snapshot,
 )
 from tennis_entry_watch.models import (
     Entry,
@@ -723,6 +728,14 @@ def collect_configured_draws(
     retrieved_at = datetime.now(timezone.utc)
     client = session or requests.Session()
     current_day = as_of or date.today()
+    live_history_by_id = {
+        entry_list.tournament.tournament_id: entry_list
+        for entry_list in entry_lists_from_live_snapshot(
+            live_snapshot,
+            catalog,
+            current_day,
+        )
+    }
     updated = 0
     warnings: list[str] = []
     discovered_atp: list[dict] = []
@@ -821,6 +834,14 @@ def collect_configured_draws(
                 if existing_path.exists()
                 else None
             )
+            predraw_path = predraw_snapshot_path(output_root, tournament_id)
+            predraw = (
+                EntryList.model_validate_json(
+                    predraw_path.read_text(encoding="utf-8-sig")
+                )
+                if predraw_path.exists()
+                else None
+            )
             if not qualifying and existing is not None:
                 qualifying = existing.qualifying_entries
             tournament = tournament.model_copy(
@@ -838,6 +859,15 @@ def collect_configured_draws(
             )
             if existing is not None:
                 published = merge_published_draw_history(published, existing)
+            if predraw is not None:
+                published = merge_published_draw_history(published, predraw)
+            live_history = live_history_by_id.get(tournament_id)
+            if live_history is not None:
+                published = merge_published_draw_history(
+                    published,
+                    live_history,
+                )
+            published = project_main_alternates_from_qualifying(published)
             if write_entry_snapshot(published, output_root):
                 updated += 1
         except Exception as exc:

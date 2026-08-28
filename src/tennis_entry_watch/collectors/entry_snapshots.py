@@ -3,11 +3,20 @@ from datetime import date
 from pathlib import Path
 
 from tennis_entry_watch.collectors.live_tennis_snapshot import entry_lists_from_live_snapshot
-from tennis_entry_watch.models import EntryList, EntryStatus, TournamentCatalog
+from tennis_entry_watch.models import (
+    EntryList,
+    EntryStatus,
+    SourceType,
+    TournamentCatalog,
+)
 
 
 def snapshot_path(root: Path, tournament_id: str) -> Path:
     return root / tournament_id / "current.json"
+
+
+def predraw_snapshot_path(root: Path, tournament_id: str) -> Path:
+    return root / tournament_id / "predraw.json"
 
 
 def load_entry_snapshots(root: Path) -> list[EntryList]:
@@ -23,20 +32,100 @@ def _semantic_payload(entry_list: EntryList) -> dict:
     return payload
 
 
-def write_entry_snapshot(entry_list: EntryList, root: Path) -> bool:
-    destination = snapshot_path(root, entry_list.tournament.tournament_id)
-    if destination.exists():
-        previous = EntryList.model_validate_json(destination.read_text(encoding="utf-8-sig"))
-        if _semantic_payload(previous) == _semantic_payload(entry_list):
-            return False
+def _write_json(entry_list: EntryList, destination: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
     temporary = destination.with_suffix(".json.tmp")
     temporary.write_text(
-        json.dumps(entry_list.model_dump(mode="json"), ensure_ascii=False, indent=2) + "\n",
+        json.dumps(entry_list.model_dump(mode="json"), ensure_ascii=False, indent=2)
+        + "\n",
         encoding="utf-8",
     )
     temporary.replace(destination)
+
+
+def _predraw_richness(entry_list: EntryList) -> tuple[int, int]:
+    alternates = sum(
+        entry.status in {EntryStatus.ALT, EntryStatus.QALT}
+        for entry in [*entry_list.entries, *entry_list.qualifying_entries]
+    )
+    return alternates, len(entry_list.entries) + len(entry_list.qualifying_entries)
+
+
+def _retain_predraw_snapshot(entry_list: EntryList, root: Path) -> None:
+    if entry_list.tournament.draw_published:
+        return
+    destination = predraw_snapshot_path(
+        root,
+        entry_list.tournament.tournament_id,
+    )
+    if destination.exists():
+        previous = EntryList.model_validate_json(
+            destination.read_text(encoding="utf-8-sig")
+        )
+        if _semantic_payload(previous) == _semantic_payload(entry_list):
+            return
+        if _predraw_richness(entry_list) < _predraw_richness(previous):
+            return
+    _write_json(entry_list, destination)
+
+
+def write_entry_snapshot(entry_list: EntryList, root: Path) -> bool:
+    destination = snapshot_path(root, entry_list.tournament.tournament_id)
+    previous = None
+    if destination.exists():
+        previous = EntryList.model_validate_json(destination.read_text(encoding="utf-8-sig"))
+        if entry_list.tournament.draw_published and not previous.tournament.draw_published:
+            _retain_predraw_snapshot(previous, root)
+        if _semantic_payload(previous) == _semantic_payload(entry_list):
+            return False
+    _retain_predraw_snapshot(entry_list, root)
+    _write_json(entry_list, destination)
     return True
+
+
+def project_main_alternates_from_qualifying(entry_list: EntryList) -> EntryList:
+    """Fallback projection when no pre-draw main alternate queue was retained."""
+    if any(entry.status == EntryStatus.ALT for entry in entry_list.entries):
+        return entry_list
+    main_ids = {
+        entry.player.player_id
+        for entry in entry_list.entries
+        if entry.status not in {EntryStatus.ALT, EntryStatus.OUT}
+    }
+    candidates = sorted(
+        (
+            entry
+            for entry in entry_list.qualifying_entries
+            if entry.player.player_id not in main_ids
+            and entry.status != EntryStatus.OUT
+        ),
+        key=lambda entry: (
+            entry.entry_rank or entry.current_rank or 99999,
+            entry.player.name,
+        ),
+    )
+    if not candidates:
+        return entry_list
+    projected = [
+        entry.model_copy(
+            update={
+                "status": EntryStatus.ALT,
+                "alternate_position": position,
+                "seed": None,
+                "previous_status": None,
+                "source": entry.source.model_copy(
+                    update={
+                        "source_type": SourceType.TRUSTED_SECONDARY,
+                        "collector": "qualifying_draw_main_alternate_projection",
+                    }
+                ),
+            }
+        )
+        for position, entry in enumerate(candidates, 1)
+    ]
+    return entry_list.model_copy(
+        update={"entries": [*entry_list.entries, *projected]}
+    )
 
 
 def merge_published_draw_history(
