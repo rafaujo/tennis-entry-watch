@@ -144,6 +144,89 @@ def test_wildcard_overlay_runs_before_the_draw_is_published(
     assert result.entries[0].status == EntryStatus.WC
 
 
+def test_published_challenger_draw_preserves_automatic_alternate_projection(
+    tmp_path,
+    monkeypatch,
+    synthetic_catalog,
+    synthetic_live_snapshot,
+):
+    config_path = tmp_path / "draw-sources.json"
+    config_path.write_text(
+        json.dumps(
+            {
+                "events": [
+                    {
+                        "tournament_id": "fixture-open-2026",
+                        "format": "protennislive_pdf",
+                        "main_url": "https://example.test/main.pdf",
+                        "minimum_main_players": 2,
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    history = entry_lists_from_live_snapshot(
+        synthetic_live_snapshot,
+        synthetic_catalog,
+        as_of=synthetic_catalog.tracking_started_at,
+    )[0]
+    output_root = tmp_path / "snapshots"
+    write_entry_snapshot(history, output_root)
+    official_source = _source(
+        "https://example.test/main.pdf",
+        SourceType.ATP_OFFICIAL,
+        datetime(2026, 8, 16, tzinfo=timezone.utc),
+        "protennislive_pdf_draw",
+    )
+    official_main = [
+        entry.model_copy(update={"source": official_source})
+        for entry in history.entries
+        if entry.status == EntryStatus.DA
+    ]
+    monkeypatch.setattr(
+        "tennis_entry_watch.collectors.published_draws.collect_protennislive_draw",
+        lambda *_args, **_kwargs: (official_main, []),
+    )
+
+    class Response:
+        text = "<html></html>"
+        content = b"<html></html>"
+
+        def raise_for_status(self):
+            return None
+
+    class Session:
+        def get(self, _url, **_kwargs):
+            return Response()
+
+    updated, _warnings = collect_configured_draws(
+        config_path,
+        synthetic_catalog,
+        synthetic_live_snapshot,
+        output_root,
+        session=Session(),
+        as_of=synthetic_catalog.tracking_started_at,
+    )
+    result = EntryList.model_validate_json(
+        snapshot_path(output_root, "fixture-open-2026").read_text(encoding="utf-8")
+    )
+    alternates = [
+        entry for entry in result.entries if entry.status == EntryStatus.ALT
+    ]
+
+    assert updated == 1
+    assert result.tournament.draw_published is True
+    assert len(alternates) == 6
+    assert [entry.alternate_position for entry in alternates] == [
+        1, 2, 3, 4, 5, 6
+    ]
+    assert all(
+        entry.source.collector == "live_tennis_schedule_snapshot"
+        for entry in alternates
+    )
+
+
 def test_configured_wildcards_are_used_when_official_page_is_unavailable(
     tmp_path, synthetic_catalog, synthetic_live_snapshot
 ):

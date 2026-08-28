@@ -35,7 +35,7 @@ def test_real_pre_draw_page_shows_confirmed_and_pending_places():
     assert page.count("not announced") == 4
     assert page.count("special exempt / late entry / performance bye allocation pending") == 3
     assert "#80 · Lorenzo Sonego" in page
-    assert "No verified alternate list is available" in page
+    assert "No verified or projected alternate list is available" in page
     assert "The draw has not been published" in page
     assert "22 Aug–29 Aug 2026" in page
 
@@ -131,6 +131,39 @@ def test_qualifying_wild_card_is_visible(
 
     assert wildcard.player.name in page
     assert 'status-wc" title="Wild card">WC' in page
+
+
+def test_projected_challenger_alternates_remain_labelled_after_draw(
+    synthetic_catalog, synthetic_live_snapshot
+):
+    history = entry_lists_from_live_snapshot(
+        synthetic_live_snapshot,
+        synthetic_catalog,
+        as_of=synthetic_catalog.tracking_started_at,
+    )[0]
+    published = history.model_copy(
+        update={
+            "tournament": history.tournament.model_copy(
+                update={"draw_published": True}
+            ),
+            "entries": [
+                entry
+                for entry in history.entries
+                if entry.status == EntryStatus.DA
+            ],
+        }
+    )
+
+    page = build_page(merge_published_draw_history(published, history))
+
+    assert "projected alternates" in page
+    assert "Final projected pre-draw queue" in page
+    assert page.count("FINAL PROJECTION") == 6
+    assert "This is a projection, not an official acceptance list" not in page
+
+    fallback_page = build_page(published)
+    assert "Informational projection reconstructed" in fallback_page
+    assert fallback_page.count("FINAL PROJECTION") == 6
 
 
 def test_us_open_page_shows_alternate_queue_and_promotion():

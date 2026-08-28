@@ -4,6 +4,8 @@ from datetime import date
 from tennis_entry_watch.collectors.entry_snapshots import (
     load_entry_snapshots,
     merge_published_draw_history,
+    predraw_snapshot_path,
+    project_main_alternates_from_qualifying,
     retain_live_entry_snapshots,
     write_entry_snapshot,
 )
@@ -22,7 +24,7 @@ def test_empty_schedule_refresh_retains_last_non_empty_entry_list(
     )
     assert updated == 1
     before = load_entry_snapshots(tmp_path)[0]
-    assert len(before.entries) == 2
+    assert len(before.entries) == 8
     assert len(before.qualifying_entries) == 6
 
     empty_refresh = deepcopy(synthetic_live_snapshot)
@@ -102,14 +104,15 @@ def test_published_challenger_draw_keeps_known_er_and_pr(
 def test_schedule_refresh_does_not_replace_a_published_draw(
     tmp_path, synthetic_live_snapshot, synthetic_catalog
 ):
-    published = entry_lists_from_live_snapshot(
+    tracked = entry_lists_from_live_snapshot(
         synthetic_live_snapshot,
         synthetic_catalog,
         synthetic_catalog.tracking_started_at,
     )[0]
-    published = published.model_copy(
+    write_entry_snapshot(tracked, tmp_path)
+    published = tracked.model_copy(
         update={
-            "tournament": published.tournament.model_copy(
+            "tournament": tracked.tournament.model_copy(
                 update={"draw_published": True}
             )
         }
@@ -130,3 +133,42 @@ def test_schedule_refresh_does_not_replace_a_published_draw(
     assert updated == 0
     assert retained == 1
     assert after == published
+    assert predraw_snapshot_path(
+        tmp_path, "fixture-open-2026"
+    ).exists()
+
+
+def test_published_draw_projects_alternates_from_qualifying_as_fallback(
+    synthetic_live_snapshot, synthetic_catalog
+):
+    tracked = entry_lists_from_live_snapshot(
+        synthetic_live_snapshot,
+        synthetic_catalog,
+        synthetic_catalog.tracking_started_at,
+    )[0]
+    published = tracked.model_copy(
+        update={
+            "tournament": tracked.tournament.model_copy(
+                update={"draw_published": True}
+            ),
+            "entries": [
+                entry for entry in tracked.entries if entry.status == EntryStatus.DA
+            ],
+        }
+    )
+
+    projected = project_main_alternates_from_qualifying(published)
+    alternates = [
+        entry for entry in projected.entries if entry.status == EntryStatus.ALT
+    ]
+
+    assert len(alternates) == 6
+    assert [entry.alternate_position for entry in alternates] == [1, 2, 3, 4, 5, 6]
+    assert all(
+        entry.source.collector == "qualifying_draw_main_alternate_projection"
+        for entry in alternates
+    )
+    assert all(
+        entry.source.source_type.value == "trusted_secondary"
+        for entry in alternates
+    )

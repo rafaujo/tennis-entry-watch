@@ -66,7 +66,10 @@ def entry_list_from_catalog_event(
     )
     schedules = snapshot.get("schedules", [])
     aliases = catalog_event.schedule_aliases
-    main = [item for item in schedules if _scheduled_for(item, aliases)]
+    main = sorted(
+        (item for item in schedules if _scheduled_for(item, aliases)),
+        key=lambda item: (item.get("rank") or 99999, item["name"]),
+    )
     qualifying = sorted(
         (item for item in schedules if _scheduled_for(item, aliases, qualifying=True)),
         key=lambda item: (item.get("rank") or 99999, item["name"]),
@@ -80,10 +83,28 @@ def entry_list_from_catalog_event(
     q_draw = tournament.qualifying_draw_size or len(qualifying)
     qualifying_acceptances = qualifying[:q_draw]
     qualifying_alternates = qualifying[q_draw:]
+    direct_capacity = max(
+        0,
+        (tournament.main_draw_size or len(main))
+        - (tournament.main_draw_qualifier_slots or 0)
+        - (tournament.main_draw_wildcard_slots or 0),
+    )
+    main_acceptances = main[:direct_capacity]
+    main_ids = {stable_player_id(item["name"]) for item in main}
+    main_alternate_candidates = [
+        *main[direct_capacity:],
+        *(item for item in qualifying if stable_player_id(item["name"]) not in main_ids),
+    ]
     return EntryList(
         tournament=tournament,
         snapshot_at=retrieved_at,
-        entries=[_entry(item, EntryStatus.DA, source) for item in main],
+        entries=[
+            *(_entry(item, EntryStatus.DA, source) for item in main_acceptances),
+            *(
+                _entry(item, EntryStatus.ALT, source, position)
+                for position, item in enumerate(main_alternate_candidates, 1)
+            ),
+        ],
         qualifying_entries=[
             *(_entry(item, EntryStatus.QDA, source) for item in qualifying_acceptances),
             *(

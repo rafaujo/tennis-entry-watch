@@ -11,7 +11,10 @@ from tennis_entry_watch.collectors.live_tennis_snapshot import (
     load_live_snapshot,
     tournament_status,
 )
-from tennis_entry_watch.collectors.entry_snapshots import merge_published_draw_history
+from tennis_entry_watch.collectors.entry_snapshots import (
+    merge_published_draw_history,
+    project_main_alternates_from_qualifying,
+)
 from tennis_entry_watch.site.pwa import pwa_head, write_pwa_files
 
 
@@ -190,6 +193,8 @@ def build_page(
     live_schedules: list[dict] | None = None,
     live_snapshot_at: str | None = None,
 ) -> str:
+    if entry_list.tournament.draw_published:
+        entry_list = project_main_alternates_from_qualifying(entry_list)
     t = entry_list.tournament
     main_entries = sorted(
         (entry for entry in entry_list.entries if entry.status in MAIN_DRAW_STATUSES),
@@ -214,6 +219,18 @@ def build_page(
     alternates = sorted(
         (entry for entry in entry_list.entries if entry.status == EntryStatus.ALT),
         key=lambda entry: entry.alternate_position or 9999,
+    )
+    projected_alternates = any(
+        entry.source.collector
+        in {
+            "live_tennis_schedule_snapshot",
+            "qualifying_draw_main_alternate_projection",
+        }
+        for entry in alternates
+    )
+    qualifying_projection = any(
+        entry.source.collector == "qualifying_draw_main_alternate_projection"
+        for entry in alternates
     )
     withdrawals = sorted(
         (entry for entry in entry_list.entries if entry.status == EntryStatus.OUT),
@@ -287,19 +304,36 @@ def build_page(
         )
         main_rows.append(f'<tr class="empty"><td colspan="6">{message}</td></tr>')
 
-    alternate_explain = (
-        "Final tracked pre-draw queue, retained as history after publication."
-        if t.draw_published
-        else (
+    if t.draw_published and qualifying_projection:
+        alternate_explain = (
+            "Informational projection reconstructed from the published qualifying field "
+            "and ranking order because no final official alternate list was retained."
+        )
+    elif t.draw_published and projected_alternates:
+        alternate_explain = (
+            "Final projected pre-draw queue, retained as history. It was calculated "
+            "from tracked schedules and ranking order, not published as an official list."
+        )
+    elif t.draw_published:
+        alternate_explain = (
+            "Final tracked pre-draw queue, retained as history after publication."
+        )
+    elif projected_alternates:
+        alternate_explain = (
+            "Possible main-draw alternates calculated from tracked schedules and ranking "
+            "order. This is a projection, not an official acceptance list."
+        )
+    else:
+        alternate_explain = (
             "The order follows the latest verified list. "
             "Each withdrawal can move the queue by one place."
         )
-    )
     alternate_path_heading = (
         "Final status" if t.draw_published else "Path to main draw"
     )
     final_queue_badge = (
-        '<span class="chance chance-queue">FINAL QUEUE</span>'
+        '<span class="chance chance-queue">'
+        f'{"FINAL PROJECTION" if projected_alternates else "FINAL QUEUE"}</span>'
         if t.draw_published
         else None
     )
@@ -309,12 +343,13 @@ def build_page(
         f'<td class="player">{html.escape(entry.player.name)}</td>'
         f'<td>{html.escape(entry.player.nationality or "—")}</td>'
         f'<td class="num">{_rank(entry.entry_rank)}</td>'
+        f'<td class="num">{_rank(entry.current_rank)}</td>'
         f'<td>{final_queue_badge or _chance(entry.alternate_position)}</td></tr>'
         for entry in alternates
     ) or (
-        '<tr class="empty"><td colspan="5">The alternate queue is closed after draw publication.</td></tr>'
+        '<tr class="empty"><td colspan="6">The alternate queue is closed after draw publication.</td></tr>'
         if t.draw_published
-        else '<tr class="empty"><td colspan="5">No verified alternate list is available from the selected source.</td></tr>'
+        else '<tr class="empty"><td colspan="6">No verified or projected alternate list is available from the selected source.</td></tr>'
     )
 
     withdrawal_rows = "".join(
@@ -513,10 +548,10 @@ def build_page(
 <html lang="en"><head>{_head(f'{t.name} entry watch', base_href)}</head><body>
 {_nav(home_href, schedules_href, archive_href, install_href)}
 <main class="tournament-page">{sample_notice}<div class="subhead"><div><span class="phase">{draw_phase}</span><h1>{html.escape(t.name)}</h1><p class="meta">{t.start_date:%d %b}–{t.end_date:%d %b %Y} · {html.escape(t.category)} · {t.surface.value} · {html.escape(t.location.city)}, {html.escape(t.location.country)}</p></div><div class="updated">Entry snapshot<br><strong>{entry_list.snapshot_at:%Y-%m-%d %H:%M UTC}</strong>{live_updated}</div></div>
-<div class="summary"><div class="metric"><strong>{len(main_entries)}/{t.main_draw_size or '—'}</strong><span>named in main field</span></div><div class="metric"><strong>{len(alternates)}</strong><span>verified alternates</span></div><div class="metric"><strong>{len(withdrawals)}</strong><span>withdrawals tracked</span></div><div class="metric"><strong>{cutoff_text}</strong><span>current direct cutoff</span></div></div>
+<div class="summary"><div class="metric"><strong>{len(main_entries)}/{t.main_draw_size or '—'}</strong><span>named in main field</span></div><div class="metric"><strong>{len(alternates)}</strong><span>{'projected alternates' if projected_alternates else 'verified alternates'}</span></div><div class="metric"><strong>{len(withdrawals)}</strong><span>withdrawals tracked</span></div><div class="metric"><strong>{cutoff_text}</strong><span>current direct cutoff</span></div></div>
 {lifecycle_notice}
 <div class="entry-grid"><section id="main-draw"><h2>Main draw</h2><p class="explain">{main_explain}</p><div class="scroll"><table><thead><tr><th class="num">Seed</th><th>Player / place</th><th>Nat.</th><th class="num">Rk</th><th class="num">ER</th><th>Status</th></tr></thead><tbody>{''.join(main_rows)}</tbody></table></div><div class="legend"><span><b>DA</b> Direct</span><span><b>PR</b> Protected ranking</span><span><b>Q</b> Qualifier</span><span><b>WC</b> Wild card</span></div></section><div>
-<section id="alternates"><h2>Main-draw alternates</h2><p class="explain">{alternate_explain}</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">Entry rank</th><th>{alternate_path_heading}</th></tr></thead><tbody>{alternate_rows}</tbody></table></div></section>
+<section id="alternates"><h2>Main-draw alternates</h2><p class="explain">{alternate_explain}</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nation</th><th class="num">ER</th><th class="num">Live Rk</th><th>{alternate_path_heading}</th></tr></thead><tbody>{alternate_rows}</tbody></table></div></section>
 <section id="withdrawals"><h2>Withdrawals</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Player</th><th>Nat.</th><th>Previous</th><th class="num">ER</th></tr></thead><tbody>{withdrawal_rows}</tbody></table></div></section></div></div>
 <div class="entry-grid"><section id="qualifying"><h2>Qualifying</h2><p class="explain">{q_explain}</p><div class="scroll"><table><thead><tr><th class="num">Q queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path</th></tr></thead><tbody>{q_rows}</tbody></table></div></section>
 <section id="qualifying-alternates"><h2>Qualifying alternates</h2><p class="explain">{q_alt_explain}</p><div class="scroll"><table><thead><tr><th class="num">Queue</th><th>Player</th><th>Nat.</th><th class="num">Live Rk</th><th>Status</th><th>Path to qualifying</th></tr></thead><tbody>{q_alt_rows}</tbody></table></div></section></div>
