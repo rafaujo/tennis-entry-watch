@@ -11,6 +11,19 @@ from tennis_entry_watch.models import (
 )
 
 
+PROJECTED_MAIN_ALTERNATE_COLLECTORS = {
+    "live_tennis_schedule_snapshot",
+    "qualifying_draw_main_alternate_projection",
+}
+
+
+def is_projected_main_alternate(entry) -> bool:
+    return (
+        entry.status == EntryStatus.ALT
+        and entry.source.collector in PROJECTED_MAIN_ALTERNATE_COLLECTORS
+    )
+
+
 def snapshot_path(root: Path, tournament_id: str) -> Path:
     return root / tournament_id / "current.json"
 
@@ -133,7 +146,19 @@ def merge_published_draw_history(
     history: EntryList,
 ) -> EntryList:
     """Keep known entry metadata and pre-draw history beside an official draw."""
-    entries = list(published.entries)
+    has_verified_alternates = any(
+        entry.status == EntryStatus.ALT
+        and not is_projected_main_alternate(entry)
+        for entry in published.entries
+    )
+    entries = [
+        entry
+        for entry in published.entries
+        if not (
+            has_verified_alternates
+            and is_projected_main_alternate(entry)
+        )
+    ]
     published_positions = {
         entry.player.player_id: index
         for index, entry in enumerate(entries)
@@ -171,12 +196,23 @@ def merge_published_draw_history(
     )
     draw_looks_complete = len(published_positions) >= historical_acceptances
     entry_ids = {entry.player.player_id for entry in entries}
+    entry_positions = {
+        entry.player.player_id: index for index, entry in enumerate(entries)
+    }
     for previous in history.entries:
         if previous.player.player_id in entry_ids:
+            index = entry_positions[previous.player.player_id]
+            if (
+                previous.status == EntryStatus.ALT
+                and not is_projected_main_alternate(previous)
+                and is_projected_main_alternate(entries[index])
+            ):
+                entries[index] = previous
             continue
         if previous.status in {EntryStatus.ALT, EntryStatus.OUT}:
             entries.append(previous)
             entry_ids.add(previous.player.player_id)
+            entry_positions[previous.player.player_id] = len(entries) - 1
             continue
         if previous.status in accepted_statuses and draw_looks_complete:
             entries.append(
@@ -191,6 +227,17 @@ def merge_published_draw_history(
                 )
             )
             entry_ids.add(previous.player.player_id)
+            entry_positions[previous.player.player_id] = len(entries) - 1
+
+    if any(
+        entry.status == EntryStatus.ALT
+        and not is_projected_main_alternate(entry)
+        for entry in entries
+    ):
+        entries = [
+            entry for entry in entries
+            if not is_projected_main_alternate(entry)
+        ]
 
     qualifying_entries = list(published.qualifying_entries)
     qualifying_ids = {entry.player.player_id for entry in qualifying_entries}
