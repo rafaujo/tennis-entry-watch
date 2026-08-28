@@ -22,7 +22,7 @@
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-08-28T16:43:00.796033Z",
+  "snapshot_at": "2026-08-28T21:11:40.379689Z",
   "entries": [
     {
       "player": {
@@ -42,7 +42,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -65,7 +65,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -88,7 +88,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -111,7 +111,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "grigor-dimitrov",
+        "name": "Grigor Dimitrov",
+        "nationality": "BUL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 137,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -134,7 +157,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -157,7 +180,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -180,7 +203,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -203,7 +226,53 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "harry-wendelken",
+        "name": "Harry Wendelken",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 196,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dalibor-svrcina",
+        "name": "Dalibor Svrčina",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 134,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -226,7 +295,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -249,7 +318,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -272,7 +341,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -295,7 +364,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -318,7 +387,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -341,7 +410,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -364,7 +433,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -387,7 +456,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -410,7 +479,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -433,7 +502,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -456,7 +525,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -479,7 +548,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -502,7 +571,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -525,7 +594,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -548,7 +617,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -571,7 +640,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "francesco-passaro",
+        "name": "Francesco Passaro",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 207,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -594,7 +686,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -617,7 +709,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andrea-guerrieri",
+        "name": "Andrea Guerrieri",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 187,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -640,7 +755,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -663,7 +778,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -686,7 +801,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -709,7 +824,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -732,7 +847,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -755,7 +870,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -778,7 +893,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -801,7 +916,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -824,7 +939,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -847,7 +962,53 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "shintaro-mochizuki",
+        "name": "Shintaro Mochizuki",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 117,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jurij-rodionov",
+        "name": "Jurij Rodionov",
+        "nationality": "AUT",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 143,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -870,7 +1031,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -893,7 +1054,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -916,7 +1077,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -939,7 +1100,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -962,7 +1123,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -985,7 +1146,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1008,7 +1169,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1031,7 +1192,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "zsombor-piros",
+        "name": "Zsombor Piros",
+        "nationality": "HUN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 118,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1054,7 +1238,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1077,7 +1261,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1100,7 +1284,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1123,7 +1307,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1146,7 +1330,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tomas-barrios-vera",
+        "name": "Tomás Barrios Vera",
+        "nationality": "CHI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 144,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1169,7 +1376,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1192,7 +1399,53 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "nishesh-basavareddy",
+        "name": "Nishesh Basavareddy",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 163,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tristan-schoolkate",
+        "name": "Tristan Schoolkate",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 180,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1215,7 +1468,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1238,7 +1491,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1261,7 +1514,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hugo-gaston",
+        "name": "Hugo Gaston",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 91,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1284,7 +1560,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1307,7 +1583,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1330,7 +1606,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1353,7 +1629,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1376,7 +1652,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1399,7 +1675,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1422,7 +1698,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1445,7 +1721,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1468,7 +1744,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1491,7 +1767,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1514,7 +1790,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "rei-sakamoto",
+        "name": "Rei Sakamoto",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 157,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1537,7 +1836,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1560,7 +1859,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1583,7 +1882,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1606,7 +1905,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1629,7 +1928,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "federico-cina",
+        "name": "Federico Cina",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 181,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1652,7 +1974,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1675,7 +1997,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1698,7 +2020,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1721,7 +2043,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1744,7 +2066,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1767,7 +2089,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1790,7 +2112,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jacob-fearnley",
+        "name": "Jacob Fearnley",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 101,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1813,7 +2158,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1836,7 +2181,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1859,7 +2204,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1882,7 +2227,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1905,7 +2250,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1928,7 +2273,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1951,7 +2296,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1974,7 +2319,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -1997,7 +2342,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2020,7 +2365,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2043,7 +2388,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2066,7 +2411,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2089,7 +2434,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2112,7 +2457,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "toby-samuel",
+        "name": "Toby Samuel",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 110,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2135,7 +2503,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "lloyd-harris",
+        "name": "Lloyd Harris",
+        "nationality": "RSA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 139,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2158,7 +2549,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2181,7 +2572,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2204,7 +2595,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2227,7 +2618,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2250,7 +2641,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2273,7 +2664,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2296,7 +2687,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2319,7 +2710,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2342,7 +2733,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
+        "source_type": "tournament_official",
+        "collector": "us_open_official_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "coleman-wong",
+        "name": "Coleman Wong",
+        "nationality": "HKG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 94,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2365,7 +2779,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2388,7 +2802,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2411,7 +2825,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2434,7 +2848,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2457,7 +2871,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2480,7 +2894,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2503,7 +2917,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2526,7 +2940,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2549,7 +2963,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -2589,75 +3003,6 @@
       "entry_rank": null,
       "current_rank": 87,
       "alternate_position": 1,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "hugo-gaston",
-        "name": "Hugo Gaston",
-        "nationality": "FRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 91,
-      "alternate_position": 2,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "coleman-wong",
-        "name": "Coleman Wong",
-        "nationality": "HKG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 94,
-      "alternate_position": 3,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "jacob-fearnley",
-        "name": "Jacob Fearnley",
-        "nationality": "GBR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 101,
-      "alternate_position": 4,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -2763,29 +3108,6 @@
     },
     {
       "player": {
-        "player_id": "toby-samuel",
-        "name": "Toby Samuel",
-        "nationality": "GBR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 110,
-      "alternate_position": 9,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
         "player_id": "nicolas-mejia",
         "name": "Nicolás Mejía",
         "nationality": "COL",
@@ -2796,52 +3118,6 @@
       "entry_rank": null,
       "current_rank": 115,
       "alternate_position": 10,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "shintaro-mochizuki",
-        "name": "Shintaro Mochizuki",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 117,
-      "alternate_position": 11,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "zsombor-piros",
-        "name": "Zsombor Piros",
-        "nationality": "HUN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 118,
-      "alternate_position": 12,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -3039,29 +3315,6 @@
     },
     {
       "player": {
-        "player_id": "dalibor-svrcina",
-        "name": "Dalibor Svrčina",
-        "nationality": "CZE",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 134,
-      "alternate_position": 21,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
         "player_id": "cristian-garin",
         "name": "Cristian Garín",
         "nationality": "CHI",
@@ -3108,29 +3361,6 @@
     },
     {
       "player": {
-        "player_id": "grigor-dimitrov",
-        "name": "Grigor Dimitrov",
-        "nationality": "BUL",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 137,
-      "alternate_position": 24,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
         "player_id": "alexandre-muller",
         "name": "Alexandre Müller",
         "nationality": "FRA",
@@ -3154,29 +3384,6 @@
     },
     {
       "player": {
-        "player_id": "lloyd-harris",
-        "name": "Lloyd Harris",
-        "nationality": "RSA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 139,
-      "alternate_position": 26,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
         "player_id": "hugo-dellien",
         "name": "Hugo Dellien",
         "nationality": "BOL",
@@ -3187,52 +3394,6 @@
       "entry_rank": null,
       "current_rank": 140,
       "alternate_position": 27,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "jurij-rodionov",
-        "name": "Jurij Rodionov",
-        "nationality": "AUT",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 143,
-      "alternate_position": 28,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "tomas-barrios-vera",
-        "name": "Tomás Barrios Vera",
-        "nationality": "CHI",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 144,
-      "alternate_position": 29,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -3453,29 +3614,6 @@
     },
     {
       "player": {
-        "player_id": "rei-sakamoto",
-        "name": "Rei Sakamoto",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 157,
-      "alternate_position": 39,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
         "player_id": "gauthier-onclin",
         "name": "Gauthier Onclin",
         "nationality": "BEL",
@@ -3578,29 +3716,6 @@
       "entry_rank": null,
       "current_rank": 162,
       "alternate_position": 44,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "nishesh-basavareddy",
-        "name": "Nishesh Basavareddy",
-        "nationality": "USA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 163,
-      "alternate_position": 45,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -3936,52 +4051,6 @@
     },
     {
       "player": {
-        "player_id": "tristan-schoolkate",
-        "name": "Tristan Schoolkate",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 180,
-      "alternate_position": 60,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "federico-cina",
-        "name": "Federico Cina",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 181,
-      "alternate_position": 61,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
         "player_id": "tristan-boyer",
         "name": "Tristan Boyer",
         "nationality": "USA",
@@ -4061,29 +4130,6 @@
       "entry_rank": null,
       "current_rank": 185,
       "alternate_position": 65,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "andrea-guerrieri",
-        "name": "Andrea Guerrieri",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 187,
-      "alternate_position": 66,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -4222,29 +4268,6 @@
       "entry_rank": null,
       "current_rank": 193,
       "alternate_position": 72,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "harry-wendelken",
-        "name": "Harry Wendelken",
-        "nationality": "GBR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 196,
-      "alternate_position": 73,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -4452,29 +4475,6 @@
       "entry_rank": null,
       "current_rank": 206,
       "alternate_position": 82,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:38:24.813945Z",
-        "source_type": "trusted_secondary",
-        "collector": "qualifying_draw_main_alternate_projection"
-      }
-    },
-    {
-      "player": {
-        "player_id": "francesco-passaro",
-        "name": "Francesco Passaro",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 207,
-      "alternate_position": 83,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -5541,7 +5541,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5564,7 +5564,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5587,7 +5587,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5610,7 +5610,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5633,7 +5633,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5656,7 +5656,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5679,7 +5679,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5702,7 +5702,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5725,7 +5725,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5748,7 +5748,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5771,7 +5771,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5794,7 +5794,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5817,7 +5817,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5840,7 +5840,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5863,7 +5863,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5886,7 +5886,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5909,7 +5909,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5932,7 +5932,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5955,7 +5955,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -5978,7 +5978,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6001,7 +6001,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6024,7 +6024,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6047,7 +6047,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6070,7 +6070,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6093,7 +6093,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6116,7 +6116,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6139,7 +6139,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6162,7 +6162,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6185,7 +6185,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6208,7 +6208,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6231,7 +6231,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6254,7 +6254,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6277,7 +6277,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6300,7 +6300,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6323,7 +6323,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6346,7 +6346,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6369,7 +6369,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6392,7 +6392,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6415,7 +6415,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6438,7 +6438,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6461,7 +6461,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6484,7 +6484,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6507,7 +6507,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6530,7 +6530,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6553,7 +6553,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6576,7 +6576,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6599,7 +6599,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6622,7 +6622,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6645,7 +6645,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6668,7 +6668,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6691,7 +6691,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6714,7 +6714,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6737,7 +6737,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6760,7 +6760,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6783,7 +6783,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6806,7 +6806,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6829,7 +6829,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6852,7 +6852,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6875,7 +6875,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6898,7 +6898,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6921,7 +6921,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6944,7 +6944,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6967,7 +6967,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -6990,7 +6990,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7013,7 +7013,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7036,7 +7036,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7059,7 +7059,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7082,7 +7082,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7105,7 +7105,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7128,7 +7128,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7151,7 +7151,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7174,7 +7174,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7197,7 +7197,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7220,7 +7220,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7243,7 +7243,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7266,7 +7266,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7289,7 +7289,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7312,7 +7312,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7335,7 +7335,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7358,7 +7358,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7381,7 +7381,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7404,7 +7404,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7427,7 +7427,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7450,7 +7450,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7473,7 +7473,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7496,7 +7496,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7519,7 +7519,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7542,7 +7542,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7565,7 +7565,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7588,7 +7588,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7611,7 +7611,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7634,7 +7634,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7657,7 +7657,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7680,7 +7680,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7703,7 +7703,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7726,7 +7726,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7749,7 +7749,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7772,7 +7772,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7795,7 +7795,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7818,7 +7818,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7841,7 +7841,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7864,7 +7864,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7887,7 +7887,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7910,7 +7910,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7933,7 +7933,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7956,7 +7956,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -7979,7 +7979,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8002,7 +8002,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8025,7 +8025,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8048,7 +8048,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8071,7 +8071,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8094,7 +8094,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8117,7 +8117,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8140,7 +8140,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8163,7 +8163,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8186,7 +8186,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8209,7 +8209,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8232,7 +8232,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8255,7 +8255,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8278,7 +8278,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8301,7 +8301,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8324,7 +8324,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8347,7 +8347,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8370,7 +8370,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8393,7 +8393,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8416,7 +8416,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8439,7 +8439,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
@@ -8462,7 +8462,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
-        "retrieved_at": "2026-08-28T16:43:00.796033Z",
+        "retrieved_at": "2026-08-28T21:11:40.379689Z",
         "source_type": "tournament_official",
         "collector": "us_open_official_pdf_draw"
       }
