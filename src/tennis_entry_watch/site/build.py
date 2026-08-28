@@ -11,6 +11,7 @@ from tennis_entry_watch.collectors.live_tennis_snapshot import (
     load_live_snapshot,
     tournament_status,
 )
+from tennis_entry_watch.collectors.entry_snapshots import merge_published_draw_history
 from tennis_entry_watch.site.pwa import pwa_head, write_pwa_files
 
 
@@ -74,84 +75,6 @@ def overlay_official_wildcards(
         update={
             "snapshot_at": max(base.snapshot_at, retained.snapshot_at),
             "entries": entries,
-        }
-    )
-
-
-def merge_published_draw_history(
-    published: EntryList,
-    history: EntryList,
-) -> EntryList:
-    """Keep the final pre-draw queue and withdrawals beside an official draw."""
-    entries = list(published.entries)
-    published_positions = {
-        entry.player.player_id: index for index, entry in enumerate(entries)
-    }
-
-    # Record promotions on the official row instead of duplicating those
-    # players in the historical alternate queue.
-    for previous in history.entries:
-        index = published_positions.get(previous.player.player_id)
-        if index is None:
-            continue
-        official = entries[index]
-        updates = {}
-        if official.entry_rank is None and previous.entry_rank is not None:
-            updates["entry_rank"] = previous.entry_rank
-        if previous.status == EntryStatus.PR and official.status == EntryStatus.DA:
-            updates["status"] = EntryStatus.PR
-        elif (
-            previous.status == EntryStatus.ALT
-            and official.status != EntryStatus.WC
-        ):
-            if previous.previous_status == EntryStatus.PR:
-                updates["status"] = EntryStatus.PR
-            if official.previous_status is None:
-                updates["previous_status"] = EntryStatus.ALT
-        if updates:
-            entries[index] = official.model_copy(update=updates)
-
-    official_source = next((entry.source for entry in published.entries), None)
-    accepted_statuses = {EntryStatus.DA, EntryStatus.PR, EntryStatus.SE}
-    historical_acceptances = sum(
-        entry.status in accepted_statuses for entry in history.entries
-    )
-    draw_looks_complete = len(published.entries) >= historical_acceptances
-    for previous in history.entries:
-        if previous.player.player_id in published_positions:
-            continue
-        if previous.status in {EntryStatus.ALT, EntryStatus.OUT}:
-            entries.append(previous)
-            continue
-        if previous.status in accepted_statuses and draw_looks_complete:
-            # Absence from a complete published draw confirms the withdrawal,
-            # but does not reveal its exact date.
-            entries.append(
-                previous.model_copy(
-                    update={
-                        "status": EntryStatus.OUT,
-                        "alternate_position": None,
-                        "previous_status": previous.status,
-                        "withdrawn_at": None,
-                        "source": official_source or previous.source,
-                    }
-                )
-            )
-
-    qualifying_entries = list(published.qualifying_entries)
-    qualifying_ids = {entry.player.player_id for entry in qualifying_entries}
-    qualifying_entries.extend(
-        entry
-        for entry in history.qualifying_entries
-        if entry.status in {EntryStatus.QALT, EntryStatus.OUT}
-        and entry.player.player_id not in qualifying_ids
-    )
-
-    return published.model_copy(
-        update={
-            "snapshot_at": max(published.snapshot_at, history.snapshot_at),
-            "entries": entries,
-            "qualifying_entries": qualifying_entries,
         }
     )
 
