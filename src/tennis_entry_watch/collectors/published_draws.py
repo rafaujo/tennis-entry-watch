@@ -862,7 +862,10 @@ def collect_configured_draws(
             if predraw is not None:
                 published = merge_published_draw_history(published, predraw)
             live_history = live_history_by_id.get(tournament_id)
-            if live_history is not None:
+            if live_history is not None and not any(
+                entry.status == EntryStatus.ALT
+                for entry in published.entries
+            ):
                 published = merge_published_draw_history(
                     published,
                     live_history,
