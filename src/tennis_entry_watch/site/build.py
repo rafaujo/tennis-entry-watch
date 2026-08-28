@@ -92,10 +92,21 @@ def merge_published_draw_history(
     # players in the historical alternate queue.
     for previous in history.entries:
         index = published_positions.get(previous.player.player_id)
-        if index is None or previous.status != EntryStatus.ALT:
+        if index is None:
             continue
         official = entries[index]
-        if official.previous_status is None:
+        if previous.status == EntryStatus.PR and official.status == EntryStatus.DA:
+            entries[index] = official.model_copy(
+                update={
+                    "status": EntryStatus.PR,
+                    "entry_rank": official.entry_rank or previous.entry_rank,
+                }
+            )
+        elif (
+            previous.status == EntryStatus.ALT
+            and official.status != EntryStatus.WC
+            and official.previous_status is None
+        ):
             entries[index] = official.model_copy(
                 update={"previous_status": EntryStatus.ALT}
             )
@@ -175,7 +186,11 @@ def _rank(value: int | None) -> str:
 def _status(entry) -> str:
     detail = STATUS_LABELS[entry.status]
     movement = ""
-    if entry.previous_status == EntryStatus.ALT and entry.status in MAIN_DRAW_STATUSES:
+    if (
+        entry.previous_status == EntryStatus.ALT
+        and entry.status in MAIN_DRAW_STATUSES
+        and entry.status != EntryStatus.WC
+    ):
         movement = '<small class="promoted">promoted from alternate</small>'
     return (
         f'<span class="status status-{entry.status.value.lower()}" title="{html.escape(detail)}">'
