@@ -2,7 +2,10 @@ from pathlib import Path
 
 from datetime import date, datetime, timezone
 
-from tennis_entry_watch.collectors.live_tennis_snapshot import load_live_snapshot
+from tennis_entry_watch.collectors.live_tennis_snapshot import (
+    entry_lists_from_live_snapshot,
+    load_live_snapshot,
+)
 from tennis_entry_watch.models import EntryList, EntryStatus, Source, SourceType
 from tennis_entry_watch.site.build import (
     build_page,
@@ -70,6 +73,25 @@ def test_official_wildcards_overlay_a_manually_verified_list():
     assert overlaid.previous_status == EntryStatus.ALT
     assert overlaid.alternate_position is None
     assert overlaid.source.source_type == SourceType.TOURNAMENT_OFFICIAL
+
+
+def test_qualifying_wild_card_is_visible(
+    synthetic_catalog, synthetic_live_snapshot
+):
+    entry_list = entry_lists_from_live_snapshot(
+        synthetic_live_snapshot,
+        synthetic_catalog,
+        as_of=synthetic_catalog.tracking_started_at,
+    )[0]
+    wildcard = entry_list.qualifying_entries[0].model_copy(
+        update={"status": EntryStatus.WC}
+    )
+    entry_list.qualifying_entries[0] = wildcard
+
+    page = build_page(entry_list)
+
+    assert wildcard.player.name in page
+    assert 'status-wc" title="Wild card">WC' in page
 
 
 def test_us_open_page_shows_alternate_queue_and_promotion():
@@ -162,3 +184,15 @@ def test_completed_event_leaves_homepage_and_enters_archive(tmp_path):
     assert "Europcar Cancun Country Club" in archive
     assert "Cincinnati Open" in archive
     assert "Winston-Salem Open" in index
+
+
+def test_published_snapshot_replaces_stale_winston_salem_entry_watch(tmp_path):
+    build_site(Path("data/entries"), tmp_path, as_of=date(2026, 8, 27))
+    page = (tmp_path / "tournaments" / "winston-salem-open-2026.html").read_text(
+        encoding="utf-8"
+    )
+
+    assert "The draw has been published" in page
+    assert "Open the published draw" in page
+    assert 'status-qda"' in page
+    assert "PROJ Q" not in page

@@ -16,10 +16,10 @@
     },
     {
       "tournament_id": "us-open-2026",
-      "format": "protennislive_pdf",
-      "main_url": "https://www.protennislive.com/posting/2026/560/mds.pdf",
-      "qualifying_url": "https://www.protennislive.com/posting/2026/560/qs.pdf",
-      "minimum_main_players": 112,
+      "format": "us_open_pdf",
+      "main_url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+      "qualifying_url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
+      "minimum_main_players": 108,
       "wildcard_url": "https://www.usopen.org/en_US/news/articles/2026-08-18/gael_monfils_alexei_popyrin_lead_2026_us_open_mens_wild_cards.html",
       "minimum_main_wildcards": 6,
       "main_wildcards": [
@@ -30,6 +30,27 @@
         "Gael Monfils",
         "Dane Sweeny"
       ]
+    },
+    {
+      "tournament_id": "kingston-2-challenger-2026",
+      "format": "protennislive_pdf",
+      "main_url": "https://www.protennislive.com/posting/2026/3129/mds.pdf",
+      "qualifying_url": "https://www.protennislive.com/posting/2026/3129/qs.pdf",
+      "minimum_main_players": 24
+    },
+    {
+      "tournament_id": "roehampton-2-challenger-2026",
+      "format": "protennislive_pdf",
+      "main_url": "https://www.protennislive.com/posting/2026/3125/mds.pdf",
+      "qualifying_url": "https://www.protennislive.com/posting/2026/3125/qs.pdf",
+      "minimum_main_players": 24
+    },
+    {
+      "tournament_id": "augsburg-challenger-2026",
+      "format": "protennislive_pdf",
+      "main_url": "https://www.protennislive.com/posting/2026/8266/mds.pdf",
+      "qualifying_url": "https://www.protennislive.com/posting/2026/8266/qs.pdf",
+      "minimum_main_players": 24
     },
     {
       "tournament_id": "hamburg-ladies-gents-cup-2026",

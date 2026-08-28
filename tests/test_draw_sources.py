@@ -20,10 +20,10 @@ def test_current_atp_draws_are_monitored_from_official_pdfs() -> None:
     }
     assert events["us-open-2026"] == {
         "tournament_id": "us-open-2026",
-        "format": "protennislive_pdf",
-        "main_url": "https://www.protennislive.com/posting/2026/560/mds.pdf",
-        "qualifying_url": "https://www.protennislive.com/posting/2026/560/qs.pdf",
-        "minimum_main_players": 112,
+        "format": "us_open_pdf",
+        "main_url": "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+        "qualifying_url": "https://www.usopen.org/en_US/scores/draws/2026_MQ_draw.pdf",
+        "minimum_main_players": 108,
         "wildcard_url": "https://www.usopen.org/en_US/news/articles/2026-08-18/gael_monfils_alexei_popyrin_lead_2026_us_open_mens_wild_cards.html",
         "minimum_main_wildcards": 6,
         "main_wildcards": [
@@ -35,3 +35,12 @@ def test_current_atp_draws_are_monitored_from_official_pdfs() -> None:
             "Dane Sweeny",
         ],
     }
+    assert events["kingston-2-challenger-2026"]["main_url"].endswith(
+        "/3129/mds.pdf"
+    )
+    assert events["roehampton-2-challenger-2026"]["qualifying_url"].endswith(
+        "/3125/qs.pdf"
+    )
+    assert events["augsburg-challenger-2026"]["main_url"].endswith(
+        "/8266/mds.pdf"
+    )

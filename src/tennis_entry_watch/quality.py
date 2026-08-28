@@ -30,7 +30,11 @@ def _load_merged_entries(data_root: Path, snapshot_root: Path) -> dict[str, Entr
     retained = load_entry_snapshots(snapshot_root) if snapshot_root.exists() else []
     verified = load_entry_snapshots(data_root) if data_root.exists() else []
     merged = {item.tournament.tournament_id: item for item in retained}
-    merged.update({item.tournament.tournament_id: item for item in verified})
+    for item in verified:
+        tournament_id = item.tournament.tournament_id
+        published = merged.get(tournament_id)
+        if published is None or not published.tournament.draw_published:
+            merged[tournament_id] = item
     return merged
 
 
@@ -57,7 +61,8 @@ def validate_quality(
         if entry_list:
             main_count = sum(entry.status in MAIN_DRAW_STATUSES for entry in entry_list.entries)
             qualifying_count = sum(
-                entry.status == EntryStatus.QDA for entry in entry_list.qualifying_entries
+                entry.status in {EntryStatus.QDA, EntryStatus.WC}
+                for entry in entry_list.qualifying_entries
             )
             sources = {
                 entry.source.source_type.value
