@@ -96,7 +96,12 @@ def test_published_draw_keeps_predraw_alternates_and_withdrawals():
     assert statuses["Juncheng Shang"].status == EntryStatus.PR
     assert statuses["Thanasi Kokkinakis"].status == EntryStatus.PR
     assert statuses["Filip Misolic"].status == EntryStatus.PR
+    assert statuses["Carlos Taberner"].status == EntryStatus.PR
+    assert statuses["Carlos Taberner"].entry_rank == 107
+    assert statuses["Carlos Taberner"].previous_status == EntryStatus.ALT
+    assert statuses["Benjamin Bonzi"].entry_rank == 103
     assert statuses["Stan Wawrinka"].status == EntryStatus.WC
+    assert statuses["Stan Wawrinka"].entry_rank == 118
     assert statuses["Stan Wawrinka"].previous_status is None
 
     page = build_page(result)
@@ -105,7 +110,7 @@ def test_published_draw_keeps_predraw_alternates_and_withdrawals():
     assert "promoted from alternate" in page
     wawrinka_row = page[page.index("Stan Wawrinka") : page.index("</tr>", page.index("Stan Wawrinka"))]
     assert "promoted from alternate" not in wawrinka_row
-    assert page.count('status-pr" title="Protected ranking">PR') == 3
+    assert page.count('status-pr" title="Protected ranking">PR') == 4
     assert "PROJ Q" not in page
 
 

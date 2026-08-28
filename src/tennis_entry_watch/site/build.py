@@ -95,21 +95,21 @@ def merge_published_draw_history(
         if index is None:
             continue
         official = entries[index]
+        updates = {}
+        if official.entry_rank is None and previous.entry_rank is not None:
+            updates["entry_rank"] = previous.entry_rank
         if previous.status == EntryStatus.PR and official.status == EntryStatus.DA:
-            entries[index] = official.model_copy(
-                update={
-                    "status": EntryStatus.PR,
-                    "entry_rank": official.entry_rank or previous.entry_rank,
-                }
-            )
+            updates["status"] = EntryStatus.PR
         elif (
             previous.status == EntryStatus.ALT
             and official.status != EntryStatus.WC
-            and official.previous_status is None
         ):
-            entries[index] = official.model_copy(
-                update={"previous_status": EntryStatus.ALT}
-            )
+            if previous.previous_status == EntryStatus.PR:
+                updates["status"] = EntryStatus.PR
+            if official.previous_status is None:
+                updates["previous_status"] = EntryStatus.ALT
+        if updates:
+            entries[index] = official.model_copy(update=updates)
 
     official_source = next((entry.source for entry in published.entries), None)
     accepted_statuses = {EntryStatus.DA, EntryStatus.PR, EntryStatus.SE}
