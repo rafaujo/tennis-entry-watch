@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-08-29T14:35:46.636916Z",
+  "retrieved_at": "2026-08-29T17:14:28.245869Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -6681,8 +6681,8 @@
     },
     {
       "tournament": {
-        "tournament_id": "ct-porto-cup-2026",
-        "name": "CT Porto Cup",
+        "tournament_id": "porto-1-challenger-2026",
+        "name": "CT PORTO CUP",
         "year": 2026,
         "start_date": "2026-08-31",
         "end_date": "2026-09-06",
@@ -6704,15 +6704,14 @@
         "status": "upcoming"
       },
       "schedule_aliases": [
-        "Porto",
-        "CT Porto Cup"
+        "Porto 1"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
     },
     {
       "tournament": {
-        "tournament_id": "como-lake-challenger-2026",
+        "tournament_id": "como-challenger-2026",
         "name": "Como Lake Challenger",
         "year": 2026,
         "start_date": "2026-08-31",
@@ -6735,8 +6734,7 @@
         "status": "upcoming"
       },
       "schedule_aliases": [
-        "Como",
-        "Como Lake Challenger"
+        "Como"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"

@@ -1,4 +1,4 @@
-const CACHE_NAME = "tennis-entry-watch-592b5d28ff6a";
+const CACHE_NAME = "tennis-entry-watch-763b37e6e295";
 const PRECACHE_URLS = [
   "./archive/index.html",
   "./assets/icons/apple-touch-icon.png",
@@ -22,9 +22,7 @@ const PRECACHE_URLS = [
   "./tournaments/citta-di-biella-2026.html",
   "./tournaments/columbus-challenger-2026.html",
   "./tournaments/como-challenger-2026.html",
-  "./tournaments/como-lake-challenger-2026.html",
   "./tournaments/copa-sevilla-2026.html",
-  "./tournaments/ct-porto-cup-2026.html",
   "./tournaments/curitiba-challenger-2026.html",
   "./tournaments/genoa-challenger-2026.html",
   "./tournaments/guangzhou-huangpu-international-tennis-open-2026.html",
