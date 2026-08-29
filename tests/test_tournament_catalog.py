@@ -3,6 +3,7 @@ from pathlib import Path
 
 from tennis_entry_watch.collectors.tournament_catalog import (
     TournamentCatalogCollector,
+    _apply_overrides,
     parse_calendar_page,
     write_catalog_if_changed,
 )
@@ -31,6 +32,33 @@ def test_calendar_parser_extracts_tournament_metadata():
     assert tournament.main_draw_size == 48
     assert tournament.qualifying_draw_size == 16
     assert events[0].schedule_aliases == ["Winston-Salem", "Winston-Salem Open"]
+
+
+def test_catalog_override_survives_a_source_name_change():
+    renamed_html = HTML.replace("Winston-Salem Open", "Como Lake Challenger").replace(
+        "Winston-Salem", "Como"
+    )
+    events = parse_calendar_page(
+        renamed_html,
+        2026,
+        "https://example.test/calendar",
+    )
+    overrides = {
+        "events": [
+            {
+                "source_name": "Città di Como Challenger",
+                "source_names": ["Como Lake Challenger"],
+                "source_start_date": "2026-08-24",
+                "tournament_id": "como-challenger-2026",
+                "name": "Como Lake Challenger",
+            }
+        ]
+    }
+
+    updated = _apply_overrides(events, overrides)
+
+    assert updated[0].tournament.tournament_id == "como-challenger-2026"
+    assert updated[0].tournament.name == "Como Lake Challenger"
 
 
 def test_catalog_timestamp_only_change_does_not_rewrite(tmp_path, monkeypatch):

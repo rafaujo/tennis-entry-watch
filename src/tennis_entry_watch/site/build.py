@@ -804,6 +804,15 @@ def build_site(
     )
     live_entry_lists = entry_lists_from_live_snapshot(live_snapshot, catalog, reference_date)
     retained_entry_lists = discover_entry_lists(snapshot_root) if snapshot_root.exists() else []
+    if catalog:
+        catalog_ids = {
+            event.tournament.tournament_id for event in catalog.events
+        }
+        retained_entry_lists = [
+            item
+            for item in retained_entry_lists
+            if item.tournament.tournament_id in catalog_ids
+        ]
     # Priority: manually verified lists, then retained/published snapshots, then the
     # current schedule. An empty schedule refresh can therefore never erase a list.
     retained_by_id = {
