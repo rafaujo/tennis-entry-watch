@@ -249,6 +249,10 @@ def build_page(
         (entry for entry in entry_list.qualifying_entries if entry.status == EntryStatus.QALT),
         key=lambda entry: entry.alternate_position or 9999,
     )
+    projected_q_alternates = any(
+        entry.source.collector == "live_tennis_schedule_snapshot"
+        for entry in q_alternates
+    )
 
     qualifier_slots = t.main_draw_qualifier_slots or 0
     wildcard_slots = t.main_draw_wildcard_slots or 0
@@ -362,6 +366,13 @@ def build_page(
         for entry in withdrawals
     ) or '<tr class="empty"><td colspan="5">No withdrawals are identified in the selected source.</td></tr>'
 
+    q_alt_final_badge = (
+        '<span class="chance chance-queue">'
+        f'{"FINAL Q PROJECTION" if projected_q_alternates else "FINAL Q QUEUE"}'
+        '</span>'
+        if t.draw_published
+        else None
+    )
     q_alt_rows = "".join(
         '<tr>'
         f'<td class="num">{entry.alternate_position}</td>'
@@ -371,7 +382,7 @@ def build_page(
         f'<td><span class="status status-qalt">'
         f'{"PROJ Q ALT" if entry.source.collector == "live_tennis_schedule_snapshot" else "Q ALT"}'
         f'</span></td>'
-        f'<td>{_chance(entry.alternate_position)}</td></tr>'
+        f'<td>{q_alt_final_badge or _chance(entry.alternate_position)}</td></tr>'
         for entry in q_alternates
     )
 
@@ -464,7 +475,7 @@ def build_page(
 
     if not q_alt_rows:
         q_alt_rows = (
-            '<tr class="empty"><td colspan="6">The qualifying-alternate queue is closed after draw publication.</td></tr>'
+            '<tr class="empty"><td colspan="6">No final qualifying-alternate queue was retained before draw publication.</td></tr>'
             if t.draw_published
             else '<tr class="empty"><td colspan="6">No verified or projected qualifying-alternate queue is available yet. '
             'A queue is shown only when tracked candidates exceed the qualifying draw capacity.</td></tr>'
@@ -528,7 +539,11 @@ def build_page(
         )
         main_explain = "The official draw replaces projected seeds and pending entry places."
         q_explain = "The published qualifying draw replaces the projected qualifying field."
-        q_alt_explain = "Alternate estimates close once qualifying begins."
+        q_alt_explain = (
+            "Final projected pre-draw qualifying-alternate queue, retained as history."
+            if projected_q_alternates
+            else "Final tracked pre-draw qualifying-alternate queue, retained as history."
+        )
     else:
         lifecycle_notice = (
             '<p class="notice"><strong>The draw has not been published.</strong> This is an entry watch, not the draw. '

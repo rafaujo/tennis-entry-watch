@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
 from tennis_entry_watch.collectors.entry_snapshots import (
+    merge_missing_alternate_history,
     merge_published_draw_history,
     predraw_snapshot_path,
     project_main_alternates_from_qualifying,
@@ -862,11 +863,8 @@ def collect_configured_draws(
             if predraw is not None:
                 published = merge_published_draw_history(published, predraw)
             live_history = live_history_by_id.get(tournament_id)
-            if live_history is not None and not any(
-                entry.status == EntryStatus.ALT
-                for entry in published.entries
-            ):
-                published = merge_published_draw_history(
+            if live_history is not None:
+                published = merge_missing_alternate_history(
                     published,
                     live_history,
                 )
