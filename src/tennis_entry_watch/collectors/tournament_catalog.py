@@ -181,10 +181,12 @@ def _load_overrides(path: Path) -> dict:
 
 
 def _apply_overrides(events: list[CatalogEvent], overrides: dict) -> list[CatalogEvent]:
-    by_key = {
-        (item.get("source_name"), item.get("source_start_date")): item
-        for item in overrides.get("events", [])
-    }
+    by_key = {}
+    for item in overrides.get("events", []):
+        source_names = [item.get("source_name"), *item.get("source_names", [])]
+        for source_name in source_names:
+            if source_name:
+                by_key[(source_name, item.get("source_start_date"))] = item
     updated: list[CatalogEvent] = []
     used_ids: set[str] = set()
     for event in events:

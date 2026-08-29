@@ -285,6 +285,57 @@ def test_full_site_builds_tournaments_and_player_schedules(tmp_path):
     assert "pre-draw qualifying estimates are closed" not in cincinnati
 
 
+def test_full_site_ignores_retained_snapshots_no_longer_in_catalog(
+    tmp_path, current, synthetic_catalog
+):
+    data_root = tmp_path / "entries"
+    snapshot_root = tmp_path / "snapshots"
+    canonical_dir = data_root / "fixture-open-2026"
+    orphan_dir = snapshot_root / "renamed-fixture-open-2026"
+    canonical_dir.mkdir(parents=True)
+    orphan_dir.mkdir(parents=True)
+
+    tournament = synthetic_catalog.events[0].tournament
+    canonical = current.model_copy(update={"tournament": tournament})
+    orphan = canonical.model_copy(
+        update={
+            "tournament": tournament.model_copy(
+                update={"tournament_id": "renamed-fixture-open-2026"}
+            )
+        }
+    )
+    (canonical_dir / "current.json").write_text(
+        canonical.model_dump_json(), encoding="utf-8"
+    )
+    (orphan_dir / "current.json").write_text(
+        orphan.model_dump_json(), encoding="utf-8"
+    )
+    catalog_path = tmp_path / "catalog.json"
+    catalog_path.write_text(synthetic_catalog.model_dump_json(), encoding="utf-8")
+    ranking_path = tmp_path / "ranking.json"
+    ranking_path.write_text(
+        '{"retrieved_at":"2026-08-15T12:00:00Z",'
+        '"schedule_source":"https://example.test/schedules",'
+        '"rankings":[],"schedules":[]}',
+        encoding="utf-8",
+    )
+
+    output = tmp_path / "site"
+    written = build_site(
+        data_root,
+        output,
+        ranking_path=ranking_path,
+        catalog_path=catalog_path,
+        as_of=date(2026, 8, 15),
+        snapshot_root=snapshot_root,
+    )
+
+    index = (output / "index.html").read_text(encoding="utf-8")
+    assert index.count(">Fixture Open</a>") == 1
+    assert output / "tournaments" / "fixture-open-2026.html" in written
+    assert not (output / "tournaments" / "renamed-fixture-open-2026.html").exists()
+
+
 def test_completed_event_leaves_homepage_and_enters_archive(tmp_path):
     build_site(Path("data/entries"), tmp_path, as_of=date(2026, 8, 24))
     index = (tmp_path / "index.html").read_text(encoding="utf-8")
