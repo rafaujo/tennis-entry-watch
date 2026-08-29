@@ -257,6 +257,40 @@ def merge_published_draw_history(
     )
 
 
+def merge_missing_alternate_history(
+    published: EntryList,
+    history: EntryList,
+) -> EntryList:
+    """Restore missing main and qualifying alternate queues independently."""
+    needs_main_alternates = (
+        not any(entry.status == EntryStatus.ALT for entry in published.entries)
+        and any(entry.status == EntryStatus.ALT for entry in history.entries)
+    )
+    needs_qualifying_alternates = (
+        not any(
+            entry.status == EntryStatus.QALT
+            for entry in published.qualifying_entries
+        )
+        and any(
+            entry.status == EntryStatus.QALT
+            for entry in history.qualifying_entries
+        )
+    )
+    if not needs_main_alternates and not needs_qualifying_alternates:
+        return published
+    selected_history = history.model_copy(
+        update={
+            "entries": history.entries if needs_main_alternates else [],
+            "qualifying_entries": (
+                history.qualifying_entries
+                if needs_qualifying_alternates
+                else []
+            ),
+        }
+    )
+    return merge_published_draw_history(published, selected_history)
+
+
 def retain_live_entry_snapshots(
     snapshot: dict,
     catalog: TournamentCatalog,

@@ -201,6 +201,9 @@ def test_projected_challenger_alternates_remain_labelled_after_draw(
     fallback_page = build_page(published)
     assert "Informational projection reconstructed" in fallback_page
     assert fallback_page.count("FINAL PROJECTION") == 6
+    assert page.count("FINAL Q PROJECTION") == 2
+    assert "qualifying-alternate queue, retained as history" in page
+    assert "qualifying-alternate queue is closed" not in page
 
 
 def test_us_open_page_shows_alternate_queue_and_promotion():

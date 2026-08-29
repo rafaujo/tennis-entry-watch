@@ -3,6 +3,7 @@ from datetime import date
 
 from tennis_entry_watch.collectors.entry_snapshots import (
     load_entry_snapshots,
+    merge_missing_alternate_history,
     merge_published_draw_history,
     predraw_snapshot_path,
     project_main_alternates_from_qualifying,
@@ -172,3 +173,39 @@ def test_published_draw_projects_alternates_from_qualifying_as_fallback(
         entry.source.source_type.value == "trusted_secondary"
         for entry in alternates
     )
+
+
+def test_live_history_restores_qualifying_alternates_when_main_queue_exists(
+    synthetic_live_snapshot, synthetic_catalog
+):
+    history = entry_lists_from_live_snapshot(
+        synthetic_live_snapshot,
+        synthetic_catalog,
+        synthetic_catalog.tracking_started_at,
+    )[0]
+    published = history.model_copy(
+        update={
+            "tournament": history.tournament.model_copy(
+                update={"draw_published": True}
+            ),
+            "qualifying_entries": [
+                entry
+                for entry in history.qualifying_entries
+                if entry.status == EntryStatus.QDA
+            ],
+        }
+    )
+    assert any(entry.status == EntryStatus.ALT for entry in published.entries)
+    assert not any(
+        entry.status == EntryStatus.QALT
+        for entry in published.qualifying_entries
+    )
+
+    merged = merge_missing_alternate_history(published, history)
+    qualifying_alternates = [
+        entry
+        for entry in merged.qualifying_entries
+        if entry.status == EntryStatus.QALT
+    ]
+
+    assert [entry.alternate_position for entry in qualifying_alternates] == [1, 2]
