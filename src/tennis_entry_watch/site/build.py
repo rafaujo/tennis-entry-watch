@@ -539,11 +539,19 @@ def build_page(
         )
         main_explain = "The official draw replaces projected seeds and pending entry places."
         q_explain = "The published qualifying draw replaces the projected qualifying field."
-        q_alt_explain = (
-            "Final projected pre-draw qualifying-alternate queue, retained as history."
-            if projected_q_alternates
-            else "Final tracked pre-draw qualifying-alternate queue, retained as history."
-        )
+        if projected_q_alternates:
+            q_alt_explain = (
+                "Final projected pre-draw qualifying-alternate queue, retained as history."
+            )
+        elif q_alternates:
+            q_alt_explain = (
+                "Final tracked pre-draw qualifying-alternate queue, retained as history."
+            )
+        else:
+            q_alt_explain = (
+                "No final pre-draw qualifying-alternate queue was retained; "
+                "the published draw is not used to invent one."
+            )
     else:
         lifecycle_notice = (
             '<p class="notice"><strong>The draw has not been published.</strong> This is an entry watch, not the draw. '

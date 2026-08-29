@@ -205,6 +205,12 @@ def test_projected_challenger_alternates_remain_labelled_after_draw(
     assert "qualifying-alternate queue, retained as history" in page
     assert "qualifying-alternate queue is closed" not in page
 
+    page_without_q_alternates = build_page(
+        published.model_copy(update={"qualifying_entries": []})
+    )
+    assert "No final pre-draw qualifying-alternate queue was retained" in page_without_q_alternates
+    assert "the published draw is not used to invent one" in page_without_q_alternates
+
 
 def test_us_open_page_shows_alternate_queue_and_promotion():
     from tennis_entry_watch.models import EntryList
