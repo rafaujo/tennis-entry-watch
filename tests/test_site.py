@@ -76,41 +76,78 @@ def test_official_wildcards_overlay_a_manually_verified_list():
     assert overlaid.source.source_type == SourceType.TOURNAMENT_OFFICIAL
 
 
-def test_published_draw_keeps_predraw_alternates_and_withdrawals():
-    verified = EntryList.model_validate_json(
-        Path("data/entries/us-open-2026/current.json").read_text(encoding="utf-8")
+def test_published_draw_keeps_predraw_alternates_and_withdrawals(current):
+    """Exercise draw-history rules without depending on a live tournament file."""
+    by_name = {entry.player.name: entry for entry in current.entries}
+    history = current.model_copy(
+        update={
+            "entries": [
+                by_name["Alex River"].model_copy(
+                    update={
+                        "status": EntryStatus.DA,
+                        "previous_status": None,
+                        "withdrawn_at": None,
+                    }
+                ),
+                by_name["Bruno Costa"].model_copy(update={"status": EntryStatus.PR}),
+                by_name["Marco Silva"].model_copy(
+                    update={
+                        "status": EntryStatus.ALT,
+                        "alternate_position": 1,
+                    }
+                ),
+                by_name["Daniel Lee"].model_copy(
+                    update={
+                        "status": EntryStatus.ALT,
+                        "alternate_position": 2,
+                    }
+                ),
+                by_name["Emil Novak"].model_copy(
+                    update={
+                        "status": EntryStatus.ALT,
+                        "alternate_position": 3,
+                    }
+                ),
+            ]
+        }
     )
-    published = EntryList.model_validate_json(
-        Path("data/entry-snapshots/us-open-2026/current.json").read_text(
-            encoding="utf-8"
-        )
+    published = current.model_copy(
+        update={
+            "tournament": current.tournament.model_copy(
+                update={"draw_published": True}
+            ),
+            "entries": [
+                by_name["Bruno Costa"].model_copy(
+                    update={"status": EntryStatus.DA, "entry_rank": None}
+                ),
+                by_name["Marco Silva"].model_copy(
+                    update={"status": EntryStatus.DA, "entry_rank": None}
+                ),
+                by_name["Emil Novak"],
+            ],
+        }
     )
 
-    result = merge_published_draw_history(published, verified)
+    result = merge_published_draw_history(published, history)
     statuses = {entry.player.name: entry for entry in result.entries}
 
-    assert statuses["Benjamin Bonzi"].previous_status == EntryStatus.ALT
-    assert statuses["Hugo Gaston"].status == EntryStatus.ALT
-    assert statuses["Sebastian Korda"].status == EntryStatus.OUT
-    assert statuses["Jannik Sinner"].status == EntryStatus.OUT
-    assert statuses["Juncheng Shang"].status == EntryStatus.PR
-    assert statuses["Thanasi Kokkinakis"].status == EntryStatus.PR
-    assert statuses["Filip Misolic"].status == EntryStatus.PR
-    assert statuses["Carlos Taberner"].status == EntryStatus.PR
-    assert statuses["Carlos Taberner"].entry_rank == 107
-    assert statuses["Carlos Taberner"].previous_status == EntryStatus.ALT
-    assert statuses["Benjamin Bonzi"].entry_rank == 103
-    assert statuses["Stan Wawrinka"].status == EntryStatus.WC
-    assert statuses["Stan Wawrinka"].entry_rank == 118
-    assert statuses["Stan Wawrinka"].previous_status is None
+    assert statuses["Marco Silva"].previous_status == EntryStatus.ALT
+    assert statuses["Marco Silva"].entry_rank == 91
+    assert statuses["Daniel Lee"].status == EntryStatus.ALT
+    assert statuses["Alex River"].status == EntryStatus.OUT
+    assert statuses["Alex River"].previous_status == EntryStatus.DA
+    assert statuses["Bruno Costa"].status == EntryStatus.PR
+    assert statuses["Bruno Costa"].entry_rank == 72
+    assert statuses["Emil Novak"].status == EntryStatus.WC
+    assert statuses["Emil Novak"].previous_status is None
 
     page = build_page(result)
     assert "Final tracked pre-draw queue" in page
     assert "FINAL QUEUE" in page
     assert "promoted from alternate" in page
-    wawrinka_row = page[page.index("Stan Wawrinka") : page.index("</tr>", page.index("Stan Wawrinka"))]
-    assert "promoted from alternate" not in wawrinka_row
-    assert page.count('status-pr" title="Protected ranking">PR') == 4
+    wildcard_row = page[page.index("Emil Novak") : page.index("</tr>", page.index("Emil Novak"))]
+    assert "promoted from alternate" not in wildcard_row
+    assert page.count('status-pr" title="Protected ranking">PR') == 1
     assert "PROJ Q" not in page
 
 
