@@ -22,31 +22,8 @@
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-08-30T00:21:15.944070Z",
+  "snapshot_at": "2026-08-30T14:52:21.022467Z",
   "entries": [
-    {
-      "player": {
-        "player_id": "pol-martin-tiffon",
-        "name": "Pol Martín Tiffon",
-        "nationality": "ESP",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 210,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
     {
       "player": {
         "player_id": "maxim-mrva",
@@ -57,7 +34,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 212,
+      "current_rank": 205,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -65,7 +42,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "pol-martin-tiffon",
+        "name": "Pol Martín Tiffon",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 209,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -80,7 +80,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 289,
+      "current_rank": 274,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -88,7 +88,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -103,7 +103,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 291,
+      "current_rank": 283,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -111,7 +111,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -126,7 +126,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 301,
+      "current_rank": 290,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -134,7 +134,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -149,7 +149,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 328,
+      "current_rank": 327,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -157,53 +157,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "marko-topo",
-        "name": "Marko Topo",
-        "nationality": "GER",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 341,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "ognjen-milic",
-        "name": "Ognjen Milić",
-        "nationality": "SRB",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 345,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -218,7 +172,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 351,
+      "current_rank": 339,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -226,7 +180,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -241,7 +195,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 357,
+      "current_rank": 342,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -249,7 +203,53 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marko-topo",
+        "name": "Marko Topo",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 343,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ognjen-milic",
+        "name": "Ognjen Milić",
+        "nationality": "SRB",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 349,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -264,7 +264,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 365,
+      "current_rank": 351,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -272,30 +272,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "gabriele-piraino",
-        "name": "Gabriele Piraino",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 370,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -310,7 +287,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 377,
+      "current_rank": 364,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -318,7 +295,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "gabriele-piraino",
+        "name": "Gabriele Piraino",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 365,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -333,7 +333,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 390,
+      "current_rank": 376,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -341,76 +341,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "oleg-prihodko",
-        "name": "Oleg Prihodko",
-        "nationality": "MKD",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 409,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "robert-strombachs",
-        "name": "Robert Strombachs",
-        "nationality": "LAT",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 413,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "massimo-giunta",
-        "name": "Massimo Giunta",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 420,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -425,7 +356,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 425,
+      "current_rank": 396,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -433,7 +364,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "massimo-giunta",
+        "name": "Massimo Giunta",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 405,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -448,7 +402,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 430,
+      "current_rank": 408,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -456,22 +410,22 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
     },
     {
       "player": {
-        "player_id": "vladyslav-orlov",
-        "name": "Vladyslav Orlov",
-        "nationality": "UKR",
+        "player_id": "robert-strombachs",
+        "name": "Robert Strombachs",
+        "nationality": "LAT",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 436,
+      "current_rank": 414,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -479,7 +433,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -494,7 +448,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 476,
+      "current_rank": 434,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -502,7 +456,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "oleg-prihodko",
+        "name": "Oleg Prihodko",
+        "nationality": "MKD",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 460,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -517,7 +494,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 496,
+      "current_rank": 473,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -525,7 +502,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "vladyslav-orlov",
+        "name": "Vladyslav Orlov",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 483,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -540,7 +540,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 502,
+      "current_rank": 509,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -548,7 +548,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -563,7 +563,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 363,
+      "current_rank": 352,
       "alternate_position": 1,
       "seed": null,
       "projected_seed": null,
@@ -571,7 +571,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -586,7 +586,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 547,
+      "current_rank": 508,
       "alternate_position": 2,
       "seed": null,
       "projected_seed": null,
@@ -594,7 +594,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -609,7 +609,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 576,
+      "current_rank": 539,
       "alternate_position": 3,
       "seed": null,
       "projected_seed": null,
@@ -617,30 +617,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "amit-vales",
-        "name": "Amit Vales",
-        "nationality": "ISR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 598,
-      "alternate_position": 4,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -655,7 +632,30 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 625,
+      "current_rank": 567,
+      "alternate_position": 4,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "amit-vales",
+        "name": "Amit Vales",
+        "nationality": "ISR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 583,
       "alternate_position": 5,
       "seed": null,
       "projected_seed": null,
@@ -663,53 +663,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "oleksandr-ovcharenko",
-        "name": "Oleksandr Ovcharenko",
-        "nationality": "UKR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 629,
-      "alternate_position": 6,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "stefan-popovic",
-        "name": "Stefan Popović",
-        "nationality": "SRB",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 630,
-      "alternate_position": 7,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -724,38 +678,15 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 643,
-      "alternate_position": 8,
+      "current_rank": 634,
+      "alternate_position": 6,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "giorgio-tabacco",
-        "name": "Giorgio Tabacco",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 654,
-      "alternate_position": 9,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -770,15 +701,38 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 657,
-      "alternate_position": 10,
+      "current_rank": 639,
+      "alternate_position": 7,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "stefan-popovic",
+        "name": "Stefan Popović",
+        "nationality": "SRB",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 642,
+      "alternate_position": 8,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -793,38 +747,38 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 668,
-      "alternate_position": 11,
+      "current_rank": 652,
+      "alternate_position": 9,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
     },
     {
       "player": {
-        "player_id": "samir-hamza-reguig",
-        "name": "Samir Hamza Reguig",
-        "nationality": "ALG",
+        "player_id": "oleksandr-ovcharenko",
+        "name": "Oleksandr Ovcharenko",
+        "nationality": "UKR",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 682,
-      "alternate_position": 12,
+      "current_rank": 665,
+      "alternate_position": 10,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -839,15 +793,15 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 721,
-      "alternate_position": 13,
+      "current_rank": 700,
+      "alternate_position": 11,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -862,15 +816,15 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 734,
-      "alternate_position": 14,
+      "current_rank": 716,
+      "alternate_position": 12,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -885,7 +839,53 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 766,
+      "current_rank": 740,
+      "alternate_position": 13,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "giorgio-tabacco",
+        "name": "Giorgio Tabacco",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 748,
+      "alternate_position": 14,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "samir-hamza-reguig",
+        "name": "Samir Hamza Reguig",
+        "nationality": "ALG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 749,
       "alternate_position": 15,
       "seed": null,
       "projected_seed": null,
@@ -893,7 +893,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -908,7 +908,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 903,
+      "current_rank": 860,
       "alternate_position": 16,
       "seed": null,
       "projected_seed": null,
@@ -916,7 +916,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -933,7 +933,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 363,
+      "current_rank": 352,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -941,7 +941,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -956,7 +956,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 547,
+      "current_rank": 508,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -964,7 +964,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -979,7 +979,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 576,
+      "current_rank": 539,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -987,30 +987,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "amit-vales",
-        "name": "Amit Vales",
-        "nationality": "ISR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 598,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1025,7 +1002,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 625,
+      "current_rank": 567,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1033,22 +1010,22 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
     },
     {
       "player": {
-        "player_id": "oleksandr-ovcharenko",
-        "name": "Oleksandr Ovcharenko",
-        "nationality": "UKR",
+        "player_id": "amit-vales",
+        "name": "Amit Vales",
+        "nationality": "ISR",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 629,
+      "current_rank": 583,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1056,30 +1033,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "stefan-popovic",
-        "name": "Stefan Popović",
-        "nationality": "SRB",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 630,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1094,7 +1048,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 643,
+      "current_rank": 634,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1102,30 +1056,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "giorgio-tabacco",
-        "name": "Giorgio Tabacco",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 654,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1140,7 +1071,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 657,
+      "current_rank": 639,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1148,7 +1079,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "stefan-popovic",
+        "name": "Stefan Popović",
+        "nationality": "SRB",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 642,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1163,7 +1117,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 668,
+      "current_rank": 652,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1171,22 +1125,22 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
     },
     {
       "player": {
-        "player_id": "samir-hamza-reguig",
-        "name": "Samir Hamza Reguig",
-        "nationality": "ALG",
+        "player_id": "oleksandr-ovcharenko",
+        "name": "Oleksandr Ovcharenko",
+        "nationality": "UKR",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 682,
+      "current_rank": 665,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1194,7 +1148,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1209,7 +1163,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 721,
+      "current_rank": 700,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1217,7 +1171,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1232,7 +1186,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 734,
+      "current_rank": 716,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1240,7 +1194,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1255,7 +1209,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 766,
+      "current_rank": 740,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1263,7 +1217,53 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "giorgio-tabacco",
+        "name": "Giorgio Tabacco",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 748,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "samir-hamza-reguig",
+        "name": "Samir Hamza Reguig",
+        "nationality": "ALG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 749,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1278,7 +1278,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 903,
+      "current_rank": 860,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1286,7 +1286,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-08-30T00:21:15.944070Z",
+        "retrieved_at": "2026-08-30T14:52:21.022467Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
