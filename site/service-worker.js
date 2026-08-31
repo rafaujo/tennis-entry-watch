@@ -1,4 +1,4 @@
-const CACHE_NAME = "tennis-entry-watch-809fe33d85d4";
+const CACHE_NAME = "tennis-entry-watch-e1c45ef091ef";
 const PRECACHE_URLS = [
   "./archive/index.html",
   "./assets/icons/apple-touch-icon.png",
@@ -10,9 +10,11 @@ const PRECACHE_URLS = [
   "./manifest.webmanifest",
   "./pwa.js",
   "./schedules/index.html",
+  "./tournaments/antofagasta-challenger-2026.html",
   "./tournaments/aon-open-challenger-2026.html",
   "./tournaments/augsburg-challenger-2026.html",
   "./tournaments/bari-challlenger-2026.html",
+  "./tournaments/braga-open-2026.html",
   "./tournaments/cancun-challenger-2026.html",
   "./tournaments/cassis-open-provence-2026.html",
   "./tournaments/challenger-de-buenos-aires-2026.html",
@@ -39,6 +41,7 @@ const PRECACHE_URLS = [
   "./tournaments/no-open-2026.html",
   "./tournaments/open-de-rennes-2026.html",
   "./tournaments/open-de-vendee-2026.html",
+  "./tournaments/palermo-challenger-2026.html",
   "./tournaments/phan-thiet-challenger-iii-2026.html",
   "./tournaments/phan-thiet-challenger-iv-2026.html",
   "./tournaments/plovdiv-3-challenger-2026.html",
@@ -53,11 +56,14 @@ const PRECACHE_URLS = [
   "./tournaments/saint-tropez-open-2026.html",
   "./tournaments/serving-the-future-open-2026.html",
   "./tournaments/shanghai-challenger-2026.html",
+  "./tournaments/shanghai-masters-2026.html",
   "./tournaments/sion-challenger-2026.html",
   "./tournaments/szczecin-open-2026.html",
   "./tournaments/tiburon-challenger-2026.html",
   "./tournaments/us-open-2026.html",
+  "./tournaments/villena-open-2026.html",
   "./tournaments/winston-salem-open-2026.html",
+  "./tournaments/wuning-challenger-iii-2026.html",
   "./tournaments/zhangjiagang-challenger-2026.html"
 ];
 
