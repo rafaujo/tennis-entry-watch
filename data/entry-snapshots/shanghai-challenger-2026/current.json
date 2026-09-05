@@ -15,14 +15,14 @@
     "qualifying_draw_size": 24,
     "main_draw_qualifier_slots": 6,
     "main_draw_wildcard_slots": 3,
-    "draw_published": false,
-    "draw_url": null,
+    "draw_published": true,
+    "draw_url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
     "qualifying_list_published": true,
     "entry_list_date": null,
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-09-05T00:07:15.114341Z",
+  "snapshot_at": "2026-09-05T13:27:39.511696Z",
   "entries": [
     {
       "player": {
@@ -34,63 +34,86 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 133,
+      "current_rank": 134,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "taro-daniel",
-        "name": "Taro Daniel",
-        "nationality": "JPN",
+        "player_id": "petr-bar-biryukov",
+        "name": "Petr Bar Biryukov",
+        "nationality": "RUS",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 162,
+      "current_rank": 292,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "alexis-galarneau",
-        "name": "Alexis Galarneau",
-        "nationality": "CAN",
+        "player_id": "wu-tung-lin",
+        "name": "Wu Tung-lin",
+        "nationality": null,
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 176,
+      "current_rank": null,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tseng-chun-hsin",
+        "name": "Tseng Chun-hsin",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -110,10 +133,171 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "akira-santillan",
+        "name": "Akira Santillan",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 312,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ilya-ivashka",
+        "name": "Ilya Ivashka",
+        "nationality": "BLR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 358,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hsu-yu-hsiou",
+        "name": "Hsu Yu-hsiou",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "cui-jie",
+        "name": "Cui Jie",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sun-fajing",
+        "name": "Sun Fajing",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sergey-fomin",
+        "name": "Sergey Fomin",
+        "nationality": "UZB",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 281,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "zhou-yi",
+        "name": "Zhou Yi",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -133,56 +317,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "chun-hsin-tseng",
-        "name": "Chun Hsin Tseng",
-        "nationality": "TWN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 203,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "rio-noguchi",
-        "name": "Rio Noguchi",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 220,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -195,17 +333,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 234,
+      "current_rank": 237,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -218,201 +356,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 237,
+      "current_rank": 240,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "yi-zhou",
-        "name": "Yi Zhou",
-        "nationality": "CHN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 248,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "matthew-dellavedova",
-        "name": "Matthew Dellavedova",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 262,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "sergey-fomin",
-        "name": "Sergey Fomin",
-        "nationality": "UZB",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 281,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "yu-hsiou-hsu",
-        "name": "Yu-hsiou Hsu",
-        "nationality": "TWN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 289,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "petr-bar-biryukov",
-        "name": "Petr Bar Biryukov",
-        "nationality": "RUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 292,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "kaichi-uchida",
-        "name": "Kaichi Uchida",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 305,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "akira-santillan",
-        "name": "Akira Santillan",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 312,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "fajing-sun",
-        "name": "Fajing Sun",
-        "nationality": "CHN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 318,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -432,56 +386,171 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "ilya-ivashka",
-        "name": "Ilya Ivashka",
-        "nationality": "BLR",
+        "player_id": "xiao-linang",
+        "name": "Xiao Linang",
+        "nationality": null,
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
-      "current_rank": 357,
+      "current_rank": null,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "tung-lin-wu",
-        "name": "Tung Lin Wu",
-        "nationality": "TWN",
+        "player_id": "kaichi-uchida",
+        "name": "Kaichi Uchida",
+        "nationality": "JPN",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 359,
+      "current_rank": 305,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "semen-pankin",
+        "name": "Semen Pankin",
+        "nationality": "RUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 409,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "alexis-galarneau",
+        "name": "Alexis Galarneau",
+        "nationality": "CAN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 176,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "rio-noguchi",
+        "name": "Rio Noguchi",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 223,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "te-rigele",
+        "name": "Te Rigele",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yosuke-watanuki",
+        "name": "Yosuke Watanuki",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 394,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -494,17 +563,178 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 475,
+      "current_rank": 477,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matthew-dellavedova",
+        "name": "Matthew Dellavedova",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 262,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "taro-daniel",
+        "name": "Taro Daniel",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 162,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "chun-hsin-tseng",
+        "name": "Chun Hsin Tseng",
+        "nationality": "TWN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 203,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yi-zhou",
+        "name": "Yi Zhou",
+        "nationality": "CHN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 250,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yu-hsiou-hsu",
+        "name": "Yu-hsiou Hsu",
+        "nationality": "TWN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 289,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "fajing-sun",
+        "name": "Fajing Sun",
+        "nationality": "CHN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 319,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tung-lin-wu",
+        "name": "Tung Lin Wu",
+        "nationality": "TWN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 360,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -517,7 +747,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 362,
+      "current_rank": 363,
       "alternate_position": 1,
       "seed": null,
       "projected_seed": null,
@@ -525,30 +755,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "semen-pankin",
-        "name": "Semen Pankin",
-        "nationality": "RUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 409,
-      "alternate_position": 2,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -571,7 +778,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -594,7 +801,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -609,7 +816,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 435,
+      "current_rank": 436,
       "alternate_position": 5,
       "seed": null,
       "projected_seed": null,
@@ -617,7 +824,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -640,7 +847,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -663,7 +870,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -686,7 +893,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -701,7 +908,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 483,
+      "current_rank": 486,
       "alternate_position": 9,
       "seed": null,
       "projected_seed": null,
@@ -709,7 +916,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -724,7 +931,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 552,
+      "current_rank": 553,
       "alternate_position": 10,
       "seed": null,
       "projected_seed": null,
@@ -732,7 +939,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -747,7 +954,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 744,
+      "current_rank": 745,
       "alternate_position": 11,
       "seed": null,
       "projected_seed": null,
@@ -755,7 +962,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -770,7 +977,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 806,
+      "current_rank": 807,
       "alternate_position": 12,
       "seed": null,
       "projected_seed": null,
@@ -778,7 +985,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -801,7 +1008,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -816,7 +1023,7 @@
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 864,
+      "current_rank": 865,
       "alternate_position": 14,
       "seed": null,
       "projected_seed": null,
@@ -824,7 +1031,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -847,9 +1054,285 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yibing-wu",
+        "name": "Yibing Wu",
+        "nationality": "CHN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 97,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "christopher-o-connell",
+        "name": "Christopher O'Connell",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 110,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yunchaokete-bu",
+        "name": "Yunchaokete Bu",
+        "nationality": "CHN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 113,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "patrick-kypson",
+        "name": "Patrick Kypson",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 114,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dalibor-svrcina",
+        "name": "Dalibor Svrčina",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 117,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "shintaro-mochizuki",
+        "name": "Shintaro Mochizuki",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 126,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "nikoloz-basilashvili",
+        "name": "Nikoloz Basilashvili",
+        "nationality": "GEO",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 130,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "lloyd-harris",
+        "name": "Lloyd Harris",
+        "nationality": "RSA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 135,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "zhizhen-zhang",
+        "name": "Zhizhen Zhang",
+        "nationality": "CHN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 150,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "soonwoo-kwon",
+        "name": "Soonwoo Kwon",
+        "nationality": "KOR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 155,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "keegan-smith",
+        "name": "Keegan Smith",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 185,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "james-mccabe",
+        "name": "James McCabe",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 242,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Shanghai_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T13:27:39.511696Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     }
   ],
@@ -864,7 +1347,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 362,
+      "current_rank": 363,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -872,7 +1355,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -895,7 +1378,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -918,7 +1401,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -941,7 +1424,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -956,7 +1439,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 435,
+      "current_rank": 436,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -964,7 +1447,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -987,7 +1470,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1010,7 +1493,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1033,7 +1516,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1048,7 +1531,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 483,
+      "current_rank": 486,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1056,7 +1539,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1071,7 +1554,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 552,
+      "current_rank": 553,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1079,7 +1562,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1094,7 +1577,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 744,
+      "current_rank": 745,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1102,7 +1585,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1117,7 +1600,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 806,
+      "current_rank": 807,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1125,7 +1608,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1148,7 +1631,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1163,7 +1646,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 864,
+      "current_rank": 865,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1171,7 +1654,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1194,7 +1677,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-05T00:07:15.114341Z",
+        "retrieved_at": "2026-09-05T13:27:34.334569Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
