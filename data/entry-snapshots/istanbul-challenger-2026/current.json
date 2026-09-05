@@ -1,22 +1,22 @@
 {
   "tournament": {
-    "tournament_id": "phan-thiet-challenger-iii-2026",
-    "name": "Phan Thiết Challenger III",
+    "tournament_id": "istanbul-challenger-2026",
+    "name": "Istanbul Challenger",
     "year": 2026,
     "start_date": "2026-09-07",
     "end_date": "2026-09-13",
-    "category": "Challenger 50",
+    "category": "Challenger 75",
     "surface": "Hard",
     "location": {
-      "city": "Phan Thiết",
-      "country": "Vietnam Hard –"
+      "city": "Istanbul",
+      "country": "Turkey Hard –"
     },
     "main_draw_size": 32,
     "qualifying_draw_size": 24,
     "main_draw_qualifier_slots": 6,
     "main_draw_wildcard_slots": 3,
     "draw_published": true,
-    "draw_url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+    "draw_url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
     "qualifying_list_published": false,
     "entry_list_date": null,
     "entry_ranking_date": null,
@@ -26,22 +26,22 @@
   "entries": [
     {
       "player": {
-        "player_id": "moise-kouame",
-        "name": "Moïse Kouamé",
-        "nationality": "FRA",
+        "player_id": "francesco-maestrelli",
+        "name": "Francesco Maestrelli",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 193,
+      "current_rank": 167,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -49,22 +49,22 @@
     },
     {
       "player": {
-        "player_id": "kenta-miyoshi",
-        "name": "Kenta Miyoshi",
-        "nationality": "JPN",
+        "player_id": "juan-pablo-ficovich",
+        "name": "Juan Pablo Ficovich",
+        "nationality": "ARG",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 455,
+      "current_rank": 369,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -72,22 +72,22 @@
     },
     {
       "player": {
-        "player_id": "filip-peliwo",
-        "name": "Filip Peliwo",
-        "nationality": "POL",
+        "player_id": "alafia-ayeni",
+        "name": "Alafia Ayeni",
+        "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 694,
+      "current_rank": 456,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -95,22 +95,22 @@
     },
     {
       "player": {
-        "player_id": "tai-sach",
-        "name": "Tai Sach",
-        "nationality": "AUS",
+        "player_id": "carl-emil-overbeck",
+        "name": "Carl Emil Overbeck",
+        "nationality": "DEN",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 499,
+      "current_rank": 282,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -118,160 +118,22 @@
     },
     {
       "player": {
-        "player_id": "truong-thanh-minh",
-        "name": "Trương Thành Minh",
-        "nationality": null,
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "WC",
-      "entry_rank": null,
-      "current_rank": null,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "tran-quoc-cuong",
-        "name": "Trần Quốc Cường",
-        "nationality": null,
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "WC",
-      "entry_rank": null,
-      "current_rank": null,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "arthur-weber",
-        "name": "Arthur Weber",
-        "nationality": "FRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 466,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "florent-bax",
-        "name": "Florent Bax",
-        "nationality": "FRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 302,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "maximus-jones",
-        "name": "Maximus Jones",
-        "nationality": "THA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 468,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "hiroki-moriya",
-        "name": "Hiroki Moriya",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 521,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "dominik-palan",
-        "name": "Dominik Palán",
+        "player_id": "marek-gengel",
+        "name": "Marek Gengel",
         "nationality": "CZE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 612,
+      "current_rank": 390,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -279,22 +141,22 @@
     },
     {
       "player": {
-        "player_id": "kasidit-samrej",
-        "name": "Kasidit Samrej",
-        "nationality": "THA",
+        "player_id": "christian-langmo",
+        "name": "Christian Langmo",
+        "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 432,
+      "current_rank": 533,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -302,183 +164,22 @@
     },
     {
       "player": {
-        "player_id": "sidharth-rawat",
-        "name": "Sidharth Rawat",
-        "nationality": "IND",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 646,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "yuta-shimizu",
-        "name": "Yuta Shimizu",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 415,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "philip-sekulic",
-        "name": "Philip Sekulic",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 361,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "moerani-bouzige",
-        "name": "Moerani Bouzige",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 438,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "koki-matsuda",
-        "name": "Koki Matsuda",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 470,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "enzo-aguiard",
-        "name": "Enzo Aguiard",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 434,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "khumoyun-sultanov",
-        "name": "Khumoyun Sultanov",
-        "nationality": "UZB",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 420,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-05T23:54:32.397161Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
-      }
-    },
-    {
-      "player": {
-        "player_id": "sergio-callejon-hernando",
-        "name": "Sergio Callejon Hernando",
+        "player_id": "ivan-marrero-curbelo",
+        "name": "Ivan Marrero Curbelo",
         "nationality": "ESP",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 478,
+      "current_rank": 336,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -486,22 +187,22 @@
     },
     {
       "player": {
-        "player_id": "ilia-simakin",
-        "name": "Ilia Simakin",
-        "nationality": "RUS",
+        "player_id": "maks-kasnikowski",
+        "name": "Maks Kaśnikowski",
+        "nationality": "POL",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 222,
+      "current_rank": 242,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -509,22 +210,22 @@
     },
     {
       "player": {
-        "player_id": "cruz-hewitt",
-        "name": "Cruz Hewitt",
-        "nationality": "AUS",
+        "player_id": "timofey-skatov",
+        "name": "Timofey Skatov",
+        "nationality": "KAZ",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 338,
+      "current_rank": 192,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -532,22 +233,206 @@
     },
     {
       "player": {
-        "player_id": "constantin-bittoun-kouzmine",
-        "name": "Constantin Bittoun Kouzmine",
+        "player_id": "yank-erel",
+        "name": "Yankı Erel",
+        "nationality": "TUR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 339,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "georgii-kravchenko",
+        "name": "Georgii Kravchenko",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 357,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "emirhan-bulut",
+        "name": "Emirhan Bulut",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jay-friend",
+        "name": "Jay Friend",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 307,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "michele-ribecai",
+        "name": "Michele Ribecai",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 251,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "august-holmgren",
+        "name": "August Holmgren",
+        "nationality": "DEN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 231,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "vadym-ursu",
+        "name": "Vadym Ursu",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 408,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dimitar-kuzmanov",
+        "name": "Dimitar Kuzmanov",
+        "nationality": "BUL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 374,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "harold-mayot",
+        "name": "Harold Mayot",
         "nationality": "FRA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 425,
+      "current_rank": 313,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -555,22 +440,22 @@
     },
     {
       "player": {
-        "player_id": "blake-ellis",
-        "name": "Blake Ellis",
-        "nationality": "AUS",
+        "player_id": "cezar-cretu",
+        "name": "Cezar Crețu",
+        "nationality": "ROU",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 465,
+      "current_rank": 265,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -578,22 +463,45 @@
     },
     {
       "player": {
-        "player_id": "max-purcell",
-        "name": "Max Purcell",
-        "nationality": "AUS",
+        "player_id": "max-basing",
+        "name": "Max Basing",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 303,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "atakan-karahan",
+        "name": "Atakan Karahan",
+        "nationality": null,
         "atp_id": null,
         "birth_date": null
       },
       "status": "WC",
       "entry_rank": null,
-      "current_rank": 793,
+      "current_rank": null,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
@@ -601,22 +509,114 @@
     },
     {
       "player": {
-        "player_id": "rodrigo-pacheco-mendez",
-        "name": "Rodrigo Pacheco Mendez",
-        "nationality": "MEX",
+        "player_id": "mert-alkaya",
+        "name": "Mert Alkaya",
+        "nationality": "TUR",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 263,
+      "current_rank": 293,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Phan_Thi%E1%BA%BFt_Challenger_III_%E2%80%93_Singles",
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tiago-torres",
+        "name": "Tiago Torres",
+        "nationality": "POR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 350,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "miguel-tobon",
+        "name": "Miguel Tobon",
+        "nationality": "COL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 510,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "koray-krc",
+        "name": "Koray Kırcı",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-05T23:54:32.397161Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "edas-butvilas",
+        "name": "Edas Butvilas",
+        "nationality": "LTU",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 194,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Istanbul_Challenger_%E2%80%93_Singles",
         "retrieved_at": "2026-09-05T23:54:32.397161Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
