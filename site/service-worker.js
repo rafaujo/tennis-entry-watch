@@ -1,4 +1,4 @@
-const CACHE_NAME = "tennis-entry-watch-a48d470cdccd";
+const CACHE_NAME = "tennis-entry-watch-a96697dab896";
 const PRECACHE_URLS = [
   "./archive/index.html",
   "./assets/icons/apple-touch-icon.png",
