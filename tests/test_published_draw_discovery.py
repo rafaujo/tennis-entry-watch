@@ -1,9 +1,11 @@
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from tennis_entry_watch.models import EntryStatus
 from tennis_entry_watch.collectors.published_draws import (
     _us_open_text_names,
+    PlayerResolver,
+    collect_wikipedia_draw,
     discover_atp_draw_sources,
     discover_challenger_draw_sources,
     discover_wikipedia_challenger_draw_sources,
@@ -13,6 +15,48 @@ from tennis_entry_watch.collectors.tournament_catalog import load_catalog
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+class _Response:
+    def __init__(self, text: str) -> None:
+        self.text = text
+
+    def raise_for_status(self) -> None:
+        return None
+
+
+class _Session:
+    def __init__(self, text: str) -> None:
+        self.text = text
+
+    def get(self, *_args, **_kwargs) -> _Response:
+        return _Response(self.text)
+
+
+def test_wikipedia_draw_reads_only_first_round_player_column() -> None:
+    html = """
+    <table>
+      <tr><th colspan="13">First round</th></tr>
+      <tr>
+        <td></td><td>WC</td><td><span class="flagicon"><a title="China"></a></span>Xiao Linang</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td><span class="flagicon"><a title="China"></a></span>L Xiao</td>
+      </tr>
+      <tr><td></td><td></td><td><span class="flagicon"><a title="Japan"></a></span>Taro Daniel</td></tr>
+    </table>
+    """
+
+    entries = collect_wikipedia_draw(
+        "https://example.test/draw",
+        PlayerResolver({}),
+        datetime(2026, 9, 9, tzinfo=timezone.utc),
+        _Session(html),
+    )
+
+    assert [entry.player.name for entry in entries] == ["Xiao Linang", "Taro Daniel"]
+    assert entries[0].status is EntryStatus.WC
+
+
 ATP_HTML = """
 <a href="/en/tournaments/winston-salem/6242/overview">
   Winston-Salem, United States Winston-Salem Open | 23 - 29 August, 2026
