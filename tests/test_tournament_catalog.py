@@ -61,6 +61,30 @@ def test_catalog_override_survives_a_source_name_change():
     assert updated[0].tournament.name == "Como Lake Challenger"
 
 
+def test_catalog_override_replaces_ambiguous_city_schedule_alias():
+    shanghai_html = HTML.replace(
+        "Winston-Salem Open", "Shanghai Masters"
+    ).replace("Winston-Salem", "Shanghai")
+    events = parse_calendar_page(
+        shanghai_html,
+        2026,
+        "https://example.test/calendar",
+    )
+    overrides = {
+        "events": [
+            {
+                "source_name": "Shanghai Masters",
+                "source_start_date": "2026-08-24",
+                "schedule_aliases": ["Shanghai Masters"],
+            }
+        ]
+    }
+
+    updated = _apply_overrides(events, overrides)
+
+    assert updated[0].schedule_aliases == ["Shanghai Masters"]
+
+
 def test_catalog_timestamp_only_change_does_not_rewrite(tmp_path, monkeypatch):
     class Session:
         def get(self, url, headers, timeout):
