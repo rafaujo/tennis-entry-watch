@@ -699,7 +699,15 @@ def collect_wikipedia_draw(
     by_player: dict[str, Entry] = {}
     draw_tables = [table for table in soup.select("table") if table.get_text(" ", strip=True).startswith("First round")]
     for table in draw_tables:
-        for td in table.select("td"):
+        for row in table.select("tr"):
+            cells = row.find_all("td", recursive=False)
+            if len(cells) < 3:
+                continue
+            # Wikipedia's draw tables repeat players in later-round columns.
+            # Reading only the first-round player column avoids duplicates whose
+            # later-round labels are abbreviated (for example "L Xiao" versus
+            # "Xiao Linang").
+            td = cells[2]
             parsed = _wiki_player_cell(td)
             if not parsed:
                 continue
@@ -827,6 +835,15 @@ def collect_configured_draws(
                 raise ValueError(f"unsupported draw format {item['format']!r}")
             if len(main) < item.get("minimum_main_players", 16):
                 raise ValueError(f"only {len(main)} main-draw players parsed")
+            if (
+                item["format"] == "wikipedia_draw"
+                and tournament.main_draw_size
+                and len(main) > tournament.main_draw_size
+            ):
+                raise ValueError(
+                    f"{len(main)} main-draw players parsed exceeds the configured "
+                    f"size {tournament.main_draw_size}"
+                )
             existing_path = snapshot_path(output_root, tournament_id)
             existing = (
                 EntryList.model_validate_json(
