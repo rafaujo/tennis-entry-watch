@@ -1,4 +1,4 @@
-const CACHE_NAME = "tennis-entry-watch-2b51e350d0b5";
+const CACHE_NAME = "tennis-entry-watch-64b4b0a5efa9";
 const PRECACHE_URLS = [
   "./archive/index.html",
   "./assets/icons/apple-touch-icon.png",
@@ -17,6 +17,7 @@ const PRECACHE_URLS = [
   "./tournaments/braga-open-2026.html",
   "./tournaments/cancun-challenger-2026.html",
   "./tournaments/cassis-open-provence-2026.html",
+  "./tournaments/catania-challenger-2026.html",
   "./tournaments/challenger-de-buenos-aires-2026.html",
   "./tournaments/chengdu-open-2026.html",
   "./tournaments/china-open-2026.html",
@@ -34,12 +35,16 @@ const PRECACHE_URLS = [
   "./tournaments/internazionali-di-tennis-citta-di-todi-2026.html",
   "./tournaments/istanbul-challenger-2026.html",
   "./tournaments/japan-open-2026.html",
+  "./tournaments/jinan-open-2026.html",
   "./tournaments/jingshan-tennis-open-2026.html",
   "./tournaments/kingston-1-challenger-2026.html",
   "./tournaments/kingston-2-challenger-2026.html",
+  "./tournaments/maia-challenger-2026.html",
   "./tournaments/manacor-challenger-2026.html",
   "./tournaments/no-open-2026.html",
+  "./tournaments/olbia-challenger-2026.html",
   "./tournaments/open-de-rennes-2026.html",
+  "./tournaments/open-de-roanne-2026.html",
   "./tournaments/open-de-vendee-2026.html",
   "./tournaments/palermo-challenger-2026.html",
   "./tournaments/phan-thiet-challenger-iii-2026.html",
@@ -54,6 +59,7 @@ const PRECACHE_URLS = [
   "./tournaments/roehampton-1-challenger-2026.html",
   "./tournaments/roehampton-2-challenger-2026.html",
   "./tournaments/saint-tropez-open-2026.html",
+  "./tournaments/santa-cruz-challenger-ii-2026.html",
   "./tournaments/serving-the-future-open-2026.html",
   "./tournaments/shanghai-challenger-2026.html",
   "./tournaments/shanghai-masters-2026.html",
