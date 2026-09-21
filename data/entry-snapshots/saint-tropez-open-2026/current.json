@@ -22,7 +22,7 @@
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-09-21T00:17:05.939005Z",
+  "snapshot_at": "2026-09-21T16:28:47.716912Z",
   "entries": [
     {
       "player": {
@@ -34,7 +34,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 84,
+      "current_rank": 81,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -42,7 +42,53 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "karl-poling",
+        "name": "Karl Poling",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "LL",
+      "entry_rank": null,
+      "current_rank": 451,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "vadym-ursu",
+        "name": "Vadym Ursu",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "LL",
+      "entry_rank": null,
+      "current_rank": 396,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -57,7 +103,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 150,
+      "current_rank": 146,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -65,7 +111,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hugo-grenier",
+        "name": "Hugo Grenier",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 280,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -80,7 +149,7 @@
       },
       "status": "WC",
       "entry_rank": null,
-      "current_rank": 340,
+      "current_rank": 335,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -88,7 +157,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -103,7 +172,7 @@
       },
       "status": "WC",
       "entry_rank": null,
-      "current_rank": 390,
+      "current_rank": 458,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -111,7 +180,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -126,7 +195,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 143,
+      "current_rank": 147,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -134,7 +203,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -149,7 +218,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 101,
+      "current_rank": 98,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -157,7 +226,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -172,7 +241,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 260,
+      "current_rank": 256,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -180,7 +249,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -195,7 +264,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 216,
+      "current_rank": 212,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -203,7 +272,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -218,7 +287,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 177,
+      "current_rank": 174,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -226,7 +295,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -241,7 +310,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 172,
+      "current_rank": 177,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -249,7 +318,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "daniel-jade",
+        "name": "Daniel Jade",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 624,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -264,7 +356,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 320,
+      "current_rank": 315,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -272,7 +364,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -287,7 +379,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 119,
+      "current_rank": 116,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -295,7 +387,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -310,7 +402,7 @@
       },
       "status": "WC",
       "entry_rank": null,
-      "current_rank": 127,
+      "current_rank": 123,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -318,7 +410,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -333,7 +425,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 198,
+      "current_rank": 202,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -341,7 +433,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -356,7 +448,7 @@
       },
       "status": "SE",
       "entry_rank": null,
-      "current_rank": 237,
+      "current_rank": 236,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -364,7 +456,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -379,7 +471,7 @@
       },
       "status": "SE",
       "entry_rank": null,
-      "current_rank": 217,
+      "current_rank": 213,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -387,7 +479,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -402,7 +494,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 168,
+      "current_rank": 164,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -410,7 +502,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -425,7 +517,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 170,
+      "current_rank": 167,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -433,7 +525,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -448,7 +540,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 204,
+      "current_rank": 222,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -456,7 +548,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -471,7 +563,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 95,
+      "current_rank": 94,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -479,7 +571,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -502,7 +594,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -517,7 +609,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 231,
+      "current_rank": 240,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -525,30 +617,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "michael-mmoh",
-        "name": "Michael Mmoh",
+        "player_id": "murphy-cassone",
+        "name": "Murphy Cassone",
         "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "Q",
       "entry_rank": null,
-      "current_rank": 148,
+      "current_rank": 311,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -563,7 +655,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 160,
+      "current_rank": 156,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -571,7 +663,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matteo-martineau",
+        "name": "Mattéo Martineau",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 271,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -586,7 +701,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 152,
+      "current_rank": 150,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -594,7 +709,76 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "moez-echargui",
+        "name": "Moez Echargui",
+        "nationality": "TUN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 371,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "daniel-masur",
+        "name": "Daniel Masur",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 401,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "michael-mmoh",
+        "name": "Michael Mmoh",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 148,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -607,17 +791,17 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "OUT",
       "entry_rank": null,
       "current_rank": 98,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "DA",
       "withdrawn_at": null,
       "source": {
         "url": "https://en.wikipedia.org/wiki/2026_Saint-Tropez_Open_%E2%80%93_Singles",
-        "retrieved_at": "2026-09-21T00:17:05.939005Z",
+        "retrieved_at": "2026-09-21T16:28:47.716912Z",
         "source_type": "trusted_secondary",
         "collector": "wikipedia_published_draw"
       }
@@ -785,29 +969,6 @@
     },
     {
       "player": {
-        "player_id": "moez-echargui",
-        "name": "Moez Echargui",
-        "nationality": "TUN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 215,
-      "alternate_position": 2,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-12T00:19:02.861156Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
         "player_id": "michele-ribecai",
         "name": "Michele Ribecai",
         "nationality": "ITA",
@@ -818,52 +979,6 @@
       "entry_rank": null,
       "current_rank": 256,
       "alternate_position": 4,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-12T00:19:02.861156Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "hugo-grenier",
-        "name": "Hugo Grenier",
-        "nationality": "FRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 263,
-      "alternate_position": 5,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-12T00:19:02.861156Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "matteo-martineau",
-        "name": "Mattéo Martineau",
-        "nationality": "FRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 279,
-      "alternate_position": 6,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -900,29 +1015,6 @@
     },
     {
       "player": {
-        "player_id": "murphy-cassone",
-        "name": "Murphy Cassone",
-        "nationality": "USA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 329,
-      "alternate_position": 9,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-12T00:19:02.861156Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
         "player_id": "mathys-erhard",
         "name": "Mathys Erhard",
         "nationality": "FRA",
@@ -933,29 +1025,6 @@
       "entry_rank": null,
       "current_rank": 345,
       "alternate_position": 12,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-12T00:19:02.861156Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "daniel-masur",
-        "name": "Daniel Masur",
-        "nationality": "GER",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 362,
-      "alternate_position": 13,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -1002,29 +1071,6 @@
       "entry_rank": null,
       "current_rank": 401,
       "alternate_position": 15,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-12T00:19:02.861156Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "vadym-ursu",
-        "name": "Vadym Ursu",
-        "nationality": "UKR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 406,
-      "alternate_position": 16,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
