@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-09-09T23:13:57.571471Z",
+  "retrieved_at": "2026-09-21T00:17:05.091685Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -7298,8 +7298,8 @@
     },
     {
       "tournament": {
-        "tournament_id": "genoa-challenger-2026",
-        "name": "Genoa Challenger",
+        "tournament_id": "de-wave-open-challenger-2026",
+        "name": "De Wave Open Challenger",
         "year": 2026,
         "start_date": "2026-09-21",
         "end_date": "2026-09-27",
@@ -7321,9 +7321,8 @@
         "status": "upcoming"
       },
       "schedule_aliases": [
-        "Genoa 2",
         "Genoa",
-        "Genoa Challenger"
+        "De Wave Open Challenger"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
@@ -7395,8 +7394,8 @@
     },
     {
       "tournament": {
-        "tournament_id": "serving-the-future-open-2026",
-        "name": "Serving the Future Open",
+        "tournament_id": "san-diego-challenger-2026",
+        "name": "San Diego Challenger",
         "year": 2026,
         "start_date": "2026-09-21",
         "end_date": "2026-09-27",
@@ -7418,9 +7417,8 @@
         "status": "upcoming"
       },
       "schedule_aliases": [
-        "San Diego 2",
         "San Diego",
-        "Serving the Future Open"
+        "San Diego Challenger"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
@@ -8231,6 +8229,37 @@
     },
     {
       "tournament": {
+        "tournament_id": "fort-worth-challenger-2026",
+        "name": "Fort Worth Challenger",
+        "year": 2026,
+        "start_date": "2026-10-19",
+        "end_date": "2026-10-25",
+        "category": "Challenger 75",
+        "surface": "Hard",
+        "location": {
+          "city": "Fort Worth",
+          "country": "United States Hard –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Fort Worth",
+        "Fort Worth Challenger"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
         "tournament_id": "guangzhou-international-challenger-2026",
         "name": "Guangzhou International Challenger",
         "year": 2026,
@@ -8380,37 +8409,6 @@
       "schedule_aliases": [
         "Guayaquil",
         "Challenger Ciudad de Guayaquil"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary"
-    },
-    {
-      "tournament": {
-        "tournament_id": "gaborone-challenger-2026",
-        "name": "Gaborone Challenger",
-        "year": 2026,
-        "start_date": "2026-10-26",
-        "end_date": "2026-11-01",
-        "category": "Challenger 50",
-        "surface": "Hard",
-        "location": {
-          "city": "Gaborone",
-          "country": "Botswana Hard –"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Gaborone",
-        "Gaborone Challenger"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
