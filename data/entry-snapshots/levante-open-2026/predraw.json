@@ -1,15 +1,15 @@
 {
   "tournament": {
-    "tournament_id": "antofagasta-challenger-2026",
-    "name": "Antofagasta Challenger",
+    "tournament_id": "levante-open-2026",
+    "name": "Levante Open",
     "year": 2026,
-    "start_date": "2026-10-05",
-    "end_date": "2026-10-11",
-    "category": "Challenger 75",
+    "start_date": "2026-09-28",
+    "end_date": "2026-10-04",
+    "category": "Challenger 50",
     "surface": "Clay",
     "location": {
-      "city": "Antofagasta",
-      "country": "Chile Clay –"
+      "city": "Bari",
+      "country": "Italy Clay –"
     },
     "main_draw_size": 32,
     "qualifying_draw_size": 24,
@@ -26,15 +26,15 @@
   "entries": [
     {
       "player": {
-        "player_id": "gustavo-heide",
-        "name": "Gustavo Heide",
-        "nationality": "BRA",
+        "player_id": "elmer-mller",
+        "name": "Elmer Møller",
+        "nationality": "DEN",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 121,
+      "current_rank": 174,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -49,15 +49,15 @@
     },
     {
       "player": {
-        "player_id": "francisco-comesana",
-        "name": "Francisco Comesaña",
-        "nationality": "ARG",
+        "player_id": "vitaliy-sachko",
+        "name": "Vitaliy Sachko",
+        "nationality": "UKR",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 122,
+      "current_rank": 178,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -72,15 +72,15 @@
     },
     {
       "player": {
-        "player_id": "hugo-dellien",
-        "name": "Hugo Dellien",
-        "nationality": "BOL",
+        "player_id": "pol-martin-tiffon",
+        "name": "Pol Martín Tiffon",
+        "nationality": "ESP",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 126,
+      "current_rank": 208,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -95,15 +95,15 @@
     },
     {
       "player": {
-        "player_id": "tomas-barrios-vera",
-        "name": "Tomás Barrios Vera",
-        "nationality": "CHI",
+        "player_id": "lorenzo-giustino",
+        "name": "Lorenzo Giustino",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 134,
+      "current_rank": 209,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -118,15 +118,15 @@
     },
     {
       "player": {
-        "player_id": "thiago-seyboth-wild",
-        "name": "Thiago Seyboth Wild",
-        "nationality": "BRA",
+        "player_id": "maxim-mrva",
+        "name": "Maxim Mrva",
+        "nationality": "CZE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 135,
+      "current_rank": 213,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -141,15 +141,15 @@
     },
     {
       "player": {
-        "player_id": "juan-carlos-prado-angelo",
-        "name": "Juan Carlos Prado Angelo",
-        "nationality": "BOL",
+        "player_id": "gianluca-cadenasso",
+        "name": "Gianluca Cadenasso",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 159,
+      "current_rank": 221,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -164,15 +164,15 @@
     },
     {
       "player": {
-        "player_id": "juan-pablo-varillas",
-        "name": "Juan Pablo Varillas",
-        "nationality": "PER",
+        "player_id": "jay-clarke",
+        "name": "Jay Clarke",
+        "nationality": "GBR",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 190,
+      "current_rank": 235,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -187,15 +187,15 @@
     },
     {
       "player": {
-        "player_id": "lautaro-midon",
-        "name": "Lautaro Midon",
-        "nationality": "ARG",
+        "player_id": "martin-krumich",
+        "name": "Martin Krumich",
+        "nationality": "CZE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 198,
+      "current_rank": 253,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -210,15 +210,15 @@
     },
     {
       "player": {
-        "player_id": "joao-lucas-reis-da-silva",
-        "name": "João Lucas Reis Da Silva",
-        "nationality": "BRA",
+        "player_id": "buvaysar-gadamauri",
+        "name": "Buvaysar Gadamauri",
+        "nationality": "BEL",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 230,
+      "current_rank": 264,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -233,15 +233,15 @@
     },
     {
       "player": {
-        "player_id": "guido-ivan-justo",
-        "name": "Guido Iván Justo",
-        "nationality": "ARG",
+        "player_id": "enrico-dalla-valle",
+        "name": "Enrico Dalla Valle",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 238,
+      "current_rank": 319,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -256,15 +256,15 @@
     },
     {
       "player": {
-        "player_id": "matias-soto",
-        "name": "Matías Soto",
-        "nationality": "CHI",
+        "player_id": "dimitar-kuzmanov",
+        "name": "Dimitar Kuzmanov",
+        "nationality": "BUL",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 247,
+      "current_rank": 360,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -279,15 +279,15 @@
     },
     {
       "player": {
-        "player_id": "franco-roncadelli",
-        "name": "Franco Roncadelli",
-        "nationality": "URU",
+        "player_id": "carlos-taberner",
+        "name": "Carlos Taberner",
+        "nationality": "ESP",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 258,
+      "current_rank": 375,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -302,15 +302,15 @@
     },
     {
       "player": {
-        "player_id": "pedro-boscardin-dias",
-        "name": "Pedro Boscardin Dias",
-        "nationality": "BRA",
+        "player_id": "andrej-martin",
+        "name": "Andrej Martin",
+        "nationality": "SVK",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 261,
+      "current_rank": 379,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -325,15 +325,15 @@
     },
     {
       "player": {
-        "player_id": "matheus-pucinelli-de-almeida",
-        "name": "Matheus Pucinelli De Almeida",
-        "nationality": "BRA",
+        "player_id": "max-wiskandt",
+        "name": "Max Wiskandt",
+        "nationality": "GER",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 268,
+      "current_rank": 381,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -348,15 +348,15 @@
     },
     {
       "player": {
-        "player_id": "alex-barrena",
-        "name": "Alex Barrena",
-        "nationality": "ARG",
+        "player_id": "laurent-lokoli",
+        "name": "Laurent Lokoli",
+        "nationality": "FRA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 269,
+      "current_rank": 385,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -371,15 +371,15 @@
     },
     {
       "player": {
-        "player_id": "nick-hardt",
-        "name": "Nick Hardt",
-        "nationality": "DOM",
+        "player_id": "gabriele-piraino",
+        "name": "Gabriele Piraino",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 274,
+      "current_rank": 386,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -394,15 +394,15 @@
     },
     {
       "player": {
-        "player_id": "juan-bautista-torres",
-        "name": "Juan Bautista Torres",
-        "nationality": "ARG",
+        "player_id": "samuele-pieri",
+        "name": "Samuele Pieri",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 275,
+      "current_rank": 398,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -417,15 +417,15 @@
     },
     {
       "player": {
-        "player_id": "genaro-alberto-olivieri",
-        "name": "Genaro Alberto Olivieri",
-        "nationality": "ARG",
+        "player_id": "mika-petkovic",
+        "name": "Mika Petković",
+        "nationality": "GER",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 290,
+      "current_rank": 431,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -440,15 +440,15 @@
     },
     {
       "player": {
-        "player_id": "alvaro-guillen-meza",
-        "name": "Álvaro Guillén Meza",
-        "nationality": "ECU",
+        "player_id": "garrett-johns",
+        "name": "Garrett Johns",
+        "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 322,
+      "current_rank": 433,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -463,15 +463,15 @@
     },
     {
       "player": {
-        "player_id": "gonzalo-villanueva",
-        "name": "Gonzalo Villanueva",
-        "nationality": "ARG",
+        "player_id": "geoffrey-blancaneaux",
+        "name": "Geoffrey Blancaneaux",
+        "nationality": "FRA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 328,
+      "current_rank": 441,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -486,15 +486,15 @@
     },
     {
       "player": {
-        "player_id": "felipe-meligeni-alves",
-        "name": "Felipe Meligeni Alves",
-        "nationality": "BRA",
+        "player_id": "benito-sanchez-martinez",
+        "name": "Benito Sánchez Martinez",
+        "nationality": "GER",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 463,
+      "current_rank": 901,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -509,15 +509,15 @@
     },
     {
       "player": {
-        "player_id": "juan-manuel-la-serna",
-        "name": "Juan Manuel La Serna",
-        "nationality": "ARG",
+        "player_id": "sean-cuenin",
+        "name": "Sean Cuenin",
+        "nationality": "FRA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 279,
+      "current_rank": 305,
       "alternate_position": 1,
       "seed": null,
       "projected_seed": null,
@@ -532,15 +532,15 @@
     },
     {
       "player": {
-        "player_id": "joaquin-aguilar-cardozo",
-        "name": "Joaquin Aguilar Cardozo",
-        "nationality": "URU",
+        "player_id": "duje-ajdukovic",
+        "name": "Duje Ajduković",
+        "nationality": "CRO",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 335,
+      "current_rank": 347,
       "alternate_position": 2,
       "seed": null,
       "projected_seed": null,
@@ -555,15 +555,15 @@
     },
     {
       "player": {
-        "player_id": "eduardo-ribeiro",
-        "name": "Eduardo Ribeiro",
-        "nationality": "BRA",
+        "player_id": "franco-agamenone",
+        "name": "Franco Agamenone",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 338,
+      "current_rank": 374,
       "alternate_position": 3,
       "seed": null,
       "projected_seed": null,
@@ -578,15 +578,15 @@
     },
     {
       "player": {
-        "player_id": "valerio-aboian",
-        "name": "Valerio Aboian",
-        "nationality": "ARG",
+        "player_id": "massimo-giunta",
+        "name": "Massimo Giunta",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 339,
+      "current_rank": 388,
       "alternate_position": 4,
       "seed": null,
       "projected_seed": null,
@@ -601,15 +601,15 @@
     },
     {
       "player": {
-        "player_id": "nicolas-kicker",
-        "name": "Nicolás Kicker",
-        "nationality": "ARG",
+        "player_id": "jacopo-vasami",
+        "name": "Jacopo Vasami",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 344,
+      "current_rank": 392,
       "alternate_position": 5,
       "seed": null,
       "projected_seed": null,
@@ -624,15 +624,15 @@
     },
     {
       "player": {
-        "player_id": "carlos-maria-zarate",
-        "name": "Carlos Maria Zarate",
-        "nationality": "ARG",
+        "player_id": "olle-wallin",
+        "name": "Olle Wallin",
+        "nationality": "SWE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 346,
+      "current_rank": 415,
       "alternate_position": 6,
       "seed": null,
       "projected_seed": null,
@@ -647,15 +647,15 @@
     },
     {
       "player": {
-        "player_id": "juan-estevez",
-        "name": "Juan Estevez",
-        "nationality": "ARG",
+        "player_id": "izan-almazan-valiente",
+        "name": "Izan Almazan Valiente",
+        "nationality": "ESP",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 353,
+      "current_rank": 422,
       "alternate_position": 7,
       "seed": null,
       "projected_seed": null,
@@ -670,15 +670,15 @@
     },
     {
       "player": {
-        "player_id": "juan-pablo-ficovich",
-        "name": "Juan Pablo Ficovich",
-        "nationality": "ARG",
+        "player_id": "matthew-william-donald",
+        "name": "Matthew William Donald",
+        "nationality": "CZE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 359,
+      "current_rank": 460,
       "alternate_position": 8,
       "seed": null,
       "projected_seed": null,
@@ -693,15 +693,15 @@
     },
     {
       "player": {
-        "player_id": "lucio-ratti",
-        "name": "Lucio Ratti",
-        "nationality": "ARG",
+        "player_id": "federico-arnaboldi",
+        "name": "Federico Arnaboldi",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 383,
+      "current_rank": 475,
       "alternate_position": 9,
       "seed": null,
       "projected_seed": null,
@@ -716,15 +716,15 @@
     },
     {
       "player": {
-        "player_id": "murkel-dellien",
-        "name": "Murkel Dellien",
-        "nationality": "BOL",
+        "player_id": "benjamin-hassan",
+        "name": "Benjamin Hassan",
+        "nationality": "LBN",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 403,
+      "current_rank": 491,
       "alternate_position": 10,
       "seed": null,
       "projected_seed": null,
@@ -739,15 +739,15 @@
     },
     {
       "player": {
-        "player_id": "mateus-alves",
-        "name": "Mateus Alves",
-        "nationality": "BRA",
+        "player_id": "gianmarco-ferrari",
+        "name": "Gianmarco Ferrari",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 417,
+      "current_rank": 521,
       "alternate_position": 11,
       "seed": null,
       "projected_seed": null,
@@ -762,15 +762,15 @@
     },
     {
       "player": {
-        "player_id": "paulo-andre-saraiva-dos-santos",
-        "name": "Paulo Andre Saraiva Dos Santos",
-        "nationality": "BRA",
+        "player_id": "fabrizio-andaloro",
+        "name": "Fabrizio Andaloro",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 435,
+      "current_rank": 523,
       "alternate_position": 12,
       "seed": null,
       "projected_seed": null,
@@ -785,15 +785,15 @@
     },
     {
       "player": {
-        "player_id": "santiago-taverna",
-        "name": "Santiago Taverna",
-        "nationality": "ARG",
+        "player_id": "giuseppe-la-vela",
+        "name": "Giuseppe La Vela",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 454,
+      "current_rank": 531,
       "alternate_position": 13,
       "seed": null,
       "projected_seed": null,
@@ -808,154 +808,16 @@
     },
     {
       "player": {
-        "player_id": "daniel-dutra-da-silva",
-        "name": "Daniel Dutra da Silva",
-        "nationality": "BRA",
+        "player_id": "dimitris-sakellaridis",
+        "name": "Dimitris Sakellaridis",
+        "nationality": "GRE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "ALT",
       "entry_rank": null,
-      "current_rank": 484,
+      "current_rank": 557,
       "alternate_position": 14,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "joao-eduardo-schiessl",
-        "name": "João Eduardo Schiessl",
-        "nationality": "BRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 512,
-      "alternate_position": 15,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "alan-magadan",
-        "name": "Alan Magadan",
-        "nationality": "MEX",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 514,
-      "alternate_position": 16,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "pedro-sakamoto",
-        "name": "Pedro Sakamoto",
-        "nationality": "BRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 526,
-      "alternate_position": 17,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "lorenzo-joaquin-rodriguez",
-        "name": "Lorenzo Joaquín Rodríguez",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 538,
-      "alternate_position": 18,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "maximo-zeitune",
-        "name": "Maximo Zeitune",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 558,
-      "alternate_position": 19,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "ignacio-monzon",
-        "name": "Ignacio Monzón",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 562,
-      "alternate_position": 20,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
@@ -971,15 +833,15 @@
   "qualifying_entries": [
     {
       "player": {
-        "player_id": "juan-manuel-la-serna",
-        "name": "Juan Manuel La Serna",
-        "nationality": "ARG",
+        "player_id": "sean-cuenin",
+        "name": "Sean Cuenin",
+        "nationality": "FRA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 279,
+      "current_rank": 305,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -994,15 +856,15 @@
     },
     {
       "player": {
-        "player_id": "joaquin-aguilar-cardozo",
-        "name": "Joaquin Aguilar Cardozo",
-        "nationality": "URU",
+        "player_id": "duje-ajdukovic",
+        "name": "Duje Ajduković",
+        "nationality": "CRO",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 335,
+      "current_rank": 347,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1017,15 +879,15 @@
     },
     {
       "player": {
-        "player_id": "eduardo-ribeiro",
-        "name": "Eduardo Ribeiro",
-        "nationality": "BRA",
+        "player_id": "franco-agamenone",
+        "name": "Franco Agamenone",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 338,
+      "current_rank": 374,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1040,15 +902,15 @@
     },
     {
       "player": {
-        "player_id": "valerio-aboian",
-        "name": "Valerio Aboian",
-        "nationality": "ARG",
+        "player_id": "massimo-giunta",
+        "name": "Massimo Giunta",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 339,
+      "current_rank": 388,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1063,15 +925,15 @@
     },
     {
       "player": {
-        "player_id": "nicolas-kicker",
-        "name": "Nicolás Kicker",
-        "nationality": "ARG",
+        "player_id": "jacopo-vasami",
+        "name": "Jacopo Vasami",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 344,
+      "current_rank": 392,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1086,15 +948,15 @@
     },
     {
       "player": {
-        "player_id": "carlos-maria-zarate",
-        "name": "Carlos Maria Zarate",
-        "nationality": "ARG",
+        "player_id": "olle-wallin",
+        "name": "Olle Wallin",
+        "nationality": "SWE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 346,
+      "current_rank": 415,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1109,15 +971,15 @@
     },
     {
       "player": {
-        "player_id": "juan-estevez",
-        "name": "Juan Estevez",
-        "nationality": "ARG",
+        "player_id": "izan-almazan-valiente",
+        "name": "Izan Almazan Valiente",
+        "nationality": "ESP",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 353,
+      "current_rank": 422,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1132,15 +994,15 @@
     },
     {
       "player": {
-        "player_id": "juan-pablo-ficovich",
-        "name": "Juan Pablo Ficovich",
-        "nationality": "ARG",
+        "player_id": "matthew-william-donald",
+        "name": "Matthew William Donald",
+        "nationality": "CZE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 359,
+      "current_rank": 460,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1155,15 +1017,15 @@
     },
     {
       "player": {
-        "player_id": "lucio-ratti",
-        "name": "Lucio Ratti",
-        "nationality": "ARG",
+        "player_id": "federico-arnaboldi",
+        "name": "Federico Arnaboldi",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 383,
+      "current_rank": 475,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1178,15 +1040,15 @@
     },
     {
       "player": {
-        "player_id": "murkel-dellien",
-        "name": "Murkel Dellien",
-        "nationality": "BOL",
+        "player_id": "benjamin-hassan",
+        "name": "Benjamin Hassan",
+        "nationality": "LBN",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 403,
+      "current_rank": 491,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1201,15 +1063,15 @@
     },
     {
       "player": {
-        "player_id": "mateus-alves",
-        "name": "Mateus Alves",
-        "nationality": "BRA",
+        "player_id": "gianmarco-ferrari",
+        "name": "Gianmarco Ferrari",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 417,
+      "current_rank": 521,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1224,15 +1086,15 @@
     },
     {
       "player": {
-        "player_id": "paulo-andre-saraiva-dos-santos",
-        "name": "Paulo Andre Saraiva Dos Santos",
-        "nationality": "BRA",
+        "player_id": "fabrizio-andaloro",
+        "name": "Fabrizio Andaloro",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 435,
+      "current_rank": 523,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1247,15 +1109,15 @@
     },
     {
       "player": {
-        "player_id": "santiago-taverna",
-        "name": "Santiago Taverna",
-        "nationality": "ARG",
+        "player_id": "giuseppe-la-vela",
+        "name": "Giuseppe La Vela",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 454,
+      "current_rank": 531,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -1270,153 +1132,15 @@
     },
     {
       "player": {
-        "player_id": "daniel-dutra-da-silva",
-        "name": "Daniel Dutra da Silva",
-        "nationality": "BRA",
+        "player_id": "dimitris-sakellaridis",
+        "name": "Dimitris Sakellaridis",
+        "nationality": "GRE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 484,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "joao-eduardo-schiessl",
-        "name": "João Eduardo Schiessl",
-        "nationality": "BRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 512,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "alan-magadan",
-        "name": "Alan Magadan",
-        "nationality": "MEX",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 514,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "pedro-sakamoto",
-        "name": "Pedro Sakamoto",
-        "nationality": "BRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 526,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "lorenzo-joaquin-rodriguez",
-        "name": "Lorenzo Joaquín Rodríguez",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 538,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "maximo-zeitune",
-        "name": "Maximo Zeitune",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 558,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-09-26T14:30:34.010371Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "ignacio-monzon",
-        "name": "Ignacio Monzón",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 562,
+      "current_rank": 557,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
