@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-09-28T00:47:36.899830Z",
+  "retrieved_at": "2026-09-28T18:10:24.888394Z",
   "ranking_source": "https://live-tennis.eu/en/atp-live-ranking",
   "schedule_source": "https://live-tennis.eu/en/atp-schedule",
   "rankings": [
@@ -36,7 +36,7 @@
     {
       "name": "Daniil Medvedev",
       "nation": "RUS",
-      "points": 3710,
+      "points": 3775,
       "rank": 6
     },
     {
@@ -144,7 +144,7 @@
     {
       "name": "Andrey Rublev",
       "nation": "RUS",
-      "points": 2020,
+      "points": 2085,
       "rank": 24
     },
     {
@@ -154,21 +154,21 @@
       "rank": 25
     },
     {
+      "name": "Alejandro Davidovich Fokina",
+      "nation": "ESP",
+      "points": 1845,
+      "rank": 26
+    },
+    {
       "name": "Karen Khachanov",
       "nation": "RUS",
       "points": 1800,
-      "rank": 26
+      "rank": 27
     },
     {
       "name": "Alexander Blockx",
       "nation": "BEL",
       "points": 1787,
-      "rank": 27
-    },
-    {
-      "name": "Alejandro Davidovich Fokina",
-      "nation": "ESP",
-      "points": 1780,
       "rank": 28
     },
     {
@@ -232,21 +232,21 @@
       "rank": 38
     },
     {
+      "name": "Hubert Hurkacz",
+      "nation": "POL",
+      "points": 1285,
+      "rank": 39
+    },
+    {
       "name": "Cameron Norrie",
       "nation": "GBR",
       "points": 1275,
-      "rank": 39
+      "rank": 40
     },
     {
       "name": "Botic van de Zandschulp",
       "nation": "NED",
       "points": 1258,
-      "rank": 40
-    },
-    {
-      "name": "Hubert Hurkacz",
-      "nation": "POL",
-      "points": 1220,
       "rank": 41
     },
     {
@@ -8059,8 +8059,7 @@
       "nation": "CHI",
       "rank": 248,
       "events": [
-        "Antofagasta",
-        "Quito 4"
+        "Antofagasta"
       ]
     },
     {
@@ -9930,7 +9929,7 @@
       "rank": 498,
       "events": [
         "Luan 5",
-        "Qual. Qian Daohu"
+        "Qian Daohu"
       ]
     },
     {
@@ -10076,9 +10075,7 @@
       "name": "Yanis Ghazouani Durand",
       "nation": "FRA",
       "rank": 517,
-      "events": [
-        "Rodez"
-      ]
+      "events": []
     },
     {
       "name": "Alexander Donski",
@@ -10092,7 +10089,7 @@
       "rank": 519,
       "events": [
         "Santa Margherita 9",
-        "Qual. Santa Margherita 10"
+        "Santa Margherita 10"
       ]
     },
     {
@@ -10532,7 +10529,6 @@
       "nation": "GEO",
       "rank": 574,
       "events": [
-        "Sharm El Sheikh 16",
         "Sharm El Sheikh 17"
       ]
     },
@@ -10602,7 +10598,7 @@
       "nation": "HUN",
       "rank": 583,
       "events": [
-        "Qual. Luanda 2"
+        "Monastir 41"
       ]
     },
     {
@@ -10666,7 +10662,7 @@
       "rank": 591,
       "events": [
         "Heraklion 9",
-        "Qual. Heraklion 10"
+        "Heraklion 10"
       ]
     },
     {
@@ -10894,7 +10890,7 @@
       "rank": 621,
       "events": [
         "Monastir 40",
-        "Qual. Monastir 41"
+        "Qual. Szabolcsveresmart"
       ]
     },
     {
@@ -11021,7 +11017,7 @@
       "nation": "ITA",
       "rank": 638,
       "events": [
-        "Sharm El Sheikh 17"
+        "Szabolcsveresmart"
       ]
     },
     {
@@ -11170,7 +11166,7 @@
       "rank": 658,
       "events": [
         "Qual. Wuning 3",
-        "Qual. Solapur"
+        "Solapur"
       ]
     },
     {
@@ -11244,7 +11240,7 @@
       "nation": "USA",
       "rank": 667,
       "events": [
-        "Quito 4"
+        "Lexington"
       ]
     },
     {
@@ -11320,9 +11316,7 @@
       "name": "Marc Majdandzic",
       "nation": "GER",
       "rank": 677,
-      "events": [
-        "Qual. Luanda 2"
-      ]
+      "events": []
     },
     {
       "name": "Bruno Kuzuhara",
@@ -11338,7 +11332,7 @@
       "rank": 679,
       "events": [
         "Sharm El Sheikh 16",
-        "Qual. Sharm El Sheikh 17"
+        "Sharm El Sheikh 17"
       ]
     },
     {
@@ -11363,16 +11357,14 @@
       "nation": "GEO",
       "rank": 682,
       "events": [
-        "Qual. Sharm El Sheikh 17"
+        "Sharm El Sheikh 17"
       ]
     },
     {
       "name": "Jacob Bradshaw",
       "nation": "AUS",
       "rank": 683,
-      "events": [
-        "Qual. Qian Daohu"
-      ]
+      "events": []
     },
     {
       "name": "Tim Handel",
@@ -11509,7 +11501,7 @@
       "rank": 701,
       "events": [
         "Monastir 40",
-        "Qual. Luanda 2"
+        "Qual. Monastir 41"
       ]
     },
     {
@@ -11585,7 +11577,7 @@
       "nation": "THA",
       "rank": 711,
       "events": [
-        "Qual. Qian Daohu"
+        "Qual. Solapur"
       ]
     },
     {
@@ -11654,7 +11646,8 @@
       "nation": "ITA",
       "rank": 720,
       "events": [
-        "Qual. Santa Margherita 9"
+        "Qual. Santa Margherita 9",
+        "Qual. Offenbach"
       ]
     },
     {
@@ -11730,7 +11723,7 @@
       "nation": "JPN",
       "rank": 730,
       "events": [
-        "Qual. Austin"
+        "Qual. Qian Daohu"
       ]
     },
     {
@@ -11949,7 +11942,8 @@
       "nation": "JPN",
       "rank": 760,
       "events": [
-        "Luan 5"
+        "Luan 5",
+        "Qual. Qian Daohu"
       ]
     },
     {
@@ -12113,7 +12107,8 @@
       "nation": "TWN",
       "rank": 782,
       "events": [
-        "Luan 5"
+        "Luan 5",
+        "Qual. Qian Daohu"
       ]
     },
     {
@@ -12434,7 +12429,6 @@
       "nation": "FRA",
       "rank": 825,
       "events": [
-        "Quito 3",
         "Qual. Paranavai"
       ]
     },
@@ -12647,7 +12641,7 @@
       "nation": "BRA",
       "rank": 854,
       "events": [
-        "Qual. Paranavai"
+        "Paranavai"
       ]
     },
     {
@@ -12828,9 +12822,7 @@
       "name": "Davide Tortora",
       "nation": "ITA",
       "rank": 879,
-      "events": [
-        "Qual. Lexington"
-      ]
+      "events": []
     },
     {
       "name": "Nitin Kumar Sinha",
@@ -13048,7 +13040,9 @@
       "name": "Oliver Okonkwo",
       "nation": "GBR",
       "rank": 910,
-      "events": []
+      "events": [
+        "Qual. Lexington"
+      ]
     },
     {
       "name": "Mickael Kaouk",
@@ -13167,7 +13161,7 @@
       "rank": 928,
       "events": [
         "Heraklion 9",
-        "Qual. Bol 5"
+        "Qual. Luanda 2"
       ]
     },
     {
@@ -13183,9 +13177,7 @@
       "name": "Cooper Williams",
       "nation": "USA",
       "rank": 930,
-      "events": [
-        "Qual. Lexington"
-      ]
+      "events": []
     },
     {
       "name": "Luis Carlos Alvarez",
@@ -13262,7 +13254,9 @@
       "name": "Máté Valkusz",
       "nation": "HUN",
       "rank": 941,
-      "events": []
+      "events": [
+        "Qual. Szabolcsveresmart"
+      ]
     },
     {
       "name": "James Watt",
@@ -13393,7 +13387,8 @@
       "nation": "USA",
       "rank": 960,
       "events": [
-        "Kigali 2"
+        "Kigali 2",
+        "Qual. Solapur"
       ]
     },
     {
@@ -13443,7 +13438,7 @@
       "nation": "RUS",
       "rank": 966,
       "events": [
-        "Qual. Sharm El Sheikh 17"
+        "Qual. Solapur"
       ]
     },
     {
