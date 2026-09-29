@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-09-26T14:30:36.618967Z",
+  "retrieved_at": "2026-09-29T16:31:25.424509Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -7796,8 +7796,8 @@
     },
     {
       "tournament": {
-        "tournament_id": "palermo-challenger-2026",
-        "name": "Palermo Challenger",
+        "tournament_id": "internazionali-di-sicilia-2026",
+        "name": "Internazionali di Sicilia",
         "year": 2026,
         "start_date": "2026-10-05",
         "end_date": "2026-10-11",
@@ -7820,7 +7820,7 @@
       },
       "schedule_aliases": [
         "Palermo",
-        "Palermo Challenger"
+        "Internazionali di Sicilia"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
@@ -8750,6 +8750,37 @@
       "schedule_aliases": [
         "Bratislava",
         "Slovak Open"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
+        "tournament_id": "taranto-challenger-2026",
+        "name": "Taranto Challenger",
+        "year": 2026,
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-08",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Taranto",
+          "country": "Italy Hard –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Taranto",
+        "Taranto Challenger"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
@@ -9711,6 +9742,99 @@
       "schedule_aliases": [
         "Rio de Janeiro",
         "Rio de Janeiro Challenger"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
+        "tournament_id": "guanzate-challenger-2026",
+        "name": "Guanzate Challenger",
+        "year": 2026,
+        "start_date": "2026-12-14",
+        "end_date": "2026-12-20",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Guanzate",
+          "country": "Italy Hard (i) –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Guanzate",
+        "Guanzate Challenger"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
+        "tournament_id": "la-paz-challenger-ii-2026",
+        "name": "La Paz Challenger II",
+        "year": 2026,
+        "start_date": "2026-12-14",
+        "end_date": "2026-12-20",
+        "category": "Challenger 50",
+        "surface": "Clay",
+        "location": {
+          "city": "La Paz",
+          "country": "Bolivia Clay –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "La Paz",
+        "La Paz Challenger II"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
+        "tournament_id": "nova-lima-challenger-2026",
+        "name": "Nova Lima Challenger",
+        "year": 2026,
+        "start_date": "2026-12-14",
+        "end_date": "2026-12-20",
+        "category": "Challenger 50",
+        "surface": "Clay",
+        "location": {
+          "city": "Nova Lima",
+          "country": "Brazil Clay –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Nova Lima",
+        "Nova Lima Challenger"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"

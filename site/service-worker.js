@@ -1,4 +1,4 @@
-const CACHE_NAME = "tennis-entry-watch-f04badb367e0";
+const CACHE_NAME = "tennis-entry-watch-58f36959b9ad";
 const PRECACHE_URLS = [
   "./archive/index.html",
   "./assets/icons/apple-touch-icon.png",
@@ -42,6 +42,7 @@ const PRECACHE_URLS = [
   "./tournaments/hamburg-ladies-gents-cup-2026.html",
   "./tournaments/hangzhou-open-2026.html",
   "./tournaments/indiana-hardcourt-championships-2026.html",
+  "./tournaments/internazionali-di-sicilia-2026.html",
   "./tournaments/internazionali-di-tennis-citta-di-todi-2026.html",
   "./tournaments/istanbul-challenger-2026.html",
   "./tournaments/japan-open-2026.html",
@@ -60,7 +61,6 @@ const PRECACHE_URLS = [
   "./tournaments/open-de-rennes-2026.html",
   "./tournaments/open-de-roanne-2026.html",
   "./tournaments/open-de-vendee-2026.html",
-  "./tournaments/palermo-challenger-2026.html",
   "./tournaments/paris-masters-2026.html",
   "./tournaments/phan-thiet-challenger-iii-2026.html",
   "./tournaments/phan-thiet-challenger-iv-2026.html",
@@ -85,6 +85,7 @@ const PRECACHE_URLS = [
   "./tournaments/slovak-open-2026.html",
   "./tournaments/swiss-indoors-2026.html",
   "./tournaments/szczecin-open-2026.html",
+  "./tournaments/taranto-challenger-2026.html",
   "./tournaments/tiburon-challenger-2026.html",
   "./tournaments/us-open-2026.html",
   "./tournaments/vienna-open-2026.html",
