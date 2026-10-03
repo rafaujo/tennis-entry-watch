@@ -15,14 +15,14 @@
     "qualifying_draw_size": 24,
     "main_draw_qualifier_slots": 6,
     "main_draw_wildcard_slots": 3,
-    "draw_published": false,
-    "draw_url": null,
+    "draw_published": true,
+    "draw_url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
     "qualifying_list_published": true,
     "entry_list_date": null,
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-10-03T14:43:28.992119Z",
+  "snapshot_at": "2026-10-03T19:14:14.804102Z",
   "entries": [
     {
       "player": {
@@ -41,240 +41,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "max-alcala-gurri",
-        "name": "Max Alcalá Gurri",
-        "nationality": "ESP",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 138,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "vilius-gaubas",
-        "name": "Vilius Gaubas",
-        "nationality": "LTU",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 141,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "andrea-pellegrino",
-        "name": "Andrea Pellegrino",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 145,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "nikolas-sanchez-izquierdo",
-        "name": "Nikolás Sánchez Izquierdo",
-        "nationality": "ESP",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 156,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "marco-cecchinato",
-        "name": "Marco Cecchinato",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 162,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "luka-mikrut",
-        "name": "Luka Mikrut",
-        "nationality": "CRO",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 166,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "mackenzie-mcdonald",
-        "name": "Mackenzie McDonald",
-        "nationality": "USA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 169,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "matej-dodig",
-        "name": "Matej Dodig",
-        "nationality": "CRO",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 174,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "lukas-neumayer",
-        "name": "Lukas Neumayer",
-        "nationality": "AUT",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 179,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "elmer-mller",
-        "name": "Elmer Møller",
-        "nationality": "DEN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 180,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -294,10 +64,79 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "thiago-monteiro",
+        "name": "Thiago Monteiro",
+        "nationality": "BRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 235,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "elmer-mller",
+        "name": "Elmer Møller",
+        "nationality": "DEN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 180,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tiago-pereira",
+        "name": "Tiago Pereira",
+        "nationality": "POR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 338,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -317,125 +156,125 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "maxim-mrva",
-        "name": "Maxim Mrva",
-        "nationality": "CZE",
+        "player_id": "goncalo-marques",
+        "name": "Goncalo Marques",
+        "nationality": "POR",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
-      "current_rank": 216,
+      "current_rank": 595,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "thiago-monteiro",
-        "name": "Thiago Monteiro",
-        "nationality": "BRA",
+        "player_id": "nikolas-sanchez-izquierdo",
+        "name": "Nikolás Sánchez Izquierdo",
+        "nationality": "ESP",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 235,
+      "current_rank": 156,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "marvin-moller",
-        "name": "Marvin Möller",
-        "nationality": "GER",
+        "player_id": "vilius-gaubas",
+        "name": "Vilius Gaubas",
+        "nationality": "LTU",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 239,
+      "current_rank": 141,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "andrej-nedic",
-        "name": "Andrej Nedić",
-        "nationality": "BIH",
+        "player_id": "joao-domingues",
+        "name": "João Domingues",
+        "nationality": "POR",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
-      "current_rank": 244,
+      "current_rank": 585,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "sumit-nagal",
-        "name": "Sumit Nagal",
-        "nationality": "IND",
+        "player_id": "duje-ajdukovic",
+        "name": "Duje Ajduković",
+        "nationality": "CRO",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 253,
+      "current_rank": 352,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -455,10 +294,217 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sumit-nagal",
+        "name": "Sumit Nagal",
+        "nationality": "IND",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 253,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "luka-mikrut",
+        "name": "Luka Mikrut",
+        "nationality": "CRO",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 166,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mackenzie-mcdonald",
+        "name": "Mackenzie McDonald",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 169,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marvin-moller",
+        "name": "Marvin Möller",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 239,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tiago-torres",
+        "name": "Tiago Torres",
+        "nationality": "POR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 364,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "miguel-damas",
+        "name": "Miguel Damas",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 348,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matej-dodig",
+        "name": "Matej Dodig",
+        "nationality": "CRO",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 174,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andrea-pellegrino",
+        "name": "Andrea Pellegrino",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 145,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marco-cecchinato",
+        "name": "Marco Cecchinato",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 162,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -478,33 +524,56 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "miguel-damas",
-        "name": "Miguel Damas",
-        "nationality": "ESP",
+        "player_id": "lukas-neumayer",
+        "name": "Lukas Neumayer",
+        "nationality": "AUT",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 348,
+      "current_rank": 179,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andrej-nedic",
+        "name": "Andrej Nedić",
+        "nationality": "BIH",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 244,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -515,88 +584,65 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "ALT",
+      "status": "DA",
       "entry_rank": null,
       "current_rank": 323,
-      "alternate_position": 1,
+      "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "tiago-pereira",
-        "name": "Tiago Pereira",
-        "nationality": "POR",
+        "player_id": "max-alcala-gurri",
+        "name": "Max Alcalá Gurri",
+        "nationality": "ESP",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "ALT",
+      "status": "DA",
       "entry_rank": null,
-      "current_rank": 338,
-      "alternate_position": 2,
+      "current_rank": 138,
+      "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "duje-ajdukovic",
-        "name": "Duje Ajduković",
-        "nationality": "CRO",
+        "player_id": "maxim-mrva",
+        "name": "Maxim Mrva",
+        "nationality": "CZE",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "ALT",
+      "status": "OUT",
       "entry_rank": null,
-      "current_rank": 352,
-      "alternate_position": 3,
+      "current_rank": 216,
+      "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "DA",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "tiago-torres",
-        "name": "Tiago Torres",
-        "nationality": "POR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 364,
-      "alternate_position": 4,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -617,7 +663,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -640,7 +686,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -663,7 +709,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -686,7 +732,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -709,7 +755,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -732,7 +778,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -755,7 +801,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -778,7 +824,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -801,7 +847,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -824,7 +870,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -847,7 +893,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -870,7 +916,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -893,7 +939,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -916,9 +962,78 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "henrique-rocha",
+        "name": "Henrique Rocha",
+        "nationality": "POR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 121,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "roberto-carballes-baena",
+        "name": "Roberto Carballés Baena",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 257,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "frederico-ferreira-silva",
+        "name": "Frederico Ferreira Silva",
+        "nationality": "POR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 261,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Braga_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T19:14:14.804102Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     }
   ],
@@ -941,7 +1056,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -964,7 +1079,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -987,7 +1102,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1010,7 +1125,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1033,7 +1148,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1056,7 +1171,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1079,7 +1194,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1102,7 +1217,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1125,7 +1240,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1148,7 +1263,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1171,7 +1286,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1194,7 +1309,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1217,7 +1332,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1240,7 +1355,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1263,7 +1378,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1286,7 +1401,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1309,7 +1424,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1332,7 +1447,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T14:43:28.992119Z",
+        "retrieved_at": "2026-10-03T19:14:09.644766Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
