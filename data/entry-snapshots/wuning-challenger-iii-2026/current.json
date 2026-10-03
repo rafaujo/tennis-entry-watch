@@ -1,0 +1,627 @@
+{
+  "tournament": {
+    "tournament_id": "wuning-challenger-iii-2026",
+    "name": "Wuning Challenger III",
+    "year": 2026,
+    "start_date": "2026-10-05",
+    "end_date": "2026-10-11",
+    "category": "Challenger 50",
+    "surface": "Hard",
+    "location": {
+      "city": "Wuning",
+      "country": "China Hard –"
+    },
+    "main_draw_size": 32,
+    "qualifying_draw_size": 24,
+    "main_draw_qualifier_slots": 6,
+    "main_draw_wildcard_slots": 3,
+    "draw_published": true,
+    "draw_url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+    "qualifying_list_published": false,
+    "entry_list_date": null,
+    "entry_ranking_date": null,
+    "status": "upcoming"
+  },
+  "snapshot_at": "2026-10-03T14:43:33.865306Z",
+  "entries": [
+    {
+      "player": {
+        "player_id": "keegan-smith",
+        "name": "Keegan Smith",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 200,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hiroki-moriya",
+        "name": "Hiroki Moriya",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 506,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dominik-palan",
+        "name": "Dominik Palán",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 632,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "beibit-zhukayev",
+        "name": "Beibit Zhukayev",
+        "nationality": "KAZ",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 504,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yaroslav-demin",
+        "name": "Yaroslav Demin",
+        "nationality": "RUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 654,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "luca-castelnuovo",
+        "name": "Luca Castelnuovo",
+        "nationality": "SUI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 456,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "akira-santillan",
+        "name": "Akira Santillan",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 321,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jay-friend",
+        "name": "Jay Friend",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 260,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mitsuki-wei-kang-leong",
+        "name": "Mitsuki Wei Kang Leong",
+        "nationality": "MAS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 424,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sidharth-rawat",
+        "name": "Sidharth Rawat",
+        "nationality": "IND",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 665,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hikaru-shiraishi",
+        "name": "Hikaru Shiraishi",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 603,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "masamichi-imamura",
+        "name": "Masamichi Imamura",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 412,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "kaichi-uchida",
+        "name": "Kaichi Uchida",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 385,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sun-fajing",
+        "name": "Sun Fajing",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "wang-aoran",
+        "name": "Wang Aoran",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "kasidit-samrej",
+        "name": "Kasidit Samrej",
+        "nationality": "THA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 396,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "enzo-aguiard",
+        "name": "Enzo Aguiard",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 439,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "evan-zhu",
+        "name": "Evan Zhu",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 479,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "koki-matsuda",
+        "name": "Koki Matsuda",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 481,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "charles-broom",
+        "name": "Charles Broom",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 267,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sergey-fomin",
+        "name": "Sergey Fomin",
+        "nationality": "UZB",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 292,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "timofei-derepasko",
+        "name": "Timofei Derepasko",
+        "nationality": "RUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 663,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "filip-peliwo",
+        "name": "Filip Peliwo",
+        "nationality": "POL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 662,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "omar-jasika",
+        "name": "Omar Jasika",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 422,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "semen-pankin",
+        "name": "Semen Pankin",
+        "nationality": "RUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 432,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marat-sharipov",
+        "name": "Marat Sharipov",
+        "nationality": "RUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 234,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Wuning_Challenger_III_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-03T14:43:33.865306Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    }
+  ],
+  "qualifying_entries": []
+}

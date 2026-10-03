@@ -1,4 +1,4 @@
-const CACHE_NAME = "tennis-entry-watch-b184dae80986";
+const CACHE_NAME = "tennis-entry-watch-b0a1d41a96c5";
 const PRECACHE_URLS = [
   "./archive/index.html",
   "./assets/icons/apple-touch-icon.png",
@@ -35,6 +35,7 @@ const PRECACHE_URLS = [
   "./tournaments/curitiba-challenger-2026.html",
   "./tournaments/de-wave-open-challenger-2026.html",
   "./tournaments/european-open-2026.html",
+  "./tournaments/ferrero-challenger-2026.html",
   "./tournaments/florence-challenger-2026.html",
   "./tournaments/fort-worth-challenger-2026.html",
   "./tournaments/guangzhou-huangpu-international-tennis-open-2026.html",
@@ -89,7 +90,6 @@ const PRECACHE_URLS = [
   "./tournaments/tiburon-challenger-2026.html",
   "./tournaments/us-open-2026.html",
   "./tournaments/vienna-open-2026.html",
-  "./tournaments/villena-open-2026.html",
   "./tournaments/winston-salem-open-2026.html",
   "./tournaments/wuning-challenger-iii-2026.html",
   "./tournaments/zhangjiagang-challenger-2026.html"

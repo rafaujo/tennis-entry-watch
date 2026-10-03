@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-09-29T16:31:25.424509Z",
+  "retrieved_at": "2026-10-03T14:43:32.892726Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -7796,6 +7796,37 @@
     },
     {
       "tournament": {
+        "tournament_id": "ferrero-challenger-2026",
+        "name": "Ferrero Challenger",
+        "year": 2026,
+        "start_date": "2026-10-05",
+        "end_date": "2026-10-11",
+        "category": "Challenger 100",
+        "surface": "Hard",
+        "location": {
+          "city": "Villena",
+          "country": "Spain Hard –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Villena",
+        "Ferrero Challenger"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
         "tournament_id": "internazionali-di-sicilia-2026",
         "name": "Internazionali di Sicilia",
         "year": 2026,
@@ -7853,37 +7884,6 @@
         "Shanghai Masters"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Tour",
-      "source_type": "trusted_secondary"
-    },
-    {
-      "tournament": {
-        "tournament_id": "villena-open-2026",
-        "name": "Villena Open",
-        "year": 2026,
-        "start_date": "2026-10-05",
-        "end_date": "2026-10-11",
-        "category": "Challenger 100",
-        "surface": "Hard",
-        "location": {
-          "city": "Villena",
-          "country": "Spain Hard –"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Villena",
-        "Villena Open"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
     },
     {
