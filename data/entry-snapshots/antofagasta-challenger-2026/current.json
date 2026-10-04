@@ -15,14 +15,14 @@
     "qualifying_draw_size": 24,
     "main_draw_qualifier_slots": 6,
     "main_draw_wildcard_slots": 3,
-    "draw_published": false,
-    "draw_url": null,
+    "draw_published": true,
+    "draw_url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
     "qualifying_list_published": true,
     "entry_list_date": null,
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-10-03T19:14:09.644766Z",
+  "snapshot_at": "2026-10-04T00:38:29.446334Z",
   "entries": [
     {
       "player": {
@@ -41,125 +41,79 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "francisco-comesana",
-        "name": "Francisco Comesaña",
-        "nationality": "ARG",
+        "player_id": "samuel-heredia",
+        "name": "Samuel Heredia",
+        "nationality": "COL",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
-      "current_rank": 125,
+      "current_rank": 635,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "tomas-barrios-vera",
-        "name": "Tomás Barrios Vera",
-        "nationality": "CHI",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 132,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "thiago-seyboth-wild",
-        "name": "Thiago Seyboth Wild",
+        "player_id": "eduardo-ribeiro",
+        "name": "Eduardo Ribeiro",
         "nationality": "BRA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 136,
+      "current_rank": 345,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "juan-carlos-prado-angelo",
-        "name": "Juan Carlos Prado Angelo",
-        "nationality": "BOL",
+        "player_id": "nicolas-villalon",
+        "name": "Nicolás Villalón",
+        "nationality": "CHI",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "WC",
       "entry_rank": null,
-      "current_rank": 161,
+      "current_rank": 713,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "juan-pablo-varillas",
-        "name": "Juan Pablo Varillas",
-        "nationality": "PER",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 198,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -179,102 +133,33 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "alex-barrena",
-        "name": "Alex Barrena",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 223,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "guido-ivan-justo",
-        "name": "Guido Iván Justo",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 229,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "joao-lucas-reis-da-silva",
-        "name": "João Lucas Reis Da Silva",
+        "player_id": "thiago-seyboth-wild",
+        "name": "Thiago Seyboth Wild",
         "nationality": "BRA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 230,
+      "current_rank": 136,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "pedro-boscardin-dias",
-        "name": "Pedro Boscardin Dias",
-        "nationality": "BRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 242,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -294,125 +179,56 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "matheus-pucinelli-de-almeida",
-        "name": "Matheus Pucinelli De Almeida",
-        "nationality": "BRA",
+        "player_id": "murkel-dellien",
+        "name": "Murkel Dellien",
+        "nationality": "BOL",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 255,
+      "current_rank": 407,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "franco-roncadelli",
-        "name": "Franco Roncadelli",
-        "nationality": "URU",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 264,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "juan-bautista-torres",
-        "name": "Juan Bautista Torres",
+        "player_id": "juan-estevez",
+        "name": "Juan Estevez",
         "nationality": "ARG",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 278,
+      "current_rank": 359,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "nick-hardt",
-        "name": "Nick Hardt",
-        "nationality": "DOM",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 280,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "genaro-alberto-olivieri",
-        "name": "Genaro Alberto Olivieri",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 286,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -432,10 +248,286 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "nick-hardt",
+        "name": "Nick Hardt",
+        "nationality": "DOM",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 280,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "felipe-meligeni-alves",
+        "name": "Felipe Meligeni Alves",
+        "nationality": "BRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "PR",
+      "entry_rank": null,
+      "current_rank": 454,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "juan-pablo-varillas",
+        "name": "Juan Pablo Varillas",
+        "nationality": "PER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 198,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "juan-carlos-prado-angelo",
+        "name": "Juan Carlos Prado Angelo",
+        "nationality": "BOL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 161,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "juan-bautista-torres",
+        "name": "Juan Bautista Torres",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 278,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "pedro-boscardin-dias",
+        "name": "Pedro Boscardin Dias",
+        "nationality": "BRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 242,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "miguel-tobon",
+        "name": "Miguel Tobon",
+        "nationality": "COL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 507,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "franco-roncadelli",
+        "name": "Franco Roncadelli",
+        "nationality": "URU",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 264,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tomas-barrios-vera",
+        "name": "Tomás Barrios Vera",
+        "nationality": "CHI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 132,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "alex-barrena",
+        "name": "Alex Barrena",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 223,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matheus-pucinelli-de-almeida",
+        "name": "Matheus Pucinelli De Almeida",
+        "nationality": "BRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 255,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "genaro-alberto-olivieri",
+        "name": "Genaro Alberto Olivieri",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 286,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -452,59 +544,82 @@
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "juan-estevez",
-        "name": "Juan Estevez",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 359,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "felipe-meligeni-alves",
-        "name": "Felipe Meligeni Alves",
+        "player_id": "joao-lucas-reis-da-silva",
+        "name": "João Lucas Reis Da Silva",
         "nationality": "BRA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 454,
+      "current_rank": 230,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "guido-ivan-justo",
+        "name": "Guido Iván Justo",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 229,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "francisco-comesana",
+        "name": "Francisco Comesaña",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 125,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -525,7 +640,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -548,30 +663,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "eduardo-ribeiro",
-        "name": "Eduardo Ribeiro",
-        "nationality": "BRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 345,
-      "alternate_position": 3,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -594,7 +686,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -617,7 +709,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -640,7 +732,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -663,7 +755,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -686,30 +778,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "murkel-dellien",
-        "name": "Murkel Dellien",
-        "nationality": "BOL",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 407,
-      "alternate_position": 9,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -732,7 +801,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -755,7 +824,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -778,7 +847,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -801,7 +870,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -824,7 +893,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -847,7 +916,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -870,7 +939,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -893,7 +962,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -916,9 +985,55 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hugo-dellien",
+        "name": "Hugo Dellien",
+        "nationality": "BOL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 128,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "alvaro-guillen-meza",
+        "name": "Álvaro Guillén Meza",
+        "nationality": "ECU",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 329,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Antofagasta_Challenger_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-04T00:38:29.446334Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     }
   ],
@@ -941,7 +1056,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -964,7 +1079,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -987,7 +1102,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1010,7 +1125,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1033,7 +1148,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1056,7 +1171,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1079,7 +1194,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1102,7 +1217,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1125,7 +1240,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1148,7 +1263,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1171,7 +1286,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1194,7 +1309,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1217,7 +1332,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1240,7 +1355,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1263,7 +1378,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1286,7 +1401,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1309,7 +1424,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1332,7 +1447,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-03T19:14:09.644766Z",
+        "retrieved_at": "2026-10-04T00:38:24.368284Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
