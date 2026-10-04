@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-10-03T14:43:32.892726Z",
+  "retrieved_at": "2026-10-04T15:22:59.487641Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -8260,6 +8260,37 @@
     },
     {
       "tournament": {
+        "tournament_id": "grand-prix-auvergne-rhone-alpes-2026",
+        "name": "Grand Prix Auvergne-Rhône-Alpes",
+        "year": 2026,
+        "start_date": "2026-10-19",
+        "end_date": "2026-10-25",
+        "category": "ATP 250",
+        "surface": "Hard",
+        "location": {
+          "city": "Lyon",
+          "country": "France"
+        },
+        "main_draw_size": 28,
+        "qualifying_draw_size": 16,
+        "main_draw_qualifier_slots": 4,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Lyon",
+        "Grand Prix Auvergne-Rhône-Alpes"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
         "tournament_id": "guangzhou-international-challenger-2026",
         "name": "Guangzhou International Challenger",
         "year": 2026,
@@ -8318,37 +8349,6 @@
         "Lisboa Belém Open"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary"
-    },
-    {
-      "tournament": {
-        "tournament_id": "lyon-2026",
-        "name": "Lyon",
-        "year": 2026,
-        "start_date": "2026-10-19",
-        "end_date": "2026-10-25",
-        "category": "ATP 250",
-        "surface": "Hard",
-        "location": {
-          "city": "Grand Prix Auvergne-Rhône-Alpes Lyon",
-          "country": "France"
-        },
-        "main_draw_size": 28,
-        "qualifying_draw_size": 16,
-        "main_draw_qualifier_slots": 4,
-        "main_draw_wildcard_slots": 3,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Grand Prix Auvergne-Rhône-Alpes Lyon",
-        "Lyon"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Tour",
       "source_type": "trusted_secondary"
     },
     {
