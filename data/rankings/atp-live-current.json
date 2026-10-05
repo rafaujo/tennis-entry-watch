@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-10-05T00:56:01.476145Z",
+  "retrieved_at": "2026-10-05T19:18:22.229794Z",
   "ranking_source": "https://live-tennis.eu/en/atp-live-ranking",
   "schedule_source": "https://live-tennis.eu/en/atp-schedule",
   "rankings": [
@@ -18,7 +18,7 @@
     {
       "name": "Carlos Alcaraz",
       "nation": "ESP",
-      "points": 5260,
+      "points": 5390,
       "rank": 3
     },
     {
@@ -28,15 +28,15 @@
       "rank": 4
     },
     {
-      "name": "Daniil Medvedev",
-      "nation": "RUS",
-      "points": 4010,
-      "rank": 5
-    },
-    {
       "name": "Félix Auger-Aliassime",
       "nation": "CAN",
       "points": 3890,
+      "rank": 5
+    },
+    {
+      "name": "Daniil Medvedev",
+      "nation": "RUS",
+      "points": 3860,
       "rank": 6
     },
     {
@@ -46,27 +46,27 @@
       "rank": 7
     },
     {
-      "name": "Frances Tiafoe",
-      "nation": "USA",
-      "points": 3380,
+      "name": "Alex de Minaur",
+      "nation": "AUS",
+      "points": 3430,
       "rank": 8
     },
     {
-      "name": "Alex de Minaur",
-      "nation": "AUS",
-      "points": 3300,
+      "name": "Frances Tiafoe",
+      "nation": "USA",
+      "points": 3380,
       "rank": 9
+    },
+    {
+      "name": "Novak Djoković",
+      "nation": "SRB",
+      "points": 3310,
+      "rank": 10
     },
     {
       "name": "Arthur Fils",
       "nation": "FRA",
       "points": 3275,
-      "rank": 10
-    },
-    {
-      "name": "Novak Djoković",
-      "nation": "SRB",
-      "points": 3180,
       "rank": 11
     },
     {
@@ -94,27 +94,27 @@
       "rank": 15
     },
     {
+      "name": "Jiří Lehečka",
+      "nation": "CZE",
+      "points": 2440,
+      "rank": 16
+    },
+    {
       "name": "Learner Tien",
       "nation": "USA",
       "points": 2395,
-      "rank": 16
+      "rank": 17
     },
     {
       "name": "Tommy Paul",
       "nation": "USA",
       "points": 2375,
-      "rank": 17
+      "rank": 18
     },
     {
       "name": "Brandon Nakashima",
       "nation": "USA",
       "points": 2335,
-      "rank": 18
-    },
-    {
-      "name": "Jiří Lehečka",
-      "nation": "CZE",
-      "points": 2310,
       "rank": 19
     },
     {
@@ -8500,9 +8500,7 @@
       "name": "Oliver Crawford",
       "nation": "GBR",
       "rank": 304,
-      "events": [
-        "Mumbai 2"
-      ]
+      "events": []
     },
     {
       "name": "Ugo Blanchet",
@@ -9306,9 +9304,7 @@
       "name": "Hamish Stewart",
       "nation": "GBR",
       "rank": 404,
-      "events": [
-        "Redbridge"
-      ]
+      "events": []
     },
     {
       "name": "Vadym Ursu",
@@ -9379,7 +9375,6 @@
       "nation": "CZE",
       "rank": 414,
       "events": [
-        "Sharm El Sheikh 17",
         "Sharm El Sheikh 18"
       ]
     },
@@ -10273,9 +10268,7 @@
       "name": "Daniil Ostapenkov",
       "nation": "BLR",
       "rank": 530,
-      "events": [
-        "Lexington"
-      ]
+      "events": []
     },
     {
       "name": "Digvijay Pratap Singh",
@@ -10380,8 +10373,7 @@
       "nation": "ITA",
       "rank": 544,
       "events": [
-        "Santa Margherita 10",
-        "Qual. Santa Margherita 11"
+        "Santa Margherita 10"
       ]
     },
     {
@@ -10578,10 +10570,7 @@
       "name": "Nino Ehrenschneider",
       "nation": "GER",
       "rank": 569,
-      "events": [
-        "Qian Daohu",
-        "Shenzhen"
-      ]
+      "events": []
     },
     {
       "name": "Ignacio Monzón",
@@ -10681,7 +10670,6 @@
       "nation": "GEO",
       "rank": 582,
       "events": [
-        "Sharm El Sheikh 17",
         "Sharm El Sheikh 18"
       ]
     },
@@ -10947,7 +10935,7 @@
       "rank": 616,
       "events": [
         "Solapur",
-        "Tanagura"
+        "Mumbai 2"
       ]
     },
     {
@@ -11062,9 +11050,7 @@
       "name": "Sanhui Shin",
       "nation": "KOR",
       "rank": 631,
-      "events": [
-        "Singapore 3"
-      ]
+      "events": []
     },
     {
       "name": "Dominik Palán",
@@ -11222,7 +11208,7 @@
       "nation": "GER",
       "rank": 652,
       "events": [
-        "Qual. Sarreguemines"
+        "Qual. Monastir 42"
       ]
     },
     {
@@ -11261,7 +11247,7 @@
       "nation": "TUR",
       "rank": 657,
       "events": [
-        "Qual. Heraklion 11"
+        "Singapore 3"
       ]
     },
     {
@@ -11269,7 +11255,7 @@
       "nation": "JPN",
       "rank": 658,
       "events": [
-        "Qual. Mumbai 2"
+        "Mumbai 2"
       ]
     },
     {
@@ -11313,8 +11299,8 @@
       "nation": "RUS",
       "rank": 663,
       "events": [
-        "Qual. Qian Daohu",
-        "Qual. Shenzhen"
+        "Qian Daohu",
+        "Shenzhen"
       ]
     },
     {
@@ -11331,7 +11317,7 @@
       "rank": 665,
       "events": [
         "Solapur",
-        "Qual. Mumbai 2"
+        "Mumbai 2"
       ]
     },
     {
@@ -11402,10 +11388,7 @@
       "name": "Maxwell McKennon",
       "nation": "USA",
       "rank": 674,
-      "events": [
-        "Lexington",
-        "Ithaca"
-      ]
+      "events": []
     },
     {
       "name": "Mukund Sasikumar",
@@ -11513,9 +11496,7 @@
       "name": "Jacob Bradshaw",
       "nation": "AUS",
       "rank": 688,
-      "events": [
-        "Qual. Tamworth"
-      ]
+      "events": []
     },
     {
       "name": "Aleksandre Bakshi",
@@ -11743,7 +11724,7 @@
       "rank": 718,
       "events": [
         "Lexington",
-        "Qual. Mumbai 2"
+        "Qual. Tamworth"
       ]
     },
     {
@@ -11829,7 +11810,7 @@
       "rank": 729,
       "events": [
         "Lexington",
-        "Qual. Ithaca"
+        "Ithaca"
       ]
     },
     {
@@ -12236,7 +12217,9 @@
       "name": "Conor Gannon",
       "nation": "IRL",
       "rank": 783,
-      "events": []
+      "events": [
+        "Qual. Redbridge"
+      ]
     },
     {
       "name": "Émilien Demanet",
@@ -12294,7 +12277,7 @@
       "nation": "FRA",
       "rank": 790,
       "events": [
-        "Qual. Sarreguemines"
+        "Qual. Redbridge"
       ]
     },
     {
@@ -12397,7 +12380,7 @@
       "rank": 803,
       "events": [
         "Qual. Qian Daohu",
-        "Qual. Shenzhen"
+        "Qual. Tanagura"
       ]
     },
     {
@@ -12467,7 +12450,7 @@
       "rank": 812,
       "events": [
         "Szabolcsveresmart",
-        "Qual. Heraklion 11"
+        "Qual. Sarreguemines"
       ]
     },
     {
@@ -12499,7 +12482,7 @@
       "rank": 816,
       "events": [
         "Sharm El Sheikh 17",
-        "Qual. Sharm El Sheikh 18"
+        "Qual. Sarreguemines"
       ]
     },
     {
@@ -12507,7 +12490,6 @@
       "nation": "BUL",
       "rank": 817,
       "events": [
-        "Paranavai",
         "Qual. Ithaca"
       ]
     },
@@ -12516,8 +12498,7 @@
       "nation": "FRA",
       "rank": 818,
       "events": [
-        "Qual. Offenbach",
-        "Qual. Luanda 3"
+        "Qual. Offenbach"
       ]
     },
     {
@@ -12981,7 +12962,9 @@
       "name": "Oliver Okonkwo",
       "nation": "GBR",
       "rank": 878,
-      "events": []
+      "events": [
+        "Qual. Ithaca"
+      ]
     },
     {
       "name": "Alexandre Aubriot",
@@ -13010,7 +12993,7 @@
       "nation": "JPN",
       "rank": 882,
       "events": [
-        "Qual. Heraklion 11"
+        "Qual. Mumbai 2"
       ]
     },
     {
@@ -13146,7 +13129,7 @@
       "nation": "JPN",
       "rank": 900,
       "events": [
-        "Qual. Singapore 3"
+        "Qual. Tanagura"
       ]
     },
     {
@@ -13283,7 +13266,9 @@
       "name": "Muhammad Shoaib",
       "nation": "PAK",
       "rank": 920,
-      "events": []
+      "events": [
+        "Qual. Singapore 3"
+      ]
     },
     {
       "name": "Zsombor Velcz",
@@ -13313,9 +13298,7 @@
       "name": "Peter Bertran",
       "nation": "DOM",
       "rank": 924,
-      "events": [
-        "Quito 4"
-      ]
+      "events": []
     },
     {
       "name": "Noritaka Koizumi",
@@ -13463,7 +13446,7 @@
       "rank": 944,
       "events": [
         "Qual. Solapur",
-        "Qual. Luanda 3"
+        "Qual. Mumbai 2"
       ]
     },
     {
@@ -13638,7 +13621,8 @@
       "nation": "USA",
       "rank": 968,
       "events": [
-        "Qual. Solapur"
+        "Qual. Solapur",
+        "Qual. Mumbai 2"
       ]
     },
     {
@@ -13707,7 +13691,7 @@
       "rank": 976,
       "events": [
         "Qual. Heraklion 10",
-        "Qual. Bol 6"
+        "Qual. Heraklion 11"
       ]
     },
     {
@@ -13745,7 +13729,7 @@
       "rank": 981,
       "events": [
         "Qual. Offenbach",
-        "Qual. Monastir 42"
+        "Qual. Heraklion 11"
       ]
     },
     {
@@ -13884,7 +13868,7 @@
       "nation": "SUI",
       "rank": 999,
       "events": [
-        "Qual. Monastir 42"
+        "Qual. Heraklion 11"
       ]
     },
     {
