@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-10-10T01:45:32.463673Z",
+  "retrieved_at": "2026-10-10T15:52:44.239536Z",
   "ranking_source": "https://live-tennis.eu/en/atp-live-ranking",
   "schedule_source": "https://live-tennis.eu/en/atp-schedule",
   "rankings": [
@@ -18,7 +18,7 @@
     {
       "name": "Carlos Alcaraz",
       "nation": "ESP",
-      "points": 5570,
+      "points": 5610,
       "rank": 3
     },
     {
@@ -36,7 +36,7 @@
     {
       "name": "Félix Auger-Aliassime",
       "nation": "CAN",
-      "points": 3500,
+      "points": 3540,
       "rank": 6
     },
     {
@@ -48,19 +48,19 @@
     {
       "name": "Arthur Fils",
       "nation": "FRA",
-      "points": 3285,
+      "points": 3325,
       "rank": 8
+    },
+    {
+      "name": "Daniil Medvedev",
+      "nation": "RUS",
+      "points": 3310,
+      "rank": 9
     },
     {
       "name": "Alex de Minaur",
       "nation": "AUS",
       "points": 3280,
-      "rank": 9
-    },
-    {
-      "name": "Daniil Medvedev",
-      "nation": "RUS",
-      "points": 3270,
       "rank": 10
     },
     {
@@ -72,13 +72,13 @@
     {
       "name": "Taylor Fritz",
       "nation": "USA",
-      "points": 2840,
+      "points": 2880,
       "rank": 12
     },
     {
       "name": "Rafael Jódar",
       "nation": "ESP",
-      "points": 2594,
+      "points": 2634,
       "rank": 13
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Tommy Paul",
       "nation": "USA",
-      "points": 2385,
+      "points": 2425,
       "rank": 15
     },
     {
@@ -102,25 +102,25 @@
     {
       "name": "Learner Tien",
       "nation": "USA",
-      "points": 2305,
+      "points": 2345,
       "rank": 17
+    },
+    {
+      "name": "Jiří Lehečka",
+      "nation": "CZE",
+      "points": 2235,
+      "rank": 18
     },
     {
       "name": "Alexander Bublik",
       "nation": "KAZ",
       "points": 2235,
-      "rank": 18
+      "rank": 19
     },
     {
       "name": "Francisco Cerúndolo",
       "nation": "ARG",
       "points": 2220,
-      "rank": 19
-    },
-    {
-      "name": "Jiří Lehečka",
-      "nation": "CZE",
-      "points": 2195,
       "rank": 20
     },
     {
@@ -142,15 +142,15 @@
       "rank": 23
     },
     {
-      "name": "Karen Khachanov",
-      "nation": "RUS",
-      "points": 1940,
+      "name": "Casper Ruud",
+      "nation": "NOR",
+      "points": 1945,
       "rank": 24
     },
     {
-      "name": "Casper Ruud",
-      "nation": "NOR",
-      "points": 1905,
+      "name": "Karen Khachanov",
+      "nation": "RUS",
+      "points": 1940,
       "rank": 25
     },
     {
@@ -190,15 +190,15 @@
       "rank": 31
     },
     {
-      "name": "Ignacio Buse",
-      "nation": "PER",
-      "points": 1445,
+      "name": "Valentin Vacherot",
+      "nation": "MON",
+      "points": 1480,
       "rank": 32
     },
     {
-      "name": "Valentin Vacherot",
-      "nation": "MON",
-      "points": 1440,
+      "name": "Ignacio Buse",
+      "nation": "PER",
+      "points": 1445,
       "rank": 33
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Botic van de Zandschulp",
       "nation": "NED",
-      "points": 1263,
+      "points": 1283,
       "rank": 38
     },
     {
       "name": "Stefanos Tsitsipas",
       "nation": "GRE",
-      "points": 1260,
+      "points": 1280,
       "rank": 39
     },
     {
@@ -256,15 +256,15 @@
       "rank": 42
     },
     {
-      "name": "Mariano Navone",
-      "nation": "ARG",
-      "points": 1151,
+      "name": "Zizou Bergs",
+      "nation": "BEL",
+      "points": 1170,
       "rank": 43
     },
     {
-      "name": "Zizou Bergs",
-      "nation": "BEL",
-      "points": 1150,
+      "name": "Mariano Navone",
+      "nation": "ARG",
+      "points": 1151,
       "rank": 44
     },
     {
@@ -424,39 +424,39 @@
       "rank": 70
     },
     {
+      "name": "Pablo Carreño Busta",
+      "nation": "ESP",
+      "points": 773,
+      "rank": 71
+    },
+    {
       "name": "Camilo Ugo Carabelli",
       "nation": "ARG",
       "points": 770,
-      "rank": 71
+      "rank": 72
     },
     {
       "name": "Hamad Medjedović",
       "nation": "SRB",
       "points": 764,
-      "rank": 72
+      "rank": 73
     },
     {
       "name": "Tomáš Macháč",
       "nation": "CZE",
       "points": 763,
-      "rank": 73
+      "rank": 74
     },
     {
       "name": "Zachary Svajda",
       "nation": "USA",
       "points": 759,
-      "rank": 74
+      "rank": 75
     },
     {
       "name": "Martin Landaluce",
       "nation": "ESP",
       "points": 758,
-      "rank": 75
-    },
-    {
-      "name": "Pablo Carreño Busta",
-      "nation": "ESP",
-      "points": 753,
       "rank": 76
     },
     {
@@ -700,27 +700,27 @@
       "rank": 116
     },
     {
+      "name": "Dalibor Svrčina",
+      "nation": "CZE",
+      "points": 494,
+      "rank": 117
+    },
+    {
       "name": "Emilio Nava",
       "nation": "USA",
       "points": 493,
-      "rank": 117
+      "rank": 118
     },
     {
       "name": "Sebastian Ofner",
       "nation": "AUT",
       "points": 491,
-      "rank": 118
+      "rank": 119
     },
     {
       "name": "Otto Virtanen",
       "nation": "FIN",
       "points": 486,
-      "rank": 119
-    },
-    {
-      "name": "Dalibor Svrčina",
-      "nation": "CZE",
-      "points": 474,
       "rank": 120
     },
     {
@@ -730,45 +730,45 @@
       "rank": 121
     },
     {
+      "name": "Thiago Seyboth Wild",
+      "nation": "BRA",
+      "points": 470,
+      "rank": 122
+    },
+    {
       "name": "Rei Sakamoto",
       "nation": "JPN",
       "points": 463,
-      "rank": 122
+      "rank": 123
     },
     {
       "name": "Pedro Martínez",
       "nation": "ESP",
       "points": 462,
-      "rank": 123
+      "rank": 124
     },
     {
       "name": "Hugo Dellien",
       "nation": "BOL",
       "points": 460,
-      "rank": 124
+      "rank": 125
     },
     {
       "name": "Alexei Popyrin",
       "nation": "AUS",
       "points": 458,
-      "rank": 125
+      "rank": 126
     },
     {
       "name": "Patrick Kypson",
       "nation": "USA",
       "points": 458,
-      "rank": 126
+      "rank": 127
     },
     {
       "name": "Nikoloz Basilashvili",
       "nation": "GEO",
       "points": 453,
-      "rank": 127
-    },
-    {
-      "name": "Thiago Seyboth Wild",
-      "nation": "BRA",
-      "points": 448,
       "rank": 128
     },
     {
@@ -916,141 +916,141 @@
       "rank": 152
     },
     {
+      "name": "Laslo Djere",
+      "nation": "SRB",
+      "points": 362,
+      "rank": 153
+    },
+    {
+      "name": "Daniil Glinka",
+      "nation": "EST",
+      "points": 361,
+      "rank": 154
+    },
+    {
       "name": "Jack Draper",
       "nation": "GBR",
       "points": 360,
-      "rank": 153
+      "rank": 155
     },
     {
       "name": "Darwin Blanch",
       "nation": "USA",
       "points": 359,
-      "rank": 154
+      "rank": 156
     },
     {
       "name": "Clément Tabur",
       "nation": "FRA",
       "points": 359,
-      "rank": 155
+      "rank": 157
     },
     {
       "name": "Soonwoo Kwon",
       "nation": "KOR",
       "points": 355,
-      "rank": 156
+      "rank": 158
     },
     {
       "name": "Dušan Lajović",
       "nation": "SRB",
       "points": 353,
-      "rank": 157
+      "rank": 159
+    },
+    {
+      "name": "Elmer Møller",
+      "nation": "DEN",
+      "points": 353,
+      "rank": 160
     },
     {
       "name": "Marco Cecchinato",
       "nation": "ITA",
       "points": 353,
-      "rank": 158
+      "rank": 161
     },
     {
       "name": "Reilly Opelka",
       "nation": "USA",
       "points": 351,
-      "rank": 159
+      "rank": 162
+    },
+    {
+      "name": "Matej Dodig",
+      "nation": "CRO",
+      "points": 348,
+      "rank": 163
     },
     {
       "name": "Andrea Guerrieri",
       "nation": "ITA",
       "points": 347,
-      "rank": 160
+      "rank": 164
     },
     {
       "name": "Tom Gentzsch",
       "nation": "GER",
       "points": 344,
-      "rank": 161
+      "rank": 165
     },
     {
       "name": "Tristan Schoolkate",
       "nation": "AUS",
       "points": 341,
-      "rank": 162
+      "rank": 166
     },
     {
       "name": "Zhizhen Zhang",
       "nation": "CHN",
       "points": 340,
-      "rank": 163
+      "rank": 167
     },
     {
       "name": "Pavel Kotov",
       "nation": "RUS",
       "points": 339,
-      "rank": 164
+      "rank": 168
     },
     {
       "name": "Lukas Neumayer",
       "nation": "AUT",
       "points": 338,
-      "rank": 165
-    },
-    {
-      "name": "Laslo Djere",
-      "nation": "SRB",
-      "points": 337,
-      "rank": 166
-    },
-    {
-      "name": "Daniil Glinka",
-      "nation": "EST",
-      "points": 336,
-      "rank": 167
+      "rank": 169
     },
     {
       "name": "Joel Schwärzler",
       "nation": "AUT",
       "points": 334,
-      "rank": 168
+      "rank": 170
     },
     {
       "name": "Alex Bolt",
       "nation": "AUS",
       "points": 332,
-      "rank": 169
+      "rank": 171
     },
     {
       "name": "Francesco Maestrelli",
       "nation": "ITA",
       "points": 331,
-      "rank": 170
-    },
-    {
-      "name": "Elmer Møller",
-      "nation": "DEN",
-      "points": 331,
-      "rank": 171
+      "rank": 172
     },
     {
       "name": "Vitaliy Sachko",
       "nation": "UKR",
       "points": 330,
-      "rank": 172
+      "rank": 173
     },
     {
       "name": "Stefano Travaglia",
       "nation": "ITA",
       "points": 330,
-      "rank": 173
+      "rank": 174
     },
     {
       "name": "Eliot Spizzirri",
       "nation": "USA",
       "points": 327,
-      "rank": 174
-    },
-    {
-      "name": "Matej Dodig",
-      "nation": "CRO",
-      "points": 326,
       "rank": 175
     },
     {
@@ -1552,56 +1552,56 @@
       "rank": 258
     },
     {
+      "name": "Matthew Dellavedova",
+      "nation": "AUS",
+      "points": 207,
+      "rank": 259
+    },
+    {
       "name": "Yoshihito Nishioka",
       "nation": "JPN",
       "points": 206,
-      "rank": 259
+      "rank": 260
     },
     {
       "name": "Rodrigo Pacheco Mendez",
       "nation": "MEX",
       "points": 204,
-      "rank": 260
+      "rank": 261
     },
     {
       "name": "Dominic Stricker",
       "nation": "SUI",
       "points": 203,
-      "rank": 261
+      "rank": 262
     },
     {
       "name": "Murphy Cassone",
       "nation": "USA",
       "points": 203,
-      "rank": 262
+      "rank": 263
     },
     {
       "name": "Genaro Alberto Olivieri",
       "nation": "ARG",
       "points": 203,
-      "rank": 263
+      "rank": 264
     },
     {
       "name": "Franco Roncadelli",
       "nation": "URU",
       "points": 202,
-      "rank": 264
+      "rank": 265
     },
     {
       "name": "Mika Brunold",
       "nation": "SUI",
       "points": 200,
-      "rank": 265
+      "rank": 266
     },
     {
       "name": "Martin Krumich",
       "nation": "CZE",
-      "points": 200,
-      "rank": 266
-    },
-    {
-      "name": "Matthew Dellavedova",
-      "nation": "AUS",
       "points": 200,
       "rank": 267
     },
@@ -1690,248 +1690,248 @@
       "rank": 281
     },
     {
+      "name": "Jay Friend",
+      "nation": "JPN",
+      "points": 190,
+      "rank": 282
+    },
+    {
       "name": "Yu-hsiou Hsu",
       "nation": "TWN",
       "points": 187,
-      "rank": 282
+      "rank": 283
     },
     {
       "name": "Michele Ribecai",
       "nation": "ITA",
       "points": 187,
-      "rank": 283
+      "rank": 284
     },
     {
       "name": "Filip Jianu",
       "nation": "ROU",
       "points": 187,
-      "rank": 284
+      "rank": 285
     },
     {
       "name": "Oliver Tarvet",
       "nation": "GBR",
       "points": 186,
-      "rank": 285
+      "rank": 286
     },
     {
       "name": "Sumit Nagal",
       "nation": "IND",
       "points": 186,
-      "rank": 286
+      "rank": 287
     },
     {
       "name": "Carl Emil Overbeck",
       "nation": "DEN",
       "points": 184,
-      "rank": 287
+      "rank": 288
     },
     {
       "name": "Henri Squire",
       "nation": "GER",
       "points": 184,
-      "rank": 288
+      "rank": 289
     },
     {
       "name": "Florent Bax",
       "nation": "FRA",
       "points": 184,
-      "rank": 289
+      "rank": 290
     },
     {
       "name": "Sergey Fomin",
       "nation": "UZB",
       "points": 182,
-      "rank": 290
+      "rank": 291
     },
     {
       "name": "Stefan Dostanic",
       "nation": "USA",
       "points": 181,
-      "rank": 291
+      "rank": 292
     },
     {
       "name": "Mattéo Martineau",
       "nation": "FRA",
       "points": 181,
-      "rank": 292
+      "rank": 293
     },
     {
       "name": "Fajing Sun",
       "nation": "CHN",
       "points": 181,
-      "rank": 293
+      "rank": 294
     },
     {
       "name": "Nick Hardt",
       "nation": "DOM",
       "points": 180,
-      "rank": 294
+      "rank": 295
     },
     {
       "name": "Juan Bautista Torres",
       "nation": "ARG",
       "points": 180,
-      "rank": 295
+      "rank": 296
     },
     {
       "name": "Georgii Kravchenko",
       "nation": "UKR",
       "points": 180,
-      "rank": 296
+      "rank": 297
     },
     {
-      "name": "Jay Friend",
-      "nation": "JPN",
+      "name": "Daniel Michalski",
+      "nation": "POL",
       "points": 179,
-      "rank": 297
+      "rank": 298
     },
     {
       "name": "Filippo Romano",
       "nation": "ITA",
       "points": 179,
-      "rank": 298
+      "rank": 299
     },
     {
       "name": "Max Schönhaus",
       "nation": "GER",
       "points": 178,
-      "rank": 299
+      "rank": 300
     },
     {
       "name": "Enrico Dalla Valle",
       "nation": "ITA",
       "points": 178,
-      "rank": 300
+      "rank": 301
     },
     {
       "name": "Oriol Roca Batalla",
       "nation": "ESP",
       "points": 178,
-      "rank": 301
+      "rank": 302
     },
     {
       "name": "Pierre Hugues Herbert",
       "nation": "FRA",
       "points": 177,
-      "rank": 302
+      "rank": 303
     },
     {
       "name": "Oliver Crawford",
       "nation": "GBR",
       "points": 177,
-      "rank": 303
+      "rank": 304
     },
     {
       "name": "Abdullah Shelbayh",
       "nation": "JOR",
       "points": 177,
-      "rank": 304
+      "rank": 305
     },
     {
       "name": "Anton Matusevich",
       "nation": "GBR",
       "points": 177,
-      "rank": 305
+      "rank": 306
     },
     {
       "name": "Sandro Kopp",
       "nation": "AUT",
       "points": 177,
-      "rank": 306
+      "rank": 307
     },
     {
       "name": "Akira Santillan",
       "nation": "JPN",
       "points": 177,
-      "rank": 307
+      "rank": 308
     },
     {
       "name": "Sean Cuenin",
       "nation": "FRA",
       "points": 176,
-      "rank": 308
+      "rank": 309
+    },
+    {
+      "name": "Mert Alkaya",
+      "nation": "TUR",
+      "points": 175,
+      "rank": 310
     },
     {
       "name": "Samuele Pieri",
       "nation": "ITA",
       "points": 174,
-      "rank": 309
+      "rank": 311
     },
     {
       "name": "Guy den Ouden",
       "nation": "NED",
       "points": 173,
-      "rank": 310
+      "rank": 312
     },
     {
       "name": "Radu Mihai Papoe",
       "nation": "ROU",
       "points": 173,
-      "rank": 311
-    },
-    {
-      "name": "Daniel Michalski",
-      "nation": "POL",
-      "points": 172,
-      "rank": 312
+      "rank": 313
     },
     {
       "name": "Gonzalo Villanueva",
       "nation": "ARG",
       "points": 172,
-      "rank": 313
+      "rank": 314
     },
     {
       "name": "Tiago Pereira",
       "nation": "POR",
       "points": 171,
-      "rank": 314
+      "rank": 315
     },
     {
       "name": "Daniel Milavsky",
       "nation": "USA",
       "points": 170,
-      "rank": 315
+      "rank": 316
     },
     {
       "name": "Dali Blanch",
       "nation": "USA",
       "points": 169,
-      "rank": 316
+      "rank": 317
     },
     {
       "name": "Lucas Poullain",
       "nation": "FRA",
       "points": 169,
-      "rank": 317
+      "rank": 318
     },
     {
       "name": "Thomas Faurel",
       "nation": "FRA",
       "points": 168,
-      "rank": 318
+      "rank": 319
     },
     {
       "name": "Giles Hussey",
       "nation": "GBR",
       "points": 168,
-      "rank": 319
+      "rank": 320
     },
     {
       "name": "Jonáš Forejtek",
       "nation": "CZE",
       "points": 168,
-      "rank": 320
+      "rank": 321
     },
     {
       "name": "Carlo Alberto Caniato",
       "nation": "ITA",
-      "points": 168,
-      "rank": 321
-    },
-    {
-      "name": "Mert Alkaya",
-      "nation": "TUR",
       "points": 168,
       "rank": 322
     },
@@ -2116,50 +2116,50 @@
       "rank": 352
     },
     {
+      "name": "Robert Strombachs",
+      "nation": "LAT",
+      "points": 142,
+      "rank": 353
+    },
+    {
       "name": "Carlos Maria Zarate",
       "nation": "ARG",
       "points": 142,
-      "rank": 353
+      "rank": 354
     },
     {
       "name": "Jake Delaney",
       "nation": "AUS",
       "points": 142,
-      "rank": 354
+      "rank": 355
     },
     {
       "name": "Mathys Erhard",
       "nation": "FRA",
       "points": 141,
-      "rank": 355
+      "rank": 356
     },
     {
       "name": "Alejo Sanchez Quilez",
       "nation": "ESP",
       "points": 140,
-      "rank": 356
+      "rank": 357
     },
     {
       "name": "Ugo Blanchet",
       "nation": "FRA",
       "points": 139,
-      "rank": 357
+      "rank": 358
     },
     {
       "name": "Franco Agamenone",
       "nation": "ITA",
       "points": 139,
-      "rank": 358
+      "rank": 359
     },
     {
       "name": "Ognjen Milić",
       "nation": "SRB",
-      "points": 138,
-      "rank": 359
-    },
-    {
-      "name": "Robert Strombachs",
-      "nation": "LAT",
       "points": 138,
       "rank": 360
     },
@@ -2332,44 +2332,44 @@
       "rank": 388
     },
     {
+      "name": "Eliakim Coulibaly",
+      "nation": "CIV",
+      "points": 126,
+      "rank": 389
+    },
+    {
       "name": "Omar Jasika",
       "nation": "AUS",
       "points": 126,
-      "rank": 389
+      "rank": 390
     },
     {
       "name": "Arthur Cazaux",
       "nation": "FRA",
       "points": 125,
-      "rank": 390
+      "rank": 391
     },
     {
       "name": "Aziz Dougaz",
       "nation": "TUN",
       "points": 125,
-      "rank": 391
+      "rank": 392
     },
     {
       "name": "Massimo Giunta",
       "nation": "ITA",
       "points": 125,
-      "rank": 392
+      "rank": 393
     },
     {
       "name": "Jack Kennedy",
       "nation": "USA",
       "points": 124,
-      "rank": 393
+      "rank": 394
     },
     {
       "name": "Hernán Casanova",
       "nation": "ARG",
-      "points": 122,
-      "rank": 394
-    },
-    {
-      "name": "Eliakim Coulibaly",
-      "nation": "CIV",
       "points": 122,
       "rank": 395
     },
@@ -2530,171 +2530,171 @@
       "rank": 421
     },
     {
+      "name": "Alibek Kachmazov",
+      "nation": "RUS",
+      "points": 113,
+      "rank": 422
+    },
+    {
       "name": "Yosuke Watanuki",
       "nation": "JPN",
       "points": 113,
-      "rank": 422
+      "rank": 423
     },
     {
       "name": "Niels Visker",
       "nation": "NED",
       "points": 113,
-      "rank": 423
+      "rank": 424
     },
     {
       "name": "Luca Staeheli",
       "nation": "SUI",
       "points": 113,
-      "rank": 424
+      "rank": 425
     },
     {
       "name": "Paulo Andre Saraiva Dos Santos",
       "nation": "BRA",
       "points": 113,
-      "rank": 425
+      "rank": 426
     },
     {
       "name": "Kaichi Uchida",
       "nation": "JPN",
       "points": 113,
-      "rank": 426
+      "rank": 427
     },
     {
       "name": "Masamichi Imamura",
       "nation": "JPN",
       "points": 113,
-      "rank": 427
+      "rank": 428
     },
     {
       "name": "Justin Engel",
       "nation": "GER",
       "points": 112,
-      "rank": 428
+      "rank": 429
     },
     {
       "name": "Semen Pankin",
       "nation": "RUS",
       "points": 112,
-      "rank": 429
+      "rank": 430
     },
     {
       "name": "Khumoyun Sultanov",
       "nation": "UZB",
       "points": 111,
-      "rank": 430
+      "rank": 431
     },
     {
       "name": "Spencer Johnson",
       "nation": "USA",
       "points": 110,
-      "rank": 431
+      "rank": 432
     },
     {
       "name": "Andrea Collarini",
       "nation": "ARG",
       "points": 110,
-      "rank": 432
+      "rank": 433
     },
     {
       "name": "Alafia Ayeni",
       "nation": "USA",
       "points": 110,
-      "rank": 433
+      "rank": 434
     },
     {
       "name": "Enzo Aguiard",
       "nation": "AUS",
       "points": 110,
-      "rank": 434
+      "rank": 435
     },
     {
       "name": "Sergi Perez Contri",
       "nation": "ESP",
       "points": 110,
-      "rank": 435
+      "rank": 436
     },
     {
       "name": "Tyler Zink",
       "nation": "USA",
       "points": 109,
-      "rank": 436
+      "rank": 437
     },
     {
       "name": "Karan Singh",
       "nation": "IND",
       "points": 109,
-      "rank": 437
+      "rank": 438
     },
     {
       "name": "Yannik Kelm",
       "nation": "GER",
       "points": 108,
-      "rank": 438
+      "rank": 439
     },
     {
       "name": "Gerard Campana Lee",
       "nation": "KOR",
       "points": 108,
-      "rank": 439
+      "rank": 440
     },
     {
       "name": "Kenta Miyoshi",
       "nation": "JPN",
       "points": 107,
-      "rank": 440
+      "rank": 441
     },
     {
       "name": "Oleg Prihodko",
       "nation": "MKD",
       "points": 107,
-      "rank": 441
+      "rank": 442
     },
     {
       "name": "Oleksii Krutykh",
       "nation": "UKR",
       "points": 107,
-      "rank": 442
+      "rank": 443
     },
     {
       "name": "Santiago Taverna",
       "nation": "ARG",
       "points": 106,
-      "rank": 443
+      "rank": 444
     },
     {
       "name": "Murkel Dellien",
       "nation": "BOL",
       "points": 106,
-      "rank": 444
+      "rank": 445
     },
     {
       "name": "Blake Ellis",
       "nation": "AUS",
       "points": 105,
-      "rank": 445
+      "rank": 446
     },
     {
       "name": "Geoffrey Blancaneaux",
       "nation": "FRA",
       "points": 105,
-      "rank": 446
+      "rank": 447
     },
     {
       "name": "Carlos Taberner",
       "nation": "ESP",
       "points": 104,
-      "rank": 447
+      "rank": 448
     },
     {
       "name": "Luca Castelnuovo",
       "nation": "SUI",
       "points": 103,
-      "rank": 448
-    },
-    {
-      "name": "Alibek Kachmazov",
-      "nation": "RUS",
-      "points": 102,
       "rank": 449
     },
     {
@@ -2830,14 +2830,14 @@
       "rank": 471
     },
     {
-      "name": "Jie Cui",
-      "nation": "CHN",
+      "name": "Eero Vasa",
+      "nation": "FIN",
       "points": 96,
       "rank": 472
     },
     {
-      "name": "Eero Vasa",
-      "nation": "FIN",
+      "name": "Jie Cui",
+      "nation": "CHN",
       "points": 96,
       "rank": 473
     },
@@ -3004,122 +3004,122 @@
       "rank": 500
     },
     {
+      "name": "Sergio Callejon Hernando",
+      "nation": "ESP",
+      "points": 87,
+      "rank": 501
+    },
+    {
       "name": "Viktor Durasovic",
       "nation": "NOR",
       "points": 87,
-      "rank": 501
+      "rank": 502
     },
     {
       "name": "Filip Jeff Planinšek",
       "nation": "SLO",
       "points": 87,
-      "rank": 502
+      "rank": 503
     },
     {
       "name": "Jack Logé",
       "nation": "BEL",
       "points": 87,
-      "rank": 503
+      "rank": 504
     },
     {
       "name": "Alex Hernandez",
       "nation": "MEX",
       "points": 86,
-      "rank": 504
+      "rank": 505
     },
     {
       "name": "Ioannis Xilas",
       "nation": "GRE",
       "points": 86,
-      "rank": 505
+      "rank": 506
     },
     {
       "name": "Tai Sach",
       "nation": "AUS",
       "points": 86,
-      "rank": 506
+      "rank": 507
     },
     {
       "name": "Aziz Ouakaa",
       "nation": "TUN",
       "points": 86,
-      "rank": 507
+      "rank": 508
     },
     {
       "name": "Li Tu",
       "nation": "AUS",
       "points": 85,
-      "rank": 508
+      "rank": 509
     },
     {
       "name": "Dmitry Popko",
       "nation": "KAZ",
       "points": 85,
-      "rank": 509
+      "rank": 510
     },
     {
       "name": "Daniel Siniakov",
       "nation": "CZE",
       "points": 85,
-      "rank": 510
+      "rank": 511
     },
     {
       "name": "Pierluigi Basile",
       "nation": "ITA",
       "points": 85,
-      "rank": 511
+      "rank": 512
     },
     {
       "name": "Ivan Gakhov",
       "nation": "RUS",
       "points": 85,
-      "rank": 512
+      "rank": 513
     },
     {
       "name": "Alexander Donski",
       "nation": "BUL",
       "points": 84,
-      "rank": 513
+      "rank": 514
     },
     {
       "name": "Benjamin Hassan",
       "nation": "LBN",
       "points": 84,
-      "rank": 514
+      "rank": 515
     },
     {
       "name": "Pedro Sakamoto",
       "nation": "BRA",
       "points": 84,
-      "rank": 515
+      "rank": 516
     },
     {
       "name": "Christian Langmo",
       "nation": "USA",
       "points": 84,
-      "rank": 516
+      "rank": 517
     },
     {
       "name": "Mats Rosenkranz",
       "nation": "GER",
       "points": 83,
-      "rank": 517
+      "rank": 518
     },
     {
       "name": "Lilian Marmousez",
       "nation": "FRA",
       "points": 83,
-      "rank": 518
+      "rank": 519
     },
     {
       "name": "Rudolf Molleker",
       "nation": "GER",
-      "points": 83,
-      "rank": 519
-    },
-    {
-      "name": "Sergio Callejon Hernando",
-      "nation": "ESP",
       "points": 83,
       "rank": 520
     },
@@ -3130,158 +3130,158 @@
       "rank": 521
     },
     {
+      "name": "John Echeverria",
+      "nation": "ESP",
+      "points": 82,
+      "rank": 522
+    },
+    {
       "name": "Patrick Zahraj",
       "nation": "GER",
       "points": 82,
-      "rank": 522
+      "rank": 523
     },
     {
       "name": "Yasutaka Uchiyama",
       "nation": "JPN",
       "points": 81,
-      "rank": 523
+      "rank": 524
     },
     {
       "name": "Beibit Zhukayev",
       "nation": "KAZ",
       "points": 81,
-      "rank": 524
+      "rank": 525
     },
     {
       "name": "Yanis Ghazouani Durand",
       "nation": "FRA",
       "points": 81,
-      "rank": 525
+      "rank": 526
     },
     {
       "name": "Leonardo Rossi",
       "nation": "ITA",
       "points": 81,
-      "rank": 526
+      "rank": 527
     },
     {
       "name": "Corentin Denolly",
       "nation": "FRA",
       "points": 80,
-      "rank": 527
+      "rank": 528
     },
     {
       "name": "Giuseppe La Vela",
       "nation": "ITA",
       "points": 80,
-      "rank": 528
+      "rank": 529
     },
     {
       "name": "Luca Wiedenmann",
       "nation": "GER",
       "points": 80,
-      "rank": 529
+      "rank": 530
     },
     {
       "name": "Peter Makk",
       "nation": "HUN",
       "points": 79,
-      "rank": 530
+      "rank": 531
     },
     {
       "name": "M Rifki Fitriadi",
       "nation": "INA",
       "points": 79,
-      "rank": 531
+      "rank": 532
+    },
+    {
+      "name": "Matisse Bobichon",
+      "nation": "FRA",
+      "points": 78,
+      "rank": 533
     },
     {
       "name": "Yanaki Milev",
       "nation": "BUL",
       "points": 78,
-      "rank": 532
+      "rank": 534
     },
     {
       "name": "Alec Deckers",
       "nation": "NED",
       "points": 78,
-      "rank": 533
-    },
-    {
-      "name": "John Echeverria",
-      "nation": "ESP",
-      "points": 78,
-      "rank": 534
+      "rank": 535
     },
     {
       "name": "Nino Ehrenschneider",
       "nation": "GER",
       "points": 78,
-      "rank": 535
+      "rank": 536
     },
     {
       "name": "Bor Artnak",
       "nation": "SLO",
       "points": 77,
-      "rank": 536
+      "rank": 537
     },
     {
       "name": "Maximo Zeitune",
       "nation": "ARG",
       "points": 77,
-      "rank": 537
+      "rank": 538
     },
     {
       "name": "Jordan Thompson",
       "nation": "AUS",
       "points": 76,
-      "rank": 538
+      "rank": 539
     },
     {
       "name": "Tibo Colson",
       "nation": "BEL",
       "points": 76,
-      "rank": 539
+      "rank": 540
     },
     {
       "name": "Gavin Young",
       "nation": "USA",
       "points": 76,
-      "rank": 540
+      "rank": 541
     },
     {
       "name": "Melios Efstathiou",
       "nation": "CYP",
       "points": 76,
-      "rank": 541
+      "rank": 542
     },
     {
       "name": "Daniil Ostapenkov",
       "nation": "BLR",
       "points": 76,
-      "rank": 542
+      "rank": 543
     },
     {
       "name": "Cannon Kingsley",
       "nation": "USA",
       "points": 75,
-      "rank": 543
+      "rank": 544
     },
     {
       "name": "Tuncay Duran",
       "nation": "TUR",
       "points": 75,
-      "rank": 544
+      "rank": 545
     },
     {
       "name": "Adrian Ötzbach",
       "nation": "GER",
       "points": 75,
-      "rank": 545
+      "rank": 546
     },
     {
       "name": "James Trotter",
       "nation": "JPN",
-      "points": 74,
-      "rank": 546
-    },
-    {
-      "name": "Matisse Bobichon",
-      "nation": "FRA",
       "points": 74,
       "rank": 547
     },
@@ -3394,206 +3394,206 @@
       "rank": 565
     },
     {
-      "name": "Luca Potenza",
+      "name": "Alexander Weis",
       "nation": "ITA",
       "points": 69,
       "rank": 566
     },
     {
+      "name": "Luca Potenza",
+      "nation": "ITA",
+      "points": 69,
+      "rank": 567
+    },
+    {
       "name": "Kaylan Bigun",
       "nation": "USA",
       "points": 69,
-      "rank": 567
+      "rank": 568
     },
     {
       "name": "Amit Vales",
       "nation": "ISR",
       "points": 69,
-      "rank": 568
+      "rank": 569
     },
     {
       "name": "Saba Purtseladze",
       "nation": "GEO",
       "points": 69,
-      "rank": 569
+      "rank": 570
     },
     {
       "name": "Marcel Zieliński",
       "nation": "POL",
       "points": 69,
-      "rank": 570
+      "rank": 571
     },
     {
       "name": "Pedro Vives Marcos",
       "nation": "ESP",
       "points": 68,
-      "rank": 571
+      "rank": 572
     },
     {
       "name": "Daniel de Jonge",
       "nation": "NED",
       "points": 68,
-      "rank": 572
+      "rank": 573
     },
     {
       "name": "Hyeon Chung",
       "nation": "KOR",
       "points": 68,
-      "rank": 573
+      "rank": 574
     },
     {
       "name": "João Domingues",
       "nation": "POR",
       "points": 68,
-      "rank": 574
+      "rank": 575
     },
     {
       "name": "Lorenzo Carboni",
       "nation": "ITA",
       "points": 68,
-      "rank": 575
+      "rank": 576
     },
     {
       "name": "Keegan Rice",
       "nation": "CAN",
       "points": 67,
-      "rank": 576
+      "rank": 577
     },
     {
       "name": "Goncalo Marques",
       "nation": "POR",
       "points": 67,
-      "rank": 577
+      "rank": 578
     },
     {
       "name": "Jelle Sels",
       "nation": "NED",
       "points": 67,
-      "rank": 578
+      "rank": 579
     },
     {
       "name": "Chase Ferguson",
       "nation": "AUS",
       "points": 67,
-      "rank": 579
+      "rank": 580
     },
     {
       "name": "Paul Inchauspe",
       "nation": "FRA",
       "points": 66,
-      "rank": 580
+      "rank": 581
     },
     {
       "name": "Nerman Fatić",
       "nation": "BIH",
       "points": 66,
-      "rank": 581
+      "rank": 582
     },
     {
       "name": "Martin Van Der Meerschen",
       "nation": "BEL",
       "points": 66,
-      "rank": 582
+      "rank": 583
     },
     {
       "name": "Federico Iannaccone",
       "nation": "ITA",
       "points": 66,
-      "rank": 583
+      "rank": 584
     },
     {
       "name": "Erik Arutiunian",
       "nation": "BLR",
       "points": 65,
-      "rank": 584
+      "rank": 585
     },
     {
       "name": "Shunsuke Mitsui",
       "nation": "JPN",
       "points": 65,
-      "rank": 585
+      "rank": 586
     },
     {
       "name": "Alejandro Juan Mano",
       "nation": "ESP",
       "points": 65,
-      "rank": 586
+      "rank": 587
     },
     {
       "name": "John Hallquist Lithen",
       "nation": "SWE",
       "points": 65,
-      "rank": 587
+      "rank": 588
     },
     {
       "name": "Hikaru Shiraishi",
       "nation": "JPN",
       "points": 65,
-      "rank": 588
+      "rank": 589
     },
     {
       "name": "Guto Miguel",
       "nation": "BRA",
       "points": 64,
-      "rank": 589
+      "rank": 590
     },
     {
       "name": "Robin Catry",
       "nation": "FRA",
       "points": 64,
-      "rank": 590
+      "rank": 591
     },
     {
       "name": "Andrea Vavassori",
       "nation": "ITA",
       "points": 63,
-      "rank": 591
+      "rank": 592
     },
     {
       "name": "Juan Sebastián Gómez",
       "nation": "COL",
       "points": 63,
-      "rank": 592
+      "rank": 593
     },
     {
       "name": "Hunter Heck",
       "nation": "USA",
       "points": 63,
-      "rank": 593
+      "rank": 594
     },
     {
       "name": "Andrea De Marchi",
       "nation": "ITA",
       "points": 63,
-      "rank": 594
+      "rank": 595
     },
     {
       "name": "Naoya Honda",
       "nation": "JPN",
       "points": 63,
-      "rank": 595
+      "rank": 596
     },
     {
       "name": "Thiago Cigarran",
       "nation": "ARG",
       "points": 63,
-      "rank": 596
+      "rank": 597
     },
     {
       "name": "Jamie Mackenzie",
       "nation": "GER",
       "points": 62,
-      "rank": 597
+      "rank": 598
     },
     {
       "name": "Daniel Jade",
       "nation": "FRA",
-      "points": 62,
-      "rank": 598
-    },
-    {
-      "name": "Alexander Weis",
-      "nation": "ITA",
       "points": 62,
       "rank": 599
     },
@@ -3640,373 +3640,373 @@
       "rank": 606
     },
     {
+      "name": "Anton Arzhankin",
+      "nation": "RUS",
+      "points": 61,
+      "rank": 607
+    },
+    {
       "name": "Lorenzo Bocchi",
       "nation": "ITA",
       "points": 61,
-      "rank": 607
+      "rank": 608
     },
     {
       "name": "Timofei Derepasko",
       "nation": "RUS",
       "points": 61,
-      "rank": 608
+      "rank": 609
     },
     {
       "name": "Javier Barranco Cosano",
       "nation": "ESP",
       "points": 60,
-      "rank": 609
+      "rank": 610
     },
     {
       "name": "Daniele Rapagnetta",
       "nation": "ITA",
       "points": 60,
-      "rank": 610
+      "rank": 611
     },
     {
       "name": "João Eduardo Schiessl",
       "nation": "BRA",
       "points": 60,
-      "rank": 611
+      "rank": 612
     },
     {
       "name": "Isaac Becroft",
       "nation": "NZL",
       "points": 60,
-      "rank": 612
+      "rank": 613
     },
     {
       "name": "Miloš Karol",
       "nation": "SVK",
       "points": 59,
-      "rank": 613
+      "rank": 614
     },
     {
       "name": "Yaroslav Demin",
       "nation": "RUS",
       "points": 59,
-      "rank": 614
+      "rank": 615
     },
     {
       "name": "Amir Omarkhanov",
       "nation": "KAZ",
       "points": 59,
-      "rank": 615
+      "rank": 616
     },
     {
       "name": "Oleksandr Ovcharenko",
       "nation": "UKR",
       "points": 59,
-      "rank": 616
+      "rank": 617
     },
     {
       "name": "Leo Borg",
       "nation": "SWE",
       "points": 59,
-      "rank": 617
+      "rank": 618
     },
     {
       "name": "Pietro Fellin",
       "nation": "ITA",
       "points": 59,
-      "rank": 618
+      "rank": 619
     },
     {
       "name": "Sanhui Shin",
       "nation": "KOR",
       "points": 59,
-      "rank": 619
+      "rank": 620
     },
     {
       "name": "Dominik Palán",
       "nation": "CZE",
       "points": 59,
-      "rank": 620
+      "rank": 621
     },
     {
       "name": "Michael Antonius",
       "nation": "USA",
       "points": 58,
-      "rank": 621
+      "rank": 622
     },
     {
       "name": "Matyas Fuele",
       "nation": "HUN",
       "points": 58,
-      "rank": 622
+      "rank": 623
     },
     {
       "name": "Pieter De Lange",
       "nation": "NED",
       "points": 58,
-      "rank": 623
+      "rank": 624
+    },
+    {
+      "name": "Dev Javia",
+      "nation": "IND",
+      "points": 58,
+      "rank": 625
     },
     {
       "name": "Tiago Cação",
       "nation": "POR",
       "points": 58,
-      "rank": 624
+      "rank": 626
     },
     {
       "name": "Samuel Heredia",
       "nation": "COL",
       "points": 58,
-      "rank": 625
+      "rank": 627
     },
     {
       "name": "Aidan Kim",
       "nation": "USA",
       "points": 57,
-      "rank": 626
+      "rank": 628
     },
     {
       "name": "Conner Huertas del Pino",
       "nation": "PER",
       "points": 57,
-      "rank": 627
+      "rank": 629
     },
     {
       "name": "Pedro Rodenas",
       "nation": "ESP",
       "points": 57,
-      "rank": 628
-    },
-    {
-      "name": "Anton Arzhankin",
-      "nation": "RUS",
-      "points": 57,
-      "rank": 629
+      "rank": 630
     },
     {
       "name": "Manuel Mazza",
       "nation": "ITA",
       "points": 57,
-      "rank": 630
+      "rank": 631
     },
     {
       "name": "Guillaume Dalmasso",
       "nation": "FRA",
       "points": 57,
-      "rank": 631
+      "rank": 632
     },
     {
       "name": "Nicolas Tepmahc",
       "nation": "FRA",
       "points": 57,
-      "rank": 632
+      "rank": 633
     },
     {
       "name": "Gabriele Bosio",
       "nation": "ITA",
       "points": 57,
-      "rank": 633
+      "rank": 634
     },
     {
       "name": "Cedrik Marcel Stebe",
       "nation": "GER",
       "points": 56,
-      "rank": 634
+      "rank": 635
     },
     {
       "name": "Max Purcell",
       "nation": "AUS",
       "points": 56,
-      "rank": 635
+      "rank": 636
     },
     {
       "name": "Michael Bassem Sobhy",
       "nation": "EGY",
       "points": 56,
-      "rank": 636
+      "rank": 637
     },
     {
       "name": "Ryan Colby",
       "nation": "USA",
       "points": 56,
-      "rank": 637
+      "rank": 638
     },
     {
       "name": "Marlon Vankan",
       "nation": "GER",
       "points": 56,
-      "rank": 638
+      "rank": 639
     },
     {
       "name": "Ignacio Parisca Romera",
       "nation": "VEN",
       "points": 56,
-      "rank": 639
+      "rank": 640
     },
     {
       "name": "Filip Peliwo",
       "nation": "POL",
       "points": 56,
-      "rank": 640
+      "rank": 641
     },
     {
       "name": "Nikolai Barsukov",
       "nation": "GER",
       "points": 56,
-      "rank": 641
+      "rank": 642
     },
     {
       "name": "Alan Fernando Rubio Fierros",
       "nation": "MEX",
       "points": 55,
-      "rank": 642
+      "rank": 643
     },
     {
       "name": "Samuel Vincent Ruggeri",
       "nation": "ITA",
       "points": 55,
-      "rank": 643
+      "rank": 644
     },
     {
       "name": "Tomasz Berkieta",
       "nation": "POL",
       "points": 55,
-      "rank": 644
+      "rank": 645
     },
     {
       "name": "Ergi Kırkın",
       "nation": "TUR",
       "points": 55,
-      "rank": 645
+      "rank": 646
     },
     {
       "name": "Maxime Janvier",
       "nation": "FRA",
       "points": 55,
-      "rank": 646
+      "rank": 647
     },
     {
       "name": "Radu David Turcanu",
       "nation": "ROU",
       "points": 55,
-      "rank": 647
+      "rank": 648
     },
     {
       "name": "Kokoro Isomura",
       "nation": "JPN",
       "points": 55,
-      "rank": 648
+      "rank": 649
     },
     {
       "name": "Samir Banerjee",
       "nation": "USA",
       "points": 54,
-      "rank": 649
+      "rank": 650
     },
     {
       "name": "Taha Baadi",
       "nation": "MAR",
       "points": 54,
-      "rank": 650
+      "rank": 651
     },
     {
       "name": "Dan Martin",
       "nation": "CAN",
       "points": 54,
-      "rank": 651
+      "rank": 652
     },
     {
       "name": "Kai Wehnelt",
       "nation": "GER",
       "points": 54,
-      "rank": 652
+      "rank": 653
     },
     {
       "name": "Stefan Adrian Andreescu",
       "nation": "ROU",
       "points": 54,
-      "rank": 653
+      "rank": 654
     },
     {
       "name": "Kuan Yi Lee",
       "nation": "TWN",
       "points": 54,
-      "rank": 654
+      "rank": 655
     },
     {
       "name": "Ryuki Matsuda",
       "nation": "JPN",
       "points": 54,
-      "rank": 655
+      "rank": 656
     },
     {
       "name": "David Goffin",
       "nation": "BEL",
       "points": 53,
-      "rank": 656
+      "rank": 657
     },
     {
       "name": "Oliver Bonding",
       "nation": "GBR",
       "points": 53,
-      "rank": 657
+      "rank": 658
     },
     {
       "name": "Karol Filar",
       "nation": "POL",
       "points": 53,
-      "rank": 658
+      "rank": 659
     },
     {
       "name": "John Sperle",
       "nation": "GER",
       "points": 53,
-      "rank": 659
+      "rank": 660
     },
     {
       "name": "Imanol López Morillo",
       "nation": "ESP",
       "points": 53,
-      "rank": 660
+      "rank": 661
     },
     {
       "name": "Kirill Kivattsev",
       "nation": "RUS",
       "points": 53,
-      "rank": 661
+      "rank": 662
     },
     {
       "name": "Naoki Nakagawa",
       "nation": "JPN",
       "points": 52,
-      "rank": 662
+      "rank": 663
     },
     {
       "name": "Maxwell McKennon",
       "nation": "USA",
       "points": 52,
-      "rank": 663
+      "rank": 664
     },
     {
       "name": "Nicolas Zanellato",
       "nation": "BRA",
       "points": 52,
-      "rank": 664
+      "rank": 665
     },
     {
       "name": "Giovanni Oradini",
       "nation": "ITA",
       "points": 52,
-      "rank": 665
+      "rank": 666
     },
     {
       "name": "Herman Hoeyeraal",
       "nation": "NOR",
       "points": 51,
-      "rank": 666
-    },
-    {
-      "name": "Sidharth Rawat",
-      "nation": "IND",
-      "points": 51,
       "rank": 667
     },
     {
-      "name": "Dev Javia",
+      "name": "Sidharth Rawat",
       "nation": "IND",
       "points": 51,
       "rank": 668
@@ -4522,447 +4522,447 @@
       "rank": 753
     },
     {
+      "name": "Casey Hoole",
+      "nation": "AUS",
+      "points": 39,
+      "rank": 754
+    },
+    {
       "name": "Matthew Forbes",
       "nation": "USA",
       "points": 39,
-      "rank": 754
+      "rank": 755
     },
     {
       "name": "Alex Knaff",
       "nation": "LUX",
       "points": 39,
-      "rank": 755
+      "rank": 756
     },
     {
       "name": "Yuta Kawahashi",
       "nation": "JPN",
       "points": 39,
-      "rank": 756
+      "rank": 757
     },
     {
       "name": "Amr Elsayed",
       "nation": "EGY",
       "points": 39,
-      "rank": 757
+      "rank": 758
     },
     {
       "name": "Yuta Tomida",
       "nation": "JPN",
       "points": 39,
-      "rank": 758
+      "rank": 759
     },
     {
       "name": "Émilien Demanet",
       "nation": "BEL",
       "points": 39,
-      "rank": 759
+      "rank": 760
     },
     {
       "name": "Evan Bynoe",
       "nation": "USA",
       "points": 39,
-      "rank": 760
+      "rank": 761
     },
     {
       "name": "Joshua Sheehy",
       "nation": "USA",
       "points": 38,
-      "rank": 761
+      "rank": 762
     },
     {
       "name": "Keaton Hance",
       "nation": "USA",
       "points": 38,
-      "rank": 762
+      "rank": 763
     },
     {
       "name": "Jakub Nicod",
       "nation": "CZE",
       "points": 38,
-      "rank": 763
+      "rank": 764
     },
     {
       "name": "Noah Zamora",
       "nation": "USA",
       "points": 38,
-      "rank": 764
+      "rank": 765
     },
     {
       "name": "Niklas Guttau",
       "nation": "GER",
       "points": 38,
-      "rank": 765
+      "rank": 766
     },
     {
       "name": "Rafael Izquierdo Luque",
       "nation": "ESP",
       "points": 38,
-      "rank": 766
+      "rank": 767
     },
     {
       "name": "Rares Teodor Pieleanu",
       "nation": "ROU",
       "points": 38,
-      "rank": 767
+      "rank": 768
     },
     {
       "name": "Michele Mecarelli",
       "nation": "ITA",
       "points": 38,
-      "rank": 768
+      "rank": 769
     },
     {
       "name": "Rodrigo Alujas",
       "nation": "MEX",
       "points": 38,
-      "rank": 769
+      "rank": 770
     },
     {
       "name": "Maé Malige",
       "nation": "FRA",
       "points": 38,
-      "rank": 770
+      "rank": 771
     },
     {
       "name": "Max Dahlin",
       "nation": "SWE",
       "points": 37,
-      "rank": 771
+      "rank": 772
     },
     {
       "name": "Andres Santamarta Roig",
       "nation": "ESP",
       "points": 37,
-      "rank": 772
+      "rank": 773
     },
     {
       "name": "Maxim Zhukov",
       "nation": "RUS",
       "points": 37,
-      "rank": 773
+      "rank": 774
     },
     {
       "name": "Matt Ponchet",
       "nation": "FRA",
       "points": 37,
-      "rank": 774
+      "rank": 775
     },
     {
       "name": "Conor Gannon",
       "nation": "IRL",
       "points": 37,
-      "rank": 775
+      "rank": 776
     },
     {
       "name": "Fabrizio Andaloro",
       "nation": "ITA",
       "points": 37,
-      "rank": 776
+      "rank": 777
+    },
+    {
+      "name": "George Lazarov",
+      "nation": "BUL",
+      "points": 37,
+      "rank": 778
     },
     {
       "name": "Carles Cordoba",
       "nation": "ESP",
       "points": 37,
-      "rank": 777
+      "rank": 779
     },
     {
       "name": "Cosme Rolland De Ravel",
       "nation": "FRA",
       "points": 36,
-      "rank": 778
+      "rank": 780
     },
     {
       "name": "Adria Soriano Barrera",
       "nation": "COL",
       "points": 36,
-      "rank": 779
+      "rank": 781
     },
     {
       "name": "Jannik Opitz",
       "nation": "GER",
       "points": 36,
-      "rank": 780
+      "rank": 782
     },
     {
       "name": "Fryderyk Lechno-Wasiutyński",
       "nation": "POL",
       "points": 36,
-      "rank": 781
+      "rank": 783
     },
     {
       "name": "Ben Jones",
       "nation": "GBR",
       "points": 36,
-      "rank": 782
+      "rank": 784
     },
     {
       "name": "Viacheslav Bielinskyi",
       "nation": "UKR",
       "points": 36,
-      "rank": 783
+      "rank": 785
     },
     {
       "name": "Oskari Paldanius",
       "nation": "FIN",
       "points": 36,
-      "rank": 784
+      "rank": 786
     },
     {
       "name": "Tianhui Zhang",
       "nation": "CHN",
       "points": 36,
-      "rank": 785
+      "rank": 787
     },
     {
       "name": "Anas Mazdrashki",
       "nation": "BUL",
       "points": 36,
-      "rank": 786
+      "rank": 788
     },
     {
       "name": "Yuki Mochizuki",
       "nation": "JPN",
       "points": 36,
-      "rank": 787
+      "rank": 789
     },
     {
       "name": "Lorenzo Rottoli",
       "nation": "ITA",
       "points": 36,
-      "rank": 788
+      "rank": 790
     },
     {
       "name": "Tomás Martínez",
       "nation": "ARG",
       "points": 36,
-      "rank": 789
+      "rank": 791
     },
     {
       "name": "Aaron Funk",
       "nation": "GER",
       "points": 36,
-      "rank": 790
+      "rank": 792
     },
     {
       "name": "Aleksandr Braynin",
       "nation": "UKR",
       "points": 36,
-      "rank": 791
+      "rank": 793
     },
     {
       "name": "Kosuke Ogura",
       "nation": "JPN",
       "points": 36,
-      "rank": 792
+      "rank": 794
     },
     {
       "name": "Nicolas Oliveira",
       "nation": "BRA",
       "points": 35,
-      "rank": 793
+      "rank": 795
     },
     {
       "name": "Étienne Donnet",
       "nation": "FRA",
       "points": 35,
-      "rank": 794
+      "rank": 796
     },
     {
       "name": "Tomás Farjat",
       "nation": "ARG",
       "points": 35,
-      "rank": 795
+      "rank": 797
     },
     {
       "name": "Abel Forger",
       "nation": "NED",
       "points": 35,
-      "rank": 796
+      "rank": 798
     },
     {
       "name": "Vincent Marysko",
       "nation": "GER",
       "points": 35,
-      "rank": 797
+      "rank": 799
     },
     {
       "name": "Oscar Weightman",
       "nation": "GBR",
       "points": 35,
-      "rank": 798
+      "rank": 800
     },
     {
       "name": "Arda Azkara",
       "nation": "TUR",
       "points": 35,
-      "rank": 799
+      "rank": 801
     },
     {
       "name": "Charles Bertimon",
       "nation": "FRA",
       "points": 35,
-      "rank": 800
+      "rank": 802
     },
     {
       "name": "Tsung Hao Huang",
       "nation": "TWN",
       "points": 35,
-      "rank": 801
+      "rank": 803
     },
     {
       "name": "Bastián Malla",
       "nation": "CHI",
       "points": 35,
-      "rank": 802
+      "rank": 804
     },
     {
       "name": "Victor Pagotto",
       "nation": "BRA",
       "points": 35,
-      "rank": 803
+      "rank": 805
     },
     {
       "name": "Dinko Dinev",
       "nation": "BUL",
       "points": 35,
-      "rank": 804
+      "rank": 806
     },
     {
       "name": "Loann Massard",
       "nation": "FRA",
       "points": 35,
-      "rank": 805
+      "rank": 807
     },
     {
       "name": "Michiel De Krom",
       "nation": "NED",
       "points": 35,
-      "rank": 806
+      "rank": 808
     },
     {
       "name": "Luca Castagnola",
       "nation": "ITA",
       "points": 35,
-      "rank": 807
+      "rank": 809
     },
     {
       "name": "Gustavo Ribeiro De Almeida",
       "nation": "BRA",
       "points": 34,
-      "rank": 808
+      "rank": 810
     },
     {
       "name": "Johan Alexander Rodriguez",
       "nation": "COL",
       "points": 34,
-      "rank": 809
+      "rank": 811
     },
     {
       "name": "Filippo Moroni",
       "nation": "ITA",
       "points": 34,
-      "rank": 810
+      "rank": 812
     },
     {
       "name": "Alexandre Reco",
       "nation": "FRA",
       "points": 34,
-      "rank": 811
+      "rank": 813
     },
     {
       "name": "Jesse Flores",
       "nation": "CRC",
       "points": 34,
-      "rank": 812
+      "rank": 814
     },
     {
       "name": "Karl Friberg",
       "nation": "SWE",
       "points": 34,
-      "rank": 813
+      "rank": 815
     },
     {
       "name": "Sam Ryan Ziegann",
       "nation": "AUS",
       "points": 34,
-      "rank": 814
+      "rank": 816
     },
     {
       "name": "Mert Naci Türker",
       "nation": "TUR",
       "points": 34,
-      "rank": 815
+      "rank": 817
     },
     {
       "name": "Benjamin Torrealba",
       "nation": "CHI",
       "points": 34,
-      "rank": 816
+      "rank": 818
     },
     {
       "name": "Alan Ważny",
       "nation": "POL",
       "points": 34,
-      "rank": 817
+      "rank": 819
     },
     {
       "name": "JiSung Nam",
       "nation": "KOR",
       "points": 33,
-      "rank": 818
+      "rank": 820
     },
     {
       "name": "Hoyoung Roh",
       "nation": "KOR",
       "points": 33,
-      "rank": 819
+      "rank": 821
     },
     {
       "name": "Yannick Theodor Alexandrescou",
       "nation": "FRA",
       "points": 33,
-      "rank": 820
+      "rank": 822
     },
     {
       "name": "Hanyi Liu",
       "nation": "CHN",
       "points": 33,
-      "rank": 821
-    },
-    {
-      "name": "George Lazarov",
-      "nation": "BUL",
-      "points": 33,
-      "rank": 822
+      "rank": 823
     },
     {
       "name": "Nicolas Robert",
       "nation": "FRA",
       "points": 33,
-      "rank": 823
+      "rank": 824
     },
     {
       "name": "Pietro Marino",
       "nation": "ITA",
       "points": 33,
-      "rank": 824
+      "rank": 825
     },
     {
       "name": "Taiyo Yamanaka",
       "nation": "JPN",
       "points": 33,
-      "rank": 825
+      "rank": 826
     },
     {
       "name": "Joshua Charlton",
       "nation": "AUS",
       "points": 33,
-      "rank": 826
-    },
-    {
-      "name": "Casey Hoole",
-      "nation": "AUS",
-      "points": 32,
       "rank": 827
     },
     {
@@ -5242,758 +5242,758 @@
       "rank": 873
     },
     {
+      "name": "Stefan Vujic",
+      "nation": "AUS",
+      "points": 29,
+      "rank": 874
+    },
+    {
       "name": "Lorenzo Claverie",
       "nation": "VEN",
       "points": 28,
-      "rank": 874
+      "rank": 875
     },
     {
       "name": "Nicolas Moreno De Alboran",
       "nation": "USA",
       "points": 28,
-      "rank": 875
+      "rank": 876
     },
     {
       "name": "Filip Pieczonka",
       "nation": "POL",
       "points": 28,
-      "rank": 876
+      "rank": 877
     },
     {
       "name": "Alvin Nicholas Tudorica",
       "nation": "CAN",
       "points": 28,
-      "rank": 877
+      "rank": 878
     },
     {
       "name": "Miles Jones",
       "nation": "USA",
       "points": 28,
-      "rank": 878
+      "rank": 879
     },
     {
       "name": "Aditya Vishal Balsekar",
       "nation": "IND",
       "points": 28,
-      "rank": 879
+      "rank": 880
     },
     {
       "name": "Dominick Mosejczuk",
       "nation": "USA",
       "points": 27,
-      "rank": 880
+      "rank": 881
     },
     {
       "name": "Ryan Peniston",
       "nation": "GBR",
       "points": 27,
-      "rank": 881
+      "rank": 882
     },
     {
       "name": "Maximilian Homberg",
       "nation": "GER",
       "points": 27,
-      "rank": 882
+      "rank": 883
     },
     {
       "name": "Charlie Robertson",
       "nation": "GBR",
       "points": 27,
-      "rank": 883
+      "rank": 884
     },
     {
       "name": "Jerry Roddick",
       "nation": "USA",
       "points": 27,
-      "rank": 884
+      "rank": 885
     },
     {
       "name": "Adhithya Ganesan",
       "nation": "USA",
       "points": 27,
-      "rank": 885
+      "rank": 886
     },
     {
       "name": "William Grant",
       "nation": "USA",
       "points": 27,
-      "rank": 886
+      "rank": 887
     },
     {
       "name": "Ronit Karki",
       "nation": "USA",
       "points": 27,
-      "rank": 887
+      "rank": 888
     },
     {
       "name": "Maxwell Exsted",
       "nation": "USA",
       "points": 27,
-      "rank": 888
+      "rank": 889
     },
     {
       "name": "Qian Sun",
       "nation": "CHN",
       "points": 27,
-      "rank": 889
+      "rank": 890
     },
     {
       "name": "Sora Fukuda",
       "nation": "JPN",
       "points": 27,
-      "rank": 890
+      "rank": 891
     },
     {
       "name": "Ryotaro Taguchi",
       "nation": "JPN",
       "points": 27,
-      "rank": 891
+      "rank": 892
     },
     {
       "name": "Francisco Rocha",
       "nation": "POR",
       "points": 27,
-      "rank": 892
+      "rank": 893
     },
     {
       "name": "Orlando Luz",
       "nation": "BRA",
       "points": 26,
-      "rank": 893
+      "rank": 894
     },
     {
       "name": "Benito Sánchez Martinez",
       "nation": "GER",
       "points": 26,
-      "rank": 894
+      "rank": 895
     },
     {
       "name": "Ofek Shimanov",
       "nation": "ISR",
       "points": 26,
-      "rank": 895
+      "rank": 896
     },
     {
       "name": "Hayden Jones",
       "nation": "AUS",
       "points": 26,
-      "rank": 896
+      "rank": 897
     },
     {
       "name": "Mikalai Haliak",
       "nation": "BLR",
       "points": 26,
-      "rank": 897
+      "rank": 898
     },
     {
       "name": "Lorenzo Comino",
       "nation": "ITA",
       "points": 26,
-      "rank": 898
+      "rank": 899
     },
     {
       "name": "Yuta Kikuchi",
       "nation": "JPN",
       "points": 26,
-      "rank": 899
+      "rank": 900
+    },
+    {
+      "name": "Jakub Filip",
+      "nation": "CZE",
+      "points": 26,
+      "rank": 901
     },
     {
       "name": "Calvin Müller",
       "nation": "GER",
       "points": 26,
-      "rank": 900
+      "rank": 902
     },
     {
       "name": "Marcus Walters",
       "nation": "GBR",
       "points": 26,
-      "rank": 901
+      "rank": 903
     },
     {
       "name": "Nikola Slavic",
       "nation": "SWE",
       "points": 26,
-      "rank": 902
+      "rank": 904
     },
     {
       "name": "Daniil Sarksian",
       "nation": "ARM",
       "points": 26,
-      "rank": 903
+      "rank": 905
     },
     {
       "name": "Elmar Ejupovic",
       "nation": "GER",
       "points": 25,
-      "rank": 904
+      "rank": 906
     },
     {
       "name": "Nick Kyrgios",
       "nation": "AUS",
       "points": 25,
-      "rank": 905
+      "rank": 907
     },
     {
       "name": "Alexey Vatutin",
       "nation": "RUS",
       "points": 25,
-      "rank": 906
+      "rank": 908
     },
     {
       "name": "Nicolás Barrientos",
       "nation": "COL",
       "points": 25,
-      "rank": 907
+      "rank": 909
     },
     {
       "name": "Muhammad Shoaib",
       "nation": "PAK",
       "points": 25,
-      "rank": 908
+      "rank": 910
     },
     {
       "name": "Patrick Maloney",
       "nation": "USA",
       "points": 25,
-      "rank": 909
+      "rank": 911
     },
     {
       "name": "Zsombor Velcz",
       "nation": "HUN",
       "points": 25,
-      "rank": 910
+      "rank": 912
     },
     {
       "name": "Pablo Perez Ramos",
       "nation": "ESP",
       "points": 25,
-      "rank": 911
+      "rank": 913
     },
     {
       "name": "Igor Kudriashov",
       "nation": "RUS",
       "points": 25,
-      "rank": 912
+      "rank": 914
     },
     {
       "name": "Noritaka Koizumi",
       "nation": "JPN",
       "points": 25,
-      "rank": 913
+      "rank": 915
     },
     {
       "name": "Mirza Bašić",
       "nation": "BIH",
       "points": 25,
-      "rank": 914
+      "rank": 916
     },
     {
       "name": "Lars Goran Verwerft",
       "nation": "BEL",
       "points": 25,
-      "rank": 915
+      "rank": 917
     },
     {
       "name": "Ryan Fishback",
       "nation": "USA",
       "points": 25,
-      "rank": 916
+      "rank": 918
     },
     {
       "name": "Geun Jun Kim",
       "nation": "KOR",
       "points": 25,
-      "rank": 917
+      "rank": 919
     },
     {
       "name": "Rocco Piatti",
       "nation": "MON",
       "points": 25,
-      "rank": 918
+      "rank": 920
     },
     {
       "name": "Finn Murgett",
       "nation": "GBR",
       "points": 25,
-      "rank": 919
+      "rank": 921
     },
     {
       "name": "Cooper Williams",
       "nation": "USA",
       "points": 24,
-      "rank": 920
+      "rank": 922
     },
     {
       "name": "Luis Carlos Alvarez",
       "nation": "MEX",
       "points": 24,
-      "rank": 921
+      "rank": 923
     },
     {
       "name": "Pierre Yves Bailly",
       "nation": "BEL",
       "points": 24,
-      "rank": 922
+      "rank": 924
     },
     {
       "name": "Kriish Tyagi",
       "nation": "IND",
       "points": 24,
-      "rank": 923
+      "rank": 925
     },
     {
       "name": "Nicolás Álvarez Varona",
       "nation": "ESP",
       "points": 24,
-      "rank": 924
+      "rank": 926
     },
     {
       "name": "Natan Rodrigues",
       "nation": "BRA",
       "points": 24,
-      "rank": 925
+      "rank": 927
     },
     {
       "name": "Tristan Stringer",
       "nation": "USA",
       "points": 24,
-      "rank": 926
+      "rank": 928
     },
     {
       "name": "Christopher Li",
       "nation": "PER",
       "points": 24,
-      "rank": 927
+      "rank": 929
     },
     {
       "name": "Flynn Thomas",
       "nation": "SUI",
       "points": 24,
-      "rank": 928
+      "rank": 930
     },
     {
       "name": "Ronald Hohmann",
       "nation": "USA",
       "points": 24,
-      "rank": 929
+      "rank": 931
     },
     {
       "name": "Aryan Shah",
       "nation": "IND",
       "points": 24,
-      "rank": 930
+      "rank": 932
     },
     {
       "name": "Ryo Tabata",
       "nation": "JPN",
       "points": 24,
-      "rank": 931
+      "rank": 933
     },
     {
       "name": "Marcello Serafini",
       "nation": "ITA",
       "points": 24,
-      "rank": 932
+      "rank": 934
     },
     {
       "name": "Iiro Vasa",
       "nation": "FIN",
       "points": 24,
-      "rank": 933
+      "rank": 935
     },
     {
       "name": "Mickael Kaouk",
       "nation": "FRA",
       "points": 24,
-      "rank": 934
+      "rank": 936
     },
     {
       "name": "Chirag Duhan",
       "nation": "IND",
       "points": 24,
-      "rank": 935
+      "rank": 937
     },
     {
       "name": "Julian Cundom",
       "nation": "ARG",
       "points": 24,
-      "rank": 936
+      "rank": 938
     },
     {
       "name": "Iannis Miletich",
       "nation": "ITA",
       "points": 24,
-      "rank": 937
+      "rank": 939
     },
     {
       "name": "Alejandro Turriziani Álvarez",
       "nation": "ESP",
       "points": 24,
-      "rank": 938
+      "rank": 940
     },
     {
       "name": "Benjamin O'Connell",
       "nation": "AUS",
       "points": 24,
-      "rank": 939
+      "rank": 941
     },
     {
       "name": "Máté Valkusz",
       "nation": "HUN",
       "points": 23,
-      "rank": 940
+      "rank": 942
     },
     {
       "name": "James Watt",
       "nation": "NZL",
       "points": 23,
-      "rank": 941
+      "rank": 943
     },
     {
       "name": "Ilya Snițari",
       "nation": "MDA",
       "points": 23,
-      "rank": 942
+      "rank": 944
     },
     {
       "name": "Peter Bertran",
       "nation": "DOM",
       "points": 23,
-      "rank": 943
+      "rank": 945
     },
     {
       "name": "Vlad Cristian Breazu",
       "nation": "ROU",
       "points": 23,
-      "rank": 944
+      "rank": 946
+    },
+    {
+      "name": "Jordan Hasson",
+      "nation": "ISR",
+      "points": 23,
+      "rank": 947
     },
     {
       "name": "Aleksandre Bakshi",
       "nation": "GEO",
       "points": 23,
-      "rank": 945
+      "rank": 948
     },
     {
       "name": "Oscar Brown",
       "nation": "GBR",
       "points": 23,
-      "rank": 946
+      "rank": 949
     },
     {
       "name": "Yan Cheng Chen",
       "nation": "TWN",
       "points": 23,
-      "rank": 947
+      "rank": 950
     },
     {
       "name": "Ruslan Tiukaev",
       "nation": "RUS",
       "points": 23,
-      "rank": 948
+      "rank": 951
     },
     {
       "name": "Hazem Naw",
       "nation": "SYR",
       "points": 23,
-      "rank": 949
+      "rank": 952
     },
     {
       "name": "Mathieu Scaglia",
       "nation": "FRA",
       "points": 23,
-      "rank": 950
+      "rank": 953
     },
     {
       "name": "David Eichenseher",
       "nation": "GER",
       "points": 23,
-      "rank": 951
+      "rank": 954
     },
     {
       "name": "Andrea Fiorentini",
       "nation": "ITA",
       "points": 23,
-      "rank": 952
+      "rank": 955
     },
     {
       "name": "Maxence Bertimon",
       "nation": "FRA",
       "points": 23,
-      "rank": 953
+      "rank": 956
     },
     {
       "name": "Ali Yazdani",
       "nation": "IRI",
       "points": 23,
-      "rank": 954
+      "rank": 957
     },
     {
       "name": "Jeremy Gschwendtner",
       "nation": "GBR",
       "points": 23,
-      "rank": 955
+      "rank": 958
     },
     {
       "name": "Jeffrey Von Der Schulenburg",
       "nation": "SUI",
       "points": 22,
-      "rank": 956
+      "rank": 959
     },
     {
       "name": "Aleksa Ćirić",
       "nation": "SRB",
       "points": 22,
-      "rank": 957
+      "rank": 960
     },
     {
       "name": "Marc Van Der Merwe",
       "nation": "RSA",
       "points": 22,
-      "rank": 958
+      "rank": 961
     },
     {
       "name": "Stefan Seifert",
       "nation": "GER",
       "points": 22,
-      "rank": 959
+      "rank": 962
     },
     {
       "name": "Chanyeong Oh",
       "nation": "KOR",
       "points": 22,
-      "rank": 960
+      "rank": 963
     },
     {
       "name": "Axel Nefve",
       "nation": "USA",
       "points": 22,
-      "rank": 961
+      "rank": 964
     },
     {
       "name": "Justin Roberts",
       "nation": "BAH",
       "points": 22,
-      "rank": 962
+      "rank": 965
     },
     {
       "name": "Oliver Okonkwo",
       "nation": "GBR",
       "points": 22,
-      "rank": 963
+      "rank": 966
     },
     {
       "name": "Yaojie Zeng",
       "nation": "CHN",
       "points": 22,
-      "rank": 964
-    },
-    {
-      "name": "Jakub Filip",
-      "nation": "CZE",
-      "points": 22,
-      "rank": 965
-    },
-    {
-      "name": "Stefan Vujic",
-      "nation": "AUS",
-      "points": 22,
-      "rank": 966
+      "rank": 967
     },
     {
       "name": "Joao Victor Couto Loureiro",
       "nation": "BRA",
       "points": 22,
-      "rank": 967
+      "rank": 968
     },
     {
       "name": "Tom Zeuch",
       "nation": "GER",
       "points": 22,
-      "rank": 968
+      "rank": 969
     },
     {
       "name": "Wishaya Trongcharoenchaikul",
       "nation": "THA",
       "points": 22,
-      "rank": 969
+      "rank": 970
     },
     {
       "name": "Taym Al Azmeh",
       "nation": "SYR",
       "points": 21,
-      "rank": 970
+      "rank": 971
     },
     {
       "name": "Matthew Thomson",
       "nation": "USA",
       "points": 21,
-      "rank": 971
+      "rank": 972
     },
     {
       "name": "Elgin Khoeblal",
       "nation": "NED",
       "points": 21,
-      "rank": 972
+      "rank": 973
     },
     {
       "name": "Jan Kupčič",
       "nation": "SLO",
       "points": 21,
-      "rank": 973
+      "rank": 974
     },
     {
       "name": "Maik Steiner",
       "nation": "GER",
       "points": 21,
-      "rank": 974
+      "rank": 975
     },
     {
       "name": "Mwendwa Mbithi",
       "nation": "USA",
       "points": 21,
-      "rank": 975
+      "rank": 976
     },
     {
       "name": "Gabriele Crivellaro",
       "nation": "ITA",
       "points": 21,
-      "rank": 976
+      "rank": 977
     },
     {
       "name": "Markus Malaszszak",
       "nation": "THA",
       "points": 21,
-      "rank": 977
+      "rank": 978
     },
     {
       "name": "Kris Van Wyk",
       "nation": "RSA",
       "points": 21,
-      "rank": 978
+      "rank": 979
     },
     {
       "name": "Nikita Ianin",
       "nation": "RUS",
       "points": 21,
-      "rank": 979
+      "rank": 980
     },
     {
       "name": "Fanming Meng",
       "nation": "CHN",
       "points": 21,
-      "rank": 980
+      "rank": 981
     },
     {
       "name": "Tomas Curras Abasolo",
       "nation": "ESP",
       "points": 21,
-      "rank": 981
+      "rank": 982
     },
     {
       "name": "Alexander Rozin",
       "nation": "CAN",
       "points": 20,
-      "rank": 982
+      "rank": 983
     },
     {
       "name": "Jason Jung",
       "nation": "TWN",
       "points": 20,
-      "rank": 983
+      "rank": 984
     },
     {
       "name": "Scott Jones",
       "nation": "AUS",
       "points": 20,
-      "rank": 984
+      "rank": 985
     },
     {
       "name": "Duje Markovina",
       "nation": "AUS",
       "points": 20,
-      "rank": 985
+      "rank": 986
     },
     {
       "name": "Luka Talan Lopatić",
       "nation": "SLO",
       "points": 20,
-      "rank": 986
+      "rank": 987
     },
     {
       "name": "Nicolas Parizzia",
       "nation": "SUI",
       "points": 20,
-      "rank": 987
+      "rank": 988
     },
     {
       "name": "Ezequiel Monferrer",
       "nation": "ARG",
       "points": 20,
-      "rank": 988
+      "rank": 989
     },
     {
       "name": "Petros Tsitsipas",
       "nation": "GRE",
       "points": 20,
-      "rank": 989
+      "rank": 990
     },
     {
       "name": "Louis Larue",
       "nation": "FRA",
       "points": 20,
-      "rank": 990
+      "rank": 991
     },
     {
       "name": "Dimitar Kisimov",
       "nation": "BUL",
       "points": 19,
-      "rank": 991
+      "rank": 992
     },
     {
       "name": "Štěpán Baum",
       "nation": "CZE",
       "points": 19,
-      "rank": 992
+      "rank": 993
     },
     {
       "name": "Michael Savano",
       "nation": "USA",
       "points": 19,
-      "rank": 993
+      "rank": 994
     },
     {
       "name": "Hady Habib",
       "nation": "LBN",
       "points": 19,
-      "rank": 994
+      "rank": 995
     },
     {
       "name": "Cezar Gabriel Papoe",
       "nation": "ROU",
       "points": 19,
-      "rank": 995
+      "rank": 996
     },
     {
       "name": "Ye Cong Mo",
       "nation": "CHN",
       "points": 19,
-      "rank": 996
+      "rank": 997
     },
     {
       "name": "Joaquin Guilleme",
       "nation": "NCA",
       "points": 19,
-      "rank": 997
+      "rank": 998
     },
     {
       "name": "Bekkhan Atlangeriev",
       "nation": "RUS",
-      "points": 19,
-      "rank": 998
-    },
-    {
-      "name": "Jordan Hasson",
-      "nation": "ISR",
       "points": 19,
       "rank": 999
     },
@@ -6067,9 +6067,19 @@
       ]
     },
     {
+      "name": "Daniil Medvedev",
+      "nation": "RUS",
+      "rank": 8,
+      "events": [
+        "Almaty",
+        "Vienna",
+        "Paris"
+      ]
+    },
+    {
       "name": "Arthur Fils",
       "nation": "FRA",
-      "rank": 8,
+      "rank": 9,
       "events": [
         "Brussels",
         "Basel",
@@ -6079,18 +6089,8 @@
     {
       "name": "Alex de Minaur",
       "nation": "AUS",
-      "rank": 9,
-      "events": [
-        "Vienna",
-        "Paris"
-      ]
-    },
-    {
-      "name": "Daniil Medvedev",
-      "nation": "RUS",
       "rank": 10,
       "events": [
-        "Almaty",
         "Vienna",
         "Paris"
       ]
@@ -6160,9 +6160,19 @@
       ]
     },
     {
+      "name": "Jiří Lehečka",
+      "nation": "CZE",
+      "rank": 18,
+      "events": [
+        "Brussels",
+        "Basel",
+        "Paris"
+      ]
+    },
+    {
       "name": "Alexander Bublik",
       "nation": "KAZ",
-      "rank": 18,
+      "rank": 19,
       "events": [
         "Almaty",
         "Basel",
@@ -6172,20 +6182,10 @@
     {
       "name": "Francisco Cerúndolo",
       "nation": "ARG",
-      "rank": 19,
-      "events": [
-        "Brussels",
-        "Vienna",
-        "Paris"
-      ]
-    },
-    {
-      "name": "Jiří Lehečka",
-      "nation": "CZE",
       "rank": 20,
       "events": [
         "Brussels",
-        "Basel",
+        "Vienna",
         "Paris"
       ]
     },
@@ -8266,9 +8266,19 @@
       ]
     },
     {
+      "name": "Matthew Dellavedova",
+      "nation": "AUS",
+      "rank": 259,
+      "events": [
+        "Qian Daohu",
+        "Tamworth",
+        "Tamworth 2"
+      ]
+    },
+    {
       "name": "Yoshihito Nishioka",
       "nation": "JPN",
-      "rank": 259,
+      "rank": 260,
       "events": [
         "Qual. Jinan"
       ]
@@ -8276,7 +8286,7 @@
     {
       "name": "Rodrigo Pacheco Mendez",
       "nation": "MEX",
-      "rank": 260,
+      "rank": 261,
       "events": [
         "Santa Cruz 2",
         "Cali",
@@ -8286,7 +8296,7 @@
     {
       "name": "Dominic Stricker",
       "nation": "SUI",
-      "rank": 261,
+      "rank": 262,
       "events": [
         "Roanne"
       ]
@@ -8294,7 +8304,7 @@
     {
       "name": "Murphy Cassone",
       "nation": "USA",
-      "rank": 262,
+      "rank": 263,
       "events": [
         "Fort Worth",
         "Sioux Falls"
@@ -8303,7 +8313,7 @@
     {
       "name": "Genaro Alberto Olivieri",
       "nation": "ARG",
-      "rank": 263,
+      "rank": 264,
       "events": [
         "Santa Cruz 2"
       ]
@@ -8311,7 +8321,7 @@
     {
       "name": "Franco Roncadelli",
       "nation": "URU",
-      "rank": 264,
+      "rank": 265,
       "events": [
         "Santa Cruz 2",
         "Guayaquil"
@@ -8320,7 +8330,7 @@
     {
       "name": "Mika Brunold",
       "nation": "SUI",
-      "rank": 265,
+      "rank": 266,
       "events": [
         "Roanne"
       ]
@@ -8328,20 +8338,10 @@
     {
       "name": "Martin Krumich",
       "nation": "CZE",
-      "rank": 266,
+      "rank": 267,
       "events": [
         "Florence",
         "Marsa"
-      ]
-    },
-    {
-      "name": "Matthew Dellavedova",
-      "nation": "AUS",
-      "rank": 267,
-      "events": [
-        "Qian Daohu",
-        "Tamworth",
-        "Tamworth 2"
       ]
     },
     {
@@ -8468,9 +8468,18 @@
       ]
     },
     {
+      "name": "Jay Friend",
+      "nation": "JPN",
+      "rank": 282,
+      "events": [
+        "Qual. Jinan",
+        "Guangzhou 2"
+      ]
+    },
+    {
       "name": "Yu-hsiou Hsu",
       "nation": "TWN",
-      "rank": 282,
+      "rank": 283,
       "events": [
         "Qual. Guangzhou 2",
         "Ningbo"
@@ -8479,7 +8488,7 @@
     {
       "name": "Michele Ribecai",
       "nation": "ITA",
-      "rank": 283,
+      "rank": 284,
       "events": [
         "Catania",
         "Florence"
@@ -8488,7 +8497,7 @@
     {
       "name": "Filip Jianu",
       "nation": "ROU",
-      "rank": 284,
+      "rank": 285,
       "events": [
         "Catania",
         "Florence",
@@ -8498,7 +8507,7 @@
     {
       "name": "Oliver Tarvet",
       "nation": "GBR",
-      "rank": 285,
+      "rank": 286,
       "events": [
         "Qual. Roanne",
         "Redbridge",
@@ -8508,13 +8517,13 @@
     {
       "name": "Sumit Nagal",
       "nation": "IND",
-      "rank": 286,
+      "rank": 287,
       "events": []
     },
     {
       "name": "Carl Emil Overbeck",
       "nation": "DEN",
-      "rank": 287,
+      "rank": 288,
       "events": [
         "Ningbo"
       ]
@@ -8522,13 +8531,13 @@
     {
       "name": "Henri Squire",
       "nation": "GER",
-      "rank": 288,
+      "rank": 289,
       "events": []
     },
     {
       "name": "Florent Bax",
       "nation": "FRA",
-      "rank": 289,
+      "rank": 290,
       "events": [
         "Luanda 2",
         "Luanda 3",
@@ -8538,7 +8547,7 @@
     {
       "name": "Sergey Fomin",
       "nation": "UZB",
-      "rank": 290,
+      "rank": 291,
       "events": [
         "Qian Daohu",
         "Ningbo"
@@ -8547,13 +8556,13 @@
     {
       "name": "Stefan Dostanic",
       "nation": "USA",
-      "rank": 291,
+      "rank": 292,
       "events": []
     },
     {
       "name": "Mattéo Martineau",
       "nation": "FRA",
-      "rank": 292,
+      "rank": 293,
       "events": [
         "Roanne",
         "Sarreguemines"
@@ -8562,7 +8571,7 @@
     {
       "name": "Fajing Sun",
       "nation": "CHN",
-      "rank": 293,
+      "rank": 294,
       "events": [
         "Qual. Jinan",
         "Qual. Guangzhou 2",
@@ -8572,7 +8581,7 @@
     {
       "name": "Nick Hardt",
       "nation": "DOM",
-      "rank": 294,
+      "rank": 295,
       "events": [
         "Santa Cruz 2",
         "Cali",
@@ -8582,7 +8591,7 @@
     {
       "name": "Juan Bautista Torres",
       "nation": "ARG",
-      "rank": 295,
+      "rank": 296,
       "events": [
         "Santa Cruz 2",
         "Cali",
@@ -8592,19 +8601,10 @@
     {
       "name": "Georgii Kravchenko",
       "nation": "UKR",
-      "rank": 296,
+      "rank": 297,
       "events": [
         "Qual. Olbia",
         "Marsa"
-      ]
-    },
-    {
-      "name": "Jay Friend",
-      "nation": "JPN",
-      "rank": 297,
-      "events": [
-        "Qual. Jinan",
-        "Guangzhou 2"
       ]
     },
     {
@@ -8655,9 +8655,7 @@
       "name": "Oliver Crawford",
       "nation": "GBR",
       "rank": 303,
-      "events": [
-        "Marsa"
-      ]
+      "events": []
     },
     {
       "name": "Abdullah Shelbayh",
@@ -8673,9 +8671,7 @@
       "name": "Anton Matusevich",
       "nation": "GBR",
       "rank": 305,
-      "events": [
-        "Sheffield 2"
-      ]
+      "events": []
     },
     {
       "name": "Sandro Kopp",
@@ -8705,9 +8701,18 @@
       ]
     },
     {
+      "name": "Mert Alkaya",
+      "nation": "TUR",
+      "rank": 309,
+      "events": [
+        "Qual. Jinan",
+        "Qual. Guangzhou 2"
+      ]
+    },
+    {
       "name": "Samuele Pieri",
       "nation": "ITA",
-      "rank": 309,
+      "rank": 310,
       "events": [
         "Qual. Catania"
       ]
@@ -8715,13 +8720,13 @@
     {
       "name": "Guy den Ouden",
       "nation": "NED",
-      "rank": 310,
+      "rank": 311,
       "events": []
     },
     {
       "name": "Radu Mihai Papoe",
       "nation": "ROU",
-      "rank": 311,
+      "rank": 312,
       "events": [
         "Catania",
         "Florence"
@@ -8730,7 +8735,7 @@
     {
       "name": "Daniel Michalski",
       "nation": "POL",
-      "rank": 312,
+      "rank": 313,
       "events": [
         "Santa Margherita 10",
         "Santa Margherita 11",
@@ -8740,7 +8745,7 @@
     {
       "name": "Gonzalo Villanueva",
       "nation": "ARG",
-      "rank": 313,
+      "rank": 314,
       "events": [
         "Santa Cruz 2",
         "Cali"
@@ -8749,17 +8754,16 @@
     {
       "name": "Tiago Pereira",
       "nation": "POR",
-      "rank": 314,
+      "rank": 315,
       "events": [
         "Qual. Maia",
-        "Qual. Lisbon",
-        "Marsa"
+        "Qual. Lisbon"
       ]
     },
     {
       "name": "Daniel Milavsky",
       "nation": "USA",
-      "rank": 315,
+      "rank": 316,
       "events": [
         "Fort Worth",
         "Las Vegas 2"
@@ -8768,7 +8772,7 @@
     {
       "name": "Dali Blanch",
       "nation": "USA",
-      "rank": 316,
+      "rank": 317,
       "events": [
         "Qual. Maia",
         "Qual. Lisbon",
@@ -8778,7 +8782,7 @@
     {
       "name": "Lucas Poullain",
       "nation": "FRA",
-      "rank": 317,
+      "rank": 318,
       "events": [
         "Qual. Roanne",
         "Redbridge",
@@ -8788,7 +8792,7 @@
     {
       "name": "Thomas Faurel",
       "nation": "FRA",
-      "rank": 318,
+      "rank": 319,
       "events": [
         "Luanda 2",
         "Luanda 3"
@@ -8797,7 +8801,7 @@
     {
       "name": "Giles Hussey",
       "nation": "GBR",
-      "rank": 319,
+      "rank": 320,
       "events": [
         "Offenbach",
         "Norman"
@@ -8806,7 +8810,7 @@
     {
       "name": "Jonáš Forejtek",
       "nation": "CZE",
-      "rank": 320,
+      "rank": 321,
       "events": [
         "Santa Margherita 10",
         "Santa Margherita 11"
@@ -8815,19 +8819,10 @@
     {
       "name": "Carlo Alberto Caniato",
       "nation": "ITA",
-      "rank": 321,
+      "rank": 322,
       "events": [
         "Qual. Catania",
         "Qual. Lisbon"
-      ]
-    },
-    {
-      "name": "Mert Alkaya",
-      "nation": "TUR",
-      "rank": 322,
-      "events": [
-        "Qual. Jinan",
-        "Qual. Guangzhou 2"
       ]
     },
     {
@@ -9089,7 +9084,7 @@
       "events": [
         "Qual. Roanne",
         "Sarreguemines",
-        "Qual. Marsa"
+        "Marsa"
       ]
     },
     {
@@ -9197,7 +9192,6 @@
       "nation": "ARG",
       "rank": 364,
       "events": [
-        "Quito 4",
         "Qual. Cali",
         "Joao Pessoa"
       ]
@@ -9364,7 +9358,7 @@
       "events": [
         "Qual. Olbia",
         "Qual. Guangzhou 2",
-        "Qual. Marsa"
+        "Marsa"
       ]
     },
     {
@@ -9694,9 +9688,15 @@
       ]
     },
     {
+      "name": "Alibek Kachmazov",
+      "nation": "RUS",
+      "rank": 422,
+      "events": []
+    },
+    {
       "name": "Yosuke Watanuki",
       "nation": "JPN",
-      "rank": 422,
+      "rank": 423,
       "events": [
         "Qual. Jinan"
       ]
@@ -9704,7 +9704,7 @@
     {
       "name": "Niels Visker",
       "nation": "NED",
-      "rank": 423,
+      "rank": 424,
       "events": [
         "Qual. Olbia",
         "Sarreguemines",
@@ -9714,7 +9714,7 @@
     {
       "name": "Luca Staeheli",
       "nation": "SUI",
-      "rank": 424,
+      "rank": 425,
       "events": [
         "Shenzhen",
         "Selva Gardena"
@@ -9723,7 +9723,7 @@
     {
       "name": "Paulo Andre Saraiva Dos Santos",
       "nation": "BRA",
-      "rank": 425,
+      "rank": 426,
       "events": [
         "Qual. Santa Cruz 2",
         "Maceio",
@@ -9733,7 +9733,7 @@
     {
       "name": "Kaichi Uchida",
       "nation": "JPN",
-      "rank": 426,
+      "rank": 427,
       "events": [
         "Qual. Jinan",
         "Qual. Guangzhou 2"
@@ -9742,7 +9742,7 @@
     {
       "name": "Masamichi Imamura",
       "nation": "JPN",
-      "rank": 427,
+      "rank": 428,
       "events": [
         "Qual. Guangzhou 2"
       ]
@@ -9750,13 +9750,13 @@
     {
       "name": "Justin Engel",
       "nation": "GER",
-      "rank": 428,
+      "rank": 429,
       "events": []
     },
     {
       "name": "Semen Pankin",
       "nation": "RUS",
-      "rank": 429,
+      "rank": 430,
       "events": [
         "Qual. Jinan"
       ]
@@ -9764,7 +9764,7 @@
     {
       "name": "Khumoyun Sultanov",
       "nation": "UZB",
-      "rank": 430,
+      "rank": 431,
       "events": [
         "Qual. Guangzhou 2"
       ]
@@ -9772,7 +9772,7 @@
     {
       "name": "Spencer Johnson",
       "nation": "USA",
-      "rank": 431,
+      "rank": 432,
       "events": [
         "Qual. Fort Worth"
       ]
@@ -9780,19 +9780,19 @@
     {
       "name": "Andrea Collarini",
       "nation": "ARG",
-      "rank": 432,
+      "rank": 433,
       "events": []
     },
     {
       "name": "Alafia Ayeni",
       "nation": "USA",
-      "rank": 433,
+      "rank": 434,
       "events": []
     },
     {
       "name": "Enzo Aguiard",
       "nation": "AUS",
-      "rank": 434,
+      "rank": 435,
       "events": [
         "Tamworth",
         "Tamworth 2"
@@ -9801,7 +9801,7 @@
     {
       "name": "Sergi Perez Contri",
       "nation": "ESP",
-      "rank": 435,
+      "rank": 436,
       "events": [
         "Qual. Maia",
         "Qual. Florence"
@@ -9810,7 +9810,7 @@
     {
       "name": "Tyler Zink",
       "nation": "USA",
-      "rank": 436,
+      "rank": 437,
       "events": [
         "Austin",
         "Fort Worth",
@@ -9820,7 +9820,7 @@
     {
       "name": "Karan Singh",
       "nation": "IND",
-      "rank": 437,
+      "rank": 438,
       "events": [
         "Solapur",
         "Mumbai 2",
@@ -9830,7 +9830,7 @@
     {
       "name": "Yannik Kelm",
       "nation": "GER",
-      "rank": 438,
+      "rank": 439,
       "events": [
         "Offenbach",
         "Qual. Marsa"
@@ -9839,7 +9839,7 @@
     {
       "name": "Gerard Campana Lee",
       "nation": "KOR",
-      "rank": 439,
+      "rank": 440,
       "events": [
         "Qual. Catania",
         "Qual. Florence"
@@ -9848,7 +9848,7 @@
     {
       "name": "Kenta Miyoshi",
       "nation": "JPN",
-      "rank": 440,
+      "rank": 441,
       "events": [
         "Qual. Fort Worth"
       ]
@@ -9856,7 +9856,7 @@
     {
       "name": "Oleg Prihodko",
       "nation": "MKD",
-      "rank": 441,
+      "rank": 442,
       "events": [
         "Qual. Roanne",
         "Sarreguemines",
@@ -9866,7 +9866,7 @@
     {
       "name": "Oleksii Krutykh",
       "nation": "UKR",
-      "rank": 442,
+      "rank": 443,
       "events": [
         "Qual. Lisbon",
         "Qual. Marsa"
@@ -9875,7 +9875,7 @@
     {
       "name": "Santiago Taverna",
       "nation": "ARG",
-      "rank": 443,
+      "rank": 444,
       "events": [
         "Qual. Santa Cruz 2",
         "Qual. Cali"
@@ -9884,7 +9884,7 @@
     {
       "name": "Murkel Dellien",
       "nation": "BOL",
-      "rank": 444,
+      "rank": 445,
       "events": [
         "Qual. Santa Cruz 2",
         "Qual. Cali"
@@ -9893,7 +9893,7 @@
     {
       "name": "Blake Ellis",
       "nation": "AUS",
-      "rank": 445,
+      "rank": 446,
       "events": [
         "Tamworth",
         "Tamworth 2"
@@ -9902,7 +9902,7 @@
     {
       "name": "Geoffrey Blancaneaux",
       "nation": "FRA",
-      "rank": 446,
+      "rank": 447,
       "events": [
         "Bol 5",
         "Bol 6",
@@ -9912,7 +9912,7 @@
     {
       "name": "Carlos Taberner",
       "nation": "ESP",
-      "rank": 447,
+      "rank": 448,
       "events": [
         "Qual. Maia",
         "Qual. Lisbon"
@@ -9921,18 +9921,12 @@
     {
       "name": "Luca Castelnuovo",
       "nation": "SUI",
-      "rank": 448,
+      "rank": 449,
       "events": [
         "Qian Daohu",
         "Qual. Guangzhou 2",
         "Tamworth 2"
       ]
-    },
-    {
-      "name": "Alibek Kachmazov",
-      "nation": "RUS",
-      "rank": 449,
-      "events": []
     },
     {
       "name": "Sander Jong",
@@ -10990,7 +10984,6 @@
       "nation": "ITA",
       "rank": 575,
       "events": [
-        "Santa Margherita 10",
         "Qual. Santa Margherita 11"
       ]
     },
@@ -11199,7 +11192,8 @@
       "nation": "BUL",
       "rank": 601,
       "events": [
-        "Qual. Santa Margherita 11"
+        "Qual. Santa Margherita 11",
+        "Qual. Marsa"
       ]
     },
     {
@@ -11359,8 +11353,7 @@
       "rank": 620,
       "events": [
         "Qian Daohu",
-        "Shenzhen",
-        "Qual. Fergana"
+        "Shenzhen"
       ]
     },
     {
@@ -11525,8 +11518,7 @@
       "rank": 640,
       "events": [
         "Qian Daohu",
-        "Shenzhen",
-        "Yanagawa City"
+        "Shenzhen"
       ]
     },
     {
@@ -11621,7 +11613,7 @@
       "rank": 652,
       "events": [
         "Qual. Catania",
-        "Qual. Heraklion 12"
+        "Qual. Marsa"
       ]
     },
     {
@@ -11676,9 +11668,7 @@
       "name": "John Sperle",
       "nation": "GER",
       "rank": 659,
-      "events": [
-        "Bol 5"
-      ]
+      "events": []
     },
     {
       "name": "Imanol López Morillo",
@@ -11934,7 +11924,8 @@
       "rank": 689,
       "events": [
         "Qual. Santa Margherita 10",
-        "Qual. Santa Margherita 11"
+        "Qual. Santa Margherita 11",
+        "Qual. Selva Gardena"
       ]
     },
     {
@@ -12023,9 +12014,7 @@
       "name": "Léo Raquillet",
       "nation": "FRA",
       "rank": 700,
-      "events": [
-        "Bol 5"
-      ]
+      "events": []
     },
     {
       "name": "Wilson Leite",
@@ -12166,7 +12155,7 @@
       "rank": 717,
       "events": [
         "Lexington",
-        "Qual. Norman"
+        "Qual. Las Vegas 2"
       ]
     },
     {
@@ -12246,7 +12235,7 @@
       "events": [
         "Lexington",
         "Ithaca",
-        "Qual. Norman"
+        "Qual. Las Vegas 2"
       ]
     },
     {
@@ -12472,9 +12461,7 @@
       "name": "Yuta Kawahashi",
       "nation": "JPN",
       "rank": 756,
-      "events": [
-        "Qual. Yanagawa City"
-      ]
+      "events": []
     },
     {
       "name": "Amr Elsayed",
@@ -12510,7 +12497,8 @@
       "rank": 760,
       "events": [
         "Qual. Austin",
-        "Ithaca"
+        "Ithaca",
+        "Qual. Norman"
       ]
     },
     {
@@ -12726,7 +12714,6 @@
       "nation": "ITA",
       "rank": 788,
       "events": [
-        "Bol 5",
         "Qual. Sharm El Sheikh 19"
       ]
     },
@@ -12764,7 +12751,6 @@
       "nation": "JPN",
       "rank": 792,
       "events": [
-        "Solapur",
         "Singapore 3",
         "Qual. Singapore 4"
       ]
@@ -12780,7 +12766,6 @@
       "nation": "FRA",
       "rank": 794,
       "events": [
-        "Qual. Offenbach",
         "Qual. Heraklion 12"
       ]
     },
@@ -12814,7 +12799,6 @@
       "nation": "GBR",
       "rank": 798,
       "events": [
-        "Szabolcsveresmart",
         "Qual. Redbridge",
         "Qual. Fergana"
       ]
@@ -12877,7 +12861,6 @@
       "nation": "FRA",
       "rank": 805,
       "events": [
-        "Offenbach",
         "Qual. Sarreguemines"
       ]
     },
@@ -13024,7 +13007,6 @@
       "nation": "ITA",
       "rank": 824,
       "events": [
-        "Qual. Santa Margherita 10",
         "Qual. Santa Margherita 11",
         "Qual. Monastir 43"
       ]
@@ -13076,7 +13058,6 @@
       "nation": "NED",
       "rank": 831,
       "events": [
-        "Offenbach",
         "Qual. Sarreguemines",
         "Qual. Sharm El Sheikh 19"
       ]
@@ -14188,7 +14169,7 @@
       "rank": 971,
       "events": [
         "Qual. Heraklion 11",
-        "Qual. Mazatlan"
+        "Qual. Heraklion 12"
       ]
     },
     {
