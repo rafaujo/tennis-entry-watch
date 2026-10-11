@@ -15,14 +15,14 @@
     "qualifying_draw_size": 24,
     "main_draw_qualifier_slots": 6,
     "main_draw_wildcard_slots": 3,
-    "draw_published": false,
-    "draw_url": null,
+    "draw_published": true,
+    "draw_url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
     "qualifying_list_published": true,
     "entry_list_date": null,
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-10-10T20:04:39.824077Z",
+  "snapshot_at": "2026-10-11T01:00:50.000455Z",
   "entries": [
     {
       "player": {
@@ -41,378 +41,79 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "vit-kopriva",
-        "name": "Vít Kopřiva",
-        "nationality": "CZE",
+        "player_id": "alexander-shevchenko",
+        "name": "Alexander Shevchenko",
+        "nationality": null,
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 66,
+      "current_rank": null,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "facundo-diaz-acosta",
-        "name": "Facundo Díaz Acosta",
-        "nationality": "ARG",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 69,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "james-duckworth",
-        "name": "James Duckworth",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 70,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "tomas-machac",
-        "name": "Tomáš Macháč",
-        "nationality": "CZE",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 73,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "martin-landaluce",
-        "name": "Martin Landaluce",
-        "nationality": "ESP",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 75,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "mattia-bellucci",
-        "name": "Mattia Bellucci",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 83,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "marin-cilic",
-        "name": "Marin Čilić",
-        "nationality": "CRO",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 84,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "yunchaokete-bu",
-        "name": "Yunchaokete Bu",
-        "nationality": "CHN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 89,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "adam-walton",
-        "name": "Adam Walton",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 96,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "aleksandr-shevchenko",
-        "name": "Aleksandr Shevchenko",
-        "nationality": "KAZ",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 109,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "dane-sweeny",
-        "name": "Dane Sweeny",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 112,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "aleksandar-vukic",
-        "name": "Aleksandar Vukic",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 115,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "alexandre-muller",
-        "name": "Alexandre Müller",
-        "nationality": "FRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 129,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "stefanos-sakellaridis",
-        "name": "Stefanos Sakellaridis",
-        "nationality": "GRE",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 132,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "shintaro-mochizuki",
-        "name": "Shintaro Mochizuki",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 134,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "ilia-simakin",
-        "name": "Ilia Simakin",
+        "player_id": "alibek-kachmazov",
+        "name": "Alibek Kachmazov",
         "nationality": "RUS",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "SE",
       "entry_rank": null,
-      "current_rank": 140,
+      "current_rank": 422,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jay-friend",
+        "name": "Jay Friend",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "SE",
+      "entry_rank": null,
+      "current_rank": 282,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "ALT",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -432,33 +133,125 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
       "player": {
-        "player_id": "zhizhen-zhang",
-        "name": "Zhizhen Zhang",
-        "nationality": "CHN",
+        "player_id": "elias-ymer",
+        "name": "Elias Ymer",
+        "nationality": "SWE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 163,
+      "current_rank": 220,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mattia-bellucci",
+        "name": "Mattia Bellucci",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 83,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "facundo-diaz-acosta",
+        "name": "Facundo Díaz Acosta",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 69,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "shintaro-mochizuki",
+        "name": "Shintaro Mochizuki",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 134,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dane-sweeny",
+        "name": "Dane Sweeny",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 112,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -478,10 +271,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -501,10 +294,401 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "adam-walton",
+        "name": "Adam Walton",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 96,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marin-cilic",
+        "name": "Marin Čilić",
+        "nationality": "CRO",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 84,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "martin-landaluce",
+        "name": "Martin Landaluce",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 75,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ilia-simakin",
+        "name": "Ilia Simakin",
+        "nationality": "RUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 140,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sun-fajing",
+        "name": "Sun Fajing",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "cui-jie",
+        "name": "Cui Jie",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "stefanos-sakellaridis",
+        "name": "Stefanos Sakellaridis",
+        "nationality": "GRE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 132,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "shang-juncheng",
+        "name": "Shang Juncheng",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "pavel-kotov",
+        "name": "Pavel Kotov",
+        "nationality": "RUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 164,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "vit-kopriva",
+        "name": "Vít Kopřiva",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 66,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tomas-machac",
+        "name": "Tomáš Macháč",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 73,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "alexandre-muller",
+        "name": "Alexandre Müller",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 129,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "aleksandar-vukic",
+        "name": "Aleksandar Vukic",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 115,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "james-duckworth",
+        "name": "James Duckworth",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 70,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yunchaokete-bu",
+        "name": "Yunchaokete Bu",
+        "nationality": "CHN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 89,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "aleksandr-shevchenko",
+        "name": "Aleksandr Shevchenko",
+        "nationality": "KAZ",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 109,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "zhizhen-zhang",
+        "name": "Zhizhen Zhang",
+        "nationality": "CHN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 163,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Jinan_Open_%E2%80%93_Singles",
+        "retrieved_at": "2026-10-11T01:00:50.000455Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_published_draw"
       }
     },
     {
@@ -525,7 +709,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -548,7 +732,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -571,7 +755,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -594,7 +778,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -617,7 +801,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -640,7 +824,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -663,7 +847,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -686,7 +870,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -709,30 +893,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "jay-friend",
-        "name": "Jay Friend",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "ALT",
-      "entry_rank": null,
-      "current_rank": 282,
-      "alternate_position": 10,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -755,7 +916,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -778,7 +939,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -801,7 +962,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -824,7 +985,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -847,7 +1008,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -870,7 +1031,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -893,7 +1054,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -916,7 +1077,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -939,7 +1100,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -962,7 +1123,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -987,7 +1148,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1010,7 +1171,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1033,7 +1194,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1056,7 +1217,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1079,7 +1240,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1102,7 +1263,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1125,7 +1286,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1148,7 +1309,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1171,7 +1332,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1194,7 +1355,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1217,7 +1378,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1240,7 +1401,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1263,7 +1424,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1286,7 +1447,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1309,7 +1470,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1332,7 +1493,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1355,7 +1516,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1378,7 +1539,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1401,7 +1562,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -1424,7 +1585,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-10T20:04:39.824077Z",
+        "retrieved_at": "2026-10-11T01:00:45.676629Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
