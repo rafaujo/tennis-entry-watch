@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-10-10T01:45:36.601076Z",
+  "retrieved_at": "2026-10-19T00:13:00.190692Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -9097,8 +9097,8 @@
     },
     {
       "tournament": {
-        "tournament_id": "champaignurbana-challenger-2026",
-        "name": "Champaign–Urbana Challenger",
+        "tournament_id": "champaign-challenger-2026",
+        "name": "Champaign Challenger",
         "year": 2026,
         "start_date": "2026-11-16",
         "end_date": "2026-11-22",
@@ -9121,7 +9121,7 @@
       },
       "schedule_aliases": [
         "Champaign",
-        "Champaign–Urbana Challenger"
+        "Champaign Challenger"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
@@ -9438,6 +9438,37 @@
     },
     {
       "tournament": {
+        "tournament_id": "san-salvador-challenger-2026",
+        "name": "San Salvador Challenger",
+        "year": 2026,
+        "start_date": "2026-11-23",
+        "end_date": "2026-11-29",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "San Salvador",
+          "country": "El Salvador Hard –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "San Salvador",
+        "San Salvador Challenger"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
         "tournament_id": "challenger-seguros-del-estado-2026",
         "name": "Challenger Seguros del Estado",
         "year": 2026,
@@ -9717,6 +9748,37 @@
     },
     {
       "tournament": {
+        "tournament_id": "nonthaburi-challenger-iii-2026",
+        "name": "Nonthaburi Challenger III",
+        "year": 2026,
+        "start_date": "2026-12-07",
+        "end_date": "2026-12-13",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Nonthaburi",
+          "country": "Thailand Hard –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Nonthaburi",
+        "Nonthaburi Challenger III"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
         "tournament_id": "rio-de-janeiro-challenger-2026",
         "name": "Rio de Janeiro Challenger",
         "year": 2026,
@@ -9742,6 +9804,37 @@
       "schedule_aliases": [
         "Rio de Janeiro",
         "Rio de Janeiro Challenger"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary"
+    },
+    {
+      "tournament": {
+        "tournament_id": "blumenau-challenger-2026",
+        "name": "Blumenau Challenger",
+        "year": 2026,
+        "start_date": "2026-12-14",
+        "end_date": "2026-12-20",
+        "category": "Challenger 50",
+        "surface": "Clay",
+        "location": {
+          "city": "Blumenau",
+          "country": "Brazil Clay –"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Blumenau",
+        "Blumenau Challenger"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
@@ -9810,16 +9903,16 @@
     },
     {
       "tournament": {
-        "tournament_id": "nova-lima-challenger-2026",
-        "name": "Nova Lima Challenger",
+        "tournament_id": "nonthaburi-challenger-iv-2026",
+        "name": "Nonthaburi Challenger IV",
         "year": 2026,
         "start_date": "2026-12-14",
         "end_date": "2026-12-20",
         "category": "Challenger 50",
-        "surface": "Clay",
+        "surface": "Hard",
         "location": {
-          "city": "Nova Lima",
-          "country": "Brazil Clay –"
+          "city": "Nonthaburi",
+          "country": "Thailand Hard –"
         },
         "main_draw_size": 32,
         "qualifying_draw_size": 24,
@@ -9833,8 +9926,8 @@
         "status": "upcoming"
       },
       "schedule_aliases": [
-        "Nova Lima",
-        "Nova Lima Challenger"
+        "Nonthaburi",
+        "Nonthaburi Challenger IV"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary"
