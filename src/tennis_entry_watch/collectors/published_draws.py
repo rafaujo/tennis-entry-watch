@@ -2,9 +2,11 @@ import io
 import json
 import re
 import unicodedata
+from email.utils import parsedate_to_datetime
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote
+from time import sleep
+from urllib.parse import quote, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -265,6 +267,72 @@ def _wikipedia_challenger_title_score(event, title: str) -> int:
         if overlap >= min(2, len(tokens)):
             score = max(score, 40 + overlap * 10)
     return score
+
+
+def discover_catalog_draw_sources(
+    catalog: TournamentCatalog,
+    session: requests.Session,
+    today: date | None = None,
+    lookahead_days: int = CHALLENGER_DRAW_LOOKAHEAD_DAYS,
+) -> tuple[list[dict], list[str]]:
+    """Follow each calendar event's exact singles page to its official PDFs."""
+    current_day = today or date.today()
+    latest_start = current_day + timedelta(days=lookahead_days)
+    sources: list[dict] = []
+    warnings: list[str] = []
+    for event in catalog.events:
+        tournament = event.tournament
+        if not event.draw_page_url:
+            continue
+        if not (
+            tournament.category.startswith("Challenger")
+            or re.fullmatch(r"ATP (?:250|500|1000)", tournament.category)
+        ):
+            continue
+        if (tournament.end_date or tournament.start_date) < current_day:
+            continue
+        if tournament.start_date > latest_start:
+            continue
+        try:
+            response = session.get(
+                event.draw_page_url,
+                headers={"User-Agent": USER_AGENT},
+                timeout=30,
+            )
+            response.raise_for_status()
+            response.encoding = "utf-8"
+            soup = BeautifulSoup(response.text, "html.parser")
+            atp_ids: set[str] = set()
+            for link in soup.select("a[href]"):
+                url = urlparse(link["href"])
+                if url.hostname not in {"protennislive.com", "www.protennislive.com"}:
+                    continue
+                match = re.fullmatch(
+                    rf"/posting/{tournament.year}/(\d+)/(?:mds|qs)\.pdf",
+                    url.path,
+                    re.I,
+                )
+                if match:
+                    atp_ids.add(match.group(1))
+            if len(atp_ids) != 1:
+                continue
+            base = {"year": tournament.year, "atp_id": atp_ids.pop()}
+            sources.append(
+                {
+                    "tournament_id": tournament.tournament_id,
+                    "format": "protennislive_pdf",
+                    "main_url": ATP_DRAW_URL.format(draw="mds", **base),
+                    "qualifying_url": ATP_DRAW_URL.format(draw="qs", **base),
+                    "minimum_main_players": max(
+                        16,
+                        tournament.main_draw_size
+                        - (8 if tournament.category.startswith("Challenger") else 16),
+                    ),
+                }
+            )
+        except Exception as exc:
+            warnings.append(f"{tournament.tournament_id}: calendar draw discovery failed ({exc})")
+    return sources, warnings
 
 
 def wikipedia_challenger_draw_titles(event, search_results: list[dict]) -> list[str]:
@@ -568,6 +636,30 @@ def _us_open_pdf_names(
     return _us_open_text_names(text)
 
 
+def _fetch_draw_pdf(session: requests.Session, url: str):
+    """Retry transient PDF failures without repeatedly hitting a rate limit."""
+    for attempt in range(3):
+        response = session.get(url, headers={"User-Agent": USER_AGENT}, timeout=45)
+        if getattr(response, "status_code", 200) in {429, 500, 502, 503, 504} and attempt < 2:
+            retry_after = getattr(response, "headers", {}).get("Retry-After")
+            delay = 2 ** (attempt + 1)
+            if retry_after:
+                try:
+                    delay = float(retry_after)
+                except ValueError:
+                    try:
+                        delay = (parsedate_to_datetime(retry_after) - datetime.now(timezone.utc)).total_seconds()
+                    except (TypeError, ValueError):
+                        pass
+            if delay > 30:
+                response.raise_for_status()
+            sleep(max(1, delay))
+            continue
+        response.raise_for_status()
+        return response
+    raise RuntimeError(f"could not retrieve draw PDF: {url}")
+
+
 def collect_protennislive_draw(
     main_url: str,
     qualifying_url: str | None,
@@ -575,8 +667,7 @@ def collect_protennislive_draw(
     retrieved_at: datetime,
     session: requests.Session,
 ) -> tuple[list[Entry], list[Entry]]:
-    main_response = session.get(main_url, headers={"User-Agent": USER_AGENT}, timeout=45)
-    main_response.raise_for_status()
+    main_response = _fetch_draw_pdf(session, main_url)
     main_source = _source(main_url, SourceType.ATP_OFFICIAL, retrieved_at, "protennislive_pdf_draw")
     main = [
         _entry(resolver, name, status, main_source, nation, seed)
@@ -584,8 +675,7 @@ def collect_protennislive_draw(
     ]
     qualifying: list[Entry] = []
     if qualifying_url:
-        q_response = session.get(qualifying_url, headers={"User-Agent": USER_AGENT}, timeout=45)
-        q_response.raise_for_status()
+        q_response = _fetch_draw_pdf(session, qualifying_url)
         q_source = _source(qualifying_url, SourceType.ATP_OFFICIAL, retrieved_at, "protennislive_pdf_draw")
         qualifying = [
             _entry(
@@ -750,6 +840,11 @@ def collect_configured_draws(
     discovered_atp: list[dict] = []
     discovered_challengers: list[dict] = []
     discovered_wikipedia: list[dict] = []
+    discovered_catalog, catalog_warnings = discover_catalog_draw_sources(
+        catalog, client, today=current_day
+    )
+    warnings.extend(catalog_warnings)
+    catalog_draw_ids = {item["tournament_id"] for item in discovered_catalog}
     try:
         calendar_response = client.get(
             ATP_TOUR_CALENDAR_URL,
@@ -786,7 +881,14 @@ def collect_configured_draws(
     try:
         discovered_wikipedia, wikipedia_warnings = (
             discover_wikipedia_challenger_draw_sources(
-                catalog,
+                catalog.model_copy(
+                    update={
+                        "events": [
+                            event for event in catalog.events
+                            if event.tournament.tournament_id not in catalog_draw_ids
+                        ]
+                    }
+                ),
                 client,
                 today=current_day,
             )
@@ -798,6 +900,9 @@ def collect_configured_draws(
     items_by_tournament = {
         item["tournament_id"]: item for item in discovered_wikipedia
     }
+    items_by_tournament.update(
+        {item["tournament_id"]: item for item in discovered_catalog}
+    )
     items_by_tournament.update(
         {item["tournament_id"]: item for item in discovered_atp}
     )

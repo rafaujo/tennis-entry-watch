@@ -3,6 +3,7 @@ import re
 import unicodedata
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -161,11 +162,26 @@ def parse_calendar_page(page_html: str, year: int, source_url: str) -> list[Cata
             draw_published=False,
             qualifying_list_published=False,
         )
+        draw_page_url = None
+        for link in candidate.select("a[href]"):
+            if link.get_text(" ", strip=True).casefold() not in {"singles", "men's singles"}:
+                continue
+            target = urljoin(source_url, link["href"])
+            parsed_target = urlparse(target)
+            if (
+                parsed_target.scheme == "https"
+                and parsed_target.netloc == "en.wikipedia.org"
+                and parsed_target.path.startswith(f"/wiki/{year}_")
+                and "redlink=1" not in parsed_target.query
+            ):
+                draw_page_url = target
+                break
         results.append(
             CatalogEvent(
                 tournament=tournament,
                 schedule_aliases=[city, name],
                 source_url=source_url,
+                draw_page_url=draw_page_url,
             )
         )
 
@@ -212,6 +228,7 @@ def _apply_overrides(events: list[CatalogEvent], overrides: dict) -> list[Catalo
             schedule_aliases=list(dict.fromkeys(aliases)),
             source_url=event.source_url,
             source_type=event.source_type,
+            draw_page_url=event.draw_page_url,
         )
         identifier = normalized.tournament.tournament_id
         if identifier in used_ids:
