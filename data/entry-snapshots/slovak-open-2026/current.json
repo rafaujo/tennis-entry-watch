@@ -1,0 +1,1709 @@
+{
+  "tournament": {
+    "tournament_id": "slovak-open-2026",
+    "name": "Slovak Open",
+    "year": 2026,
+    "start_date": "2026-11-02",
+    "end_date": "2026-11-08",
+    "category": "Challenger 100",
+    "surface": "Hard",
+    "location": {
+      "city": "Bratislava",
+      "country": "Slovakia Hard (i) –"
+    },
+    "main_draw_size": 32,
+    "qualifying_draw_size": 24,
+    "main_draw_qualifier_slots": 6,
+    "main_draw_wildcard_slots": 3,
+    "draw_published": true,
+    "draw_url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+    "qualifying_list_published": true,
+    "entry_list_date": null,
+    "entry_ranking_date": null,
+    "status": "upcoming"
+  },
+  "snapshot_at": "2026-11-05T18:47:53.802423Z",
+  "entries": [
+    {
+      "player": {
+        "player_id": "nishesh-basavareddy",
+        "name": "Nishesh Basavareddy",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 125,
+      "alternate_position": null,
+      "seed": 9,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "milos-karol",
+        "name": "Miloš Karol",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 594,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mika-brunold",
+        "name": "Mika Brunold",
+        "nationality": "SUI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 177,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "michael-vrbensky",
+        "name": "Michael Vrbenský",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 736,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jerome-kym",
+        "name": "Jérôme Kym",
+        "nationality": "SUI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 151,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "lucas-poullain",
+        "name": "Lucas Poullain",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 315,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "luka-pavlovic",
+        "name": "Luka Pavlovic",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 197,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "aleksandr-shevchenko",
+        "name": "Aleksandr Shevchenko",
+        "nationality": "KAZ",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 105,
+      "alternate_position": null,
+      "seed": 5,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "martin-damm",
+        "name": "Martin Damm",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 101,
+      "alternate_position": null,
+      "seed": 4,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tom-gentzsch",
+        "name": "Tom Gentzsch",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 159,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matej-dodig",
+        "name": "Matej Dodig",
+        "nationality": "CRO",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 140,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "michal-krajci",
+        "name": "Michal Krajčí",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 730,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "laslo-djere",
+        "name": "Laslo Djere",
+        "nationality": "SRB",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 135,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "edas-butvilas",
+        "name": "Edas Butvilas",
+        "nationality": "LTU",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 209,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "vitaliy-sachko",
+        "name": "Vitaliy Sachko",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 240,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "otto-virtanen",
+        "name": "Otto Virtanen",
+        "nationality": "FIN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 126,
+      "alternate_position": null,
+      "seed": 7,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dalibor-svrcina",
+        "name": "Dalibor Svrčina",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 116,
+      "alternate_position": null,
+      "seed": 6,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "norbert-gombos",
+        "name": "Norbert Gombos",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 375,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "giovanni-mpetshi-perricard",
+        "name": "Giovanni Mpetshi Perricard",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 138,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "martin-krumich",
+        "name": "Martin Krumich",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 298,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "eero-vasa",
+        "name": "Eero Vasa",
+        "nationality": "FIN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 485,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "gueymard-wayenbur",
+        "name": "GUEYMARD WAYENBUR",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matthew-william-donald",
+        "name": "Matthew William Donald",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "LL",
+      "entry_rank": null,
+      "current_rank": 352,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "zsombor-piros",
+        "name": "Zsombor Piros",
+        "nationality": "HUN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 98,
+      "alternate_position": null,
+      "seed": 3,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "shintaro-mochizuki",
+        "name": "Shintaro Mochizuki",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 127,
+      "alternate_position": null,
+      "seed": 8,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "nicolai-budkov-kjaer",
+        "name": "Nicolai Budkov Kjaer",
+        "nationality": "NOR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 176,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "kimmer-coppejans",
+        "name": "Kimmer Coppejans",
+        "nationality": "BEL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 222,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jonas-forejtek",
+        "name": "Jonáš Forejtek",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 301,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jurij-rodionov",
+        "name": "Jurij Rodionov",
+        "nationality": "AUT",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 142,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "stefano-travaglia",
+        "name": "Stefano Travaglia",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 175,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "lukas-pokorny",
+        "name": "Lukáš Pokorný",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 500,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "toby-samuel",
+        "name": "Toby Samuel",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 95,
+      "alternate_position": null,
+      "seed": 2,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "max-houkes",
+        "name": "Max Houkes",
+        "nationality": "NED",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 213,
+      "alternate_position": 1,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andrej-martin",
+        "name": "Andrej Martin",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 351,
+      "alternate_position": 2,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sebastian-sorger",
+        "name": "Sebastian Sorger",
+        "nationality": "AUT",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 386,
+      "alternate_position": 3,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marek-gengel",
+        "name": "Marek Gengel",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 409,
+      "alternate_position": 4,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "niels-visker",
+        "name": "Niels Visker",
+        "nationality": "NED",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 419,
+      "alternate_position": 5,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yannik-kelm",
+        "name": "Yannik Kelm",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 430,
+      "alternate_position": 6,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "oleg-prihodko",
+        "name": "Oleg Prihodko",
+        "nationality": "MKD",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 438,
+      "alternate_position": 7,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "vadym-ursu",
+        "name": "Vadym Ursu",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 443,
+      "alternate_position": 8,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "fares-zakaria",
+        "name": "Fares Zakaria",
+        "nationality": "EGY",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 535,
+      "alternate_position": 9,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yanis-ghazouani-durand",
+        "name": "Yanis Ghazouani Durand",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 540,
+      "alternate_position": 10,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ryan-seggerman",
+        "name": "Ryan Seggerman",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 560,
+      "alternate_position": 11,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matyas-cerny",
+        "name": "Matyáš Černý",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 688,
+      "alternate_position": 12,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "aleksandr-braynin",
+        "name": "Aleksandr Braynin",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 787,
+      "alternate_position": 13,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dominik-macej",
+        "name": "Dominik MACEJ",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": 14,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marko-bekeni",
+        "name": "Marko BEKENI",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": 15,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "radovan-michalik",
+        "name": "Radovan MICHALIK",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": 16,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tomas-lanik",
+        "name": "Tomas LANIK",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": 17,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    }
+  ],
+  "qualifying_entries": [
+    {
+      "player": {
+        "player_id": "giovanni-mpetshi-perricard",
+        "name": "Giovanni Mpetshi Perricard",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 138,
+      "alternate_position": null,
+      "seed": 1,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yanis-ghazouani-durand",
+        "name": "Yanis Ghazouani Durand",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 540,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matyas-cerny",
+        "name": "Matyáš Černý",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 688,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "sebastian-sorger",
+        "name": "Sebastian Sorger",
+        "nationality": "AUT",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 386,
+      "alternate_position": null,
+      "seed": 8,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "aleksandr-braynin",
+        "name": "Aleksandr Braynin",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 787,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "michal-krajci",
+        "name": "Michal Krajčí",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 730,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "fares-zakaria",
+        "name": "Fares Zakaria",
+        "nationality": "EGY",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 535,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "niels-visker",
+        "name": "Niels Visker",
+        "nationality": "NED",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 419,
+      "alternate_position": null,
+      "seed": 10,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "max-houkes",
+        "name": "Max Houkes",
+        "nationality": "NED",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 213,
+      "alternate_position": null,
+      "seed": 3,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dominik-macej",
+        "name": "Dominik MACEJ",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "michael-vrbensky",
+        "name": "Michael Vrbenský",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 736,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marek-gengel",
+        "name": "Marek Gengel",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 409,
+      "alternate_position": null,
+      "seed": 11,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jonas-forejtek",
+        "name": "Jonáš Forejtek",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 301,
+      "alternate_position": null,
+      "seed": 4,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ryan-seggerman",
+        "name": "Ryan Seggerman",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 560,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marko-bekeni",
+        "name": "Marko BEKENI",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "matthew-william-donald",
+        "name": "Matthew William Donald",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 352,
+      "alternate_position": null,
+      "seed": 7,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "lucas-poullain",
+        "name": "Lucas Poullain",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 315,
+      "alternate_position": null,
+      "seed": 5,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tomas-lanik",
+        "name": "Tomas LANIK",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "oleg-prihodko",
+        "name": "Oleg Prihodko",
+        "nationality": "MKD",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 438,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yannik-kelm",
+        "name": "Yannik Kelm",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 430,
+      "alternate_position": null,
+      "seed": 12,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andrej-martin",
+        "name": "Andrej Martin",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 351,
+      "alternate_position": null,
+      "seed": 6,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "eero-vasa",
+        "name": "Eero Vasa",
+        "nationality": "FIN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 485,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "radovan-michalik",
+        "name": "Radovan MICHALIK",
+        "nationality": "SVK",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "vadym-ursu",
+        "name": "Vadym Ursu",
+        "nationality": "UKR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 443,
+      "alternate_position": null,
+      "seed": 9,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+        "retrieved_at": "2026-11-05T18:47:53.802423Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    }
+  ]
+}
