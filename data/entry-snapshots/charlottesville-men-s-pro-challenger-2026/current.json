@@ -15,59 +15,197 @@
     "qualifying_draw_size": 24,
     "main_draw_qualifier_slots": 6,
     "main_draw_wildcard_slots": 3,
-    "draw_published": false,
-    "draw_url": null,
-    "qualifying_list_published": false,
+    "draw_published": true,
+    "draw_url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+    "qualifying_list_published": true,
     "entry_list_date": null,
     "entry_ranking_date": null,
-    "status": "active"
+    "status": "upcoming"
   },
-  "snapshot_at": "2026-10-19T16:59:07.371512Z",
+  "snapshot_at": "2026-11-05T18:39:31.192968Z",
   "entries": [
     {
       "player": {
-        "player_id": "michael-zheng",
-        "name": "Michael Zheng",
+        "player_id": "marcos-giron",
+        "name": "Marcos Giron",
         "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 98,
+      "current_rank": 94,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "jenson-brooksby",
-        "name": "Jenson Brooksby",
-        "nationality": "USA",
+        "player_id": "dylan-dietrich",
+        "name": "Dylan Dietrich",
+        "nationality": "SUI",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 103,
+      "current_rank": 186,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "justin-boulais",
+        "name": "Justin Boulais",
+        "nationality": "CAN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 411,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "j-j-wolf",
+        "name": "J.J. Wolf",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 201,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jack-kennedy",
+        "name": "Jack Kennedy",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 384,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hynek-barton",
+        "name": "Hynek Bartoň",
+        "nationality": "CZE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 276,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andres-santamarta-roig",
+        "name": "Andres Santamarta Roig",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 610,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "clement-chidekh",
+        "name": "Clément Chidekh",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 128,
+      "alternate_position": null,
+      "seed": 5,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -82,176 +220,107 @@
       "entry_rank": null,
       "current_rank": 113,
       "alternate_position": null,
-      "seed": null,
+      "seed": 3,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "valentin-royer",
-        "name": "Valentin Royer",
-        "nationality": "FRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 116,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "clement-chidekh",
-        "name": "Clément Chidekh",
-        "nationality": "FRA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 147,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "darwin-blanch",
-        "name": "Darwin Blanch",
+        "player_id": "murphy-cassone",
+        "name": "Murphy Cassone",
         "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 155,
+      "current_rank": 285,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "jack-pinnington-jones",
-        "name": "Jack Pinnington Jones",
-        "nationality": "GBR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 186,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "alexis-galarneau",
-        "name": "Alexis Galarneau",
-        "nationality": "CAN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 192,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "liam-draxl",
-        "name": "Liam Draxl",
-        "nationality": "CAN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 194,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "tristan-boyer",
-        "name": "Tristan Boyer",
+        "player_id": "stefan-kozlov",
+        "name": "Stefan Kozlov",
         "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 195,
+      "current_rank": 265,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andres-martin",
+        "name": "Andres Martin",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 363,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "colton-smith",
+        "name": "Colton Smith",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 214,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -271,194 +340,125 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "harry-wendelken",
-        "name": "Harry Wendelken",
-        "nationality": "GBR",
+        "player_id": "andrew-fenty",
+        "name": "Andrew Fenty",
+        "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "Q",
       "entry_rank": null,
-      "current_rank": 210,
+      "current_rank": 478,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "maks-kasnikowski",
-        "name": "Maks Kaśnikowski",
-        "nationality": "POL",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 211,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "j-j-wolf",
-        "name": "J.J. Wolf",
+        "player_id": "darwin-blanch",
+        "name": "Darwin Blanch",
         "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 214,
+      "current_rank": 148,
       "alternate_position": null,
-      "seed": null,
+      "seed": 6,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "colton-smith",
-        "name": "Colton Smith",
+        "player_id": "alexis-galarneau",
+        "name": "Alexis Galarneau",
+        "nationality": "CAN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 190,
+      "alternate_position": null,
+      "seed": 7,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "daniel-milavsky",
+        "name": "Daniel Milavsky",
         "nationality": "USA",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "Q",
       "entry_rank": null,
-      "current_rank": 216,
+      "current_rank": 309,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "andy-andrade",
-        "name": "Andy Andrade",
-        "nationality": "ECU",
+        "player_id": "max-hans-rehberg",
+        "name": "Max Hans Rehberg",
+        "nationality": "GER",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 222,
+      "current_rank": 238,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "dylan-dietrich",
-        "name": "Dylan Dietrich",
-        "nationality": "SUI",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 251,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "murphy-cassone",
-        "name": "Murphy Cassone",
-        "nationality": "USA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 277,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "jack-kennedy",
-        "name": "Jack Kennedy",
-        "nationality": "USA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 393,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -471,17 +471,362 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 474,
+      "current_rank": 476,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "aidan-mayo",
+        "name": "Aidan Mayo",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 271,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "petr-nesterov",
+        "name": "Petr Nesterov",
+        "nationality": "BUL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 281,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "alastair-gray",
+        "name": "Alastair Gray",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 267,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "valentin-royer",
+        "name": "Valentin Royer",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 118,
+      "alternate_position": null,
+      "seed": 4,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "liam-draxl",
+        "name": "Liam Draxl",
+        "nationality": "CAN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 164,
+      "alternate_position": null,
+      "seed": 8,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "maks-kasnikowski",
+        "name": "Maks Kaśnikowski",
+        "nationality": "POL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 208,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "abdullah-shelbayh",
+        "name": "Abdullah Shelbayh",
+        "nationality": "JOR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 303,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "michael-antonius",
+        "name": "Michael Antonius",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 581,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "harry-wendelken",
+        "name": "Harry Wendelken",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 232,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andy-andrade",
+        "name": "Andy Andrade",
+        "nationality": "ECU",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 220,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "james-trotter",
+        "name": "James Trotter",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "Q",
+      "entry_rank": null,
+      "current_rank": 516,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "michael-zheng",
+        "name": "Michael Zheng",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 99,
+      "alternate_position": null,
+      "seed": 2,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jenson-brooksby",
+        "name": "Jenson Brooksby",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 103,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jack-pinnington-jones",
+        "name": "Jack Pinnington Jones",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 186,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "tristan-boyer",
+        "name": "Tristan Boyer",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 195,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -492,21 +837,988 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "OUT",
       "entry_rank": null,
       "current_rank": 678,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/mds.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ozan-baris",
+        "name": "Ozan Baris",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 397,
+      "alternate_position": 1,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "kenta-miyoshi",
+        "name": "Kenta Miyoshi",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 415,
+      "alternate_position": 2,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "geoffrey-blancaneaux",
+        "name": "Geoffrey Blancaneaux",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 444,
+      "alternate_position": 3,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "karl-poling",
+        "name": "Karl Poling",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 446,
+      "alternate_position": 4,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "emile-hudd",
+        "name": "Emile Hudd",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 460,
+      "alternate_position": 5,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "duncan-chan",
+        "name": "Duncan Chan",
+        "nationality": "CAN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 465,
+      "alternate_position": 6,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mitchell-krueger",
+        "name": "Mitchell Krueger",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 482,
+      "alternate_position": 7,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "patrick-zahraj",
+        "name": "Patrick Zahraj",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 536,
+      "alternate_position": 8,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "samuel-heredia",
+        "name": "Samuel Heredia",
+        "nationality": "COL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 629,
+      "alternate_position": 9,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "shunsuke-mitsui",
+        "name": "Shunsuke Mitsui",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 647,
+      "alternate_position": 10,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "joshua-sheehy",
+        "name": "Joshua Sheehy",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 767,
+      "alternate_position": 11,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dominick-mosejczuk",
+        "name": "Dominick Mosejczuk",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 808,
+      "alternate_position": 12,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jangjun-kim",
+        "name": "Jangjun Kim",
+        "nationality": "KOR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 849,
+      "alternate_position": 13,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "joshua-charlton",
+        "name": "Joshua Charlton",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 873,
+      "alternate_position": 14,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "oliver-okonkwo",
+        "name": "Oliver Okonkwo",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 964,
+      "alternate_position": 15,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marcel-latak",
+        "name": "Marcel LATAK",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": 16,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "stiles-brockett",
+        "name": "Stiles BROCKETT",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": 17,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    },
+    {
+      "player": {
+        "player_id": "von-der-schulenbur",
+        "name": "VON DER SCHULENBUR",
+        "nationality": "SUI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": 18,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "trusted_secondary",
+        "collector": "qualifying_draw_main_alternate_projection"
+      }
+    }
+  ],
+  "qualifying_entries": [
+    {
+      "player": {
+        "player_id": "oliver-okonkwo",
+        "name": "Oliver Okonkwo",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 964,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-10-19T16:59:07.371512Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "james-trotter",
+        "name": "James Trotter",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 516,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jangjun-kim",
+        "name": "Jangjun Kim",
+        "nationality": "KOR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 849,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ozan-baris",
+        "name": "Ozan Baris",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 397,
+      "alternate_position": null,
+      "seed": 7,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "daniel-milavsky",
+        "name": "Daniel Milavsky",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 309,
+      "alternate_position": null,
+      "seed": 2,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "joshua-charlton",
+        "name": "Joshua Charlton",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 873,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "shunsuke-mitsui",
+        "name": "Shunsuke Mitsui",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 647,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "geoffrey-blancaneaux",
+        "name": "Geoffrey Blancaneaux",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 444,
+      "alternate_position": null,
+      "seed": 10,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "aidan-mayo",
+        "name": "Aidan Mayo",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 271,
+      "alternate_position": null,
+      "seed": 3,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "duncan-chan",
+        "name": "Duncan Chan",
+        "nationality": "CAN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 465,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dominick-mosejczuk",
+        "name": "Dominick Mosejczuk",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 808,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "kenta-miyoshi",
+        "name": "Kenta Miyoshi",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 415,
+      "alternate_position": null,
+      "seed": 8,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "von-der-schulenbur",
+        "name": "VON DER SCHULENBUR",
+        "nationality": "SUI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "samuel-heredia",
+        "name": "Samuel Heredia",
+        "nationality": "COL",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 629,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "joshua-sheehy",
+        "name": "Joshua Sheehy",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 767,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "justin-boulais",
+        "name": "Justin Boulais",
+        "nationality": "CAN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 411,
+      "alternate_position": null,
+      "seed": 9,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mitchell-krueger",
+        "name": "Mitchell Krueger",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 482,
+      "alternate_position": null,
+      "seed": 5,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marcel-latak",
+        "name": "Marcel LATAK",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andrew-fenty",
+        "name": "Andrew Fenty",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 478,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "karl-poling",
+        "name": "Karl Poling",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 446,
+      "alternate_position": null,
+      "seed": 11,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "andres-martin",
+        "name": "Andres Martin",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 363,
+      "alternate_position": null,
+      "seed": 6,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "patrick-zahraj",
+        "name": "Patrick Zahraj",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 536,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "stiles-brockett",
+        "name": "Stiles BROCKETT",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "emile-hudd",
+        "name": "Emile Hudd",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 460,
+      "alternate_position": null,
+      "seed": 12,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/6055/qs.pdf",
+        "retrieved_at": "2026-11-05T18:39:31.192968Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     }
-  ],
-  "qualifying_entries": []
+  ]
 }
