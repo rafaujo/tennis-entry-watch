@@ -1,14 +1,13 @@
 from datetime import datetime, timezone
-from pathlib import Path
 
 import json
+import pytest
 import requests
 
 from tennis_entry_watch.collectors.entry_snapshots import (
     snapshot_path,
     write_entry_snapshot,
 )
-from tennis_entry_watch.collectors.live_tennis_snapshot import load_live_snapshot
 from tennis_entry_watch.collectors.live_tennis_snapshot import entry_lists_from_live_snapshot
 from tennis_entry_watch.collectors.published_draws import (
     PlayerResolver,
@@ -21,7 +20,6 @@ from tennis_entry_watch.collectors.published_draws import (
 from tennis_entry_watch.models import EntryList, EntryStatus, SourceType
 
 
-ROOT = Path(__file__).resolve().parents[1]
 ANNOUNCEMENT_HTML = """
 <article>
   <p><strong>Who received 2026 US Open Men's Singles Main Draw wild cards?</strong></p>
@@ -45,14 +43,36 @@ def test_parses_only_announced_main_draw_wildcards():
     ]
 
 
-def test_official_wildcards_replace_alternate_or_direct_status():
-    entry_list = EntryList.model_validate_json(
-        (ROOT / "data/entries/us-open-2026/current.json").read_text(encoding="utf-8")
-    )
-    resolver = PlayerResolver(
-        load_live_snapshot(ROOT / "data/rankings/atp-live-current.json")
-    )
+@pytest.mark.parametrize("ranking_name", [None, "Gael Monfils", "Gaël Monfils"])
+def test_official_wildcards_replace_alternate_or_direct_status(
+    synthetic_catalog, ranking_name
+):
     retrieved_at = datetime(2026, 8, 20, 22, tzinfo=timezone.utc)
+    entry_source = _source(
+        "https://example.test/entries",
+        SourceType.TRUSTED_SECONDARY,
+        retrieved_at,
+        "fixture_entry_list",
+    )
+    entry_resolver = PlayerResolver({})
+    entry_list = EntryList(
+        tournament=synthetic_catalog.events[0].tournament,
+        snapshot_at=retrieved_at,
+        entries=[
+            _entry(entry_resolver, "Martin Damm", EntryStatus.DA, entry_source)
+            .model_copy(update={"status": EntryStatus.ALT, "alternate_position": 1}),
+            _entry(entry_resolver, "Gaël Monfils", EntryStatus.DA, entry_source),
+        ],
+    )
+    # Ranking updates may drop a player or change the spelling of their name.
+    resolver = PlayerResolver(
+        {
+            "rankings": (
+                [{"name": ranking_name, "nation": "FRA", "rank": 100}]
+                if ranking_name else []
+            )
+        }
+    )
     source = _source(
         "https://example.test/official-wildcards",
         SourceType.TOURNAMENT_OFFICIAL,
@@ -67,6 +87,7 @@ def test_official_wildcards_replace_alternate_or_direct_status():
     overlaid = apply_main_draw_wildcards(entry_list, wildcards, retrieved_at)
     by_name = {entry.player.name: entry for entry in overlaid.entries}
 
+    assert len(overlaid.entries) == 3
     assert by_name["Martin Damm"].status == EntryStatus.WC
     assert by_name["Martin Damm"].previous_status == EntryStatus.ALT
     assert by_name["Martin Damm"].alternate_position is None
