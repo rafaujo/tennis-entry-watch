@@ -1,17 +1,27 @@
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+import json
+import pytest
+import requests
+
 from tennis_entry_watch.models import EntryStatus
 from tennis_entry_watch.collectors.published_draws import (
     _us_open_text_names,
     PlayerResolver,
     collect_wikipedia_draw,
+    collect_configured_draws,
+    discover_catalog_draw_sources,
+    _entry,
+    _source,
+    _fetch_draw_pdf,
     discover_atp_draw_sources,
     discover_challenger_draw_sources,
     discover_wikipedia_challenger_draw_sources,
     parse_atp_tournament_links,
 )
 from tennis_entry_watch.collectors.tournament_catalog import load_catalog
+from tennis_entry_watch.models import EntryList, SourceType
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,6 +41,97 @@ class _Session:
 
     def get(self, *_args, **_kwargs) -> _Response:
         return _Response(self.text)
+
+
+def test_calendar_draw_sources_cover_atp_events_without_a_city_search(synthetic_catalog):
+    event = synthetic_catalog.events[0]
+    event.tournament = event.tournament.model_copy(update={"category": "ATP 250"})
+    event.draw_page_url = "https://en.wikipedia.org/wiki/2026_Fixture_Open_Singles"
+    sources, warnings = discover_catalog_draw_sources(
+        synthetic_catalog,
+        _Session('<a href="https://www.protennislive.com/posting/2026/1234/mds.pdf">Main draw</a>'),
+        today=date(2026, 8, 18),
+    )
+
+    assert warnings == []
+    assert sources[0]["tournament_id"] == "fixture-open-2026"
+    assert sources[0]["qualifying_url"] == "https://www.protennislive.com/posting/2026/1234/qs.pdf"
+    assert sources[0]["format"] == "protennislive_pdf"
+
+
+def test_draw_pdf_retries_a_temporary_rate_limit(monkeypatch):
+    delays = []
+    monkeypatch.setattr("tennis_entry_watch.collectors.published_draws.sleep", delays.append)
+    responses = [requests.Response(), requests.Response()]
+    responses[0].status_code = 429
+    responses[0].headers["Retry-After"] = "3"
+    responses[1].status_code = 200
+
+    class Session:
+        def get(self, *_args, **_kwargs):
+            return responses.pop(0)
+
+    assert _fetch_draw_pdf(Session(), "https://example.test/draw.pdf").status_code == 200
+    assert delays == [3]
+    assert responses == []
+
+
+@pytest.mark.parametrize("pdf_links", [
+    '<a href="https://www.protennislive.com/posting/2025/1234/mds.pdf">Previous year</a>',
+    '<a href="https://example.test/posting/2026/1234/mds.pdf">Unofficial host</a>',
+    '<a href="https://www.protennislive.com/posting/2026/1234/mds.pdf">One event</a>'
+    '<a href="https://www.protennislive.com/posting/2026/5678/mds.pdf">Another event</a>',
+])
+def test_calendar_draw_sources_reject_unrelated_pdfs(synthetic_catalog, pdf_links):
+    synthetic_catalog.events[0].draw_page_url = "https://en.wikipedia.org/wiki/2026_Fixture_Open_Singles"
+    sources, _warnings = discover_catalog_draw_sources(
+        synthetic_catalog, _Session(pdf_links), today=date(2026, 8, 18)
+    )
+    assert sources == []
+
+
+def test_draw_backfill_works_when_atp_calendars_return_403(
+    tmp_path, monkeypatch, synthetic_catalog, synthetic_live_snapshot
+):
+    event = synthetic_catalog.events[0]
+    event.draw_page_url = "https://en.wikipedia.org/wiki/2026_Fixture_Open_Singles"
+    config = tmp_path / "sources.json"
+    config.write_text(json.dumps({"events": []}), encoding="utf-8")
+    source = _source(
+        "https://www.protennislive.com/posting/2026/1234/mds.pdf",
+        SourceType.ATP_OFFICIAL,
+        datetime(2026, 8, 18, tzinfo=timezone.utc),
+        "protennislive_pdf_draw",
+    )
+    main = [
+        _entry(PlayerResolver({}), f"Player {i}", EntryStatus.DA, source)
+        for i in range(20)
+    ]
+    monkeypatch.setattr(
+        "tennis_entry_watch.collectors.published_draws.collect_protennislive_draw",
+        lambda *_args: (main, []),
+    )
+
+    class Session:
+        def get(self, url, **_kwargs):
+            if "atptour.com" in url:
+                raise requests.HTTPError("403 Forbidden")
+            assert url == event.draw_page_url
+            return _Response(
+                '<a href="https://www.protennislive.com/posting/2026/1234/mds.pdf">Draw</a>'
+            )
+
+    updated, warnings = collect_configured_draws(
+        config, synthetic_catalog, synthetic_live_snapshot,
+        tmp_path / "snapshots", session=Session(), as_of=date(2026, 8, 18),
+    )
+    saved = EntryList.model_validate_json(
+        (tmp_path / "snapshots/fixture-open-2026/current.json").read_text(encoding="utf-8")
+    )
+    assert updated == 1
+    assert saved.tournament.draw_published is True
+    assert sum(entry.status == EntryStatus.DA for entry in saved.entries) == 20
+    assert len([warning for warning in warnings if "403" in warning]) == 2
 
 
 def test_wikipedia_draw_reads_only_first_round_player_column() -> None:

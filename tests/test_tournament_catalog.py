@@ -61,6 +61,20 @@ def test_catalog_override_survives_a_source_name_change():
     assert updated[0].tournament.name == "Como Lake Challenger"
 
 
+def test_calendar_keeps_the_exact_singles_page_through_overrides():
+    html = HTML.replace(
+        "Hard – 48S/16Q/16D",
+        'Hard – 48S/16Q/16D<br><a href="/wiki/2026_Winston-Salem_Open_%E2%80%93_Singles">Singles</a>'
+        '<a href="/wiki/2026_Winston-Salem_Open_%E2%80%93_Doubles">Doubles</a>',
+    )
+    events = parse_calendar_page(html, 2026, "https://en.wikipedia.org/wiki/2026_ATP_Tour")
+    updated = _apply_overrides(events, {"events": []})
+
+    assert updated[0].draw_page_url == (
+        "https://en.wikipedia.org/wiki/2026_Winston-Salem_Open_%E2%80%93_Singles"
+    )
+
+
 def test_catalog_override_replaces_ambiguous_city_schedule_alias():
     shanghai_html = HTML.replace(
         "Winston-Salem Open", "Shanghai Masters"
