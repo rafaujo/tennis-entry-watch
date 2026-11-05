@@ -1,6 +1,13 @@
 {
   "events": [
     {
+      "tournament_id": "slovak-open-2026",
+      "format": "protennislive_pdf",
+      "main_url": "https://www.stz.sk/soubory/mds_so26_muzi.pdf",
+      "qualifying_url": "https://www.stz.sk/soubory/qs_so26_muzi.pdf",
+      "minimum_main_players": 24
+    },
+    {
       "tournament_id": "cincinnati-open-2026",
       "format": "protennislive_pdf",
       "main_url": "https://www.protennislive.com/posting/2026/422/mds.pdf",
