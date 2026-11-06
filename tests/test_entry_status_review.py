@@ -13,7 +13,7 @@ from tennis_entry_watch.collectors.tournament_catalog import _qualifying_wildcar
 from tennis_entry_watch.collectors.wildcards import event_page_from_draw_url, parse_wikipedia_wildcards
 from tennis_entry_watch.models import EntryStatus, SourceType
 from tennis_entry_watch.quality import validate_quality
-from tennis_entry_watch.site.build import _status
+from tennis_entry_watch.site.build import _status, overlay_official_wildcards
 
 
 @pytest.mark.parametrize("row,name,status,seed,previous", [
@@ -149,6 +149,21 @@ def test_secondary_wc_announcement_does_not_overwrite_an_official_entry_method(s
     })
     result = apply_main_draw_wildcards(current, [candidate], now)
     assert result.entries[0].status == EntryStatus.PR
+
+
+def test_site_overlays_official_qualifying_wcs_on_a_manually_verified_list(synthetic_catalog, synthetic_live_snapshot):
+    base = _fixture(synthetic_catalog, synthetic_live_snapshot)
+    target = base.qualifying_entries[-1]
+    official_wc = target.model_copy(update={
+        "status": EntryStatus.WC, "alternate_position": None,
+        "source": _source("https://example.test/official", SourceType.TOURNAMENT_OFFICIAL, base.snapshot_at, "fixture"),
+    })
+    retained = base.model_copy(update={"qualifying_entries": [official_wc]})
+    result = overlay_official_wildcards(base, retained)
+    entry = next(item for item in result.qualifying_entries if item.player.player_id == target.player.player_id)
+    assert entry.status == EntryStatus.WC
+    assert entry.alternate_position is None
+    assert "entered from" not in _status(entry)
 
 
 def test_quality_uses_the_retained_draw_phase_not_just_calendar(synthetic_catalog, synthetic_live_snapshot):

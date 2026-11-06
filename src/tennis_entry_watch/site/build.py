@@ -51,9 +51,22 @@ def overlay_official_wildcards(
     retained: EntryList,
 ) -> EntryList:
     """Apply official WC statuses without replacing a manually verified list."""
-    entries = list(base.entries)
+    return base.model_copy(update={
+        "snapshot_at": max(base.snapshot_at, retained.snapshot_at),
+        "entries": _official_wc_pool(base.entries, retained.entries),
+        # A future published draw is not a pre-draw qualifying announcement.
+        # The build selects that complete draw separately when its phase applies.
+        "qualifying_entries": (
+            base.qualifying_entries if retained.tournament.draw_published
+            else _official_wc_pool(base.qualifying_entries, retained.qualifying_entries)
+        ),
+    })
+
+
+def _official_wc_pool(pool, retained_pool):
+    entries = list(pool)
     positions = {entry.player.player_id: index for index, entry in enumerate(entries)}
-    for wildcard in retained.entries:
+    for wildcard in retained_pool:
         if (
             wildcard.status != EntryStatus.WC
             or wildcard.source.source_type != SourceType.TOURNAMENT_OFFICIAL
@@ -73,18 +86,13 @@ def overlay_official_wildcards(
                 "alternate_position": None,
                 "previous_status": (
                     existing.status
-                    if existing.status == EntryStatus.ALT
+                    if existing.status in {EntryStatus.ALT, EntryStatus.QALT}
                     else existing.previous_status
                 ),
                 "source": wildcard.source,
             }
         )
-    return base.model_copy(
-        update={
-            "snapshot_at": max(base.snapshot_at, retained.snapshot_at),
-            "entries": entries,
-        }
-    )
+    return entries
 
 
 SOURCE_LABELS = {
