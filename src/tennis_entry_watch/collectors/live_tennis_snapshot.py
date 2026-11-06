@@ -15,6 +15,7 @@ from tennis_entry_watch.models import (
     TournamentStatus,
 )
 from tennis_entry_watch.normalize.players import stable_player_id
+from tennis_entry_watch.collectors.qualifying import reproject_qualifying_queue
 
 
 def _entry(
@@ -95,7 +96,7 @@ def entry_list_from_catalog_event(
         *main[direct_capacity:],
         *(item for item in qualifying if stable_player_id(item["name"]) not in main_ids),
     ]
-    return EntryList(
+    return reproject_qualifying_queue(EntryList(
         tournament=tournament,
         snapshot_at=retrieved_at,
         entries=[
@@ -112,7 +113,7 @@ def entry_list_from_catalog_event(
                 for position, item in enumerate(qualifying_alternates, 1)
             ),
         ],
-    )
+    ))
 
 
 def entry_lists_from_live_snapshot(

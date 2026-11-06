@@ -3,6 +3,7 @@ from datetime import date
 from pathlib import Path
 
 from tennis_entry_watch.collectors.live_tennis_snapshot import entry_lists_from_live_snapshot
+from tennis_entry_watch.collectors.qualifying import preserve_entry_metadata
 from tennis_entry_watch.models import (
     EntryList,
     EntryStatus,
@@ -190,7 +191,7 @@ def merge_published_draw_history(
             entries[index] = official.model_copy(update=updates)
 
     official_source = next((entry.source for entry in published.entries), None)
-    accepted_statuses = {EntryStatus.DA, EntryStatus.PR, EntryStatus.SE}
+    accepted_statuses = {EntryStatus.DA, EntryStatus.PR, EntryStatus.SE, EntryStatus.JR, EntryStatus.JE}
     historical_acceptances = sum(
         entry.status in accepted_statuses for entry in history.entries
     )
@@ -240,6 +241,16 @@ def merge_published_draw_history(
         ]
 
     qualifying_entries = list(published.qualifying_entries)
+    qualifying_history = {entry.player.player_id: entry for entry in history.qualifying_entries}
+    for index, entry in enumerate(qualifying_entries):
+        previous = qualifying_history.get(entry.player.player_id)
+        if (
+            previous is not None
+            and entry.status == EntryStatus.QDA
+            and entry.previous_status is None
+            and (previous.status == EntryStatus.QALT or previous.previous_status == EntryStatus.QALT)
+        ):
+            qualifying_entries[index] = entry.model_copy(update={"previous_status": EntryStatus.QALT})
     qualifying_ids = {entry.player.player_id for entry in qualifying_entries}
     qualifying_entries.extend(
         entry
@@ -309,6 +320,8 @@ def retain_live_entry_snapshots(
                 retained += 1
                 continue
         has_entries = bool(current.entries or current.qualifying_entries)
+        if has_entries and destination.exists():
+            current = preserve_entry_metadata(current, previous)
         if not has_entries and destination.exists():
             previous = EntryList.model_validate_json(
                 destination.read_text(encoding="utf-8-sig")

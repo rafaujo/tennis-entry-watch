@@ -1,4 +1,13 @@
 {
+  "wildcard_announcements": [
+    {
+      "tournament_id": "stockholm-open-2026",
+      "wildcard_url": "https://www.stockholmopen.se/sv-se/tournament/nyheter/wildcards",
+      "main_wildcards": ["Elias Ymer", "Max Dahlin"],
+      "minimum_main_wildcards": 2,
+      "qualifying_wildcards": ["Leo Borg", "Olle Wallin"]
+    }
+  ],
   "events": [
     {
       "tournament_id": "slovak-open-2026",

@@ -223,6 +223,13 @@
       "start_date": "2026-09-23",
       "end_date": "2026-09-29",
       "schedule_aliases": ["Hangzhou"]
+    },
+    {
+      "source_name": "Stockholm Open",
+      "source_start_date": "2026-11-09",
+      "start_date": "2026-11-08",
+      "end_date": "2026-11-14",
+      "schedule_aliases": ["Stockholm", "Stockholm Open"]
     }
   ]
 }

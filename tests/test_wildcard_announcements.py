@@ -307,3 +307,55 @@ def test_configured_wildcards_are_used_when_official_page_is_unavailable(
     assert updated == 1
     assert any("configured fallback used" in warning for warning in warnings)
     assert result.entries[0].status == EntryStatus.WC
+
+
+@pytest.mark.parametrize("configured", [False, True])
+def test_pre_draw_qualifying_wildcards_are_collected_and_survive_refresh(
+    tmp_path, synthetic_catalog, synthetic_live_snapshot, configured,
+):
+    from tennis_entry_watch.collectors.entry_snapshots import retain_live_entry_snapshots
+
+    event = synthetic_catalog.events[0]
+    event.event_page_url = "https://en.wikipedia.org/wiki/2026_Fixture_Open"
+    event.tournament.qualifying_wildcard_slots = 1
+    q_name = "Qualifying Player Six"
+    synthetic_live_snapshot["schedules"][-1]["name"] = q_name
+    config = {"events": []}
+    if configured:
+        config["wildcard_announcements"] = [{
+            "tournament_id": event.tournament.tournament_id,
+            "wildcard_url": "https://example.test/official",
+            "main_wildcards": ["New Wildcard"],
+            "qualifying_wildcards": [q_name],
+        }]
+    config_path = tmp_path / "sources.json"
+    config_path.write_text(json.dumps(config), encoding="utf-8")
+    output_root = tmp_path / "snapshots"
+    retain_live_entry_snapshots(synthetic_live_snapshot, synthetic_catalog, output_root, as_of=synthetic_catalog.tracking_started_at)
+
+    class Response:
+        content = b""
+        def __init__(self, text):
+            self.text = text
+        def raise_for_status(self):
+            pass
+
+    class Session:
+        def get(self, url, **_kwargs):
+            if url.endswith("official"):
+                return Response(f"<p>Confirmed wildcards: New Wildcard; {q_name}.</p>")
+            if url == event.event_page_url and not configured:
+                return Response(f"<p>The following players received wildcards into the singles main draw:</p><ul><li>New Wildcard</li></ul><p>The following players received wildcards into the singles qualifying draw:</p><ul><li>{q_name}</li></ul>")
+            return Response("<html></html>")
+
+    updated, _warnings = collect_configured_draws(config_path, synthetic_catalog, synthetic_live_snapshot, output_root, session=Session(), as_of=synthetic_catalog.tracking_started_at)
+    assert updated == 1
+    retain_live_entry_snapshots(synthetic_live_snapshot, synthetic_catalog, output_root, as_of=synthetic_catalog.tracking_started_at)
+    result = EntryList.model_validate_json(snapshot_path(output_root, event.tournament.tournament_id).read_text(encoding="utf-8"))
+    assert next(item for item in result.entries if item.player.name == "New Wildcard").status == EntryStatus.WC
+    q_wc = next(item for item in result.qualifying_entries if item.player.name == q_name)
+    assert q_wc.status == EntryStatus.WC
+    assert q_wc.alternate_position is None
+    assert q_wc.source.source_type == (SourceType.TOURNAMENT_OFFICIAL if configured else SourceType.TRUSTED_SECONDARY)
+    assert sum(item.status == EntryStatus.QDA for item in result.qualifying_entries) == 3
+    assert [item.alternate_position for item in result.qualifying_entries if item.status == EntryStatus.QALT] == [1, 2]

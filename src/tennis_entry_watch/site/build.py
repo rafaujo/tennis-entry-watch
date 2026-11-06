@@ -16,6 +16,7 @@ from tennis_entry_watch.collectors.entry_snapshots import (
     project_main_alternates_from_qualifying,
 )
 from tennis_entry_watch.site.pwa import pwa_head, write_pwa_files
+from tennis_entry_watch.collectors.qualifying import PROJECTED_QUALIFYING_COLLECTORS
 
 
 MAIN_DRAW_STATUSES = {
@@ -25,6 +26,8 @@ MAIN_DRAW_STATUSES = {
     EntryStatus.Q,
     EntryStatus.LL,
     EntryStatus.SE,
+    EntryStatus.JR,
+    EntryStatus.JE,
 }
 
 STATUS_LABELS = {
@@ -34,6 +37,8 @@ STATUS_LABELS = {
     EntryStatus.Q: "Qualifier",
     EntryStatus.LL: "Lucky loser",
     EntryStatus.SE: "Special exempt",
+    EntryStatus.JR: "Junior accelerator entry",
+    EntryStatus.JE: "Junior entry",
     EntryStatus.ALT: "Main-draw alternate",
     EntryStatus.QDA: "Qualifying acceptance",
     EntryStatus.QALT: "Qualifying alternate",
@@ -109,7 +114,9 @@ def _rank(value: int | None) -> str:
     return str(value) if value is not None else "—"
 
 
-def _status(entry) -> str:
+def _status(entry, projected_qualifying: bool = False) -> str:
+    if projected_qualifying:
+        return '<span class="status status-qda">LISTED Q</span>'
     detail = STATUS_LABELS[entry.status]
     movement = ""
     if (
@@ -118,6 +125,8 @@ def _status(entry) -> str:
         and entry.status != EntryStatus.WC
     ):
         movement = '<small class="promoted">promoted from alternate</small>'
+    elif entry.previous_status == EntryStatus.QALT and entry.status == EntryStatus.QDA:
+        movement = '<small class="promoted">entered from qualifying alternates</small>'
     return (
         f'<span class="status status-{entry.status.value.lower()}" title="{html.escape(detail)}">'
         f'{entry.status.value}</span>{movement}'
@@ -250,7 +259,7 @@ def build_page(
         key=lambda entry: entry.alternate_position or 9999,
     )
     projected_q_alternates = any(
-        entry.source.collector == "live_tennis_schedule_snapshot"
+        entry.source.collector in PROJECTED_QUALIFYING_COLLECTORS
         for entry in q_alternates
     )
 
@@ -351,7 +360,7 @@ def build_page(
         f'<td>{final_queue_badge or _chance(entry.alternate_position)}</td></tr>'
         for entry in alternates
     ) or (
-        '<tr class="empty"><td colspan="6">The alternate queue is closed after draw publication.</td></tr>'
+        '<tr class="empty"><td colspan="6">No pre-draw alternate queue was retained for this tournament.</td></tr>'
         if t.draw_published
         else '<tr class="empty"><td colspan="6">No verified or projected alternate list is available from the selected source.</td></tr>'
     )
@@ -380,7 +389,7 @@ def build_page(
         f'<td>{html.escape(entry.player.nationality or "—")}</td>'
         f'<td class="num">{_rank(entry.current_rank or entry.entry_rank)}</td>'
         f'<td><span class="status status-qalt">'
-        f'{"PROJ Q ALT" if entry.source.collector == "live_tennis_schedule_snapshot" else "Q ALT"}'
+        f'{"PROJ Q ALT" if entry.source.collector in PROJECTED_QUALIFYING_COLLECTORS else "Q ALT"}'
         f'</span></td>'
         f'<td>{q_alt_final_badge or _chance(entry.alternate_position)}</td></tr>'
         for entry in q_alternates
@@ -400,8 +409,8 @@ def build_page(
             f'<td class="player">{html.escape(entry.player.name)}</td>'
             f'<td>{html.escape(entry.player.nationality or "—")}</td>'
             f'<td class="num">{_rank(entry.current_rank or entry.entry_rank)}</td>'
-            f'<td>{_status(entry)}</td>'
-            f'<td>In qualifying field</td></tr>'
+            f'<td>{_status(entry, not t.draw_published and entry.status == EntryStatus.QDA and entry.source.collector in PROJECTED_QUALIFYING_COLLECTORS)}</td>'
+            f'<td>{"Projected qualifying field" if not t.draw_published and entry.status == EntryStatus.QDA and entry.source.collector in PROJECTED_QUALIFYING_COLLECTORS else "In qualifying field"}</td></tr>'
             for entry in ranked_qualifying
         )
         if not q_rows:
@@ -433,8 +442,9 @@ def build_page(
             projected.items(),
             key=lambda pair: (pair[1]["rank"] or 9999, pair[1]["name"]),
         )
-        qualifying_field = projected_items[:t.qualifying_draw_size]
-        projected_q_alternates = projected_items[t.qualifying_draw_size:]
+        capacity = t.qualifying_direct_capacity
+        qualifying_field = projected_items[:capacity]
+        projected_q_alternates = projected_items[capacity:]
         q_rows = "".join(
             '<tr>'
             f'<td class="num">—</td>'
@@ -478,7 +488,7 @@ def build_page(
             '<tr class="empty"><td colspan="6">No final qualifying-alternate queue was retained before draw publication.</td></tr>'
             if t.draw_published
             else '<tr class="empty"><td colspan="6">No verified or projected qualifying-alternate queue is available yet. '
-            'A queue is shown only when tracked candidates exceed the qualifying draw capacity.</td></tr>'
+            'A queue is shown only when tracked candidates exceed the available direct places.</td></tr>'
         )
 
     unique_sources = {}
@@ -562,9 +572,14 @@ def build_page(
             "<b>LISTED Q</b> comes from the tracked Live Tennis schedule; <b>PROJ Q</b> is inferred from the "
             "verified main-draw alternate list. Rows are ordered by current live ranking. Neither predicts qualification."
         )
+        if t.qualifying_wildcard_slots:
+            q_explain += (
+                f" Projection reserves {t.qualifying_wildcard_slots} wild-card places "
+                f"out of {t.qualifying_draw_size}; unannounced wild cards are not invented."
+            )
         q_alt_explain = (
             "<b>Q ALT</b> is a published/tracked queue; <b>PROJ Q ALT</b> is calculated only when tracked "
-            "candidates exceed the qualifying draw size."
+            "candidates exceed the direct places after reserving wild-card places."
         )
 
     return f'''<!doctype html>
