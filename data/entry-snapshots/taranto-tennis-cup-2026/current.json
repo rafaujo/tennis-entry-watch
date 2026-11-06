@@ -9,20 +9,21 @@
     "surface": "Hard",
     "location": {
       "city": "Taranto",
-      "country": "Italy Hard –"
+      "country": "Italy"
     },
     "main_draw_size": 32,
     "qualifying_draw_size": 24,
     "main_draw_qualifier_slots": 6,
     "main_draw_wildcard_slots": 3,
+    "qualifying_wildcard_slots": 4,
     "draw_published": true,
-    "draw_url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
+    "draw_url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
     "qualifying_list_published": true,
     "entry_list_date": null,
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-11-05T18:54:35.127786Z",
+  "snapshot_at": "2026-11-06T17:30:19.968344Z",
   "entries": [
     {
       "player": {
@@ -36,15 +37,15 @@
       "entry_rank": null,
       "current_rank": 167,
       "alternate_position": null,
-      "seed": null,
+      "seed": 1,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -64,10 +65,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -80,17 +81,17 @@
       },
       "status": "WC",
       "entry_rank": null,
-      "current_rank": 245,
+      "current_rank": 246,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -110,10 +111,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -133,10 +134,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -156,10 +157,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -172,17 +173,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 338,
+      "current_rank": 332,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -197,15 +198,15 @@
       "entry_rank": null,
       "current_rank": 288,
       "alternate_position": null,
-      "seed": null,
+      "seed": 8,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -218,17 +219,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 216,
+      "current_rank": 219,
       "alternate_position": null,
-      "seed": null,
+      "seed": 4,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -241,17 +242,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 254,
+      "current_rank": 245,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -271,10 +272,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -287,17 +288,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 215,
+      "current_rank": 218,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -310,17 +311,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 263,
+      "current_rank": 260,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -340,10 +341,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -363,33 +364,33 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "marvin-moller",
-        "name": "Marvin Möller",
+        "player_id": "marvin-moeller",
+        "name": "Marvin MOELLER",
         "nationality": "GER",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 224,
+      "current_rank": null,
       "alternate_position": null,
-      "seed": null,
+      "seed": 5,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -402,17 +403,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 225,
+      "current_rank": 213,
       "alternate_position": null,
-      "seed": null,
+      "seed": 6,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -432,10 +433,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -448,17 +449,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 266,
+      "current_rank": 268,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -478,10 +479,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -494,17 +495,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 241,
+      "current_rank": 238,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -524,10 +525,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -547,10 +548,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -563,17 +564,17 @@
       },
       "status": "WC",
       "entry_rank": null,
-      "current_rank": 210,
+      "current_rank": 211,
       "alternate_position": null,
-      "seed": null,
+      "seed": 3,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -586,17 +587,17 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 228,
+      "current_rank": 223,
       "alternate_position": null,
-      "seed": null,
+      "seed": 7,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -616,10 +617,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -639,10 +640,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -662,10 +663,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -685,10 +686,10 @@
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -701,17 +702,17 @@
       },
       "status": "Q",
       "entry_rank": null,
-      "current_rank": 377,
+      "current_rank": 379,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -724,17 +725,63 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 236,
+      "current_rank": 233,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "montes-de-la-torr",
+        "name": "MONTES-DE LA TORR",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": 2,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
+      }
+    },
+    {
+      "player": {
+        "player_id": "marvin-moller",
+        "name": "Marvin Möller",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "OUT",
+      "entry_rank": null,
+      "current_rank": 224,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": "DA",
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -745,19 +792,19 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "OUT",
       "entry_rank": null,
       "current_rank": 192,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "DA",
       "withdrawn_at": null,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/2026_Taranto_Tennis_Cup_%E2%80%93_Singles",
-        "retrieved_at": "2026-11-05T18:24:14.502075Z",
-        "source_type": "trusted_secondary",
-        "collector": "wikipedia_published_draw"
+        "url": "https://www.protennislive.com/posting/2026/3191/mds.pdf",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
+        "source_type": "atp_official",
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1190,19 +1237,19 @@
       "alternate_position": null,
       "seed": 1,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "QALT",
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
         "player_id": "filiberto-fumagalli",
-        "name": "Filiberto Fumagalli",
+        "name": "Filiberto FUMAGALLI",
         "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
@@ -1217,15 +1264,15 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
         "player_id": "marco-bavaro",
-        "name": "Marco Bavaro",
+        "name": "Marco BAVARO",
         "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
@@ -1240,9 +1287,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1263,9 +1310,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1278,7 +1325,7 @@
       },
       "status": "WC",
       "entry_rank": null,
-      "current_rank": 368,
+      "current_rank": 369,
       "alternate_position": null,
       "seed": 2,
       "projected_seed": null,
@@ -1286,9 +1333,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1309,9 +1356,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1332,9 +1379,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1355,9 +1402,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1370,7 +1417,7 @@
       },
       "status": "WC",
       "entry_rank": null,
-      "current_rank": 377,
+      "current_rank": 379,
       "alternate_position": null,
       "seed": 3,
       "projected_seed": null,
@@ -1378,15 +1425,15 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
         "player_id": "kenny-de-schepper",
-        "name": "Kenny De Schepper",
+        "name": "Kenny DE SCHEPPER",
         "nationality": "FRA",
         "atp_id": null,
         "birth_date": null
@@ -1401,9 +1448,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1424,32 +1471,32 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "arvid-nordquist",
-        "name": "Arvid Nordquist",
+        "player_id": "arvid-10nordquist",
+        "name": "Arvid 10NORDQUIST",
         "nationality": "SWE",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 663,
+      "current_rank": null,
       "alternate_position": null,
-      "seed": 10,
+      "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1462,7 +1509,7 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 387,
+      "current_rank": 388,
       "alternate_position": null,
       "seed": 4,
       "projected_seed": null,
@@ -1470,9 +1517,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1493,9 +1540,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1516,32 +1563,32 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "ziga-sesko",
-        "name": "Žiga Šeško",
+        "player_id": "ziga-11sesko",
+        "name": "Ziga 11SESKO",
         "nationality": "SLO",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 721,
+      "current_rank": null,
       "alternate_position": null,
-      "seed": 11,
+      "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1562,15 +1609,15 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
         "player_id": "ryan-peniston",
-        "name": "Ryan Peniston",
+        "name": "Ryan PENISTON",
         "nationality": "GBR",
         "atp_id": null,
         "birth_date": null
@@ -1585,9 +1632,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1608,9 +1655,9 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1623,17 +1670,17 @@
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 359,
+      "current_rank": 360,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "QALT",
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
@@ -1654,15 +1701,15 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
         "player_id": "alessio-calabrese",
-        "name": "Alessio Calabrese",
+        "name": "Alessio CALABRESE",
         "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
@@ -1677,15 +1724,15 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
         "player_id": "leonardo-borrelli",
-        "name": "Leonardo Borrelli",
+        "name": "Leonardo BORRELLI",
         "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
@@ -1700,32 +1747,32 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     },
     {
       "player": {
-        "player_id": "nico-hipfl",
-        "name": "Nico Hipfl",
+        "player_id": "nico-12hipfl",
+        "name": "Nico 12HIPFL",
         "nationality": "AUT",
         "atp_id": null,
         "birth_date": null
       },
       "status": "QDA",
       "entry_rank": null,
-      "current_rank": 703,
+      "current_rank": null,
       "alternate_position": null,
-      "seed": 12,
+      "seed": null,
       "projected_seed": null,
       "previous_status": null,
       "withdrawn_at": null,
       "source": {
         "url": "https://www.protennislive.com/posting/2026/3191/qs.pdf",
-        "retrieved_at": "2026-11-05T18:54:35.127786Z",
+        "retrieved_at": "2026-11-06T17:30:19.968344Z",
         "source_type": "atp_official",
-        "collector": "official_pdf_recovery"
+        "collector": "protennislive_pdf_draw"
       }
     }
   ]
