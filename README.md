@@ -108,6 +108,14 @@ The repository owner must select **GitHub Actions** as the Pages source in repos
 
 Important external facts must retain source URL, retrieval timestamp, source type, and collector. Preferred sources are ATP official material, official tournament material, then established specialist sources. Lower-confidence material must not silently replace higher-confidence facts. AI-extracted material, if introduced later, remains explicitly labeled and must pass deterministic validation before publication.
 
+## Wild cards and qualifying queues
+
+Official ATP/Challenger PDFs provide entry methods, including seeded `WC1`/`WC 1`, protected rankings and junior entries (`JR`/`JE`). An `Alt` in a published draw means that player **entered** from the alternate list; it is not a player still waiting. Qualifying arrivals retain this distinction in their history.
+
+Before publication, explicit singles wild-card lists on the exact event's Wikipedia page are collected as secondary evidence when available. Reviewed official news announcements can be configured under `wildcard_announcements` in `data/tournaments/draw_sources.json`, with separate `main_wildcards` and `qualifying_wildcards`. Generic participation news is not enough to classify a player as WC. Confirmed entry methods survive less-detailed schedule refreshes; the published draw takes priority.
+
+Qualifying projections reserve WC places according to ATP draw composition (for example, 20 direct places plus 4 WCs in a 24-player Challenger qualifying draw). Excess tracked candidates form a ranked `PROJ Q ALT` queue. The final known queue is retained after draw publication. A draw alone cannot reconstruct players who signed in but never entered, so missing qualifying-alternate data remains explicitly unavailable rather than being generated from ranking alone.
+
 ## First real source
 
 The Winston-Salem collector parses a dated official tournament announcement containing 37 explicitly identified direct entries and their 2026-07-27 rankings. The US Open snapshot contains 104 current main-field names, 99 alternates, one withdrawal, and one promotion from the official report created on 2026-08-02. Neither dataset infers entry from ranking alone.

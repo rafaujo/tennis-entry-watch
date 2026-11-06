@@ -95,6 +95,17 @@ def _wildcard_slots(category: str, main_draw: int) -> int | None:
     return 3 if main_draw <= 32 else 4 if main_draw < 128 else 8
 
 
+def _qualifying_wildcard_slots(category: str, qualifying_draw: int | None) -> int | None:
+    # ATP 2026 Rulebook, section 7.08 (qualifying draw composition).
+    if category.startswith("Challenger"):
+        return 4 if qualifying_draw == 24 else None
+    if category == "ATP 250" and qualifying_draw == 16:
+        return 2
+    if category in {"ATP 500", "ATP 1000"}:
+        return {16: 3, 24: 4, 28: 4, 48: 5}.get(qualifying_draw)
+    return None
+
+
 def parse_calendar_page(page_html: str, year: int, source_url: str) -> list[CatalogEvent]:
     soup = BeautifulSoup(page_html, "html.parser")
     results: list[CatalogEvent] = []
@@ -139,6 +150,7 @@ def parse_calendar_page(page_html: str, year: int, source_url: str) -> list[Cata
         if "," not in location_text:
             continue
         city, country = (part.strip() for part in location_text.rsplit(",", 1))
+        country = re.sub(r"\s+(?:Hard(?:\s*\(i\))?|Clay|Grass|Carpet)\s*[–—-]?\s*$", "", country)
 
         category = category_match.group(0)
         main_draw = int(draw_match.group("main"))
@@ -159,6 +171,7 @@ def parse_calendar_page(page_html: str, year: int, source_url: str) -> list[Cata
             qualifying_draw_size=qualifying_draw,
             main_draw_qualifier_slots=_qualifier_slots(category, main_draw),
             main_draw_wildcard_slots=_wildcard_slots(category, main_draw),
+            qualifying_wildcard_slots=_qualifying_wildcard_slots(category, qualifying_draw),
             draw_published=False,
             qualifying_list_published=False,
         )
@@ -176,12 +189,24 @@ def parse_calendar_page(page_html: str, year: int, source_url: str) -> list[Cata
             ):
                 draw_page_url = target
                 break
+        event_page_url = None
+        if name_link.get("href"):
+            target = urljoin(source_url, name_link["href"])
+            parsed_target = urlparse(target)
+            if (
+                parsed_target.scheme == "https"
+                and parsed_target.netloc == "en.wikipedia.org"
+                and parsed_target.path.startswith(f"/wiki/{year}_")
+                and "redlink=1" not in parsed_target.query
+            ):
+                event_page_url = target
         results.append(
             CatalogEvent(
                 tournament=tournament,
                 schedule_aliases=[city, name],
                 source_url=source_url,
                 draw_page_url=draw_page_url,
+                event_page_url=event_page_url,
             )
         )
 
@@ -213,7 +238,7 @@ def _apply_overrides(events: list[CatalogEvent], overrides: dict) -> list[Catalo
             "tournament_id", "name", "start_date", "end_date", "category", "surface",
             "main_draw_size", "qualifying_draw_size", "main_draw_qualifier_slots",
             "main_draw_wildcard_slots", "draw_published", "draw_url",
-            "qualifying_list_published",
+            "qualifying_list_published", "qualifying_wildcard_slots",
         ):
             if field in override:
                 tournament_data[field] = override[field]
@@ -229,6 +254,7 @@ def _apply_overrides(events: list[CatalogEvent], overrides: dict) -> list[Catalo
             source_url=event.source_url,
             source_type=event.source_type,
             draw_page_url=event.draw_page_url,
+            event_page_url=event.event_page_url,
         )
         identifier = normalized.tournament.tournament_id
         if identifier in used_ids:

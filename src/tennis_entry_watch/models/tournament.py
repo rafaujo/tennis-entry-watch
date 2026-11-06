@@ -39,6 +39,7 @@ class Tournament(BaseModel):
     qualifying_draw_size: int | None = Field(default=None, gt=0)
     main_draw_qualifier_slots: int | None = Field(default=None, ge=0)
     main_draw_wildcard_slots: int | None = Field(default=None, ge=0)
+    qualifying_wildcard_slots: int | None = Field(default=None, ge=0)
     draw_published: bool | None = None
     draw_url: str | None = None
     qualifying_list_published: bool | None = None
@@ -52,4 +53,15 @@ class Tournament(BaseModel):
             raise ValueError("year must match start_date")
         if self.end_date and self.end_date < self.start_date:
             raise ValueError("end_date cannot precede start_date")
+        if (
+            self.qualifying_draw_size is not None
+            and (self.qualifying_wildcard_slots or 0) > self.qualifying_draw_size
+        ):
+            raise ValueError("qualifying wild-card slots cannot exceed the draw size")
         return self
+
+    @property
+    def qualifying_direct_capacity(self) -> int | None:
+        if self.qualifying_draw_size is None:
+            return None
+        return max(0, self.qualifying_draw_size - (self.qualifying_wildcard_slots or 0))

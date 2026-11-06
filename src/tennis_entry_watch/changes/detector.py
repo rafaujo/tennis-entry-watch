@@ -4,6 +4,7 @@ from tennis_entry_watch.models import ChangeType, EntryChange, EntryList, EntryS
 MAIN_DRAW_STATUSES = {
     EntryStatus.DA, EntryStatus.PR, EntryStatus.WC, EntryStatus.Q,
     EntryStatus.LL, EntryStatus.SE,
+    EntryStatus.JR, EntryStatus.JE,
 }
 
 

@@ -17,6 +17,8 @@ MAIN_DRAW_STATUSES = {
     EntryStatus.Q,
     EntryStatus.LL,
     EntryStatus.SE,
+    EntryStatus.JR,
+    EntryStatus.JE,
 }
 
 
@@ -57,6 +59,7 @@ def validate_quality(
         entry_list = entry_lists.get(tournament.tournament_id)
         main_count = 0
         qualifying_count = 0
+        main_wc_count = qualifying_wc_count = qualifying_alternate_count = 0
         source = "not found"
         if entry_list:
             main_count = sum(entry.status in MAIN_DRAW_STATUSES for entry in entry_list.entries)
@@ -64,6 +67,9 @@ def validate_quality(
                 entry.status in {EntryStatus.QDA, EntryStatus.WC}
                 for entry in entry_list.qualifying_entries
             )
+            main_wc_count = sum(entry.status == EntryStatus.WC for entry in entry_list.entries)
+            qualifying_wc_count = sum(entry.status == EntryStatus.WC for entry in entry_list.qualifying_entries)
+            qualifying_alternate_count = sum(entry.status == EntryStatus.QALT for entry in entry_list.qualifying_entries)
             sources = {
                 entry.source.source_type.value
                 for entry in [*entry_list.entries, *entry_list.qualifying_entries]
@@ -80,12 +86,13 @@ def validate_quality(
                 f"{tournament.name}: {qualifying_count} qualifying acceptances exceeds "
                 f"the configured size {tournament.qualifying_draw_size}"
             )
-        if status == TournamentStatus.ACTIVE and tournament.draw_published and main_count == 0:
+        published = tournament.draw_published or (entry_list and entry_list.tournament.draw_published)
+        if status == TournamentStatus.ACTIVE and published and main_count == 0:
             errors.append(f"{tournament.name}: published active draw has no players")
 
         rows.append(
             f"| {tournament.name} | {status.value} | {main_count} | "
-            f"{qualifying_count} | {source} |"
+            f"{qualifying_count} | {main_wc_count}/{qualifying_wc_count} | {qualifying_alternate_count} | {source} |"
         )
 
     heading = "## Tennis data quality\n\n"
@@ -95,8 +102,8 @@ def validate_quality(
         else "❌ Blocking errors:\n" + "\n".join(f"- {error}" for error in errors)
     )
     table = (
-        "\n\n| Tournament | Phase | Main | Qualifying | Source |\n"
-        "|---|---:|---:|---:|---|\n"
+        "\n\n| Tournament | Phase | Main | Qualifying | WC main/Q | Q alternates | Source |\n"
+        "|---|---:|---:|---:|---:|---:|---|\n"
         + "\n".join(rows)
     )
     return QualityResult(markdown=heading + summary + table + "\n", errors=errors)

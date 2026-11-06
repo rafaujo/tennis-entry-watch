@@ -22,6 +22,7 @@ class CatalogEvent(BaseModel):
     source_url: str
     source_type: SourceType = SourceType.TRUSTED_SECONDARY
     draw_page_url: str | None = None
+    event_page_url: str | None = None
 
     @model_validator(mode="after")
     def aliases_are_unique(self) -> "CatalogEvent":

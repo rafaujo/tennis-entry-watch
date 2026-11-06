@@ -23,6 +23,8 @@ from tennis_entry_watch.collectors.entry_snapshots import (
 from tennis_entry_watch.collectors.live_tennis_snapshot import (
     entry_lists_from_live_snapshot,
 )
+from tennis_entry_watch.collectors.qualifying import reproject_qualifying_queue
+from tennis_entry_watch.collectors.wildcards import event_page_from_draw_url, parse_wikipedia_wildcards
 from tennis_entry_watch.models import (
     Entry,
     EntryList,
@@ -87,6 +89,8 @@ DRAW_STATUS = {
     "LL": EntryStatus.LL,
     "PR": EntryStatus.PR,
     "SE": EntryStatus.SE,
+    "JR": EntryStatus.JR,
+    "JE": EntryStatus.JE,
     "ALT": EntryStatus.DA,
 }
 
@@ -498,6 +502,7 @@ def _entry(
     source: Source,
     nationality: str | None = None,
     seed: int | None = None,
+    previous_status: EntryStatus | None = None,
 ) -> Entry:
     resolved_name, nation, rank = resolver.resolve(name, nationality)
     return Entry(
@@ -505,6 +510,7 @@ def _entry(
         status=status,
         current_rank=rank,
         seed=seed,
+        previous_status=previous_status,
         source=source,
     )
 
@@ -515,7 +521,23 @@ def apply_main_draw_wildcards(
     snapshot_at: datetime,
 ) -> EntryList:
     """Overlay an official wild-card announcement on the latest entry snapshot."""
-    entries = list(entry_list.entries)
+    entries = _overlay_wildcards(entry_list.entries, wildcards)
+    return entry_list.model_copy(
+        update={"snapshot_at": snapshot_at, "entries": entries}
+    )
+
+
+def apply_qualifying_wildcards(
+    entry_list: EntryList, wildcards: list[Entry], snapshot_at: datetime,
+) -> EntryList:
+    return entry_list.model_copy(update={
+        "snapshot_at": snapshot_at,
+        "qualifying_entries": _overlay_wildcards(entry_list.qualifying_entries, wildcards),
+    })
+
+
+def _overlay_wildcards(pool: list[Entry], wildcards: list[Entry]) -> list[Entry]:
+    entries = list(pool)
     positions = {entry.player.player_id: index for index, entry in enumerate(entries)}
     for wildcard in wildcards:
         index = positions.get(wildcard.player.player_id)
@@ -526,9 +548,15 @@ def apply_main_draw_wildcards(
         existing = entries[index]
         if existing.status == EntryStatus.OUT:
             continue
+        if (
+            existing.status in {EntryStatus.WC, EntryStatus.PR, EntryStatus.JR, EntryStatus.JE}
+            and existing.source.source_type in {SourceType.ATP_OFFICIAL, SourceType.TOURNAMENT_OFFICIAL}
+            and wildcard.source.source_type not in {SourceType.ATP_OFFICIAL, SourceType.TOURNAMENT_OFFICIAL}
+        ):
+            continue
         previous_status = (
             existing.status
-            if existing.status == EntryStatus.ALT
+            if existing.status in {EntryStatus.ALT, EntryStatus.QALT}
             else existing.previous_status
         )
         entries[index] = existing.model_copy(
@@ -539,14 +567,13 @@ def apply_main_draw_wildcards(
                 "source": wildcard.source,
             }
         )
-    return entry_list.model_copy(
-        update={"snapshot_at": snapshot_at, "entries": entries}
-    )
+    return entries
 
 
-def _pdf_names(pdf_bytes: bytes, section_label: str) -> list[tuple[str, EntryStatus, str | None, int | None]]:
-    text = "\n".join(page.extract_text() or "" for page in PdfReader(io.BytesIO(pdf_bytes)).pages)
-    results: list[tuple[str, EntryStatus, str | None, int | None]] = []
+def _atp_text_names(
+    text: str, section_label: str,
+) -> list[tuple[str, EntryStatus, str | None, int | None, EntryStatus | None]]:
+    results: list[tuple[str, EntryStatus, str | None, int | None, EntryStatus | None]] = []
     in_draw = False
     for line in text.splitlines():
         if section_label in line:
@@ -576,18 +603,26 @@ def _pdf_names(pdf_bytes: bytes, section_label: str) -> list[tuple[str, EntrySta
             seed = int(seeded.group(1))
             status_token = seeded.group(2)
             rest = seeded.group(3)
-        prefixed = re.match(r"^(WC|Q|LL|PR|SE|Alt)\s+(.+)$", rest, re.I)
+        prefixed = re.match(r"^(WC|Q|LL|PR|SE|Alt|JR|JE)(?=\s|\d)\s*(\d+)?\s+(.+)$", rest, re.I)
         if prefixed:
             status_token = prefixed.group(1)
-            rest = prefixed.group(2)
+            if prefixed.group(2):
+                seed = int(prefixed.group(2))
+            rest = prefixed.group(3)
         if "," in rest:
             surname, given = (part.strip(" …") for part in rest.split(",", 1))
             name = f"{given} {surname}".strip()
         else:
             name = rest.strip(" …")
         status = DRAW_STATUS.get((status_token or "").upper(), EntryStatus.DA)
-        results.append((name, status, nation, seed))
+        previous_status = EntryStatus.ALT if (status_token or "").upper() == "ALT" else None
+        results.append((name, status, nation, seed, previous_status))
     return results
+
+
+def _pdf_names(pdf_bytes: bytes, section_label: str):
+    text = "\n".join(page.extract_text() or "" for page in PdfReader(io.BytesIO(pdf_bytes)).pages)
+    return _atp_text_names(text, section_label)
 
 
 def _us_open_text_names(
@@ -670,8 +705,8 @@ def collect_protennislive_draw(
     main_response = _fetch_draw_pdf(session, main_url)
     main_source = _source(main_url, SourceType.ATP_OFFICIAL, retrieved_at, "protennislive_pdf_draw")
     main = [
-        _entry(resolver, name, status, main_source, nation, seed)
-        for name, status, nation, seed in _pdf_names(main_response.content, "Main Draw Singles")
+        _entry(resolver, name, status, main_source, nation, seed, previous_status)
+        for name, status, nation, seed, previous_status in _pdf_names(main_response.content, "Main Draw Singles")
     ]
     qualifying: list[Entry] = []
     if qualifying_url:
@@ -685,8 +720,9 @@ def collect_protennislive_draw(
                 q_source,
                 nation,
                 seed,
+                EntryStatus.QALT if previous_status == EntryStatus.ALT else None,
             )
-            for name, status, nation, seed in _pdf_names(
+            for name, status, nation, seed, previous_status in _pdf_names(
                 q_response.content, "Qualifying Singles"
             )
         ]
@@ -996,11 +1032,45 @@ def collect_configured_draws(
         except Exception as exc:
             warnings.append(f"{tournament_id}: {exc}")
 
-    for item in config.get("events", []):
+    # Opportunistic secondary coverage before an official draw exists. Exact
+    # calendar association and a short window prevent same-city/year collisions.
+    for event in catalog.events:
+        tournament = event.tournament
+        if not current_day <= tournament.start_date <= current_day + timedelta(days=10):
+            continue
+        page_url = event.event_page_url or event_page_from_draw_url(event.draw_page_url, tournament.year)
+        existing_path = snapshot_path(output_root, tournament.tournament_id)
+        if not page_url or not existing_path.exists():
+            continue
+        existing = EntryList.model_validate_json(existing_path.read_text(encoding="utf-8-sig"))
+        if existing.tournament.draw_published:
+            continue
+        try:
+            response = client.get(page_url, headers={"User-Agent": USER_AGENT}, timeout=45)
+            response.raise_for_status()
+            main_names, qualifying_names = parse_wikipedia_wildcards(response.text)
+            if not main_names and not qualifying_names:
+                continue
+            source = _source(page_url, SourceType.TRUSTED_SECONDARY, retrieved_at, "wikipedia_wildcard_announcement")
+            overlaid = apply_main_draw_wildcards(existing, [
+                _entry(resolver, name, EntryStatus.WC, source) for name in main_names
+            ], retrieved_at)
+            overlaid = apply_qualifying_wildcards(overlaid, [
+                _entry(resolver, name, EntryStatus.WC, source) for name in qualifying_names
+            ], retrieved_at)
+            if write_entry_snapshot(reproject_qualifying_queue(overlaid), output_root):
+                updated += 1
+        except Exception as exc:
+            warnings.append(f"{tournament.tournament_id} wildcard discovery: {exc}")
+
+    for item in [*config.get("events", []), *config.get("wildcard_announcements", [])]:
         wildcard_url = item.get("wildcard_url")
         if not wildcard_url:
             continue
         tournament_id = item["tournament_id"]
+        tournament = events.get(tournament_id)
+        if tournament is None or (tournament.end_date and tournament.end_date < current_day):
+            continue
         existing_path = snapshot_path(output_root, tournament_id)
         if existing_path.exists():
             existing = EntryList.model_validate_json(
@@ -1008,7 +1078,7 @@ def collect_configured_draws(
             )
             if existing.tournament.draw_published:
                 continue
-        minimum = item.get("minimum_main_wildcards", 1)
+        minimum = item.get("minimum_main_wildcards", 0 if item.get("qualifying_wildcards") else 1)
         fallback_names = item.get("main_wildcards", [])
         names: list[str] = []
         page_error: Exception | None = None
@@ -1020,6 +1090,13 @@ def collect_configured_draws(
             )
             response.raise_for_status()
             names = parse_official_main_draw_wildcards(response.text)
+            # Configured names were checked against this official announcement;
+            # do not infer a WC merely from a generic participation announcement.
+            if not names and fallback_names and all(
+                _fold(name) in _fold(BeautifulSoup(response.text, "html.parser").get_text(" ", strip=True))
+                for name in fallback_names
+            ):
+                names = fallback_names
             if len(names) < minimum:
                 raise ValueError(
                     f"only {len(names)} announced main-draw wild cards parsed"
@@ -1053,6 +1130,11 @@ def collect_configured_draws(
                 for name in names
             ]
             overlaid = apply_main_draw_wildcards(existing, wildcards, retrieved_at)
+            overlaid = apply_qualifying_wildcards(overlaid, [
+                _entry(resolver, name, EntryStatus.WC, source)
+                for name in item.get("qualifying_wildcards", [])
+            ], retrieved_at)
+            overlaid = reproject_qualifying_queue(overlaid)
             if write_entry_snapshot(overlaid, output_root):
                 updated += 1
         except Exception as exc:

@@ -14,6 +14,8 @@ class EntryStatus(StrEnum):
     Q = "Q"
     LL = "LL"
     SE = "SE"
+    JR = "JR"
+    JE = "JE"
     ALT = "ALT"
     QDA = "QDA"
     QALT = "QALT"
