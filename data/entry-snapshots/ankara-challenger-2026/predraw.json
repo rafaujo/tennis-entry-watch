@@ -9,12 +9,13 @@
     "surface": "Hard",
     "location": {
       "city": "Ankara",
-      "country": "Turkey Hard (i) –"
+      "country": "Turkey"
     },
     "main_draw_size": 32,
     "qualifying_draw_size": 24,
     "main_draw_qualifier_slots": 6,
     "main_draw_wildcard_slots": 3,
+    "qualifying_wildcard_slots": 4,
     "draw_published": false,
     "draw_url": null,
     "qualifying_list_published": false,
@@ -22,7 +23,7 @@
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-11-06T02:26:54.791899Z",
+  "snapshot_at": "2026-11-06T12:59:37.861608Z",
   "entries": [
     {
       "player": {
@@ -42,7 +43,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -65,7 +66,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -88,7 +89,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -111,7 +112,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -134,7 +135,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -157,7 +158,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -180,7 +181,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -195,7 +196,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 372,
+      "current_rank": 373,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -203,7 +204,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -226,7 +227,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -249,7 +250,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -272,7 +273,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -295,7 +296,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -318,7 +319,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -341,7 +342,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -364,7 +365,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -387,7 +388,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -410,7 +411,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -433,7 +434,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -456,7 +457,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -479,7 +480,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-06T02:26:54.791899Z",
+        "retrieved_at": "2026-11-06T12:59:37.861608Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
