@@ -102,6 +102,22 @@ def test_published_draw_keeps_waiting_q_alternates_and_marks_entered_ones(synthe
     assert len([item for item in result.qualifying_entries if item.status == EntryStatus.QALT]) == 2
 
 
+def test_qualifying_history_does_not_mix_queues_from_different_dates(synthetic_catalog, synthetic_live_snapshot):
+    from tennis_entry_watch.models import EntryList
+
+    history = _fixture(synthetic_catalog, synthetic_live_snapshot)
+    # The old #2 is now #1. Restoring the old #1 would duplicate position #1;
+    # the current retained final queue, not a mixture of dates, must win.
+    current_queue = history.qualifying_entries[4].model_copy(update={"alternate_position": 1})
+    published = history.model_copy(update={
+        "qualifying_entries": [*history.qualifying_entries[:3], current_queue],
+    })
+    merged = merge_published_draw_history(published, history)
+    EntryList.model_validate(merged.model_dump())
+    queue = [item for item in merged.qualifying_entries if item.status == EntryStatus.QALT]
+    assert queue == [current_queue]
+
+
 def test_entered_alternate_is_not_still_waiting_or_a_promoted_wc(synthetic_catalog, synthetic_live_snapshot):
     current = _fixture(synthetic_catalog, synthetic_live_snapshot)
     entered = current.qualifying_entries[0].model_copy(update={"previous_status": EntryStatus.QALT})

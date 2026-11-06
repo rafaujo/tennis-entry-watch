@@ -252,10 +252,11 @@ def merge_published_draw_history(
         ):
             qualifying_entries[index] = entry.model_copy(update={"previous_status": EntryStatus.QALT})
     qualifying_ids = {entry.player.player_id for entry in qualifying_entries}
+    has_qualifying_queue = any(entry.status == EntryStatus.QALT for entry in qualifying_entries)
     qualifying_entries.extend(
         entry
         for entry in history.qualifying_entries
-        if entry.status in {EntryStatus.QALT, EntryStatus.OUT}
+        if (entry.status == EntryStatus.OUT or (entry.status == EntryStatus.QALT and not has_qualifying_queue))
         and entry.player.player_id not in qualifying_ids
     )
 
