@@ -1,4 +1,4 @@
-const CACHE_NAME = "tennis-entry-watch-9d877cb24610";
+const CACHE_NAME = "tennis-entry-watch-a778bc717010";
 const PRECACHE_URLS = [
   "./archive/index.html",
   "./assets/icons/apple-touch-icon.png",
@@ -84,10 +84,10 @@ const PRECACHE_URLS = [
   "./tournaments/nonthaburi-challenger-iii-2026.html",
   "./tournaments/nsw-open-2026.html",
   "./tournaments/olbia-challenger-2026.html",
-  "./tournaments/open-d-orleans-2026.html",
   "./tournaments/open-de-rennes-2026.html",
   "./tournaments/open-de-roanne-2026.html",
   "./tournaments/open-de-vendee-2026.html",
+  "./tournaments/orleans-open-2026.html",
   "./tournaments/paris-masters-2026.html",
   "./tournaments/phan-thiet-challenger-iii-2026.html",
   "./tournaments/phan-thiet-challenger-iv-2026.html",
@@ -98,8 +98,8 @@ const PRECACHE_URLS = [
   "./tournaments/prague-challenger-2026.html",
   "./tournaments/president-s-cup-2026.html",
   "./tournaments/quebec-city-challenger-2026.html",
-  "./tournaments/queensland-international-iii-2026.html",
   "./tournaments/rio-de-janeiro-challenger-2026.html",
+  "./tournaments/river-city-challenger-2026.html",
   "./tournaments/roehampton-1-challenger-2026.html",
   "./tournaments/roehampton-2-challenger-2026.html",
   "./tournaments/saint-tropez-open-2026.html",
