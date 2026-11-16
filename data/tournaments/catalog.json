@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-11-07T16:27:19.780044Z",
+  "retrieved_at": "2026-11-16T02:09:40.415191Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -9903,13 +9903,13 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_ATP_Finals_–_Singles",
       "event_page_url": "https://en.wikipedia.org/wiki/2026_ATP_Finals"
     },
     {
       "tournament": {
-        "tournament_id": "challenger-de-drummondville-2026",
-        "name": "Challenger de Drummondville",
+        "tournament_id": "challenger-banque-nationale-de-drummondville-2026",
+        "name": "Challenger Banque Nationale de Drummondville",
         "year": 2026,
         "start_date": "2026-11-16",
         "end_date": "2026-11-22",
@@ -9933,12 +9933,12 @@
       },
       "schedule_aliases": [
         "Drummondville",
-        "Challenger de Drummondville"
+        "Challenger Banque Nationale de Drummondville"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Challenger_Banque_Nationale_de_Drummondville_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Challenger_Banque_Nationale_de_Drummondville"
     },
     {
       "tournament": {
@@ -9971,8 +9971,8 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Champaign_Challenger_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Champaign_Challenger"
     },
     {
       "tournament": {
@@ -10005,8 +10005,8 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_HPP_Open_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_HPP_Open"
     },
     {
       "tournament": {
@@ -10039,42 +10039,8 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
-    },
-    {
-      "tournament": {
-        "tournament_id": "metz-challenger-2026",
-        "name": "Metz Challenger",
-        "year": 2026,
-        "start_date": "2026-11-16",
-        "end_date": "2026-11-22",
-        "category": "Challenger 125",
-        "surface": "Hard",
-        "location": {
-          "city": "Metz",
-          "country": "France"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "qualifying_wildcard_slots": 4,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Metz",
-        "Metz Challenger"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Kobe_Challenger_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Kobe_Challenger"
     },
     {
       "tournament": {
@@ -10107,8 +10073,42 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_NSW_Open_–_Men's_singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_NSW_Open"
+    },
+    {
+      "tournament": {
+        "tournament_id": "open-metzgrand-est-2026",
+        "name": "Open Metz–Grand Est",
+        "year": 2026,
+        "start_date": "2026-11-16",
+        "end_date": "2026-11-22",
+        "category": "Challenger 125",
+        "surface": "Hard",
+        "location": {
+          "city": "Metz",
+          "country": "France"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "qualifying_wildcard_slots": 4,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Metz",
+        "Open Metz–Grand Est"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary",
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Open_Metz–Grand_Est_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Open_Metz–Grand_Est"
     },
     {
       "tournament": {
@@ -10141,8 +10141,8 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Uruguay_Open_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Uruguay_Open"
     },
     {
       "tournament": {
@@ -10240,6 +10240,40 @@
       "schedule_aliases": [
         "Hersonissos",
         "Crete Challenger IV"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary",
+      "draw_page_url": null,
+      "event_page_url": null
+    },
+    {
+      "tournament": {
+        "tournament_id": "el-salvador-open-2026",
+        "name": "El Salvador Open",
+        "year": 2026,
+        "start_date": "2026-11-23",
+        "end_date": "2026-11-29",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "San Salvador",
+          "country": "El Salvador"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "qualifying_wildcard_slots": 4,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "San Salvador",
+        "El Salvador Open"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
@@ -10350,40 +10384,6 @@
     },
     {
       "tournament": {
-        "tournament_id": "san-salvador-challenger-2026",
-        "name": "San Salvador Challenger",
-        "year": 2026,
-        "start_date": "2026-11-23",
-        "end_date": "2026-11-29",
-        "category": "Challenger 50",
-        "surface": "Hard",
-        "location": {
-          "city": "San Salvador",
-          "country": "El Salvador"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "qualifying_wildcard_slots": 4,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "San Salvador",
-        "San Salvador Challenger"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
-    },
-    {
-      "tournament": {
         "tournament_id": "challenger-seguros-del-estado-2026",
         "name": "Challenger Seguros del Estado",
         "year": 2026,
@@ -10452,40 +10452,6 @@
     },
     {
       "tournament": {
-        "tournament_id": "chisinau-indoors-2026",
-        "name": "Chișinău Indoors",
-        "year": 2026,
-        "start_date": "2026-11-30",
-        "end_date": "2026-12-06",
-        "category": "Challenger 50",
-        "surface": "Hard",
-        "location": {
-          "city": "Chișinău",
-          "country": "Moldova"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "qualifying_wildcard_slots": 4,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Chișinău",
-        "Chișinău Indoors"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
-    },
-    {
-      "tournament": {
         "tournament_id": "crete-challenger-v-2026",
         "name": "Crete Challenger V",
         "year": 2026,
@@ -10512,6 +10478,40 @@
       "schedule_aliases": [
         "Hersonissos",
         "Crete Challenger V"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary",
+      "draw_page_url": null,
+      "event_page_url": null
+    },
+    {
+      "tournament": {
+        "tournament_id": "satul-german-open-2026",
+        "name": "Satul German Open",
+        "year": 2026,
+        "start_date": "2026-11-30",
+        "end_date": "2026-12-06",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Chișinău",
+          "country": "Moldova"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "qualifying_wildcard_slots": 4,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Chișinău",
+        "Satul German Open"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
@@ -10588,8 +10588,42 @@
     },
     {
       "tournament": {
-        "tournament_id": "copenhagen-challenger-2026",
-        "name": "Copenhagen Challenger",
+        "tournament_id": "corcovado-tennis-open-2026",
+        "name": "Corcovado Tennis Open",
+        "year": 2026,
+        "start_date": "2026-12-07",
+        "end_date": "2026-12-13",
+        "category": "Challenger 50",
+        "surface": "Clay",
+        "location": {
+          "city": "Rio de Janeiro",
+          "country": "Brazil"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "qualifying_wildcard_slots": 4,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Rio de Janeiro",
+        "Corcovado Tennis Open"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary",
+      "draw_page_url": null,
+      "event_page_url": null
+    },
+    {
+      "tournament": {
+        "tournament_id": "kjbenhavn-open-2026",
+        "name": "Kjøbenhavn Open",
         "year": 2026,
         "start_date": "2026-12-07",
         "end_date": "2026-12-13",
@@ -10613,7 +10647,7 @@
       },
       "schedule_aliases": [
         "Copenhagen",
-        "Copenhagen Challenger"
+        "Kjøbenhavn Open"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
@@ -10622,8 +10656,8 @@
     },
     {
       "tournament": {
-        "tournament_id": "la-paz-challenger-2026",
-        "name": "La Paz Challenger",
+        "tournament_id": "la-paz-open-2026",
+        "name": "La Paz Open",
         "year": 2026,
         "start_date": "2026-12-07",
         "end_date": "2026-12-13",
@@ -10647,7 +10681,7 @@
       },
       "schedule_aliases": [
         "La Paz",
-        "La Paz Challenger"
+        "La Paz Open"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
@@ -10724,40 +10758,6 @@
     },
     {
       "tournament": {
-        "tournament_id": "rio-de-janeiro-challenger-2026",
-        "name": "Rio de Janeiro Challenger",
-        "year": 2026,
-        "start_date": "2026-12-07",
-        "end_date": "2026-12-13",
-        "category": "Challenger 50",
-        "surface": "Clay",
-        "location": {
-          "city": "Rio de Janeiro",
-          "country": "Brazil"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "qualifying_wildcard_slots": 4,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Rio de Janeiro",
-        "Rio de Janeiro Challenger"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
-    },
-    {
-      "tournament": {
         "tournament_id": "trnava-challenger-ii-2026",
         "name": "Trnava Challenger II",
         "year": 2026,
@@ -10784,6 +10784,40 @@
       "schedule_aliases": [
         "Trnava",
         "Trnava Challenger II"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary",
+      "draw_page_url": null,
+      "event_page_url": null
+    },
+    {
+      "tournament": {
+        "tournament_id": "a-rete-park-challenger-2026",
+        "name": "A-Rete Park Challenger",
+        "year": 2026,
+        "start_date": "2026-12-14",
+        "end_date": "2026-12-20",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Guanzate",
+          "country": "Italy"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "qualifying_wildcard_slots": 4,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Guanzate",
+        "A-Rete Park Challenger"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
@@ -10826,42 +10860,8 @@
     },
     {
       "tournament": {
-        "tournament_id": "guanzate-challenger-2026",
-        "name": "Guanzate Challenger",
-        "year": 2026,
-        "start_date": "2026-12-14",
-        "end_date": "2026-12-20",
-        "category": "Challenger 50",
-        "surface": "Hard",
-        "location": {
-          "city": "Guanzate",
-          "country": "Italy"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "qualifying_wildcard_slots": 4,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Guanzate",
-        "Guanzate Challenger"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
-    },
-    {
-      "tournament": {
-        "tournament_id": "la-paz-challenger-ii-2026",
-        "name": "La Paz Challenger II",
+        "tournament_id": "la-paz-open-ii-2026",
+        "name": "La Paz Open II",
         "year": 2026,
         "start_date": "2026-12-14",
         "end_date": "2026-12-20",
@@ -10885,7 +10885,7 @@
       },
       "schedule_aliases": [
         "La Paz",
-        "La Paz Challenger II"
+        "La Paz Open II"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",

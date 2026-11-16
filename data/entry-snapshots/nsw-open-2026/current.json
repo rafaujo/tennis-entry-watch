@@ -21,9 +21,9 @@
     "qualifying_list_published": true,
     "entry_list_date": null,
     "entry_ranking_date": null,
-    "status": "upcoming"
+    "status": "active"
   },
-  "snapshot_at": "2026-11-08T16:40:43.150838Z",
+  "snapshot_at": "2026-11-16T02:09:41.504025Z",
   "entries": [
     {
       "player": {
@@ -838,19 +838,19 @@
         "atp_id": null,
         "birth_date": null
       },
-      "status": "ALT",
+      "status": "WC",
       "entry_rank": null,
       "current_rank": 636,
-      "alternate_position": 15,
+      "alternate_position": null,
       "seed": null,
       "projected_seed": null,
-      "previous_status": null,
+      "previous_status": "ALT",
       "withdrawn_at": null,
       "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "url": "https://en.wikipedia.org/wiki/2026_NSW_Open",
+        "retrieved_at": "2026-11-16T02:09:41.504025Z",
         "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
+        "collector": "wikipedia_wildcard_announcement"
       }
     },
     {
@@ -966,6 +966,52 @@
         "retrieved_at": "2026-11-08T16:40:43.150838Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mustafa-ege-sk",
+        "name": "Mustafa Ege Şık",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_NSW_Open",
+        "retrieved_at": "2026-11-16T02:09:41.504025Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_wildcard_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "li-tu",
+        "name": "Li Tu",
+        "nationality": "AUS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": 499,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_NSW_Open",
+        "retrieved_at": "2026-11-16T02:09:41.504025Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_wildcard_announcement"
       }
     }
   ],
@@ -1280,29 +1326,6 @@
       "status": "QDA",
       "entry_rank": null,
       "current_rank": 619,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "casey-hoole",
-        "name": "Casey Hoole",
-        "nationality": "AUS",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "QDA",
-      "entry_rank": null,
-      "current_rank": 636,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,

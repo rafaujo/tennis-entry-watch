@@ -21,9 +21,9 @@
     "qualifying_list_published": true,
     "entry_list_date": null,
     "entry_ranking_date": null,
-    "status": "upcoming"
+    "status": "active"
   },
-  "snapshot_at": "2026-11-08T16:40:43.150838Z",
+  "snapshot_at": "2026-11-16T02:09:41.504025Z",
   "entries": [
     {
       "player": {
@@ -943,6 +943,75 @@
         "retrieved_at": "2026-11-08T16:40:43.150838Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "adam-jilly",
+        "name": "Ádám Jilly",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Champaign_Challenger",
+        "retrieved_at": "2026-11-16T02:09:41.504025Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_wildcard_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jordan-lee",
+        "name": "Jordan Lee",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Champaign_Challenger",
+        "retrieved_at": "2026-11-16T02:09:41.504025Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_wildcard_announcement"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jeremy-zhang",
+        "name": "Jeremy Zhang",
+        "nationality": null,
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "WC",
+      "entry_rank": null,
+      "current_rank": null,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2026_Champaign_Challenger",
+        "retrieved_at": "2026-11-16T02:09:41.504025Z",
+        "source_type": "trusted_secondary",
+        "collector": "wikipedia_wildcard_announcement"
       }
     }
   ],

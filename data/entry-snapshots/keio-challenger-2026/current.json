@@ -18,12 +18,12 @@
     "qualifying_wildcard_slots": 4,
     "draw_published": false,
     "draw_url": null,
-    "qualifying_list_published": false,
+    "qualifying_list_published": true,
     "entry_list_date": null,
     "entry_ranking_date": null,
     "status": "upcoming"
   },
-  "snapshot_at": "2026-11-08T16:40:43.150838Z",
+  "snapshot_at": "2026-11-16T02:09:36.337339Z",
   "entries": [
     {
       "player": {
@@ -35,7 +35,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 128,
+      "current_rank": 131,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -43,7 +43,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -58,7 +58,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 130,
+      "current_rank": 133,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -66,7 +66,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -81,7 +81,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 172,
+      "current_rank": 168,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -89,99 +89,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "dylan-dietrich",
-        "name": "Dylan Dietrich",
-        "nationality": "SUI",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 187,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "keegan-smith",
-        "name": "Keegan Smith",
-        "nationality": "USA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 189,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "david-jorda-sanchis",
-        "name": "David Jordá Sanchis",
-        "nationality": "ESP",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 195,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "liam-broady",
-        "name": "Liam Broady",
-        "nationality": "GBR",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 213,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -196,7 +104,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 224,
+      "current_rank": 171,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -204,22 +112,22 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
     },
     {
       "player": {
-        "player_id": "chun-hsin-tseng",
-        "name": "Chun Hsin Tseng",
-        "nationality": "TWN",
+        "player_id": "dylan-dietrich",
+        "name": "Dylan Dietrich",
+        "nationality": "SUI",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 227,
+      "current_rank": 186,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -227,7 +135,53 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "keegan-smith",
+        "name": "Keegan Smith",
+        "nationality": "USA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 188,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "david-jorda-sanchis",
+        "name": "David Jordá Sanchis",
+        "nationality": "ESP",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 192,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -242,7 +196,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 231,
+      "current_rank": 214,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -250,16 +204,16 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
     },
     {
       "player": {
-        "player_id": "hayato-matsuoka",
-        "name": "Hayato Matsuoka",
-        "nationality": "JPN",
+        "player_id": "chun-hsin-tseng",
+        "name": "Chun Hsin Tseng",
+        "nationality": "TWN",
         "atp_id": null,
         "birth_date": null
       },
@@ -273,7 +227,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -288,7 +242,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 255,
+      "current_rank": 250,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -296,7 +250,53 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "liam-broady",
+        "name": "Liam Broady",
+        "nationality": "GBR",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 259,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hayato-matsuoka",
+        "name": "Hayato Matsuoka",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 274,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -311,7 +311,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 275,
+      "current_rank": 279,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -319,30 +319,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "yosuke-watanuki",
-        "name": "Yosuke Watanuki",
-        "nationality": "JPN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 289,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -357,7 +334,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 306,
+      "current_rank": 299,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -365,7 +342,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -380,7 +357,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 315,
+      "current_rank": 314,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -388,7 +365,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "yosuke-watanuki",
+        "name": "Yosuke Watanuki",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 326,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -403,7 +403,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 362,
+      "current_rank": 363,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -411,30 +411,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "jie-cui",
-        "name": "Jie Cui",
-        "nationality": "CHN",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 368,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -449,7 +426,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 392,
+      "current_rank": 371,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -457,7 +434,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "jie-cui",
+        "name": "Jie Cui",
+        "nationality": "CHN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 372,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -472,7 +472,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 431,
+      "current_rank": 460,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -480,22 +480,461 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
     },
     {
       "player": {
-        "player_id": "yoshihito-nishioka",
-        "name": "Yoshihito Nishioka",
+        "player_id": "mitsuki-wei-kang-leong",
+        "name": "Mitsuki Wei Kang Leong",
+        "nationality": "MAS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 415,
+      "alternate_position": 1,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "masamichi-imamura",
+        "name": "Masamichi Imamura",
         "nationality": "JPN",
         "atp_id": null,
         "birth_date": null
       },
-      "status": "DA",
+      "status": "ALT",
       "entry_rank": null,
-      "current_rank": 916,
+      "current_rank": 434,
+      "alternate_position": 2,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "luca-staeheli",
+        "name": "Luca Staeheli",
+        "nationality": "SUI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 439,
+      "alternate_position": 3,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "niels-mcdonald",
+        "name": "Niels McDonald",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 448,
+      "alternate_position": 4,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "benjamin-hassan",
+        "name": "Benjamin Hassan",
+        "nationality": "LBN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 451,
+      "alternate_position": 5,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "koki-matsuda",
+        "name": "Koki Matsuda",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 472,
+      "alternate_position": 6,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "keisuke-saitoh",
+        "name": "Keisuke Saitoh",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 484,
+      "alternate_position": 7,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "constantin-bittoun-kouzmine",
+        "name": "Constantin Bittoun Kouzmine",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 489,
+      "alternate_position": 8,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "maximus-jones",
+        "name": "Maximus Jones",
+        "nationality": "THA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 512,
+      "alternate_position": 9,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dimitris-sakellaridis",
+        "name": "Dimitris Sakellaridis",
+        "nationality": "GRE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 536,
+      "alternate_position": 10,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "naoya-honda",
+        "name": "Naoya Honda",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 564,
+      "alternate_position": 11,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hikaru-shiraishi",
+        "name": "Hikaru Shiraishi",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 578,
+      "alternate_position": 12,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ryuki-matsuda",
+        "name": "Ryuki Matsuda",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 641,
+      "alternate_position": 13,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "takuya-kumasaka",
+        "name": "Takuya Kumasaka",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 653,
+      "alternate_position": 14,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "s-d-prajwal-dev",
+        "name": "S D Prajwal Dev",
+        "nationality": "IND",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 680,
+      "alternate_position": 15,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "thanapet-chanta",
+        "name": "Thanapet Chanta",
+        "nationality": "THA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 699,
+      "alternate_position": 16,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "kokoro-isomura",
+        "name": "Kokoro Isomura",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 711,
+      "alternate_position": 17,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "taisei-ichikawa",
+        "name": "Taisei Ichikawa",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 758,
+      "alternate_position": 18,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "leo-vithoontien",
+        "name": "Leo Vithoontien",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "ALT",
+      "entry_rank": null,
+      "current_rank": 876,
+      "alternate_position": 19,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    }
+  ],
+  "qualifying_entries": [
+    {
+      "player": {
+        "player_id": "mitsuki-wei-kang-leong",
+        "name": "Mitsuki Wei Kang Leong",
+        "nationality": "MAS",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 415,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -503,11 +942,424 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-08T16:40:43.150838Z",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "masamichi-imamura",
+        "name": "Masamichi Imamura",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 434,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "luca-staeheli",
+        "name": "Luca Staeheli",
+        "nationality": "SUI",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 439,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "niels-mcdonald",
+        "name": "Niels McDonald",
+        "nationality": "GER",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 448,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "benjamin-hassan",
+        "name": "Benjamin Hassan",
+        "nationality": "LBN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 451,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "koki-matsuda",
+        "name": "Koki Matsuda",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 472,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "keisuke-saitoh",
+        "name": "Keisuke Saitoh",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 484,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "constantin-bittoun-kouzmine",
+        "name": "Constantin Bittoun Kouzmine",
+        "nationality": "FRA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 489,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "maximus-jones",
+        "name": "Maximus Jones",
+        "nationality": "THA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 512,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "dimitris-sakellaridis",
+        "name": "Dimitris Sakellaridis",
+        "nationality": "GRE",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 536,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "naoya-honda",
+        "name": "Naoya Honda",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 564,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "hikaru-shiraishi",
+        "name": "Hikaru Shiraishi",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 578,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "ryuki-matsuda",
+        "name": "Ryuki Matsuda",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 641,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "takuya-kumasaka",
+        "name": "Takuya Kumasaka",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 653,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "s-d-prajwal-dev",
+        "name": "S D Prajwal Dev",
+        "nationality": "IND",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 680,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "thanapet-chanta",
+        "name": "Thanapet Chanta",
+        "nationality": "THA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 699,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "kokoro-isomura",
+        "name": "Kokoro Isomura",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 711,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "taisei-ichikawa",
+        "name": "Taisei Ichikawa",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 758,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "leo-vithoontien",
+        "name": "Leo Vithoontien",
+        "nationality": "JPN",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "QDA",
+      "entry_rank": null,
+      "current_rank": 876,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-16T02:09:36.337339Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
     }
-  ],
-  "qualifying_entries": []
+  ]
 }
