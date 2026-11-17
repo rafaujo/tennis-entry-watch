@@ -23,19 +23,19 @@
     "entry_ranking_date": null,
     "status": "complete"
   },
-  "snapshot_at": "2026-11-17T04:29:03.869146Z",
+  "snapshot_at": "2026-11-17T19:11:14.407090Z",
   "entries": [
     {
       "player": {
-        "player_id": "herman-hoeyeraal",
-        "name": "Herman Hoeyeraal",
-        "nationality": "NOR",
+        "player_id": "lorenzo-bocchi",
+        "name": "Lorenzo Bocchi",
+        "nationality": "ITA",
         "atp_id": null,
         "birth_date": null
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 669,
+      "current_rank": 587,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -43,7 +43,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-17T04:29:03.869146Z",
+        "retrieved_at": "2026-11-17T19:11:14.407090Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -66,7 +66,30 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-17T04:29:03.869146Z",
+        "retrieved_at": "2026-11-17T19:11:14.407090Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "gabriele-crivellaro",
+        "name": "Gabriele Crivellaro",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 919,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-17T19:11:14.407090Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
