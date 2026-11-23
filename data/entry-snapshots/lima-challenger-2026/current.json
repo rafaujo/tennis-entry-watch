@@ -23,7 +23,7 @@
     "entry_ranking_date": null,
     "status": "complete"
   },
-  "snapshot_at": "2026-11-23T02:45:52.154523Z",
+  "snapshot_at": "2026-11-23T22:03:04.860133Z",
   "entries": [
     {
       "player": {
@@ -35,7 +35,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 588,
+      "current_rank": 589,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -43,7 +43,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-23T02:45:52.154523Z",
+        "retrieved_at": "2026-11-23T22:03:04.860133Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -58,7 +58,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 844,
+      "current_rank": 816,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -66,30 +66,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-23T02:45:52.154523Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "gabriele-crivellaro",
-        "name": "Gabriele Crivellaro",
-        "nationality": "ITA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 921,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-23T02:45:52.154523Z",
+        "retrieved_at": "2026-11-23T22:03:04.860133Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -104,7 +81,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 969,
+      "current_rank": 862,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -112,7 +89,53 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-23T02:45:52.154523Z",
+        "retrieved_at": "2026-11-23T22:03:04.860133Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "gabriele-crivellaro",
+        "name": "Gabriele Crivellaro",
+        "nationality": "ITA",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 927,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-23T22:03:04.860133Z",
+        "source_type": "trusted_secondary",
+        "collector": "live_tennis_schedule_snapshot"
+      }
+    },
+    {
+      "player": {
+        "player_id": "mateo-del-pino",
+        "name": "Mateo Del Pino",
+        "nationality": "ARG",
+        "atp_id": null,
+        "birth_date": null
+      },
+      "status": "DA",
+      "entry_rank": null,
+      "current_rank": 994,
+      "alternate_position": null,
+      "seed": null,
+      "projected_seed": null,
+      "previous_status": null,
+      "withdrawn_at": null,
+      "source": {
+        "url": "https://live-tennis.eu/en/atp-schedule",
+        "retrieved_at": "2026-11-23T22:03:04.860133Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
