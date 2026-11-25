@@ -23,7 +23,7 @@
     "entry_ranking_date": null,
     "status": "complete"
   },
-  "snapshot_at": "2026-11-25T04:54:04.776472Z",
+  "snapshot_at": "2026-11-25T19:56:55.353759Z",
   "entries": [
     {
       "player": {
@@ -35,7 +35,7 @@
       },
       "status": "DA",
       "entry_rank": null,
-      "current_rank": 592,
+      "current_rank": 593,
       "alternate_position": null,
       "seed": null,
       "projected_seed": null,
@@ -43,30 +43,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-25T04:54:04.776472Z",
-        "source_type": "trusted_secondary",
-        "collector": "live_tennis_schedule_snapshot"
-      }
-    },
-    {
-      "player": {
-        "player_id": "felix-corwin",
-        "name": "Felix Corwin",
-        "nationality": "USA",
-        "atp_id": null,
-        "birth_date": null
-      },
-      "status": "DA",
-      "entry_rank": null,
-      "current_rank": 818,
-      "alternate_position": null,
-      "seed": null,
-      "projected_seed": null,
-      "previous_status": null,
-      "withdrawn_at": null,
-      "source": {
-        "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-25T04:54:04.776472Z",
+        "retrieved_at": "2026-11-25T19:56:55.353759Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -89,7 +66,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-25T04:54:04.776472Z",
+        "retrieved_at": "2026-11-25T19:56:55.353759Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -112,7 +89,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-25T04:54:04.776472Z",
+        "retrieved_at": "2026-11-25T19:56:55.353759Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
@@ -135,7 +112,7 @@
       "withdrawn_at": null,
       "source": {
         "url": "https://live-tennis.eu/en/atp-schedule",
-        "retrieved_at": "2026-11-25T04:54:04.776472Z",
+        "retrieved_at": "2026-11-25T19:56:55.353759Z",
         "source_type": "trusted_secondary",
         "collector": "live_tennis_schedule_snapshot"
       }
