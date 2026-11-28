@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "retrieved_at": "2026-11-21T03:13:42.355772Z",
+  "retrieved_at": "2026-11-28T03:54:36.861021Z",
   "tracking_started_at": "2026-08-12",
   "sources": [
     {
@@ -10413,8 +10413,8 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Challenger_Seguros_del_Estado_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Challenger_Seguros_del_Estado"
     },
     {
       "tournament": {
@@ -10447,8 +10447,8 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Challenger_Temuco_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Challenger_Temuco"
     },
     {
       "tournament": {
@@ -10481,8 +10481,42 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Crete_Challenger_V_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Crete_Challenger_V"
+    },
+    {
+      "tournament": {
+        "tournament_id": "empire-trnava-open-2026",
+        "name": "Empire Trnava Open",
+        "year": 2026,
+        "start_date": "2026-11-30",
+        "end_date": "2026-12-06",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Trnava",
+          "country": "Slovakia"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "qualifying_wildcard_slots": 4,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Trnava",
+        "Empire Trnava Open"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary",
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Empire_Trnava_Open_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Empire_Trnava_Open"
     },
     {
       "tournament": {
@@ -10515,8 +10549,8 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Satul_German_Open_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Satul_German_Open"
     },
     {
       "tournament": {
@@ -10549,42 +10583,8 @@
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
-    },
-    {
-      "tournament": {
-        "tournament_id": "trnava-challenger-2026",
-        "name": "Trnava Challenger",
-        "year": 2026,
-        "start_date": "2026-11-30",
-        "end_date": "2026-12-06",
-        "category": "Challenger 50",
-        "surface": "Hard",
-        "location": {
-          "city": "Trnava",
-          "country": "Slovakia"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "qualifying_wildcard_slots": 4,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Trnava",
-        "Trnava Challenger"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
+      "draw_page_url": "https://en.wikipedia.org/wiki/2026_Soma_Bay_Open_II_–_Singles",
+      "event_page_url": "https://en.wikipedia.org/wiki/2026_Soma_Bay_Open_II"
     },
     {
       "tournament": {
@@ -10614,6 +10614,40 @@
       "schedule_aliases": [
         "Rio de Janeiro",
         "Corcovado Tennis Open"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
+      "source_type": "trusted_secondary",
+      "draw_page_url": null,
+      "event_page_url": null
+    },
+    {
+      "tournament": {
+        "tournament_id": "empire-trnava-open-ii-2026",
+        "name": "Empire Trnava Open II",
+        "year": 2026,
+        "start_date": "2026-12-07",
+        "end_date": "2026-12-13",
+        "category": "Challenger 50",
+        "surface": "Hard",
+        "location": {
+          "city": "Trnava",
+          "country": "Slovakia"
+        },
+        "main_draw_size": 32,
+        "qualifying_draw_size": 24,
+        "main_draw_qualifier_slots": 6,
+        "main_draw_wildcard_slots": 3,
+        "qualifying_wildcard_slots": 4,
+        "draw_published": false,
+        "draw_url": null,
+        "qualifying_list_published": false,
+        "entry_list_date": null,
+        "entry_ranking_date": null,
+        "status": "upcoming"
+      },
+      "schedule_aliases": [
+        "Trnava",
+        "Empire Trnava Open II"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
@@ -10750,40 +10784,6 @@
       "schedule_aliases": [
         "Nonthaburi",
         "Nonthaburi Challenger III"
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
-      "source_type": "trusted_secondary",
-      "draw_page_url": null,
-      "event_page_url": null
-    },
-    {
-      "tournament": {
-        "tournament_id": "trnava-challenger-ii-2026",
-        "name": "Trnava Challenger II",
-        "year": 2026,
-        "start_date": "2026-12-07",
-        "end_date": "2026-12-13",
-        "category": "Challenger 50",
-        "surface": "Hard",
-        "location": {
-          "city": "Trnava",
-          "country": "Slovakia"
-        },
-        "main_draw_size": 32,
-        "qualifying_draw_size": 24,
-        "main_draw_qualifier_slots": 6,
-        "main_draw_wildcard_slots": 3,
-        "qualifying_wildcard_slots": 4,
-        "draw_published": false,
-        "draw_url": null,
-        "qualifying_list_published": false,
-        "entry_list_date": null,
-        "entry_ranking_date": null,
-        "status": "upcoming"
-      },
-      "schedule_aliases": [
-        "Trnava",
-        "Trnava Challenger II"
       ],
       "source_url": "https://en.wikipedia.org/wiki/2026_ATP_Challenger_Tour",
       "source_type": "trusted_secondary",
